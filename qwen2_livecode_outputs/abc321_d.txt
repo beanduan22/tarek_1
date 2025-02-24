@@ -1,0 +1,90 @@
+Problem ID: abc321_d
+Problem Content:
+AtCoder cafeteria offers N main dishes and M side dishes. The price of the i-th main dish is A_i, and that of the j-th side dish is B_j.
+The cafeteria is considering introducing a new set meal menu.
+A set meal consists of one main dish and one side dish. Let s be the sum of the prices of the main dish and the side dish, then the price of the set meal is \min(s,P).
+Here, P is a constant given in the input.
+There are NM ways to choose a main dish and a side dish for a set meal. Find the total price of all these set meals.
+
+Input
+
+The input is given from Standard Input in the following format:
+N M P
+A_1 A_2 \dots A_N
+B_1 B_2 \dots B_M
+
+Output
+
+Print the answer as an integer.
+Under the constraints of this problem, it can be proved that the answer fits into a 64-bit signed integer.
+
+Constraints
+
+
+- 1\leq N,M \leq 2\times 10^5
+- 1\leq A_i,B_j \leq 10^8
+- 1\leq P \leq 2\times 10^8
+- All input values are integers.
+
+Sample Input 1
+
+2 2 7
+3 5
+6 1
+
+Sample Output 1
+
+24
+
+
+- If you choose the first main dish and the first side dish, the price of the set meal is \min(3+6,7)=7.
+- If you choose the first main dish and the second side dish, the price of the set meal is \min(3+1,7)=4.
+- If you choose the second main dish and the first side dish, the price of the set meal is \min(5+6,7)=7.
+- If you choose the second main dish and the second side dish, the price of the set meal is \min(5+1,7)=6.
+
+Thus, the answer is 7+4+7+6=24.
+
+Sample Input 2
+
+1 3 2
+1
+1 1 1
+
+Sample Output 2
+
+6
+
+Sample Input 3
+
+7 12 25514963
+2436426 24979445 61648772 23690081 33933447 76190629 62703497
+11047202 71407775 28894325 31963982 22804784 50968417 30302156 82631932 61735902 80895728 23078537 7723857
+
+Sample Output 3
+
+2115597124
+
+Qwen2 Analysis:
+Based on the constraints, input format, sample inputs, and output requirements of this problem, we can analyze it as follows:
+
+**Category:**
+
+- **Difficulty:** Intermediate to Advanced. The problem involves efficient handling of large numbers (up to $2 \times 10^8$), multiple loops, and conditionals in a smart manner.
+- **Required Programming Skills:** 
+   - Understanding of basic arithmetic operations and variable manipulations
+   - Knowledge of loop structures for iterating over arrays or lists
+   - Ability to calculate minimum values efficiently (important due to the large constraints)
+   - Experience with algorithmic optimization techniques, especially if you aim to solve it in an efficient manner
+
+- **Complexity:**
+   The core complexity of this problem lies in optimizing the way we compute all possible set meal prices. A naive approach might involve iterating through every combination, which would have a time complexity of $O(NM)$ and be acceptable due to moderate constraints ($N, M \leq 2 \times 10^5$). However, aiming for an optimized solution can introduce techniques like sorting or binary search.
+
+In summary, this problem requires solid skills in handling array operations, loop conditions, arithmetic calculations, and efficient algorithms, making it suitable as a challenge for programmers who have already mastered basic concepts but are looking to deepen their understanding of optimization practices. It falls under the category of algorithmic problems with an emphasis on efficiency and resource management.
+
+**Solution Strategy:**
+
+1. **Input Handling:** Read input values efficiently.
+2. **Sorting:** Consider sorting either side dishes or main dishes based on their prices for easier comparison when calculating minimums.
+3. **Optimization:** Focus on avoiding redundant computations, particularly in scenarios where the same or similar calculations are done multiple times due to nested loops.
+
+The solution might involve a combination of techniques like sorting and early termination once it becomes clear that further iterations cannot yield any lower sum than what has already been found, optimizing against brute force methods.

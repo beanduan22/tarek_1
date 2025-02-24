@@ -1,0 +1,47 @@
+Problem ID: 3346
+Problem Content:
+You are given a string s and an integer k.
+Define a function distance(s_1, s_2) between two strings s_1 and s_2 of the same length n as:
+
+The sum of the minimum distance between s_1[i] and s_2[i] when the characters from 'a' to 'z' are placed in a cyclic order, for all i in the range [0, n - 1].
+
+For example, distance("ab", "cd") == 4, and distance("a", "z") == 1.
+You can change any letter of s to any other lowercase English letter, any number of times.
+Return a string denoting the lexicographically smallest string t you can get after some changes, such that distance(s, t) <= k.
+ 
+Example 1:
+
+Input: s = "zbbz", k = 3
+Output: "aaaz"
+Explanation:
+Change s to "aaaz". The distance between "zbbz" and "aaaz" is equal to k = 3.
+
+Example 2:
+
+Input: s = "xaxcd", k = 4
+Output: "aawcd"
+Explanation:
+The distance between "xaxcd" and "aawcd" is equal to k = 4.
+
+Example 3:
+
+Input: s = "lol", k = 0
+Output: "lol"
+Explanation:
+It's impossible to change any character as k = 0.
+
+ 
+Constraints:
+
+1 <= s.length <= 100
+0 <= k <= 2000
+s consists only of lowercase English letters.
+
+Codestral Analysis:
+ Category: Medium Dynamic Programming Problem
+
+This problem can be classified as a medium level dynamic programming problem because it requires optimizing a value (distance) by making changes to string elements under certain constraints. The problem involves iterating over the string characters, calculating distances between characters based on their cyclic order, and then determining the optimal way to change these characters in a lexicographically smallest manner while not exceeding the given integer limit `k`.
+
+The problem uses dynamic programming to solve this optimization problem by creating a matrix to store intermediate results for subproblems, reducing redundant computations. This is achieved through a bottom-up approach, where smaller problems are solved first and their solutions used to solve larger problems, ultimately leading to the solution of the original problem.
+
+Python is an ideal language for solving this problem due to its simplicity, readability, and availability of useful libraries such as NumPy for efficient matrix operations. However, any language that supports dynamic programming can be used to tackle this problem.

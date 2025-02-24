@@ -1,0 +1,5 @@
+ The problem can be categorized as a beginner-level problem. It requires basic knowledge of working with arrays or lists in Python and performing elementwise operations on them. Here's why:
+
+1. Difficulty Level: Beginner to Intermediate - The problem involves manipulating two arrays of the same length, which is a common data structure used for such tasks. However, understanding how to iterate over these arrays or use list comprehensions may be a bit more advanced than basic level knowledge.
+2. Required Programming Skills: Basic Python programming skills and familiarity with working with arrays or lists in Python are necessary. Understanding the abs() function and elementwise operations is also required for solving this problem.
+3. Complexity: Linear (O(n)) - Since we're only iterating over each list once to calculate differences, the complexity of this problem is linear. This makes it a relatively easy problem compared to more complex problems like sorting or searching algorithms that often have higher time complexity.

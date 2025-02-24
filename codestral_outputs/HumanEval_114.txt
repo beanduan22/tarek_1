@@ -1,0 +1,7 @@
+ This problem falls under the category of "Array" and "Dynamic Programming". The difficulty level is EASY to MEDIUM. Required programming skills include handling arrays and loops efficiently. Knowledge of basic dynamic programming concepts may be useful, but not strictly necessary for a straight-forward solution.
+
+   The complexity of this problem can be analyzed as follows:
+   1) Time Complexity: O(n), where n is the length of the input array. This is because we only need to traverse through the array once.
+   2) Space Complexity: O(1). This is because we are using a constant amount of space to store variables regardless of the size of the input array.
+
+   A potential solution could involve keeping track of the minimum sum and the current running sum while iterating over the array, updating these values as necessary at each step.

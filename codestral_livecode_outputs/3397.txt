@@ -1,0 +1,47 @@
+Problem ID: 3397
+Problem Content:
+You are given two arrays of equal length, nums1 and nums2.
+Each element in nums1 has been increased (or decreased in the case of negative) by an integer, represented by the variable x.
+As a result, nums1 becomes equal to nums2. Two arrays are considered equal when they contain the same integers with the same frequencies.
+Return the integer x.
+ 
+Example 1:
+
+Input: nums1 = [2,6,4], nums2 = [9,7,5]
+Output: 3
+Explanation:
+The integer added to each element of nums1 is 3.
+
+Example 2:
+
+Input: nums1 = [10], nums2 = [5]
+Output: -5
+Explanation:
+The integer added to each element of nums1 is -5.
+
+Example 3:
+
+Input: nums1 = [1,1,1,1], nums2 = [1,1,1,1]
+Output: 0
+Explanation:
+The integer added to each element of nums1 is 0.
+
+ 
+Constraints:
+
+1 <= nums1.length == nums2.length <= 100
+0 <= nums1[i], nums2[i] <= 1000
+The test cases are generated in a way that there is an integer x such that nums1 can become equal to nums2 by adding x to each element of nums1.
+
+Codestral Analysis:
+ The problem falls under the category of "Array Manipulation" and is labeled as "Easy". This type of problem can be solved using basic array traversal and mathematics. To solve it, you will iterate through the arrays and calculate the difference between the corresponding elements in both arrays for each index. Since all differences should be equal due to the same integer being added or subtracted from every element in nums1, we only need to check one pair of elements.
+
+The time complexity is O(n) since you are iterating through the array once and performing a constant time operation on each element. The space complexity is O(1) because you don't need any additional data structures that grow with input size.
+
+Required programming skills: Basic looping constructs, understanding of arrays, basic mathematical operations.
+
+Solution approach (Pseudocode):
+
+1. Iterate through the array from 0 to length - 1.
+2. For each index i, calculate the difference between nums2[i] and nums1[i].
+3. All differences should be equal. So, return the difference of the first pair as the result. If there are no elements in the array, return 0 or any predefined value based on constraints.

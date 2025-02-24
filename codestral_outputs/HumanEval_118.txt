@@ -1,0 +1,8 @@
+ Category: Easy to Medium
+
+   Analysis:
+   The given problem is a string manipulation task that involves searching through a string for specific characters (vowels) under certain conditions. The task also requires the understanding of basic string operations, looping constructs, and conditional statements. Additionally, it assumes knowledge about English letter structure and its usage in words.
+
+   Based on these factors, I would categorize this problem as "Easy to Medium". It could be considered easier for programmers who are already familiar with string manipulation and the basic rules of English language. However, for beginners or those new to programming, it might take a bit more time to understand and implement the solution correctly.
+
+   The complexity of this problem can be viewed as linear (O(n)) because in the worst-case scenario we need to traverse through each character in the string once.

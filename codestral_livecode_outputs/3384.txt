@@ -1,0 +1,60 @@
+Problem ID: 3384
+Problem Content:
+You are given a string word of size n, and an integer k such that k divides n.
+In one operation, you can pick any two indices i and j, that are divisible by k, then replace the substring of length k starting at i with the substring of length k starting at j. That is, replace the substring word[i..i + k - 1] with the substring word[j..j + k - 1].
+Return the minimum number of operations required to make word k-periodic.
+We say that word is k-periodic if there is some string s of length k such that word can be obtained by concatenating s an arbitrary number of times. For example, if word == “ababab”, then word is 2-periodic for s = "ab".
+ 
+Example 1:
+
+Input: word = "leetcodeleet", k = 4
+Output: 1
+Explanation:
+We can obtain a 4-periodic string by picking i = 4 and j = 0. After this operation, word becomes equal to "leetleetleet".
+
+Example 2:
+
+Input: word = "leetcoleet", k = 2
+Output: 3
+Explanation:
+We can obtain a 2-periodic string by applying the operations in the table below.
+
+
+
+i
+j
+word
+
+
+0
+2
+etetcoleet
+
+
+4
+0
+etetetleet
+
+
+6
+0
+etetetetet
+
+
+
+
+
+ 
+
+ 
+Constraints:
+
+1 <= n == word.length <= 10^5
+1 <= k <= word.length
+k divides word.length.
+word consists only of lowercase English letters.
+
+Codestral Analysis:
+ The problem is about finding the minimum number of operations to make a given string k-periodic. A string is k-periodic if it can be obtained by concatenating some string s of length k an arbitrary number of times. In one operation, we can pick any two indices i and j that are divisible by k and replace the substring of length k starting at i with the substring of length k starting at j.
+
+The problem category is dynamic programming and hashtable. The difficulty level would be medium because it requires an understanding of dynamic programming to solve this problem effectively. Skills required include string manipulation, hash table usage for efficient checking of substrings, and knowledge about how to apply dynamic programming techniques such as state transitioning in a cyclic manner. The complexity is O(n^2) which could be improved to O(n log n) with the use of advanced data structures like segment trees or suffix arrays. However, these would make the problem significantly more complex.

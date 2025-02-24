@@ -1,0 +1,51 @@
+Problem ID: 3221
+Problem Content:
+You are given a 0-indexed array mountain. Your task is to find all the peaks in the mountain array.
+Return an array that consists of indices of peaks in the given array in any order.
+Notes:
+
+A peak is defined as an element that is strictly greater than its neighboring elements.
+The first and last elements of the array are not a peak.
+
+ 
+Example 1:
+
+Input: mountain = [2,4,4]
+Output: []
+Explanation: mountain[0] and mountain[2] can not be a peak because they are first and last elements of the array.
+mountain[1] also can not be a peak because it is not strictly greater than mountain[2].
+So the answer is [].
+
+Example 2:
+
+Input: mountain = [1,4,3,8,5]
+Output: [1,3]
+Explanation: mountain[0] and mountain[4] can not be a peak because they are first and last elements of the array.
+mountain[2] also can not be a peak because it is not strictly greater than mountain[3] and mountain[1].
+But mountain [1] and mountain[3] are strictly greater than their neighboring elements.
+So the answer is [1,3].
+
+ 
+Constraints:
+
+3 <= mountain.length <= 100
+1 <= mountain[i] <= 100
+
+Qwen2 Analysis:
+The given programming problem appears to be a simple array traversal task with conditions. Here's an analysis of its difficulty, required programming skills, and complexity:
+
+**Difficulty Level:**
+- **Easy:** The problem involves straightforward operations like iterating through the elements of the array. No advanced data structures or complex algorithms are needed.
+  
+**Required Programming Skills:**
+- **Basic Array Manipulation:** Knowing how to access individual elements in an array and compare values is essential.
+- **Conditional Logic:** Being able to write conditional statements (if/else) to check if a particular element meets the criteria of being a peak.
+
+**Time Complexity:**
+The time complexity for solving this problem would be O(n), where n is the length of the `mountain` array. This is because each element in the array needs to be visited once to determine if it's a peak or not, and no other operations need to be performed beyond basic comparisons.
+
+**Space Complexity:**
+The space complexity depends on how you store the results. In most cases, just storing the indices of peaks would require O(k) space where k is the number of peaks found. Since k will generally be less than n, we could consider this a constant factor in terms of efficiency relative to the input size.
+
+**Category Prediction:**
+Given these characteristics, I would categorize this problem as **Easy Array Processing** within the realm of basic programming skills and problems suitable for beginners or as part of an interview preparation guide.

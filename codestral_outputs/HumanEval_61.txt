@@ -1,0 +1,5 @@
+ This is a problem that can be categorized as a basic level problem in the field of string manipulation or parsing. It checks if every opening bracket '(' has a corresponding closing bracket ')'. The complexity is linear as it only requires iterating over the string once to solve the problem.
+
+   As for difficulty, I would classify this as an easy-to-medium level problem. A beginner might have trouble understanding how to check every opening bracket, while a more advanced programmer could likely solve it with ease. The required programming skills include understanding basic string manipulation and control flow structures (like loops and conditionals).
+
+   In summary, this is an easy-to-medium level problem that primarily tests the ability to parse strings and manage control flow effectively.

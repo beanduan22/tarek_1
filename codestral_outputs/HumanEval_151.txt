@@ -1,0 +1,7 @@
+ Category: Basic Programming
+
+   This problem can be solved using basic programming concepts such as lists, loops, conditionals, and arithmetic operations. The level of difficulty is considered easy to moderate. This problem assumes a familiarity with list traversal and simple conditional statements. No advanced data structures or algorithms are required for solving this problem.
+
+   It's important to note that the problem statement explicitly asks to ignore negative numbers and non-integers, which adds an extra layer of complexity compared to a simpler version where all numbers are processed without any conditions.
+
+   In terms of time complexity, iterating over each number in the list once will result in O(n) time complexity, where n is the size of the input list.

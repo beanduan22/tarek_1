@@ -1,0 +1,22 @@
+ Category: Basic-Medium Level Problem
+
+   Explanation:
+
+    - Difficulty: This problem is considered to be of a basic-medium level as it requires understanding of how to handle lists in Python and some knowledge about data structures like sets or dictionaries for efficient solution.
+
+    - Required Programming Skills: Proficiency in Python programming language, specifically working with lists and dictionaries. Basic knowledge of algorithm design and problem solving is also required.
+
+    - Complexity: The time complexity of the below solution is O(n) where n is the size of the input list 'numbers'. This is because we are iterating through each number in the list once to check if it's already been encountered before. Adding elements to a dictionary or set also takes constant time on average. So overall, the algorithm has a linear time complexity which makes it efficient for handling large datasets.
+
+    Solution:
+
+    def remove_duplicates(numbers: List[int]) -> List[int]:
+        seen = {}
+        result = []
+        for num in numbers:
+            if num not in seen:
+                result.append(num)
+                seen[num] = True
+        return result
+
+    This solution works by maintaining a dictionary 'seen' to keep track of numbers we have encountered so far. For each number, it checks whether the number is already present in 'seen'. If not, it adds the number to 'result' and also marks it as seen in 'seen'. The function finally returns the list 'result' which contains all unique elements from 'numbers', maintaining their original order.

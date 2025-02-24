@@ -1,0 +1,19 @@
+The programming problem can be categorized as:
+
+**Difficulty Level:** Easy
+
+**Required Programming Skills:**
+1. String manipulation - to handle planet names input.
+2. Conditional logic - to check if the provided planet names are valid.
+3. Sorting - to arrange planets based on their proximity to the sun.
+
+**Problem Complexity:**
+The problem involves a simple linear operation where we're iterating through all possible planets and comparing them with the given inputs. Therefore, it has low complexity in terms of computational resources required.
+
+To solve this problem:
+
+1. Define an array (or list) containing all planet names sorted by proximity to the sun.
+2. Implement conditional checks to validate if the input planets are present in the list.
+3. Use indexing or slicing to find the range between these two valid planet indices and return the corresponding subset of planets.
+
+This solution requires basic knowledge about programming concepts like arrays, loops, conditionals, and string handling which makes it suitable for beginners or those looking for easy problems to solve with minimal coding challenges.

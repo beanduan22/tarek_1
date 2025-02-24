@@ -1,0 +1,3 @@
+ Category: Elementary
+
+   Explanation: The problem is categorized as elementary because it involves sorting an array of non-negative integers in ascending or descending order based on a simple condition (the sum of the first and last element being odd or even). This is a common operation that can be easily solved using basic programming skills. The complexity of this problem is O(n log n) due to sorting, but since there are no nested loops or recursive calls, it's not considered as highly complex.

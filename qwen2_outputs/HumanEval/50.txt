@@ -1,0 +1,23 @@
+The problem falls under the "Intermediate" difficulty level in terms of coding challenges. This is because it involves fundamental concepts such as string manipulation, character encoding/decoding, and implementing custom functions to perform these tasks.
+
+Required programming skills:
+1. **Understanding of ASCII values**: The solution uses `ord()` and `chr()` functions which require knowledge about the ASCII table.
+2. **Basic programming constructs**: Loops (`for` loop here) and conditional statements (`%` modulo operation for wrapping around).
+3. **String operations**: Working with characters within a string.
+
+Complexity:
+The problem has two parts: encoding and decoding, both of which are relatively straightforward transformations. The time complexity is O(n), where n is the length of the input string since each character is processed once in each function. This is because Python's list comprehension and loop are used to iterate through each character of the input.
+
+Here is how you might implement `decode_shift`:
+
+```python
+def decode_shift(s: str):
+    """
+    Takes as input string encoded with encode_shift function. Returns decoded string.
+    """
+    return "".join([chr(((ord(ch) - 5 - ord("a")) % 26) + ord("a")) for ch in s])
+```
+
+The `decode_shift` function essentially undoes the shift performed by `encode_shift`. Note that if the shift was to a character with negative ASCII value after subtracting 5 (which could happen, e.g., when shifting 'z' -> 'a'), we need to wrap around back to 'a', which is done using modulo (`%`) operation.
+
+This problem requires basic string manipulation skills and understanding of simple algorithms for transforming data. It's a good exercise for students learning Python or practicing their coding skills in general, as it involves direct application of concepts learned so far.

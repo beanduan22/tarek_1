@@ -1,0 +1,70 @@
+Problem ID: abc331_b
+Problem Content:
+A supermarket sells egg packs.
+A pack of 6 eggs costs S yen, a pack of 8 eggs costs M yen, and a pack of 12 eggs costs L yen.
+When you can buy any number of each pack, find the minimum amount of money required to purchase at least N eggs.
+
+Input
+
+The input is given from Standard Input in the following format:
+N S M L
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- 1 \leq N \leq 100
+- 1 \leq S,M,L \leq 10^4
+- All input values are integers.
+
+Sample Input 1
+
+16 120 150 200
+
+Sample Output 1
+
+300
+
+It is optimal to buy two 8-egg packs.
+
+Sample Input 2
+
+10 100 50 10
+
+Sample Output 2
+
+10
+
+It is optimal to buy one 12-egg pack.
+
+Sample Input 3
+
+99 600 800 1200
+
+Sample Output 3
+
+10000
+
+It is optimal to buy five 8-egg packs and five 12-egg packs.
+
+Qwen2 Analysis:
+The problem described can be categorized as an optimization or cost minimization problem. The goal here is to find the minimum amount of money needed to buy at least `N` eggs given prices for various packs of eggs with different quantities but fixed costs.
+
+**Difficulty Level**: This would likely fall into a medium difficulty category, considering it involves basic mathematical operations and some level of optimization strategy in choosing which pack to buy based on cost per egg.
+
+**Required Programming Skills**: The skills needed include understanding how to perform calculations (in this case using division and modulo operations), as well as being able to apply logic or algorithms to optimize the solution by considering different combinations of packs that offer better value for money.
+
+**Complexity**: The time complexity would generally be considered low since it does not involve any complex data structures, recursion, or nested loops in an uncontrolled manner. It could theoretically be solved using simple arithmetic and basic programming constructs like `if` statements to compare costs based on the quantity of eggs each pack provides.
+
+To solve this problem efficiently:
+
+1. **Price per Egg Calculation**: Calculate the price per egg for each pack by dividing the cost (S, M, L) by the number of eggs in each pack.
+2. **Ordering Packs by Cost Efficiency**: Sort the packs based on their price per egg from lowest to highest.
+3. **Optimal Purchase Strategy**:
+   - Start with the cheapest pack and calculate how many full sets you can buy without falling short of `N` eggs.
+   - If buying a whole set doesn't meet or exceed `N`, consider buying fewer than a full set if it helps in reaching at least `N` eggs quicker by potentially paying less overall.
+
+**Note**: Since the problem does not specifically require an algorithm like dynamic programming (which would typically have higher time complexity), any method that calculates efficiently within these constraints could solve it effectively.

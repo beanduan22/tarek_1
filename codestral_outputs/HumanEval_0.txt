@@ -1,0 +1,10 @@
+ Category: Easy-Medium
+   Explanation: The problem can be solved using simple iteration over the list of numbers. For each number, we compare it with all other numbers in the list to check if their difference is less than the given threshold. If such a pair is found, then return True; otherwise, return False after checking all pairs. This solution requires basic programming skills and has linear complexity O(n^2), where n is the length of the input list. Thus, it can be categorized as Easy-Medium.
+   Solution Code:
+
+    def has_close_elements(numbers: List[float], threshold: float) -> bool:
+        for i in range(len(numbers)):
+            for j in range(i + 1, len(numbers)):
+                if abs(numbers[i] - numbers[j]) < threshold:
+                    return True
+        return False

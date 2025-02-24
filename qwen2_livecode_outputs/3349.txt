@@ -1,0 +1,44 @@
+Problem ID: 3349
+Problem Content:
+Given a string s, return the maximum length of a substring such that it contains at most two occurrences of each character.
+ 
+Example 1:
+
+Input: s = "bcbbbcba"
+Output: 4
+Explanation:
+The following substring has a length of 4 and contains at most two occurrences of each character: "bcbbbcba".
+Example 2:
+
+Input: s = "aaaa"
+Output: 2
+Explanation:
+The following substring has a length of 2 and contains at most two occurrences of each character: "aaaa".
+ 
+Constraints:
+
+2 <= s.length <= 100
+s consists only of lowercase English letters.
+
+Qwen2 Analysis:
+The programming problem described above falls under the category of **Algorithm** with a specific focus on **String Manipulation**, **Sliding Window**, and **Counting** techniques. 
+
+### Difficulty Level:
+
+- **Easy to Medium**: The problem requires understanding how characters are distributed within a substring, which involves counting occurrences efficiently and managing window sizes dynamically.
+
+### Required Programming Skills:
+
+1. **Sliding Window Pattern**: This is crucial for finding the maximum length of a substring satisfying certain conditions without needing to examine all possible substrings.
+
+2. **Character Counting**: Since each character can have at most two occurrences within the specified substring, being able to keep track of the count of each character is essential.
+
+3. **Dynamic Programming (in a sense)**: While it might not involve traditional DP techniques like memoization or state transitions, keeping track of changes in window size and updating results based on these changes can be seen as dynamic programming-like logic.
+
+### Complexity:
+
+- **Time Complexity**: The primary approach involves iterating through the string once with two pointers for maintaining the sliding window. Therefore, the time complexity is O(n), where n is the length of the input string.
+
+- **Space Complexity**: If we use a hash map to count occurrences of each character within the current window (or alternatively an array if the set of characters is limited as in this case), the space complexity would be O(k) where k is the number of distinct characters. Since there are only 26 lowercase English letters, this could be considered constant or effectively O(1) for practical purposes.
+
+In summary, solving this problem requires skills such as sliding window manipulation, maintaining counts of items within a window, and efficient use of data structures (like hash maps). It is a typical question that tests understanding of basic algorithmic techniques applied to strings. The solution can be implemented in any programming language that supports array or list operations and has built-in support for string manipulation and character handling.

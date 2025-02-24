@@ -1,0 +1,53 @@
+Problem ID: abc334_a
+Problem Content:
+Takahashi, a young baseball enthusiast, has been a very good boy this year, so Santa has decided to give him a bat or a glove, whichever is more expensive.
+If a bat costs B yen and a glove costs G yen (B\neq G), which one will Santa give to Takahashi?
+
+Input
+
+The input is given from Standard Input in the following format:
+B G
+
+Output
+
+If Santa gives Takahashi a bat, print Bat; if Santa gives him a glove, print Glove.
+
+Constraints
+
+
+- B and G are different integers between 1 and 1000, inclusive.
+
+Sample Input 1
+
+300 100
+
+Sample Output 1
+
+Bat
+
+The bat is more expensive than the glove, so Santa will give Takahashi the bat.
+
+Sample Input 2
+
+334 343
+
+Sample Output 2
+
+Glove
+
+The glove is more expensive than the bat, so Santa will give Takahashi the glove.
+
+Qwen2 Analysis:
+The problem described above falls into the category of "Easy to Medium" difficulty in terms of coding challenges. The primary reason for this categorization is that it requires only basic understanding of simple input-output operations along with conditional logic (if-else statements), which are fundamental concepts in programming.
+
+### Required Programming Skills:
+
+1. **Reading Input**: Participants need to understand how to read two integers from the standard input and use them appropriately.
+2. **Comparison**: The problem involves comparing two numerical values, B and G, to determine which is more expensive. This requires basic arithmetic comparison operations that are typically part of any programming language's fundamentals.
+3. **Conditional Logic**: Based on the comparison result, determining whether to print "Bat" or "Glove". This demonstrates the use of conditional logic, a core concept in programming.
+
+### Complexity:
+
+The problem does not involve complex data structures or algorithms. It is straightforward and focuses on understanding and implementing basic programming concepts. There are no recursive calls, loops that require significant iterations, or advanced mathematical calculations needed to solve it. 
+
+In summary, this problem tests the ability of a programmer to handle inputs correctly, perform simple comparisons, and execute conditional logic based on those comparisons. These skills are essential for beginners and intermediate programmers alike, making the problem suitable for educational purposes in teaching basic programming concepts.

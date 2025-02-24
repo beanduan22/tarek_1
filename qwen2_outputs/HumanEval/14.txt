@@ -1,0 +1,43 @@
+The given problem can be categorized as an Easy-level question, requiring fundamental knowledge of string manipulation and basic Python programming skills.
+
+**Difficulty:**
+
+- **Beginner to Intermediate:** The task involves processing strings and understanding list operations in Python. There are no advanced data structures or complex algorithms required for solving this problem.
+  
+**Required Programming Skills:**
+- Basic proficiency in Python:
+  - Understanding of lists
+  - Ability to iterate over a string and extract substrings
+  
+**Complexity:**
+
+- **Time Complexity:** O(n^2)
+    - Looping through the string to generate prefixes takes linear time proportional to the length of the input string. For each position in the string, we generate n-i strings where i is the current index (as we are including that character). Hence, this sums up to approximately n^2 for an average case.
+
+- **Space Complexity:** O(n)
+    - The list returned from the function grows linearly with respect to the length of the input string.
+
+**Solving Approach:**
+To solve this problem efficiently, one can follow these steps:
+
+1. Initialize an empty list `prefixes` to store all prefixes.
+2. Iterate over each character in the given string by using a for loop and include it into new strings to form prefix (starting from the first character).
+3. Append each newly formed prefix into the `prefixes` list.
+4. Return the `prefixes` list when the iteration is completed.
+
+Here's how you might write this function:
+
+```python
+def all_prefixes(string: str) -> List[str]:
+    prefixes = []
+    for i in range(len(string)):
+        # slice the string from start to current index + 1 to get prefix
+        prefix = string[:i+1]
+        prefixes.append(prefix)
+    
+    return prefixes
+```
+
+The above function works perfectly fine for generating all prefixes from shortest to longest of the input string as per the problem statement.
+
+This solution has a time complexity of O(n^2) due to nested operations within the loop, and space complexity of O(n), which is sufficient for handling most practical cases.

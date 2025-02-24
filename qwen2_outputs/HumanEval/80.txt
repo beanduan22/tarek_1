@@ -1,0 +1,9 @@
+The problem falls under the category of "Easy" with respect to difficulty. This classification considers several factors:
+
+1. **Required Programming Skills**: The task requires basic programming understanding such as string handling, loop control structures, and simple conditional statements (if-else). There is no need for advanced data structures or algorithms like sorting, recursion, or complex mathematical calculations.
+
+2. **Problem Complexity**: The solution to the problem can be devised using a straightforward approach, typically involving iterating through the input string once and maintaining some variables or counters. The logic behind determining whether the string meets the criteria (every 3 consecutive letters are distinct) is not overly complicated.
+
+3. **Algorithmic Depth**: The problem doesn't require advanced algorithmic techniques like dynamic programming, greedy algorithms, graph theory, etc., which typically define problems of medium to high difficulty levels.
+
+Therefore, based on these factors, we can classify this as an easy problem that would be suitable for beginners or learners who are familiarizing themselves with string operations and basic control flow in a programming language.

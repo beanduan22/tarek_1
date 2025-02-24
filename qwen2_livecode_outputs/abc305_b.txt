@@ -1,0 +1,72 @@
+Problem ID: abc305_b
+Problem Content:
+There are 7 points A, B, C, D, E, F, and G on a straight line, in this order. (See also the figure below.)
+The distances between adjacent points are as follows.
+
+- Between A and B: 3
+- Between B and C: 1
+- Between C and D: 4
+- Between D and E: 1
+- Between E and F: 5
+- Between F and G: 9
+
+
+You are given two uppercase English letters p and q. Each of p and q is A, B, C, D, E, F, or G, and it holds that p \neq q.
+Find the distance between the points p and q.
+
+Input
+
+The input is given from Standard Input in the following format:
+p q
+
+Output
+
+Print the distance between the points p and q.
+
+Constraints
+
+
+- Each of p and q is A,B,C,D,E,F, or G.
+- p \neq q
+
+Sample Input 1
+
+A C
+
+Sample Output 1
+
+4
+
+The distance between the points A and C is 3 + 1 = 4.
+
+Sample Input 2
+
+G B
+
+Sample Output 2
+
+20
+
+The distance between the points G and B is 9 + 5 + 1 + 4 + 1 = 20.
+
+Sample Input 3
+
+C F
+
+Sample Output 3
+
+10
+
+Qwen2 Analysis:
+The given problem involves basic array index lookup combined with a simple arithmetic operation. The primary objective is to determine distances between points which are linearly ordered along an axis. This requires understanding of string manipulation (to convert character inputs to numeric values), array access (to retrieve the distance information between two indices), and basic math operations like addition.
+
+**Difficulty:** Easy/Medium
+- **Skill Level:** Basic to Intermediate programming skills are sufficient.
+- **Complexity:** Low - The problem does not involve complex data structures or algorithms. It can be solved using simple loops or array access methods.
+
+**Categories:**
+1. **Algorithm/Logic**: Due to the straightforward nature of solving this problem through direct computation, it falls under basic algorithmic/logical thinking. It requires understanding how to map characters to integer indices and perform arithmetic operations.
+2. **String Processing**: The input consists of string characters that need to be processed numerically. This involves character-to-number conversion, which is a common task in programming problems dealing with textual inputs.
+3. **Basic Data Structures**: While the problem doesn't directly involve complex data structures like arrays or lists, it does rely on understanding how to access and manipulate elements in an array.
+
+This problem can be categorized under basic algorithmic problem-solving techniques since it involves mapping characters to indices, accessing those indices from a predefined array (effectively forming an array of distances), performing arithmetic operations based on these values, and outputting the result. It also touches upon string processing, which is a fundamental skill in programming.

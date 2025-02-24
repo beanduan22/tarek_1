@@ -1,0 +1,33 @@
+Problem ID: 2867
+Problem Content:
+You are given a binary array nums.
+A subarray of an array is good if it contains exactly one element with the value 1.
+Return an integer denoting the number of ways to split the array nums into good subarrays. As the number may be too large, return it modulo 10^9 + 7.
+A subarray is a contiguous non-empty sequence of elements within an array.
+ 
+Example 1:
+
+Input: nums = [0,1,0,0,1]
+Output: 3
+Explanation: There are 3 ways to split nums into good subarrays:
+- [0,1] [0,0,1]
+- [0,1,0] [0,1]
+- [0,1,0,0] [1]
+
+Example 2:
+
+Input: nums = [0,1,0]
+Output: 1
+Explanation: There is 1 way to split nums into good subarrays:
+- [0,1,0]
+
+ 
+Constraints:
+
+1 <= nums.length <= 10^5
+0 <= nums[i] <= 1
+
+Codestral Analysis:
+ This problem falls under the category of dynamic programming or prefix sum with some math calculations involved. It's considered a medium-level problem due to the requirement for understanding subarray manipulation and mathematical concepts. The main challenge lies in correctly calculating the number of ways to split the array into good subarrays while taking care of modulo operations to avoid integer overflow. A key insight is that once we find an element with the value 1, we can calculate the number of ways to form a good subarray ending at that index by adding the number of zeros before it plus one (for the single 1) to our total count.
+
+    The time complexity of this problem is O(n), where n is the length of the input array, as we are making a single pass through the array. The space complexity is also O(n), as we might need to store intermediate results.

@@ -1,0 +1,71 @@
+Problem ID: abc337_e
+Problem Content:
+This is an interactive problem (a type of problem where your program interacts with the judge program through Standard Input and Output).
+There are N bottles of juice, numbered 1 to N. It has been discovered that exactly one of these bottles has gone bad. Even a small sip of the spoiled juice will cause stomach upset the next day.
+Takahashi must identify the spoiled juice by the next day. To do this, he decides to call the minimum necessary number of friends and serve them some of the N bottles of juice. He can give any number of bottles to each friend, and each bottle of juice can be given to any number of friends.
+Print the number of friends to call and how to distribute the juice, then receive information on whether each friend has an upset stomach the next day, and print the spoiled bottle's number.
+
+Input/Output
+
+This is an interactive problem (a type of problem where your program interacts with the judge program through Standard Input and Output).
+Before the interaction, the judge secretly selects an integer X between 1 and N as the spoiled bottle's number. The value of X is not given to you. Also, the value of X may change during the interaction as long as it is consistent with the constraints and previous outputs.
+First, the judge will give you N as input.
+N
+
+You should print the number of friends to call, M, followed by a newline.
+M
+
+Next, you should perform the following procedure to print M outputs.
+For i = 1, 2, \ldots, M, the i-th output should contain the number K_i of bottles of juice you will serve to the i-th friend, and the K_i bottles' numbers in ascending order, A_{i, 1}, A_{i, 2}, \ldots, A_{i, K_i}, separated by spaces, followed by a newline.
+K_i A_{i, 1} A_{i, 2} \ldots A_{i, K_i}
+
+Then, the judge will inform you whether each friend has a stomach upset the next day by giving you a string S of length M consisting of 0 and 1.
+S
+
+For i = 1, 2, \ldots, M, the i-th friend has a stomach upset if and only if the i-th character of S is 1.
+You should respond by printing the number of the spoiled juice bottle X', followed by a newline.
+X'
+
+Then, terminate the program immediately.
+If the M you printed is the minimum necessary number of friends to identify the spoiled juice out of the N bottles, and the X' you printed matches the spoiled bottle's number X, then your program is considered correct.
+
+Input/Output
+
+This is an interactive problem (a type of problem where your program interacts with the judge program through Standard Input and Output).
+Before the interaction, the judge secretly selects an integer X between 1 and N as the spoiled bottle's number. The value of X is not given to you. Also, the value of X may change during the interaction as long as it is consistent with the constraints and previous outputs.
+First, the judge will give you N as input.
+N
+
+You should print the number of friends to call, M, followed by a newline.
+M
+
+Next, you should perform the following procedure to print M outputs.
+For i = 1, 2, \ldots, M, the i-th output should contain the number K_i of bottles of juice you will serve to the i-th friend, and the K_i bottles' numbers in ascending order, A_{i, 1}, A_{i, 2}, \ldots, A_{i, K_i}, separated by spaces, followed by a newline.
+K_i A_{i, 1} A_{i, 2} \ldots A_{i, K_i}
+
+Then, the judge will inform you whether each friend has a stomach upset the next day by giving you a string S of length M consisting of 0 and 1.
+S
+
+For i = 1, 2, \ldots, M, the i-th friend has a stomach upset if and only if the i-th character of S is 1.
+You should respond by printing the number of the spoiled juice bottle X', followed by a newline.
+X'
+
+Then, terminate the program immediately.
+If the M you printed is the minimum necessary number of friends to identify the spoiled juice out of the N bottles, and the X' you printed matches the spoiled bottle's number X, then your program is considered correct.
+
+Constraints
+
+
+- N is an integer.
+- 2 \leq N \leq 100
+
+
+
+Codestral Analysis:
+ This is a problem from the field of interactive programming and algorithmic thinking. It falls into the medium to hard difficulty level since it requires understanding of binary search principles and how to apply them in an interactive setting. The problem is designed for contestants who are comfortable with coding in Python or other languages that support input/output operations.
+
+    In terms of skills, this problem tests knowledge of programming logic, algorithm design, binary search, bitwise operations, and interactive programming. Contestants should be able to understand the principles behind binary search and implement them in a way that allows for interaction with a judge program. They should also be comfortable with handling input/output operations and understanding how to process binary data.
+
+    The complexity of this problem can be seen in its requirement to identify the spoiled juice bottle by calling a minimum number of friends and serving them juice, while also handling the interactive nature of the problem. The solution involves using binary search to minimize the number of friends called, and then processing the input/output data to determine which friend(s) consumed the spoiled juice bottle. This requires understanding of how to divide and conquer a problem, as well as how to handle uncertain and changing inputs.
+
+    Overall, this is an algorithmic problem that tests knowledge of binary search principles, interactive programming, and general programming logic. It falls into the medium to hard difficulty level due to its complexity and requirements for coding skills.

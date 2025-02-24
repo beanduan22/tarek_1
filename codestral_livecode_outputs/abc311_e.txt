@@ -1,0 +1,93 @@
+Problem ID: abc311_e
+Problem Content:
+There is a grid with H rows and W columns. Let (i, j) denote the square at the i-th row from the top and j-th column from the left of the grid.
+Each square of the grid is holed or not. There are exactly N holed squares: (a_1, b_1), (a_2, b_2), \dots, (a_N, b_N).
+When the triple of positive integers (i, j, n) satisfies the following condition, the square region whose top-left corner is (i, j) and whose bottom-right corner is (i + n - 1, j + n - 1) is called a holeless square.
+
+- i + n - 1 \leq H.
+- j + n - 1 \leq W.
+- For every pair of non-negative integers (k, l) such that 0 \leq k \leq n - 1, 0 \leq l \leq n - 1, square (i + k, j + l) is not holed.
+
+How many holeless squares are in the grid?
+
+Input
+
+The input is given from Standard Input in the following format:
+H W N
+a_1 b_1
+a_2 b_2
+\vdots
+a_N b_N
+
+Output
+
+Print the number of holeless squares.
+
+Constraints
+
+
+- 1 \leq H, W \leq 3000
+- 0 \leq N \leq \min(H \times W, 10^5)
+- 1 \leq a_i \leq H
+- 1 \leq b_i \leq W
+- All (a_i, b_i) are pairwise different.
+- All input values are integers.
+
+Sample Input 1
+
+2 3 1
+2 3
+
+Sample Output 1
+
+6
+
+There are six holeless squares, listed below. For the first five, n = 1, and the top-left and bottom-right corners are the same square.
+
+- The square region whose top-left and bottom-right corners are (1, 1).
+- The square region whose top-left and bottom-right corners are (1, 2).
+- The square region whose top-left and bottom-right corners are (1, 3).
+- The square region whose top-left and bottom-right corners are (2, 1).
+- The square region whose top-left and bottom-right corners are (2, 2).
+- The square region whose top-left corner is (1, 1) and whose bottom-right corner is (2, 2).
+
+Sample Input 2
+
+3 2 6
+1 1
+1 2
+2 1
+2 2
+3 1
+3 2
+
+Sample Output 2
+
+0
+
+There may be no holeless square.
+
+Sample Input 3
+
+1 1 0
+
+Sample Output 3
+
+1
+
+The whole grid may be a holeless square.
+
+Sample Input 4
+
+3000 3000 0
+
+Sample Output 4
+
+9004500500
+
+Codestral Analysis:
+ The problem is a grid-based algorithmic challenge that involves finding "holeless squares" in a given grid with dimensions H x W. A holeless square is defined as a square region with no holes (or marked squares), where the top-left corner and bottom-right corner coordinates are within the grid's boundaries. The task is to count the number of such holeless squares, given that there are N holed squares in the grid provided by their coordinates.
+
+This problem can be categorized as a medium-difficulty algorithmic problem, mainly focusing on 2D array manipulation and iterative algorithms. It requires understanding of basic programming constructs like loops, conditionals, and arrays. The problem's complexity can vary based on the size of H, W, and N. A brute force approach with three nested loops could have a time complexity of O(H * W * min(H, W)), which is feasible for smaller inputs but not for large ones due to high time constraints.
+
+A more optimal solution would involve precomputing the number of holeless squares ending at each square and using that information to calculate the overall count. This approach can be done in O(H * W) time, which makes it suitable for larger inputs as well. However, this requires a good understanding of dynamic programming techniques or prefix sums/accumulated values.

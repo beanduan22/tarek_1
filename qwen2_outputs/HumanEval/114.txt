@@ -1,0 +1,17 @@
+This problem can be categorized as:
+
+Category: Array & Dynamic Programming
+
+Difficulty: Medium
+
+Required Programming Skills: 
+- Understanding of array operations, including traversal and manipulation.
+- Familiarity with dynamic programming concepts, specifically the idea of storing intermediate results to use them later.
+
+Complexity:
+- Time Complexity: O(n), where n is the number of elements in the input list. We traverse through each element once.
+- Space Complexity: O(1), as we only use a constant amount of space for variables (no additional data structures with size dependent on input are used). 
+
+The problem involves finding minimum sum subarray which points towards dynamic programming approach, as it requires the computation of minimum sums at each step and using those intermediate results to find the final solution. The algorithm needs to iterate through all elements in the array, hence the time complexity is linear.
+
+This question aims to test one's understanding of manipulating arrays, utilizing data structures efficiently (in this case, an array itself as a dynamic data structure by storing minimum sum), and applying dynamic programming techniques for optimization. Overall, it requires a blend of algorithmic thinking and practical coding skills.

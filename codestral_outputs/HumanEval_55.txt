@@ -1,0 +1,5 @@
+ The problem is about calculating the n-th Fibonacci number. This can be solved using recursion or dynamic programming to improve efficiency. It falls under the category of 'Algorithms' and 'Mathematics'. The difficulty level for this problem can be considered EASY to MEDIUM, depending on whether a recursive solution is expected or an optimized one.
+
+   The required skills include understanding of Fibonacci sequence, basic programming concepts such as functions, loops/recursion, and familiarity with the given programming language (in this case, Python). The complexity of the problem can be considered LOW to MEDIUM, depending on the chosen method for calculation.
+
+   Therefore, I would categorize this problem as a 'Beginner-Intermediate' level Algorithms/Mathematics problem.

@@ -1,0 +1,39 @@
+Problem ID: 3403
+Problem Content:
+Given a string s, you need to partition it into one or more balanced substrings. For example, if s == "ababcc" then ("abab", "c", "c"), ("ab", "abc", "c"), and ("ababcc") are all valid partitions, but ("a", "bab", "cc"), ("aba", "bc", "c"), and ("ab", "abcc") are not. The unbalanced substrings are bolded.
+Return the minimum number of substrings that you can partition s into.
+Note: A balanced string is a string where each character in the string occurs the same number of times.
+ 
+Example 1:
+
+Input: s = "fabccddg"
+Output: 3
+Explanation:
+We can partition the string s into 3 substrings in one of the following ways: ("fab, "ccdd", "g"), or ("fabc", "cd", "dg").
+
+Example 2:
+
+Input: s = "abababaccddb"
+Output: 2
+Explanation:
+We can partition the string s into 2 substrings like so: ("abab", "abaccddb").
+
+ 
+Constraints:
+
+1 <= s.length <= 1000
+s consists only of English lowercase letters.
+
+Codestral Analysis:
+ - Difficulty: Medium
+   - Category: Dynamic Programming, Greedy Algorithm, String Manipulation
+
+   This is a dynamic programming problem with elements of string manipulation. It can be solved by implementing either the greedy algorithm or dynamic programming. The key challenge here involves finding balanced substrings in an efficient way. Since there are constraints on the length of input strings and their characters (lowercase English letters), we might not need complex data structures or algorithms, making it a moderately difficult problem.
+
+   A potential approach could be:
+   1. We can maintain a frequency count of each character in the string. For every substring, we also keep track of the frequencies of all characters that have been considered so far and check if they are balanced or not.
+   2. We can use dynamic programming to solve this problem where dp[i] denotes the minimum number of partition required for the first i characters of the input string.
+   3. If we know that substring(j+1, i) is a valid substring (balanced), then we update dp[i] as min(dp[i], dp[j]+1).
+   However, it's worth noting that this problem may also have a simple greedy solution where we just try to form the biggest balanced string from the current position and continue the process until we reach the end of the string. This method works because once a substring is valid (balanced), no need to split it further.
+
+   Hence, based on these observations, I would categorize this problem as Medium in terms of difficulty.

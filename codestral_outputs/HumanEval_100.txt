@@ -1,0 +1,8 @@
+ This problem is categorized as an "Easy" to "Medium" level programming problem due to its simplicity in structure but requires a basic understanding of Python syntax and control flow structures like loops. It does not necessitate advanced data structures or algorithms, making it suitable for beginners to intermediate programmers.
+
+The category could be further defined as:
+- Algorithmic Problem (Since it involves creating an algorithm to solve the problem)
+- Looping Problem (As we need to iterate through a sequence of numbers)
+- Conditional Problem (As it requires checks on whether n is odd or even)
+
+The overall complexity would be O(n), as in the worst case scenario, we will have to perform an operation (add to the list) for each value up to n.

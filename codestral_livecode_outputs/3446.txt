@@ -1,0 +1,32 @@
+Problem ID: 3446
+Problem Content:
+You are given 2 integer arrays nums1 and nums2 of lengths n and m respectively. You are also given a positive integer k.
+A pair (i, j) is called good if nums1[i] is divisible by nums2[j] * k (0 <= i <= n - 1, 0 <= j <= m - 1).
+Return the total number of good pairs.
+ 
+Example 1:
+
+Input: nums1 = [1,3,4], nums2 = [1,3,4], k = 1
+Output: 5
+Explanation:
+The 5 good pairs are (0, 0), (1, 0), (1, 1), (2, 0), and (2, 2).
+Example 2:
+
+Input: nums1 = [1,2,4,12], nums2 = [2,4], k = 3
+Output: 2
+Explanation:
+The 2 good pairs are (3, 0) and (3, 1).
+
+ 
+Constraints:
+
+1 <= n, m <= 50
+1 <= nums1[i], nums2[j] <= 50
+1 <= k <= 50
+
+Codestral Analysis:
+ This is a programming problem that can be categorized as medium to hard in terms of difficulty. The problem falls under the categories of array manipulation and brute force algorithms since it requires iterating through two arrays to check for all possible pairs that meet a certain condition. To solve this, one needs good understanding of looping constructs, conditional statements, and modulo operations in programming.
+
+    However, the problem can be considered a bit complex due to its constraints which involve large array sizes (up to 50 elements) and larger integer values (up to 50). This might require an efficient algorithm or optimized solution rather than just a brute force approach to get acceptable performance within reasonable time. Therefore, advanced programming skills are required to solve this problem efficiently.
+
+    Overall, this is more of a problem that tests the ability to implement logical conditions and iterate through data structures effectively while considering efficiency.

@@ -1,0 +1,46 @@
+Problem ID: 2812
+Problem Content:
+You are given two integers, num and t.
+An integer x is called achievable if it can become equal to num after applying the following operation no more than t times:
+
+Increase or decrease x by 1, and simultaneously increase or decrease num by 1.
+
+Return the maximum possible achievable number. It can be proven that there exists at least one achievable number.
+ 
+Example 1:
+
+Input: num = 4, t = 1
+Output: 6
+Explanation: The maximum achievable number is x = 6; it can become equal to num after performing this operation:
+1- Decrease x by 1, and increase num by 1. Now, x = 5 and num = 5. 
+It can be proven that there is no achievable number larger than 6.
+
+
+Example 2:
+
+Input: num = 3, t = 2
+Output: 7
+Explanation: The maximum achievable number is x = 7; after performing these operations, x will equal num: 
+1- Decrease x by 1, and increase num by 1. Now, x = 6 and num = 4.
+2- Decrease x by 1, and increase num by 1. Now, x = 5 and num = 5.
+It can be proven that there is no achievable number larger than 7.
+
+ 
+Constraints:
+
+1 <= num, t <= 50
+
+Qwen2 Analysis:
+Category: Medium Difficulty | Problem Solving Skills Required: Basic Math, Brute Force or Greedy Strategy | Complexity: O(t)
+
+Explanation:
+
+The problem involves finding the maximum achievable number given two integers `num` and `t`, under specific conditions. The solution revolves around understanding how operations can be applied to reach a target value, which requires simple arithmetic calculations.
+
+**Difficulty**: This is considered a medium difficulty problem due to its straightforward nature in terms of algorithmic complexity but might require careful analysis for those not familiar with the concept. 
+
+**Problem Solving Skills Required**: To solve this problem, one needs basic understanding of arithmetic operations and possibly an intuitive grasp on how increasing or decreasing `x` affects the difference between `num` and `x`. The solution involves applying a greedy strategy where in each step you aim to maximize the value by either increasing/decreasing both num and x.
+
+**Complexity**: The time complexity is relatively simple, depending mainly on variable `t`, making it O(t). This is because the brute force approach would involve checking all possible numbers up to `num + t` (as an upper bound) which can be linear in terms of `t`. 
+
+In summary, this problem tests basic programming skills and understanding of arithmetic operations rather than complex algorithmic concepts. It requires careful consideration but doesn't involve recursion, dynamic programming or other complex techniques.

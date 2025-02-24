@@ -1,0 +1,84 @@
+Problem ID: abc347_b
+Problem Content:
+You are given a string S consisting of lowercase English letters. How many different non-empty substrings does S have?
+A substring is a contiguous subsequence. For example, xxx is a substring of yxxxy but not of xxyxx.
+
+Input
+
+The input is given from Standard Input in the following format:
+S
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- S is a string of length between 1 and 100, inclusive, consisting of lowercase English letters.
+
+Sample Input 1
+
+yay
+
+Sample Output 1
+
+5
+
+S has the following five different non-empty substrings:
+
+- a
+- y
+- ay
+- ya
+- yay
+
+Sample Input 2
+
+aababc
+
+Sample Output 2
+
+17
+
+Sample Input 3
+
+abracadabra
+
+Sample Output 3
+
+54
+
+Qwen2 Analysis:
+The problem presented above is an example of a simple algorithmic problem in computer science. Let's break down the components:
+
+1. **Input Format**: The input consists of a single line containing a string `S` made up of lowercase English letters.
+
+2. **Task**: Count how many unique substrings exist in the given string `S`.
+
+3. **Algorithmic Complexity**: The solution requires understanding of string manipulation, iteration over characters or substrings, and maintaining counts without duplicates.
+
+4. **Data Structures Used**: A simple loop and a set (or dictionary) for tracking seen substrings are sufficient.
+
+5. **Approach**:
+    - Iterate through the input string `S`.
+    - For each character at index `i`, consider all possible substrings starting from that point (`S[i:]`).
+    - Add each of these substrings to a set or dictionary to ensure uniqueness.
+    - The size of this set will give the total number of unique substrings.
+
+6. **Categories**: Based on the analysis, this problem falls under categories such as:
+   - Basic Algorithms
+   - String Processing
+   - Data Structures (Set/Dictionary usage)
+
+The difficulty level can be considered low to medium because it involves straightforward operations like iteration and set usage, which are common in basic programming education.
+
+Skills Required:
+- Basic programming knowledge.
+- Familiarity with string manipulation functions.
+- Understanding of how to use data structures efficiently for avoiding duplicates.
+
+Complexity:
+Since the solution iterates through each character once (in Python or similar languages) and adds substrings to a set, which has an average time complexity of O(1) per insertion, the overall time complexity is `O(N^2)` as we potentially generate and check every possible substring. However, the actual number of unique substrings can be much less than this worst-case scenario.
+
+In summary, the problem requires knowledge of basic programming concepts including string handling and data structure management (like sets or dictionaries), making it suitable for someone learning these fundamental aspects of computer science. The solution involves a simple but efficient algorithm that demonstrates practical use cases in software development.

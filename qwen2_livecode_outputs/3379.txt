@@ -1,0 +1,41 @@
+Problem ID: 3379
+Problem Content:
+You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
+Return the score of s.
+ 
+Example 1:
+
+Input: s = "hello"
+Output: 13
+Explanation:
+The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13.
+
+Example 2:
+
+Input: s = "zaz"
+Output: 50
+Explanation:
+The ASCII values of the characters in s are: 'z' = 122, 'a' = 97. So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50.
+
+ 
+Constraints:
+
+2 <= s.length <= 100
+s consists only of lowercase English letters.
+
+Qwen2 Analysis:
+The provided problem can be categorized as an easy level problem primarily requiring basic understanding of string manipulation, arithmetic operations, and a little bit of knowledge about ASCII values. 
+
+**Required Programming Skills:**
+
+- **Basic String Handling:** The task involves performing operations on individual characters within the string which is one of the fundamental skills in programming.
+  
+- **Mathematical Operations:** It requires basic knowledge to perform absolute difference calculations.
+
+- **Looping Constructs:** Implementing this solution will involve iterating over the characters within the string. Familiarity with loops (for, while) would be beneficial.
+
+**Difficulty and Complexity:**
+
+This problem is straightforward in terms of logic flow and does not require any complex algorithmic thinking or advanced data structures. The major focus lies on correct implementation rather than devising an efficient strategy to solve a problem.
+
+In summary, this type of problem primarily aims at testing basic programming skills such as string processing and arithmetic operations, making it suitable for beginners or for practice in understanding fundamental concepts in a specific language (e.g., Python, Java, C++, etc.).

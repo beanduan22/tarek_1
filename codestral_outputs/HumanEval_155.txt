@@ -1,0 +1,4 @@
+ - Problem Category: Basic
+   - Difficulty Level: Easy
+   - Skills Required: Looping Constructs, Modulo Operator, Data Structures (Tuples)
+   - Complexity: Linear Time Complexity (O(n)), where n is the number of digits in the input integer.

@@ -1,0 +1,16 @@
+The problem can be categorized as follows:
+
+**Difficulty Level:** Intermediate
+
+- **Required Programming Skills:**
+    - Understanding of loops (for-loop)
+    - Conditional logic (`if` statements)
+    - Array manipulation
+    - Basic mathematical operations to check the first and last digit of a number
+    - Counting or filtering elements based on conditions
+
+- **Complexity:**
+    - The problem requires iterating over an array, checking each element for specific criteria (being greater than 10 and having odd first and last digits), which involves basic arithmetic operations.
+    - The complexity lies in organizing the logic efficiently and ensuring that all cases are handled correctly.
+
+The main challenge is to correctly identify numbers based on both their magnitude (greater than 10) and digit properties (odd first and last digits). Ensuring that this logic works for various edge cases will require careful implementation.

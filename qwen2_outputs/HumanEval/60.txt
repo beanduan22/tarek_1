@@ -1,0 +1,17 @@
+The given program is a simple mathematical function that computes the sum of all numbers from 1 to 'n'. This problem falls under the following categories:
+
+**Difficulty:** Easy
+
+**Required Programming Skills:**
+- Basic understanding of Python (or any other language with similar syntax) syntax and data types.
+- Familiarity with basic arithmetic operations in programming languages like addition (+).
+- Ability to write simple functions.
+
+**Complexity:** Low
+
+The function `sum_to_n` is a straightforward example of using the formula for calculating the sum of an arithmetic series. The problem doesn't involve complex algorithms, nested loops, recursion, or data structures. It's just applying a mathematical concept in programming context.
+
+In summary:
+- **Problem Type**: Mathematical Function / Arithmetic
+- **Skill Level**: Beginner to Intermediate
+- **Complexity Level**: Low

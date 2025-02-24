@@ -1,0 +1,18 @@
+ Category: Beginner to Intermediate
+
+Explanation:
+
+This is a beginner-to-intermediate level problem as it requires understanding of basic array manipulation, looping constructs, and if conditions. Also, it needs knowledge about how to deal with single digit numbers and finding the sum of digits in an integer. The complexity would be considered linear (O(n)) since we are iterating through the given list once.
+
+The programming skills required for this problem include basic understanding of functions, loops, if conditions, and also operations on numbers.
+
+Below is a simple Python solution for the problem:
+
+```python
+def count_nums(arr):
+    count = 0
+    for num in arr:
+        if sum(int(digit) for digit in str(abs(num))) > 0: # abs function is used to handle negative numbers
+            count += 1
+    return count
+```

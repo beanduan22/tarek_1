@@ -1,0 +1,7 @@
+ Category: Dynamic Programming (Easy-Medium)
+
+   This is a dynamic programming problem that requires an understanding of sequence generation and the implementation of iterative solutions instead of recursive ones to avoid stack overflow errors for larger inputs. The difficulty level can be considered Easy-Medium as it doesn't require advanced algorithmic knowledge, but it does demand good problem-solving skills and proficiency with iterative algorithms.
+
+   To solve this problem, we will create an array of size `n+1` to store the Fib4 sequence numbers. We initialize the first four numbers in the sequence manually since they are defined directly. Then, we use a loop to compute each subsequent number as the sum of the previous four numbers using the formula provided (`fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4)`).
+
+   This solution has a time complexity of O(n), which is efficient because it only requires one pass through the sequence to compute each number. The space complexity is also O(n), as we need to store all `n+1` numbers in the sequence array.

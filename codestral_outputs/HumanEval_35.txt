@@ -1,0 +1,3 @@
+ Category: Beginner
+
+   Explanation: This is a basic programming problem that tests understanding of list traversal and comparison operations. It requires only basic programming skills to solve. The problem can be solved by initializing a variable with the first element in the list and then iterating through the rest of the list, updating the variable if a larger number is found. The difficulty level of this problem is quite low as it doesn't involve any complex data structures or algorithms. This problem tests basic understanding of loops and conditional statements, which are fundamental building blocks of programming.

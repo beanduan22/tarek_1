@@ -1,0 +1,3 @@
+ Category: Beginner
+
+   Explanation: This is a basic conversion problem that requires understanding of binary numbers. Given a decimal number, the task is to convert it into its binary representation. The solution will involve applying the divide-by-2 method or using built-in functions in programming languages. No complex algorithms are required for this problem and it mainly tests understanding of how binary numbers work rather than advanced programming skills. Therefore, I would categorize this as a beginner level problem.

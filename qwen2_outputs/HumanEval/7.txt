@@ -1,0 +1,15 @@
+The problem presented can be categorized as:
+
+Category: Basic Level - Beginner-friendly
+
+**Reasoning:**
+1. **Difficulty:** The problem involves basic concepts of Python programming such as defining functions with parameters, manipulating lists using list comprehensions or the `filter` function, and string operations to check for substring existence in strings.
+
+2. **Required Programming Skills:** To solve this problem, one needs to understand how to:
+   - Accept and process input from a user (in form of arguments passed to a function)
+   - Manipulate lists
+   - Work with strings including finding substrings within strings
+
+3. **Complexity:** The complexity is low as the operation required is straightforward: iterating through each string, checking if it contains the given substring, and collecting those that do in a new list. No advanced data structures or algorithms are needed.
+
+In summary, this problem targets beginners to intermediate-level programmers who have been introduced to basic Python programming concepts like function definitions, loops, lists, strings manipulation. It's not overly complex but provides good practice for fundamental skills necessary in coding.

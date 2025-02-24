@@ -1,0 +1,14 @@
+ This problem can be categorized as a beginner to intermediate level problem in Python.
+
+   Difficulty Level: Beginner - Intermediate
+
+   Required Programming Skills: Basic understanding of Python syntax, loops, conditionals, and working with strings and numbers. Knowledge of binary representation of numbers is an added advantage but not mandatory.
+
+   Complexity: The complexity of this problem is O(log N) because in the worst case scenario, we need to traverse through all the digits of the number N which can be logarithmic in size for large values of N. However, since N has a maximum constraint of 10000, it makes the problem constant time complex as well.
+
+   Analysis:
+   1. The function `solve` takes an integer `N` as input.
+   2. It converts this number into binary representation and calculates the sum of its digits.
+   3. The result is a string representing the calculated sum in binary format.
+
+   So, to solve this problem, we need to convert the decimal number into binary first (which can be done using Python's built-in `bin` function), then iterate through each digit of the binary number (excluding the '0b' prefix that Python adds for binary numbers) and add them up. Finally, we should return this sum as a string in binary format.

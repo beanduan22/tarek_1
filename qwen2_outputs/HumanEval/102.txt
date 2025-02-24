@@ -1,0 +1,14 @@
+The given programming problem can be categorized as:
+
+**Category**: Easy (Beginner)
+
+**Required Programming Skills**:
+- Basic understanding of Python programming language
+- Ability to manipulate numbers using arithmetic operations 
+- Knowledge of control flow statements like `if` 
+
+**Problem Complexity**:
+- **Time Complexity**: O(1) - The solution involves simple comparison and arithmetic operations, which are constant time complexity operations.
+- **Space Complexity**: O(1) - No extra space is used, as we are only using a few variables to store the input numbers.
+
+The problem seems easy because it focuses on basic concepts of Python programming such as handling numbers and conditional statements. It doesn't involve complex algorithms or data structures. This makes it ideal for beginners who have just started learning Python.

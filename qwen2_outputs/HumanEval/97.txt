@@ -1,0 +1,11 @@
+Category: Easy
+
+This problem involves basic knowledge of Python programming including understanding of functions, arithmetic operations, and handling negative numbers. It also requires understanding of how to manipulate individual digits within integers by using modulo operation.
+
+The solution involves a few steps:
+1) The function `multiply(a,b)` is expected to take two integer inputs.
+2) We need to consider the unit digit or last digit of both input integers (a & b).
+3) We use modulo operator `%` with 10 (`digit = number % 10`) to extract the unit digit from each number, regardless if it's positive or negative since the modulo operation works correctly for negative numbers as well.
+4) Then we return the product of these two unit digits.
+
+It is an easy problem in terms of required programming skills but may require some attention to detail due to handling both positive and negative integers.

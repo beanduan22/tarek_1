@@ -1,0 +1,5 @@
+ Category: Basic-Level Problem
+
+   This is a basic-level problem that tests the understanding of string manipulation and the use of data structures like stacks in programming. It requires a good grasp of fundamental programming concepts such as loops and conditional statements to iterate over the input string and check for balanced brackets. The difficulty level can be considered easy to moderate, depending on the programmer's familiarity with these concepts.
+
+   The complexity of this problem is linear (O(n)), where n is the length of the input string, because we are only iterating over the string once. This makes it an efficient solution that can handle large inputs without significant performance issues.

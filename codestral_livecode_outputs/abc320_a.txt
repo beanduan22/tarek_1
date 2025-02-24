@@ -1,0 +1,48 @@
+Problem ID: abc320_a
+Problem Content:
+You are given positive integers A and B.
+Print the value A^B+B^A.
+
+Input
+
+The input is given from Standard Input in the following format:
+A B
+
+Output
+
+Print the answer as an integer.
+
+Constraints
+
+
+- 2 \leq A \leq B \leq 9
+- All input values are integers.
+
+Sample Input 1
+
+2 8
+
+Sample Output 1
+
+320
+
+For A = 2, B = 8, we have A^B = 256, B^A = 64, so A^B + B^A = 320.
+
+Sample Input 2
+
+9 9
+
+Sample Output 2
+
+774840978
+
+Sample Input 3
+
+5 6
+
+Sample Output 3
+
+23401
+
+Codestral Analysis:
+ The problem is a simple mathematical computation that requires basic arithmetic operations. Given two positive integers A and B, where 2 <= A <= B <= 9, the task is to calculate and print the value of A^B + B^A. Since the range of input values is small, brute force calculation can be used without worrying about efficiency. Therefore, this problem falls under the category of "Beginner". The required programming skills are basic arithmetic operations and input/output handling. The complexity of the problem is O(1) as the solution doesn't depend on the size of input values, rather it depends on the specific numbers given in the input.

@@ -1,0 +1,15 @@
+The problem described above falls under the category of **Intermediate Level Programming Problem**.
+
+### Difficulty:
+- **Conceptual Understanding**: The problem requires understanding of basic programming concepts such as loops, list manipulations, and conditional checks. These are fundamental knowledge for any programmer, making it accessible to beginners with proper guidance.
+- **Algorithmic Thinking**: The task involves deducing logic to identify and filter out duplicate elements from a list based on their occurrence count without altering the original order of the unique elements. This demands some level of algorithmic thinking which is usually acquired at an intermediate stage in learning programming.
+
+### Required Programming Skills:
+- **List Manipulation**: Working with lists, appending/removing items.
+- **Conditional Statements**: Utilizing `if` statements to check conditions (e.g., checking if an element appears more than once).
+- **Looping Constructs**: Implementing loops to iterate over the list and perform necessary checks.
+
+### Complexity:
+The complexity of this problem revolves around maintaining the order of unique elements while removing duplicates. This necessitates not just iterating through a list but tracking occurrences of each element efficiently without losing track of their original position in the list. The main challenge is implementing logic that does exactly this, which might involve using additional data structures like dictionaries or sets for efficient lookups.
+
+Therefore, this problem targets individuals with some programming background who are learning to handle more complex operations on lists and have a basic understanding of algorithmic efficiency considerations.

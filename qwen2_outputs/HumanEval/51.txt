@@ -1,0 +1,9 @@
+The given problem is a simple string manipulation problem which falls under the category of Easy to Medium difficulty level. 
+
+It requires basic knowledge in programming, particularly string handling capabilities such as slicing, concatenation, and iterating through strings. This problem does not involve complex algorithms or data structures; hence, it can be considered more straightforward to solve.
+
+The primary task here is to remove vowels from a given input string (or multiple lines). Vowels are a well-defined set of characters ('a', 'e', 'i', 'o', 'u' and their uppercase counterparts), so the problem doesn't require any sophisticated logic or advanced programming skills. Instead, it needs the application of basic concepts and careful attention to detail.
+
+The required complexity is relatively low since we're dealing with string operations which can be handled efficiently even in languages like Python that are not optimized for raw performance compared to lower-level languages like C++. The function iterates through each character once, checks if it's a vowel or not, and assembles the result accordingly. This makes it an easy-to-understand problem requiring only basic programming skills.
+
+In summary, this problem is suitable for beginners who are learning string manipulation operations in their preferred programming language. It tests understanding of string slicing, concatenation, iterating through characters, and conditional logic but does so within a straightforward context that doesn't require advanced concepts or algorithms.

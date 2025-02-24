@@ -1,0 +1,6 @@
+ The problem given is a basic function that calculates the sum of all integer numbers from 1 to n (inclusive). This can be solved using any programming language as it doesn't involve complex data structures or algorithms. To solve this, you simply need to initialize a variable with value 0 and iterate over numbers from 1 to n, adding each number to the variable.
+
+Category: Basic/Easy
+Difficulty: Very Low
+Required Programming Skills: Understanding of loops (for loop or while loop) and basic mathematical operations in the programming language.
+Complexity: Time complexity is O(n), meaning that the time it takes to complete the function grows linearly with n. Space complexity is constant, as only a few variables are used.

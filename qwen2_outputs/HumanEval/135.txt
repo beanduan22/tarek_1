@@ -1,0 +1,14 @@
+The problem is categorized under:
+
+Difficulty: Medium
+
+Required Skills: Algorithmic thinking, Iterative approach, Array manipulation 
+
+Problem Complexity: Low to medium
+
+Explanation:
+- Difficulty: The problem involves a simple iteration through the array with an understanding of basic comparisons. It does not require any complex data structures or advanced algorithms.
+- Required Skills: Solving this problem requires good programming logic and ability to manipulate arrays. While some familiarity with control flow statements (like loops and conditionals) would be beneficial, these concepts are fundamental to most programming languages.
+- Problem Complexity: The solution involves iterating through the array once and maintaining a simple variable (i.e., largest index found). There is no need for recursion or nested structures, making it relatively straightforward to understand and implement.
+
+In summary, this problem tests basic algorithmic thinking and proficiency with core programming concepts, making it suitable for those learning to code as well as more experienced developers looking for quick coding challenges.

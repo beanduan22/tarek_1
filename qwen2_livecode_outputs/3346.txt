@@ -1,0 +1,65 @@
+Problem ID: 3346
+Problem Content:
+You are given a string s and an integer k.
+Define a function distance(s_1, s_2) between two strings s_1 and s_2 of the same length n as:
+
+The sum of the minimum distance between s_1[i] and s_2[i] when the characters from 'a' to 'z' are placed in a cyclic order, for all i in the range [0, n - 1].
+
+For example, distance("ab", "cd") == 4, and distance("a", "z") == 1.
+You can change any letter of s to any other lowercase English letter, any number of times.
+Return a string denoting the lexicographically smallest string t you can get after some changes, such that distance(s, t) <= k.
+ 
+Example 1:
+
+Input: s = "zbbz", k = 3
+Output: "aaaz"
+Explanation:
+Change s to "aaaz". The distance between "zbbz" and "aaaz" is equal to k = 3.
+
+Example 2:
+
+Input: s = "xaxcd", k = 4
+Output: "aawcd"
+Explanation:
+The distance between "xaxcd" and "aawcd" is equal to k = 4.
+
+Example 3:
+
+Input: s = "lol", k = 0
+Output: "lol"
+Explanation:
+It's impossible to change any character as k = 0.
+
+ 
+Constraints:
+
+1 <= s.length <= 100
+0 <= k <= 2000
+s consists only of lowercase English letters.
+
+Qwen2 Analysis:
+The given problem can be categorized as a **Medium** difficulty question. It requires understanding of string manipulation, character mapping, sorting, and optimization techniques such as using a greedy approach or dynamic programming.
+
+**Required Programming Skills:**
+
+1. **String Manipulation:** Ability to work with strings and perform operations like iterating through them and comparing characters.
+2. **Character Mapping:** Working with the lowercase English alphabet (`a`-'z`) and understanding cyclic order concepts for calculating distances between characters.
+3. **Sorting and Optimization:** Implementing algorithms that can sort or prioritize decisions based on certain criteria, aiming to minimize a specific metric (in this case, distance).
+4. **Dynamic Programming:** Though not explicitly mentioned in the problem statement, some form of optimization technique might be required depending on how distances are calculated between different states.
+
+**Problem Complexity:**
+
+The time complexity will primarily depend on the sorting step since calculating the minimum character distance for all characters involves some comparison and potentially a full sort operation. The worst-case time complexity is `O(n * log(n))` due to the sorting part (where `n` is the length of the string).
+
+Space complexity could be considered `O(1)` or `O(n)`, depending on how efficiently you manage data structures used for calculating distances and maintaining results.
+
+**Solution Approach:**
+
+To solve this problem, one might consider implementing a greedy strategy that aims to minimize character differences while staying within the given distance limit (`k`). This approach could involve:
+
+- Calculating base distances between characters ('a'-'z') considering their cyclic nature.
+- Sorting characters in `s` based on calculated minimum distances from 'a'.
+- Iteratively replacing characters with lower or equal minimum distances than required by `k`, starting from the first character of `s`.
+- Ensuring the final string respects the distance limit when compared to other possible optimal strings.
+
+This problem encourages a deep understanding of string manipulation and optimization techniques, making it suitable for intermediate programmers looking to enhance their skills in these areas.

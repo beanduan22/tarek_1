@@ -1,0 +1,39 @@
+Problem ID: 3230
+Problem Content:
+You are given a 0-indexed string word.
+In one operation, you can pick any index i of word and change word[i] to any lowercase English letter.
+Return the minimum number of operations needed to remove all adjacent almost-equal characters from word.
+Two characters a and b are almost-equal if a == b or a and b are adjacent in the alphabet.
+ 
+Example 1:
+
+Input: word = "aaaaa"
+Output: 2
+Explanation: We can change word into "acaca" which does not have any adjacent almost-equal characters.
+It can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2.
+
+Example 2:
+
+Input: word = "abddez"
+Output: 2
+Explanation: We can change word into "ybdoez" which does not have any adjacent almost-equal characters.
+It can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2.
+Example 3:
+
+Input: word = "zyxyxyz"
+Output: 3
+Explanation: We can change word into "zaxaxaz" which does not have any adjacent almost-equal characters. 
+It can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 3.
+
+ 
+Constraints:
+
+1 <= word.length <= 100
+word consists only of lowercase English letters.
+
+Codestral Analysis:
+ The given problem is a dynamic programming problem that can be solved using the sliding window technique with some optimization. It falls into the medium difficulty level because it requires an understanding of string manipulation and dynamic programming techniques. To solve this problem, you need to iterate through the input string, keep track of the maximum possible operations for each substring, and use a map data structure to store these results.
+
+The time complexity is O(n), where n is the length of the word, as we make one pass through the word to calculate the minimum number of operations. The space complexity is also O(n) due to the usage of an array to store intermediate results and a map data structure to keep track of visited substrings.
+
+Thus, I predict that this problem can be categorized under dynamic programming problems with medium difficulty level.

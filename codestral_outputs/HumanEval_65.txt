@@ -1,0 +1,10 @@
+ This problem can be categorized as a simple-to-moderate level programming problem. The task involves manipulating an integer by shifting its digits to the right by a certain amount. If the shift is greater than the number of digits in the integer, then we reverse the order of the digits instead.
+
+   Skills required for this problem:
+   1) Understanding and usage of Python programming language, especially data types such as integers and strings.
+   2) Basic understanding of loops and conditional statements.
+   3) Ability to work with mathematical operations like division, modulo, and power.
+
+   Difficulty level: This problem can be considered easy to moderate in difficulty. The main challenge might come from handling edge cases where the shift is greater than the number of digits in the integer, or when the integer is negative. However, these are easily manageable with some additional condition checks in the code.
+
+   Complexity: In terms of time complexity, this problem can be solved in linear O(n) time where n is the number of digits in the integer as we might need to iterate through each digit once. The space complexity is also O(n) due to the use of additional string data structure to store the final result. However, both time and space complexities are not a significant concern for this problem since integers typically have only a few digits (less than 10).

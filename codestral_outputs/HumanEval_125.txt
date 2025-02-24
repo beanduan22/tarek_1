@@ -1,0 +1,7 @@
+ The problem presented is a medium-difficulty task that involves string manipulation in Python. To solve this problem, you would need to:
+
+1. Check if there are any whitespaces in the input string. If so, split the string on whitespace to create a list of words and return it.
+2. If no whitespaces exist, check for commas. If commas are found, split the string on commas to create a list of words and return it.
+3. If neither whitespaces nor commas exist, iterate over each character in the string, convert it to its ASCII value using the ord() function (which gives 'a' as 0, 'b' as 1, ..., 'z' as 25), and check if this value is odd. If so, count it and return this count.
+
+   This problem can be categorized as a string manipulation task with some conditional logic. It doesn't require advanced Python skills, but understanding of basic string methods and ASCII values would be helpful to solve the problem. The complexity of the problem is linear O(n), where n is the length of the input string, since we only need to iterate over each character in the string once.

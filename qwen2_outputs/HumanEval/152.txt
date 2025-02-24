@@ -1,0 +1,11 @@
+This problem can be categorized as:
+
+Difficulty: Intermediate
+
+Required Programming Skills: Arrays, Loops, Conditional Statements (if-else), Arithmetic operations 
+
+Complexity: Moderate - The task involves iterating through two arrays of equal length, performing calculations based on the elements at each index and producing an output array accordingly. No advanced data structures or algorithms are required.
+
+The problem requires you to understand the concept of iterating over arrays, perform simple arithmetic operations (absolute difference calculation), conditional logic (to handle correct guesses), and return a new array based on certain conditions being met. These skills can be considered part of basic programming knowledge for most developers learning languages like Python, Java, C++, etc.
+
+The main challenge lies in correctly mapping the problem requirements to code (transforming inputs into outputs according to specified rules) without making mistakes in logic or implementation details. The moderate difficulty comes from needing to handle edge cases properly and ensure that your solution works efficiently even for larger data sets.

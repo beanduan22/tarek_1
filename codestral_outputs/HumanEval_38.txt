@@ -1,0 +1,7 @@
+ Category: Easy - Intermediate
+
+   Difficulty: The problem is relatively straightforward if you understand how to handle strings in Python and basic list manipulation. It might be considered easier if you're already familiar with these concepts.
+
+   Required Programming Skills: Basic knowledge of Python, particularly string manipulation and list comprehensions. Understanding of slicing in Python would also be beneficial for solving this problem effectively.
+
+   Complexity: The complexity is linear as we are iterating through the input string only once during both encoding and decoding operations. Hence, time complexity can be considered to be O(n), where n is the length of the input string.

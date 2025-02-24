@@ -1,0 +1,7 @@
+ Category: Easy-Medium
+
+    This is a basic programming problem that involves string manipulation and sorting. Here's a breakdown of why it falls into this category:
+
+    - Difficulty: The problem statement is clear and the task itself isn't too complex. However, it does require understanding of how to handle strings in your programming language, and also requires some knowledge about string splitting and sorting functions. So, I would rate it as easy-medium.
+    - Required programming skills: This problem primarily tests the ability to manipulate strings (split a string into words, convert words to numbers) and the use of basic data structures like lists or arrays for sorting. It's also good practice for understanding how functions work in general. So, it is suitable for both beginners who are learning these concepts and more experienced programmers who might be brushing up on them.
+    - Complexity: The time complexity of this problem is O(n log n) due to the sorting operation, where 'n' is the number of words in the input string. This isn't too complex for a modern computer, so it can handle large inputs fairly efficiently. However, the space complexity could be considered slightly higher as we create additional data structures to store and manipulate the numbers.

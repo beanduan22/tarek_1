@@ -1,0 +1,52 @@
+Problem ID: abc326_a
+Problem Content:
+Takahashi is in a building with 100 floors.
+He uses the stairs for moving up two floors or less or moving down three floors or less, and uses the elevator otherwise.
+Does he use the stairs to move from floor X to floor Y?
+
+Input
+
+The input is given from Standard Input in the following format:
+X Y
+
+Output
+
+If Takahashi uses the stairs for the move, print Yes; if he uses the elevator, print No.
+
+Constraints
+
+
+- 1 \leq X,Y \leq 100
+- X \neq Y
+- All input values are integers.
+
+Sample Input 1
+
+1 4
+
+Sample Output 1
+
+No
+
+The move from floor 1 to floor 4 involves going up three floors, so Takahashi uses the elevator.
+
+Sample Input 2
+
+99 96
+
+Sample Output 2
+
+Yes
+
+The move from floor 99 to floor 96 involves going down three floors, so Takahashi uses the stairs.
+
+Sample Input 3
+
+100 1
+
+Sample Output 3
+
+No
+
+CodeBERT Logits:
+[[-0.1433534026145935, 0.10483837127685547]]

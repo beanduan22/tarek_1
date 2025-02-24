@@ -1,0 +1,10 @@
+ Category: Basic Algorithms (Easy to Intermediate)
+
+   Explanation: This is a simple algorithmic problem that can be solved using basic programming knowledge. The function `will_it_fly(q, w)` takes in two arguments: a list of integers `q` and an integer `w`. To determine if the object will fly or not, we have to check two conditions:
+
+   1. Balance Check (Palindromic List): This can be checked by comparing the original list with its reverse. If they are equal, then the list is balanced.
+   2. Weight Check: The sum of all elements in the list should be less than or equal to `w`.
+
+   The solution involves iterating over the list once for the weight check and performing a constant-time comparison operation for the balance check. Thus, the time complexity is linear with respect to the size of the input list. It's also important to note that no additional data structures are required, making the space complexity constant.
+
+   Given these aspects, this problem can be classified as Basic Algorithms, with a difficulty level of Easy to Intermediate. The skills required for solving this problem include basic understanding of functions and lists in the programming language, control flow statements (if-else), and simple operations on data structures. This is a good problem for beginners who are learning to write algorithms.

@@ -1,0 +1,11 @@
+ The problem can be analyzed as follows:
+
+Difficulty: Easy to Medium
+The main task is to filter out strings with odd lengths and then sort the remaining list of strings by their length in ascending order. If two words have the same length, they should be sorted alphabetically. Therefore, the difficulty is not high because all required operations are fairly basic and can be implemented using simple programming constructs like lists, loops, and conditional statements.
+
+Programming Skills: Basic Knowledge of List Manipulation and Sorting Algorithms
+To solve this problem, one needs to know how to perform list filtering in Python (i.e., create a new list containing only the elements that satisfy certain conditions), sort lists using the sorted() function or list's sort() method, and understand how to use lambda functions for specifying custom sorting criteria.
+
+Complexity: The time complexity is O(n log n) due to the sorting operation where 'n' is the length of the input list. This can be considered as linearithmic time complexity which is fairly efficient. However, the space complexity could also be O(n) if we create a new list to store filtered and sorted strings, where 'n' is the length of the input list. This means that for large inputs, this function may consume significant amounts of memory.
+
+Overall Category: Basic Programming Problem

@@ -1,0 +1,55 @@
+Problem ID: abc315_a
+Problem Content:
+You are given a string S consisting of lowercase English letters.
+Remove all occurrences of a, e, i, o, u from S and print the resulting string.
+S contains at least one character other than a, e, i, o, u.
+
+Input
+
+The input is given from Standard Input in the following format:
+S
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- S is a string of length between 1 and 100, inclusive, consisting of lowercase English letters.
+- S contains at least one character other than a, e, i, o, u.
+
+Sample Input 1
+
+atcoder
+
+Sample Output 1
+
+tcdr
+
+For S = atcoder, remove the 1-st, 4-th, and 6-th characters to get tcdr.
+
+Sample Input 2
+
+xyz
+
+Sample Output 2
+
+xyz
+
+Sample Input 3
+
+aaaabbbbcccc
+
+Sample Output 3
+
+bbbbcccc
+
+Codestral Analysis:
+ The problem falls under the category of "String Manipulation" or "Basic Programming". It is a beginner-level problem that requires basic knowledge in handling strings and simple looping constructs to iterate through the string and remove specific characters.
+
+    Here's how the solution can be approached:
+    1. Initialize an empty string, let's call it `result`.
+    2. Iterate over each character in the given input string `S`.
+    3. If the current character is not a vowel (i.e., it is not 'a', 'e', 'i', 'o', or 'u'), append it to the `result` string.
+    4. After iterating over all characters in `S`, print the `result` string.

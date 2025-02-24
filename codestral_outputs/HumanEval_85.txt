@@ -1,0 +1,4 @@
+ Category: Beginner
+
+   Explanation:
+   This is a basic problem that involves iterating over a list of integers, checking their indices and values to determine which elements should be added together. This requires a basic understanding of list indexing and conditional statements in Python. The complexity of the solution can be considered low since it only needs to traverse the list once. Therefore, I would categorize this problem as 'Beginner'.

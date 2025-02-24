@@ -1,0 +1,9 @@
+ Category: Basic to Intermediate
+
+   Explanation: The given problem is about processing a list of integers and generating a new list that contains the maximum element found so far at each position in the original list. This problem can be solved by iterating over the input list and keeping track of the current maximum value while constructing the output list.
+
+   Difficulty: The problem is considered to be basic to intermediate due to its clear statement, well-defined inputs and outputs, and the use of a simple algorithm to solve it. However, depending on the programming language used and the skill level of the programmer, the complexity could vary slightly. For example, using built-in functions or libraries to simplify the solution may decrease the required skills or increase difficulty if those features are not well known.
+
+   Required Programming Skills: The problem requires a basic understanding of programming concepts such as loops, lists, and variables. Knowledge of the specific language used for implementation may be beneficial but is not strictly necessary to solve the problem, given that it can be solved using relatively simple logic and constructs. However, proficiency in handling edge cases or optimizing the solution may increase the required skills.
+
+   Complexity: The time complexity of the solution is linear (O(n)), where n is the length of the input list. This is because we need to iterate over each element of the input list exactly once. The space complexity is also linear (O(n)) since we are storing the maximum values found so far in a separate output list. In terms of overall complexity, this problem can be classified as a moderate-level problem due to its clear statement and straightforward solution approach.

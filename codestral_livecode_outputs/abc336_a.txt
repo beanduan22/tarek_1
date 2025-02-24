@@ -1,0 +1,47 @@
+Problem ID: abc336_a
+Problem Content:
+For a positive integer X, the Dragon String of level X is a string of length (X+3) formed by one L, X occurrences of o, one n, and one g arranged in this order.
+You are given a positive integer N. Print the Dragon String of level N.
+Note that uppercase and lowercase letters are distinguished.
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+
+Output
+
+Print the Dragon String of level N.
+
+Constraints
+
+
+- 1 \leq N \leq 2024
+- N is an integer.
+
+Sample Input 1
+
+3
+
+Sample Output 1
+
+Looong
+
+Arranging one L, three os, one n, and one g in this order yields Looong.
+
+Sample Input 2
+
+1
+
+Sample Output 2
+
+Long
+
+Codestral Analysis:
+ The given problem is a string manipulation task that falls under the category of Beginner to Intermediate level problems in programming. Here's a breakdown:
+
+Difficulty: Beginner to Intermediate
+Required Programming Skills: Basic understanding of string concatenation and looping constructs.
+Complexity: The complexity of this problem is O(N) because we need to create a string of length N+3, which involves a simple loop operation that runs N times.
+
+The problem statement provides a clear definition for the Dragon String of level X. It asks us to generate this string for a given positive integer N, where the length of the string is N+3 and it's formed by one 'L', N occurrences of 'o', one 'n', and one 'g'. To solve this problem, we can use a loop to append 'o' to a base string 'Lng' for N times.

@@ -1,0 +1,44 @@
+Problem ID: 3362
+Problem Content:
+You are given an integer array nums. The uniqueness array of nums is the sorted array that contains the number of distinct elements of all the subarrays of nums. In other words, it is a sorted array consisting of distinct(nums[i..j]), for all 0 <= i <= j < nums.length.
+Here, distinct(nums[i..j]) denotes the number of distinct elements in the subarray that starts at index i and ends at index j.
+Return the median of the uniqueness array of nums.
+Note that the median of an array is defined as the middle element of the array when it is sorted in non-decreasing order. If there are two choices for a median, the smaller of the two values is taken.
+ 
+Example 1:
+
+Input: nums = [1,2,3]
+Output: 1
+Explanation:
+The uniqueness array of nums is [distinct(nums[0..0]), distinct(nums[1..1]), distinct(nums[2..2]), distinct(nums[0..1]), distinct(nums[1..2]), distinct(nums[0..2])] which is equal to [1, 1, 1, 2, 2, 3]. The uniqueness array has a median of 1. Therefore, the answer is 1.
+
+Example 2:
+
+Input: nums = [3,4,3,4,5]
+Output: 2
+Explanation:
+The uniqueness array of nums is [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3]. The uniqueness array has a median of 2. Therefore, the answer is 2.
+
+Example 3:
+
+Input: nums = [4,3,5,4]
+Output: 2
+Explanation:
+The uniqueness array of nums is [1, 1, 1, 1, 2, 2, 2, 3, 3, 3]. The uniqueness array has a median of 2. Therefore, the answer is 2.
+
+ 
+Constraints:
+
+1 <= nums.length <= 10^5
+1 <= nums[i] <= 10^5
+
+Codestral Analysis:
+ The given problem can be classified under the category of "Arrays" and "Sorting". It is considered a medium level problem in terms of difficulty. To solve this problem, we need to understand how to find unique elements in subarrays, sort them, and then find their median.
+
+   In terms of programming skills, this problem requires good understanding of arrays, sorting algorithms, and basic data structures like sets or hash maps to keep track of unique elements. It also involves knowledge of how to calculate the median.
+
+   The complexity of the problem can be analyzed as follows:
+
+   1. Time Complexity: We need to generate all subarrays which takes O(n^2) time where n is the length of the array, then for each subarray we find distinct elements which may take up to O(n) time in worst case (if all elements are different). So overall, it might be around O(n^3). However, using a more optimal algorithm like Merge Sort based segment tree or Sorted Set data structure can reduce this time complexity to O(n^2 log n).
+
+   2. Space Complexity: We need to store all the subarrays distinct elements which may require up to O(n^2) space in worst case (if all elements are different). Using optimized approach, we might be able to reduce this to O(n).

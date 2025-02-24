@@ -1,0 +1,9 @@
+ This problem can be categorized as a medium level problem. The reason for this classification is:
+
+1. Difficulty Level: The problem involves manipulating lists and checking conditions but doesn't require complex data structures or algorithms. It should be solvable by individuals with basic programming skills, especially those who are familiar with list operations and looping constructs in their preferred language.
+
+2. Required Programming Skills: Understanding of loops (for, while), conditional statements (if-else), lists, and the ability to iterate over elements within a list is necessary to solve this problem. Basic knowledge about even and odd numbers is also required.
+
+3. Complexity: The time complexity of the solution depends on the length of the input lists. If both lists have 'n' elements, we may need to perform an operation for each element in the worst-case scenario (when all elements in lst1 are odd). So, the overall time complexity would be O(n). Space complexity is also O(n) because we might store all odd numbers from lst1 into a separate list as part of our solution.
+
+In conclusion, this problem can be solved by individuals with basic programming skills and falls into the category of medium level problems based on difficulty, required programming skills, and complexity.

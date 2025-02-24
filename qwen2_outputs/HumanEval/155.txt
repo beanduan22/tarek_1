@@ -1,0 +1,9 @@
+The given programming problem falls under the category of "Easy" in terms of difficulty. The solution requires basic programming skills such as:
+
+- **Understanding Python**: Knowledge to work with integers, tuples, and functions.
+- **Control Flow**: Ability to use `if` statements to check for even or odd numbers.
+- **String Conversion**: Converting an integer into a string (optional but not required in this case) to count the digits.
+
+The problem doesn't involve complex data structures, algorithms, recursion, or advanced language features. The solution would require iterating through each digit of the number (in either its original form or converted to a string for easier access), determining if it's even or odd and incrementing appropriate counters accordingly. This can be efficiently solved using loops and basic arithmetic operations.
+
+The code complexity is also relatively low, as it essentially involves counting the frequency of even and odd digits within an integer.

@@ -1,0 +1,7 @@
+ Category: Mathematics/Programming (Medium)
+
+   Difficulty: Moderate
+
+   Skills Required: Basic Programming Knowledge, Understanding of Prime Numbers, Looping Concepts, Factorization Algorithm
+
+   Complexity: The problem involves finding the largest prime factor of a given number 'n'. This can be solved by repeatedly dividing 'n' by numbers starting from 2 until it becomes 1. In each iteration, if 'n' is divisible by the current divisor then we divide 'n' by that divisor and increment the divisor. If not, we just increment the divisor. The largest number at which 'n' was divisible will be the answer as this will be the largest prime factor of 'n'. This algorithm can be improved further with the concept of "Sieve of Eratosthenes" to find all primes up to a given limit and then finding the largest one that is a divisor of 'n', which would reduce the complexity. However, the basic solution explained above is sufficient for the problem statement provided.

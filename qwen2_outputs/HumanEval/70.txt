@@ -1,0 +1,16 @@
+The given problem is of moderate difficulty. It involves basic knowledge in Python programming such as working with lists and utilizing sorting functions, while also requiring some logical reasoning to understand the specific algorithm needed for "strange_sort_list" function.
+
+This problem primarily requires skills related to:
+1. Working with Lists: You need to manipulate list data structures which is a fundamental skill for any programmer.
+2. Understanding and implementing Custom Algorithms: The solution here doesn't rely on existing library functions, but instead requires the development of custom logic. 
+3. Managing Data in Different Loops: It involves managing values across multiple iterations (min/max values), this tests one's ability to iterate through data structures efficiently.
+
+The problem has a time complexity that is O(n log n) due to sorting operation used within the function, where 'n' is the number of elements in the list. The space complexity would be O(1) assuming we're not considering extra space for results since we're modifying the input list itself.
+
+In terms of difficulty level:
+
+- **Beginner**: It requires basic understanding and familiarity with Python syntax and data structures.
+- **Intermediate**: The problem involves logical thinking around sorting techniques and managing data within loops, which might challenge someone who is still learning these concepts.
+- **Advanced**: This isn't too challenging for advanced programmers since it doesn't involve complex algorithms or structures.
+
+So overall, this falls into the intermediate category as it combines basic skills with some application of logic to devise a specific solution.

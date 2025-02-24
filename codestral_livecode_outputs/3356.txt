@@ -1,0 +1,49 @@
+Problem ID: 3356
+Problem Content:
+You are given an array arr of size n consisting of non-empty strings.
+Find a string array answer of size n such that:
+
+answer[i] is the shortest substring of arr[i] that does not occur as a substring in any other string in arr. If multiple such substrings exist, answer[i] should be the lexicographically smallest. And if no such substring exists, answer[i] should be an empty string.
+
+Return the array answer.
+ 
+Example 1:
+
+Input: arr = ["cab","ad","bad","c"]
+Output: ["ab","","ba",""]
+Explanation: We have the following:
+- For the string "cab", the shortest substring that does not occur in any other string is either "ca" or "ab", we choose the lexicographically smaller substring, which is "ab".
+- For the string "ad", there is no substring that does not occur in any other string.
+- For the string "bad", the shortest substring that does not occur in any other string is "ba".
+- For the string "c", there is no substring that does not occur in any other string.
+
+Example 2:
+
+Input: arr = ["abc","bcd","abcd"]
+Output: ["","","abcd"]
+Explanation: We have the following:
+- For the string "abc", there is no substring that does not occur in any other string.
+- For the string "bcd", there is no substring that does not occur in any other string.
+- For the string "abcd", the shortest substring that does not occur in any other string is "abcd".
+
+ 
+Constraints:
+
+n == arr.length
+2 <= n <= 100
+1 <= arr[i].length <= 20
+arr[i] consists only of lowercase English letters.
+
+Codestral Analysis:
+ This is a medium-level programming problem that can be categorized as string manipulation with a hint of data structure usage such as hash maps for efficient substring checking. The difficulty level depends on how well one can handle string operations and data structures efficiently to minimize time complexity. This problem requires good knowledge in Python, Java or C++ for implementation.
+
+Key aspects of the problem:
+1. The input is an array of strings.
+2. For each string, we need to find the shortest substring that does not occur as a substring in any other string in the array. If multiple such substrings exist, the lexicographically smallest one should be chosen.
+3. If no such substring exists, an empty string should be returned for that position in the output array.
+4. The size of the input array is between 2 and 100. Each string's length is between 1 and 20 characters long.
+5. All strings consist only of lowercase English letters.
+
+To solve this problem, we can use a Trie data structure to store all substrings for each word in the array, then search for the shortest unique substring by traversing the Trie depth-first and checking uniqueness at each node.
+
+The time complexity for this approach would be O(n * m^2), where n is the number of words in the input array, and m is the maximum length of a word. The space complexity would be O(n * m^2) as well, due to storing all possible substrings in the Trie data structure. This makes it a time-consuming solution for larger inputs but still feasible within reasonable constraints.

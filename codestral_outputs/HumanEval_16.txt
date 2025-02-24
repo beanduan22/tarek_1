@@ -1,0 +1,7 @@
+ Category: Beginner
+
+   Difficulty: Easy
+
+   Required Programming Skills: Basic understanding of strings, sets, and looping constructs.
+
+   Complexity: The complexity of this problem is O(n), where n is the length of the input string. This is because we need to iterate through each character in the string once. The set operations like addition and checking membership also have an average time complexity of O(1).

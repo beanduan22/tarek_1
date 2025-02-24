@@ -1,0 +1,47 @@
+Problem ID: 3381
+Problem Content:
+You are given an array nums of non-negative integers and an integer k.
+An array is called special if the bitwise OR of all of its elements is at least k.
+Return the length of the shortest special non-empty subarray of nums, or return -1 if no special subarray exists.
+ 
+Example 1:
+
+Input: nums = [1,2,3], k = 2
+Output: 1
+Explanation:
+The subarray [3] has OR value of 3. Hence, we return 1.
+
+Example 2:
+
+Input: nums = [2,1,8], k = 10
+Output: 3
+Explanation:
+The subarray [2,1,8] has OR value of 11. Hence, we return 3.
+
+Example 3:
+
+Input: nums = [1,2], k = 0
+Output: 1
+Explanation:
+The subarray [1] has OR value of 1. Hence, we return 1.
+
+ 
+Constraints:
+
+1 <= nums.length <= 50
+0 <= nums[i] <= 50
+0 <= k < 64
+
+Qwen2 Analysis:
+The problem can be categorized as follows:
+
+Difficulty: Medium - The problem involves basic array manipulation and bitwise operations. Solving it requires good understanding of these concepts but does not involve any advanced algorithms or data structures.
+
+Required Programming Skills: Basic knowledge of programming constructs like loops, arrays, and if-else conditions is essential. Understanding of bitwise operations such as OR (|) in the context of integers is also required.
+
+Complexity:
+
+Time Complexity: O(n), where n is the size of the input array nums. The algorithm iterates through each element once to compute the bitwise OR for subarrays ending at each position.
+Space Complexity: O(1). Constant space complexity because we only use a few variables regardless of the input size (the result variable, and loop counters if needed).
+
+The problem falls under the category of Array Manipulation or Bitwise Operations in programming. It tests one's ability to efficiently compute bitwise operations on array elements and find the shortest subarray satisfying certain criteria.

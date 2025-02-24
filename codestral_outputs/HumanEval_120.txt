@@ -1,0 +1,7 @@
+ Analysis:
+
+This is a problem that can be solved by using sorting algorithms to find the maximum k numbers in the array. It doesn't require any complex data structures or algorithms, but it does test basic understanding of how to work with arrays and use simple sorting methods. Since we need to return the largest k elements from the array sorted, we first sort the array and then return the last k elements.
+
+Category:
+
+This problem can be categorized as a beginner-level problem since it tests fundamental programming skills such as understanding basic data structures (arrays), basic sorting algorithms (in this case, using built-in Python functions for simplicity), and basic indexing of arrays. The complexity of the problem is O(n log n) due to the sorting operation, where n is the size of the input array. Therefore, it's a good problem to start learning about programming problems and solving them efficiently.

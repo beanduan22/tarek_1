@@ -1,0 +1,18 @@
+ Problem Analysis:
+The problem involves creating an array of integers based on a given formula and then finding all the unique triplets in that array whose sum is divisible by 3. The given formula generates new values for each index in the array, which makes it necessary to generate the entire array first before searching for valid triplets.
+
+Based on these observations, this problem can be categorized as:
+Category: Array and Hashing (or) Math and Combinatorics (Medium to Hard)
+
+Difficulty: Medium
+The problem is not overly complex or computationally intensive for a skilled programmer with an understanding of arrays and basic combinatorics. However, it does require careful implementation and a good understanding of the constraints and requirements.
+
+Programming Skills Required:
+1. Proficiency in any programming language (Python, Java, C++, etc.).
+2. Knowledge of array manipulation.
+3. Understanding of basic combinatorics to find triplets.
+4. Problem-solving skills for implementing the given formula and finding the required triples.
+
+Complexity:
+1. Time complexity is O(n^3) because we need to check all possible combinations of triplets, which results in a cubic time complexity. This makes it less efficient for large inputs (n > 1000).
+2. Space complexity is O(n) as we are only using an additional array to store the elements. However, this can be optimized to O(1) by not storing the entire array and calculating the values on-the-fly while checking for triplets. This will increase time efficiency but decrease space efficiency.

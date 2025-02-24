@@ -1,0 +1,7 @@
+ Category: This problem can be categorized as a "Beginner-Intermediate" level problem because it requires understanding of string manipulation and basic list operations in Python. It also involves some logical thinking to count consonants accurately. However, the actual complexity of the problem is not too high since we're dealing with simple strings.
+
+    Difficulty: The difficulty can be considered Beginner-Intermediate due to its straightforwardness and the usage of common string manipulation techniques. It might be a bit challenging for someone who is new to Python or programming in general, but it's not overly complex if you have some basic understanding.
+
+    Required Programming Skills: This problem requires knowledge of Python programming language and familiarity with its built-in string and list functions/methods. Familiarity with the concept of counting characters in a string will be beneficial.
+
+    Complexity: The time complexity of this solution is O(m*n), where m is the number of words in the string and n is the average length of these words. This is because we're iterating over each word and then again iterating over each character within that word. However, since we're assuming the input string only contains letters and spaces, this can be considered a reasonable time complexity for practical purposes. The space complexity is O(m) due to storing all the words in a list which grows linearly with the number of words in the string.

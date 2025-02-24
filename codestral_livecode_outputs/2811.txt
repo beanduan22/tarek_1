@@ -1,0 +1,37 @@
+Problem ID: 2811
+Problem Content:
+You are given two integers, n and k.
+An array of distinct positive integers is called a k-avoiding array if there does not exist any pair of distinct elements that sum to k.
+Return the minimum possible sum of a k-avoiding array of length n.
+ 
+Example 1:
+
+Input: n = 5, k = 4
+Output: 18
+Explanation: Consider the k-avoiding array [1,2,4,5,6], which has a sum of 18.
+It can be proven that there is no k-avoiding array with a sum less than 18.
+
+Example 2:
+
+Input: n = 2, k = 6
+Output: 3
+Explanation: We can construct the array [1,2], which has a sum of 3.
+It can be proven that there is no k-avoiding array with a sum less than 3.
+
+ 
+Constraints:
+
+1 <= n, k <= 50
+
+Codestral Analysis:
+ This problem can be categorized as a problem of number theory and mathematical reasoning with a moderate level of difficulty. To solve this problem, you need to have strong understanding of mathematical principles and algorithms to optimize computations.
+
+   The approach for solving the problem would involve a few key steps:
+   1) Understand that to minimize the sum, we should include small positive integers in the array.
+   2) Since the pairwise sums cannot be equal to 'k', if one number is included, then its complement (i.e., k - this number) should not be included in the array.
+   3) Build the array by including consecutive numbers starting from 1 until we reach the length 'n' or encounter a number that would make the pairwise sum equal to 'k'.
+   4) If there are still elements remaining to fill, start including the next eligible numbers after 'k' has been crossed.
+
+   The time complexity of this solution is O(n), as we perform a single pass through the range of possible array values. The space complexity is also O(n), as we store the resulting array.
+
+   This problem does not require complex data structures or advanced algorithms, but it tests problem-solving skills and understanding of basic number theory concepts.

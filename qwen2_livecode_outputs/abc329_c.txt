@@ -1,0 +1,75 @@
+Problem ID: abc329_c
+Problem Content:
+You are given a string S of length N consisting of lowercase English letters.
+Find the number of non-empty substrings of S that are repetitions of one character. Here, two substrings that are equal as strings are not distinguished even if they are obtained differently.
+A non-empty substring of S is a string of length at least one obtained by deleting zero or more characters from the beginning and zero or more characters from the end of S. For example, ab and abc are non-empty substrings of abc, while ac and the empty string are not.
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+S
+
+Output
+
+Print the number of non-empty substrings of S that are repetitions of one character.
+
+Constraints
+
+
+- 1 \leq N \leq 2\times 10^5
+- S is a string of length N consisting of lowercase English letters.
+
+Sample Input 1
+
+6
+aaabaa
+
+Sample Output 1
+
+4
+
+The non-empty substrings of S that are repetitions of one character are a, aa, aaa, and b; there are four of them. Note that there are multiple ways to obtain a or aa from S, but each should only be counted once.
+
+Sample Input 2
+
+1
+x
+
+Sample Output 2
+
+1
+
+Sample Input 3
+
+12
+ssskkyskkkky
+
+Sample Output 3
+
+8
+
+Qwen2 Analysis:
+The provided problem seems to be a typical intermediate-level problem in computer science, involving string manipulation and iteration through an array (in this case, characters of a string).
+
+### Problem Analysis:
+1. **Input**: The input consists of two parts: the length `N` of the string `S`, followed by the string itself.
+2. **Constraints**: The constraints provided indicate that we're dealing with relatively large inputs (`1 ≤ N ≤ 2×10^5`), suggesting an algorithmic solution should be efficient and optimized for performance to handle larger data sets.
+
+### Categories:
+- **String Manipulation**: The problem requires understanding of string properties like substrings, character counts, and equality checks.
+- **Looping/Iteration**: It involves iterating through the string or its characters, which is a fundamental operation in many programming tasks.
+- **Counting Techniques**: Implementing an algorithm that efficiently counts certain types of elements or sequences based on specific conditions (repetitive substrings).
+
+### Programming Skills Required:
+- **Basic to Intermediate Programming Skills**: Knowledge of basic data structures (like string manipulation), algorithms, and control flow is essential.
+- **Efficiency Considerations**: Given the size constraints, solutions should avoid unnecessary complexity. This hints at the need for optimization techniques like efficient traversal or using a single pass mechanism.
+
+### Complexity:
+- **Time Complexity**: The time complexity might be O(N) if properly optimized (considering each character is visited once), which is manageable given the upper limit of N being up to 2×10^5.
+- **Space Complexity**: O(1) since no extra space proportional to input size is needed beyond storing variables for tracking substrings and counts.
+
+### Solution Approach:
+The problem can be solved through a straightforward approach by iterating over each character in the string, maintaining count of consecutive identical characters and incrementing our answer accordingly based on the length of such sequences.
+
+This categorization helps understand that while the solution might require some thought process to optimize (e.g., using loops efficiently), it doesn't necessitate advanced data structures or complex algorithms. It leans more towards algorithmic thinking and practical programming skills, making it suitable for intermediate-level learners in computer science education.

@@ -1,0 +1,88 @@
+Problem ID: 1899_B
+Problem Content:
+Alex is participating in the filming of another video of BrMeast, and BrMeast asked Alex to prepare 250 thousand tons of TNT, but Alex didn't hear him well, so he prepared $n$ boxes and arranged them in a row waiting for trucks. The $i$-th box from the left weighs $a_i$ tons.
+
+All trucks that Alex is going to use hold the same number of boxes, denoted by $k$. Loading happens the following way:
+
+ 
+-  The first $k$ boxes goes to the first truck, 
+-  The second $k$ boxes goes to the second truck, 
+-  $\dotsb$ 
+-  The last $k$ boxes goes to the $\frac{n}{k}$-th truck. Upon loading is completed, each truck must have exactly $k$ boxes. In other words, if at some point it is not possible to load exactly $k$ boxes into the truck, then the loading option with that $k$ is not possible.
+
+Alex hates justice, so he wants the maximum absolute difference between the total weights of two trucks to be as great as possible. If there is only one truck, this value is $0$.
+
+Alex has quite a lot of connections, so for every $1 \leq k \leq n$, he can find a company such that each of its trucks can hold exactly $k$ boxes. Print the maximum absolute difference between the total weights of any two trucks.
+
+Input
+
+The first line contains one integer $t$ ($1 \leq t \leq 10^4$) — the number of test cases.
+
+The first line of each test case contains one integer $n$ ($1 \leq n \leq 150\,000$) — the number of boxes.
+
+The second line contains $n$ integers $a_1, a_2, \dots, a_n$ ($1 \leq a_i \leq 10^9$) — the weights of the boxes.
+
+It is guaranteed that the sum of $n$ for all test cases does not exceed $150\,000$.
+
+Output
+
+For each test case, print a single integer — the answer to the problem.Sample Input 1:
+5
+
+2
+
+1 2
+
+6
+
+10 2 3 6 1 3
+
+4
+
+1000000000 1000000000 1000000000 1000000000
+
+15
+
+60978 82265 78961 56708 39846 31071 4913 4769 29092 91348 64119 72421 98405 222 14294
+
+8
+
+19957 69913 37531 96991 57838 21008 14207 19198
+
+
+
+Sample Output 1:
+
+1
+9
+0
+189114
+112141
+
+
+Note
+
+In the first case, we should pick two trucks, so the first one will have only the first box, and the second one will have only the second box.
+
+In the second case, we should pick six trucks, so the maximum will be $10$, the minimum will be $1$, and the answer is $10 - 1 = 9$.
+
+In the third case, for any possible $k$, the trucks will have the same total weight of boxes, so the answer is $0$.
+
+Qwen2 Analysis:
+The given programming problem involves finding the maximum absolute difference between the total weights of any two trucks when they are loaded with equal numbers of boxes under certain constraints. It requires understanding of sorting, array manipulation, and mathematical calculations.
+
+**Category Prediction:**
+
+1. **Difficulty Level:** The problem is moderately difficult as it involves multi-step logic and optimization to find the optimal arrangement that maximizes the difference in weights between two groups of boxes loaded onto trucks.
+
+2. **Required Programming Skills:** The solution requires proficient understanding of sorting algorithms (specifically, finding ranges of elements), basic array operations, and mathematical calculations including absolute values and maximum/minimum computations. Knowledge of how to efficiently compare multiple data points without explicitly iterating through all combinations is crucial here.
+
+3. **Complexity:**
+   - The time complexity might vary based on the implementation of the logic used for sorting and range query optimization. A naive solution could involve sorting first and then potentially using a brute-force approach for finding differences between every possible pair, resulting in high complexity (O(n log n) + O(n^2)).
+   - However, an optimized approach can achieve better performance by utilizing segment trees or prefix sums to answer range queries efficiently.
+
+Given these factors, this problem would likely fall under the categories of **Algorithms**, specifically focusing on **Sorting**, **Array Manipulation**, and **Optimization/Maximization problems**. It also involves elements related to **Data Structures**, particularly the use of advanced data structures like segment trees or prefix sums for efficient computation.
+
+To solve it, one might initially consider sorting the array of box weights and then using a method that efficiently calculates the maximum difference between cumulative sums of two groups defined by the number of boxes per truck (`k`). This approach would involve maintaining running sums or utilizing data structures that can quickly answer range sum queries (like segment trees) to optimize performance.
+
+This problem is excellent for interview preparation as it requires understanding, implementing complex algorithms, and optimizing solutions efficiently.

@@ -1,0 +1,18 @@
+The category of this programming problem can be classified as:
+
+Difficulty: Medium
+
+Required Programming Skills:
+- Basic knowledge about arithmetic operations (addition and division)
+- Understanding and implementation of loops or range functions to iterate over a sequence of numbers
+- Ability to perform mathematical rounding based on the specified number of decimal places
+- Proficiency in converting integers to binary format using built-in functions 
+- Familiarity with conditional statements for handling edge cases, like when n is greater than m
+
+Complexity:
+- The main challenge lies in performing arithmetic operations correctly while considering the given boundaries and then properly rounding and binarizing the result.
+- The requirement of handling an edge case where n > m might add to the complexity as it necessitates additional logic.
+
+The solution will involve a loop or iterating through the sequence from n to m, summing up the numbers in this range. Then we'll calculate the average by dividing the total sum by the number of elements (m - n + 1), round this value to the nearest integer and convert that result into binary format. If n > m, it returns -1 as specified.
+
+The logic needs clarity about rounding off operations and understanding how binary conversion works in programming languages, which usually have built-in functions for such tasks.

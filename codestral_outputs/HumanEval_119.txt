@@ -1,0 +1,14 @@
+ Problem Analysis:
+
+The problem involves checking if two given strings of only open and close parentheses can be concatenated in some order to form a string with balanced parentheses. To solve this problem, we need to understand the rules of balanced parentheses (i.e., every opening parenthesis must have a corresponding closing one) and then apply this knowledge to determine if the strings can be combined to produce a balanced sequence.
+
+Problem Category:
+
+This problem falls under the category of string manipulation and is rated as EASY. This type of problem tests basic understanding of programming constructs like loops and conditional statements, along with an ability to think logically in order to solve simple algorithmic problems. The complexity of this problem is O(n), where n is the length of the longer string, as we may need to iterate over every character in each string once.
+
+Required Programming Skills:
+- Basic string manipulation skills
+- Understanding of loops and conditional statements
+- Ability to think logically to solve a simple algorithmic problem
+
+Overall, this problem is suitable for beginners who have some basic programming experience and are comfortable with string manipulation. It tests both logical thinking and basic coding skills.

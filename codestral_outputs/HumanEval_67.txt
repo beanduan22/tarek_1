@@ -1,0 +1,3 @@
+ Category: Basic String Manipulation & Arithmetic Operations
+
+Explanation: This problem can be categorized as a basic level problem in programming, particularly for beginners or learners. It requires understanding of how to extract numerical data from a string using regex or split function and performing simple arithmetic operations on the extracted values. There are no complex data structures or algorithms involved here. However, it's important to handle potential exceptions or errors that may occur when dealing with string manipulation in real-world scenarios.

@@ -1,0 +1,91 @@
+Problem ID: abc313_b
+Problem Content:
+There are N competitive programmers numbered person 1, person 2, \ldots, and person N.
+There is a relation called superiority between the programmers.  For all pairs of distinct programmers (person X, person Y), exactly one of the following two relations holds: "person X is stronger than person Y" or "person Y is stronger than person X."
+The superiority is transitive.  In other words, for all triplets of distinct programmers (person X, person Y, person Z), it holds that:
+
+- if person X is stronger than person Y and person Y is stronger than person Z, then person X is stronger than person Z.
+
+A person X is said to be the strongest programmer if person X is stronger than person Y for all people Y other than person X.  (Under the constraints above, we can prove that there is always exactly one such person.)  
+You have M pieces of information on their superiority.  The i-th of them is that "person A_i is stronger than person B_i."
+Can you determine the strongest programmer among the N based on the information?
+If you can, print the person's number.  Otherwise, that is, if there are multiple possible strongest programmers, print -1.
+
+Input
+
+The input is given from Standard Input in the following format:
+N M
+A_1 B_1
+A_2 B_2
+\vdots
+A_M B_M
+
+Output
+
+If you can uniquely determine the strongest programmer, print the person's number; otherwise, print -1.
+
+Constraints
+
+
+- 2 \leq N \leq 50
+- 0 \leq M \leq \frac{N(N-1)}{2}
+- 1 \leq A_i, B_i \leq N
+- A_i \neq B_i
+- If i \neq j, then (A_i, B_i) \neq (A_j, B_j).
+- There is at least one way to determine superiorities for all pairs of distinct programmers, that is consistent with the given information.
+
+Sample Input 1
+
+3 2
+1 2
+2 3
+
+Sample Output 1
+
+1
+
+You have two pieces of information: "person 1 is stronger than person 2" and "person 2 is stronger than person 3."
+By the transitivity, you can also infer that "person 1 is stronger than person 3," so person 1 is the strongest programmer.
+
+Sample Input 2
+
+3 2
+1 3
+2 3
+
+Sample Output 2
+
+-1
+
+Both person 1 and person 2 may be the strongest programmer.  Since you cannot uniquely determine which is the strongest, you should print -1.
+
+Sample Input 3
+
+6 6
+1 6
+6 5
+6 2
+2 3
+4 3
+4 2
+
+Sample Output 3
+
+-1
+
+Qwen2 Analysis:
+The problem described above can be categorized as a Graph Theory problem. This is because it involves understanding relationships between entities (programmers) who are related by superiority relations which form a directed graph structure.
+
+In particular, this problem demands an understanding of the properties of directed graphs like transitivity and how they interact with constraints provided in the question to identify a unique solution or confirm lack thereof.
+
+The skills required include:
+
+1. **Understanding Graph Concepts**: Understanding basic concepts of directed graphs such as nodes (programmers), edges (relationships between programmers based on superiority), and properties like transitive relations.
+2. **Algorithmic Thinking**: The ability to design an algorithm that traverses the graph, potentially using Breadth-First Search (BFS) or Depth-First Search (DFS) techniques, to identify a node which is superior to all other nodes based on given relations.
+3. **Handling Constraints**: Understanding how constraints such as limited number of relationships and unique relations are used in the problem to help determine uniqueness or lack thereof.
+
+The complexity arises from ensuring that the algorithm correctly identifies whether there exists one unique strongest programmer, multiple possible ones due to ambiguity, or no solution at all due to contradictory information provided.
+
+In terms of difficulty, this problem is considered moderately challenging as it requires not only basic knowledge of graph theory but also careful reasoning and implementation skills to handle edge cases such as determining uniqueness in the presence of limited data points. This makes it suitable for intermediate-level participants in programming competitions or coding challenges where they are expected to apply theoretical concepts to solve problems efficiently.
+
+For an efficient solution, you would typically implement a logic that constructs the graph based on the input relations and then uses transitive closure techniques (possibly via Floyd-Warshall algorithm) to check if there exists a node which is superior to all others or determine ambiguity in case of multiple candidates. The output condition (-1) ensures handling scenarios where no clear solution exists due to contradictory input data points.

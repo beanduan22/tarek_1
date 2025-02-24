@@ -1,0 +1,51 @@
+Problem ID: 3429
+Problem Content:
+An array is considered special if every pair of its adjacent elements contains two numbers with different parity.
+You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
+ 
+Example 1:
+
+Input: nums = [1]
+Output: true
+Explanation:
+There is only one element. So the answer is true.
+
+Example 2:
+
+Input: nums = [2,1,4]
+Output: true
+Explanation:
+There is only two pairs: (2,1) and (1,4), and both of them contain numbers with different parity. So the answer is true.
+
+Example 3:
+
+Input: nums = [4,3,1,6]
+Output: false
+Explanation:
+nums[1] and nums[2] are both odd. So the answer is false.
+
+ 
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100
+
+Qwen2 Analysis:
+The given programming problem seems to fall under the category of "Easy" problems in coding challenges. Here's why:
+
+### Difficulty Level:
+- The problem description is straightforward and easy to understand. It doesn't require any complex concepts or terminology from advanced computer science or mathematics.
+- The solution involves simple logic checks (checking parity), which are accessible skills for most intermediate-level programmers.
+
+### Required Programming Skills:
+- **Basic Understanding of Arrays:** You need to be comfortable with handling arrays, indexing elements, and iterating through them in your chosen programming language.
+- **Conditional Logic:** Using if-statements or equivalent constructs to check conditions based on the input values. In this case, checking whether adjacent numbers have different parities.
+
+### Complexity:
+- **Time Complexity:** The operation involves traversing the array only once (or twice at most depending on how you implement), which results in a linear time complexity of O(n), where n is the number of elements in the array.
+- **Space Complexity:** If we ignore any additional space used for variables to store indices or values, the algorithm uses constant space. Hence, it has O(1) space complexity.
+
+### Solution Approach:
+The problem can be solved by iterating through the given array and checking if every pair of adjacent numbers have different parity (one odd and one even). This involves understanding how to determine whether a number is odd or even in your chosen programming language.
+
+In summary, this problem tests basic array manipulation skills combined with simple conditional logic checks. It's suitable for beginners or as an easy warm-up exercise before tackling more complex problems.

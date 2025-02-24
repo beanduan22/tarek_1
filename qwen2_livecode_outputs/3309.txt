@@ -1,0 +1,60 @@
+Problem ID: 3309
+Problem Content:
+You are given a 0-indexed string array words.
+Let's define a boolean function isPrefixAndSuffix that takes two strings, str1 and str2:
+
+isPrefixAndSuffix(str1, str2) returns true if str1 is both a prefix and a suffix of str2, and false otherwise.
+
+For example, isPrefixAndSuffix("aba", "ababa") is true because "aba" is a prefix of "ababa" and also a suffix, but isPrefixAndSuffix("abc", "abcd") is false.
+Return an integer denoting the number of index pairs (i, j) such that i < j, and isPrefixAndSuffix(words[i], words[j]) is true.
+ 
+Example 1:
+
+Input: words = ["a","aba","ababa","aa"]
+Output: 4
+Explanation: In this example, the counted index pairs are:
+i = 0 and j = 1 because isPrefixAndSuffix("a", "aba") is true.
+i = 0 and j = 2 because isPrefixAndSuffix("a", "ababa") is true.
+i = 0 and j = 3 because isPrefixAndSuffix("a", "aa") is true.
+i = 1 and j = 2 because isPrefixAndSuffix("aba", "ababa") is true.
+Therefore, the answer is 4.
+Example 2:
+
+Input: words = ["pa","papa","ma","mama"]
+Output: 2
+Explanation: In this example, the counted index pairs are:
+i = 0 and j = 1 because isPrefixAndSuffix("pa", "papa") is true.
+i = 2 and j = 3 because isPrefixAndSuffix("ma", "mama") is true.
+Therefore, the answer is 2.  
+Example 3:
+
+Input: words = ["abab","ab"]
+Output: 0
+Explanation: In this example, the only valid index pair is i = 0 and j = 1, and isPrefixAndSuffix("abab", "ab") is false.
+Therefore, the answer is 0.
+ 
+Constraints:
+
+1 <= words.length <= 50
+1 <= words[i].length <= 10
+words[i] consists only of lowercase English letters.
+
+Qwen2 Analysis:
+The given programming problem is about string manipulation and condition evaluation in an array of strings. It requires iterating through all pairs of indices to check if one string is both a prefix and suffix of another. This involves using functions for string comparison and potentially substring extraction.
+
+**Category Predictions:**
+
+1. **Algorithm Complexity:** The time complexity here depends on the number of comparisons which can be up to `O(n^2)` since each pair `(i, j)` with `i < j` needs to be checked.
+
+2. **Required Programming Skills:**
+   - **String manipulation:** Extracting prefixes and suffixes from strings.
+   - **Loop Control:** Implementing nested loops for index pairs `(i, j)`.
+   - **Boolean Logic:** Evaluating conditions using boolean functions like `isPrefixAndSuffix`.
+
+3. **Problem Difficulty Level:** This problem could be categorized as **Medium** due to the following:
+   - **Iterative Approach:** Requires understanding of iteration and conditional logic.
+   - **String Handling:** Understanding string prefixes, suffixes, and their relationships requires familiarity with string manipulation techniques.
+
+The nature of this question involves fundamental concepts like loops for pair-wise comparisons and string slicing. It tests basic programming skills rather than advanced algorithmic strategies or complex data structures. Therefore, the problem would likely be encountered early in a learning path through coding challenges or interviews focusing on basic to intermediate level coding tasks.
+
+In summary, based on the given attributes such as the required programming skills and complexity, this problem can safely be categorized as **Medium Difficulty** under categories such as Algorithms, String Manipulation, and Basic Data Structures.

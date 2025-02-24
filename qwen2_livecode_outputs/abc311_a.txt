@@ -1,0 +1,76 @@
+Problem ID: abc311_a
+Problem Content:
+You are given a string S consisting of A, B, and C. S is guaranteed to contain all of A, B, and C.
+If the characters of S are checked one by one from the left, how many characters will have been checked when the following condition is satisfied for the first time?
+
+- All of A, B, and C have appeared at least once.
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+S
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- 3 \leq N \leq 100
+- S is a string of length N consisting of A, B, and C.
+- S contains all of A, B, and C.
+
+Sample Input 1
+
+5
+ACABB
+
+Sample Output 1
+
+4
+
+In the first four characters from the left, A, B, and C appear twice, once, and once, respectively, satisfying the condition.
+The condition is not satisfied by checking three or fewer characters, so the answer is 4.
+
+Sample Input 2
+
+4
+CABC
+
+Sample Output 2
+
+3
+
+In the first three characters from the left, each of A, B, and C appears once, satisfying the condition.
+
+Sample Input 3
+
+30
+AABABBBABABBABABCABACAABCBACCA
+
+Sample Output 3
+
+17
+
+Qwen2 Analysis:
+The provided problem statement presents a coding challenge that involves iterating through a string to count characters until certain conditions are met. This type of problem typically tests several key aspects:
+
+1. **String Processing**: It requires basic knowledge about handling strings in most programming languages, such as accessing individual characters or substrings.
+
+2. **Counting and Conditions**: The program must be able to count occurrences of specific characters within a string until certain conditions are fulfilled.
+
+3. **Loop Control**: Iterating through the string necessitates control structures like loops, which allow for systematic traversal of each character.
+
+4. **Termination Logic**: The condition of ending the iteration when all necessary characters have appeared at least once is crucial and requires careful logic to ensure correct termination.
+
+Based on these aspects:
+
+- **Difficulty Level**: This problem likely falls into the easier-moderate range. Solving it would not require advanced or specialized algorithms, but understanding how to iterate effectively through data structures like strings is essential.
+  
+- **Required Programming Skills**: Basic programming skills including familiarity with at least one language's string handling capabilities are necessary. Good practices in logic and control flow management are also important.
+
+- **Complexity**: The problem has linear complexity relative to the length of the input string (N). This means that the time taken increases proportionally with the size of the input, assuming no optimizations are applied. However, because strings are involved, some efficiency concerns might arise depending on how they are handled internally by different languages.
+
+In summary, this is a problem suitable for an introductory to intermediate level course in computer science or programming. It tests fundamental skills such as string manipulation and loop-based logic without requiring complex algorithms or data structures that could add additional layers of complexity.

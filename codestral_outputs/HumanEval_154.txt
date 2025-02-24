@@ -1,0 +1,6 @@
+ Problem Category: String manipulation with pattern checking
+   Difficulty Level: Medium
+
+   Explanation: This is a medium-level problem that involves working with strings and implementing a pattern checking algorithm. It requires the ability to create rotations of a string and check for substring matches, which are both common string operations. The complexity of this problem can be considered moderate as it involves creating multiple rotations of the second input string and then checking each rotation for substrings in the first input string.
+
+   Skills Required: Basic programming skills, specifically in handling strings. Knowledge of substring functions and how to perform rotations on a string will be beneficial.

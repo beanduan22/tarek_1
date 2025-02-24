@@ -1,0 +1,14 @@
+ Category: Beginner to Intermediate
+
+   Difficulty: Easy
+   This problem falls into the easy-to-intermediate level as it requires string manipulation which is a common topic in introductory programming courses. It doesn't involve any complex data structures or algorithms.
+
+   Required Skills:
+   1. String Manipulation: The main part of the problem is to remove certain characters from a string, so knowledge of how to iterate over strings and manipulate them is required.
+   2. Basic Function Definition and Usage: A function needs to be defined and used as per the provided specification.
+   3. Understanding of Loops: In order to iterate through each character of the input string, a loop would be useful.
+   4. Conditional Statements: To check if each character is a vowel or not, conditional statements are needed.
+
+   Complexity:
+   1. Time Complexity: The time complexity of this function is O(n), where n is the length of the input string. This is because we iterate through each character in the string once.
+   2. Space Complexity: The space complexity is also O(n) as we create a new string to store the result, which can have up to n characters if no vowels are present in the input string.

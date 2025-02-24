@@ -1,0 +1,13 @@
+The given problem falls under the category of Easy Difficulty. 
+
+This problem tests basic knowledge in Python programming including:
+- Understanding of list data structure
+- Conditional logic (if statements) to handle different cases  
+- Use of built-in functions like `max` and `min`
+- Handling of None values when there are no suitable elements
+
+The required skills include familiarity with elementary Python syntax, conditional execution paths based on the presence or absence of certain types of numbers in the list. This involves some logical thinking but does not require advanced programming concepts or algorithms.
+
+The complexity of this problem is also low because it mainly deals with basic operations like iterating through a list and comparing values. There's no need for nested loops, recursion, or complex data structures. So it can be solved quickly by someone who has grasped the fundamentals of Python programming language.
+
+So in summary: this problem targets an Easy category because it involves straightforward logic that doesn't require advanced knowledge or skills beyond basic familiarity with Python programming concepts and syntax.

@@ -1,0 +1,44 @@
+Problem ID: 2917
+Problem Content:
+Given a 0-indexed integer array nums of length n and an integer target, return the number of pairs (i, j) where 0 <= i < j < n and nums[i] + nums[j] < target.
+ 
+Example 1:
+
+Input: nums = [-1,1,2,3,1], target = 2
+Output: 3
+Explanation: There are 3 pairs of indices that satisfy the conditions in the statement:
+- (0, 1) since 0 < 1 and nums[0] + nums[1] = 0 < target
+- (0, 2) since 0 < 2 and nums[0] + nums[2] = 1 < target 
+- (0, 4) since 0 < 4 and nums[0] + nums[4] = 0 < target
+Note that (0, 3) is not counted since nums[0] + nums[3] is not strictly less than the target.
+
+Example 2:
+
+Input: nums = [-6,2,5,-2,-7,-1,3], target = -2
+Output: 10
+Explanation: There are 10 pairs of indices that satisfy the conditions in the statement:
+- (0, 1) since 0 < 1 and nums[0] + nums[1] = -4 < target
+- (0, 3) since 0 < 3 and nums[0] + nums[3] = -8 < target
+- (0, 4) since 0 < 4 and nums[0] + nums[4] = -13 < target
+- (0, 5) since 0 < 5 and nums[0] + nums[5] = -7 < target
+- (0, 6) since 0 < 6 and nums[0] + nums[6] = -3 < target
+- (1, 4) since 1 < 4 and nums[1] + nums[4] = -5 < target
+- (3, 4) since 3 < 4 and nums[3] + nums[4] = -9 < target
+- (3, 5) since 3 < 5 and nums[3] + nums[5] = -3 < target
+- (4, 5) since 4 < 5 and nums[4] + nums[5] = -8 < target
+- (4, 6) since 4 < 6 and nums[4] + nums[6] = -4 < target
+
+ 
+Constraints:
+
+1 <= nums.length == n <= 50
+-50 <= nums[i], target <= 50
+
+Codestral Analysis:
+ The given problem is a simple array manipulation problem that can be solved by using two nested loops to iterate through all possible pairs of indices in the array and checking if they satisfy the condition `nums[i] + nums[j] < target`. This approach will have a time complexity of O(n^2) because there are n*(n-1)/2 pairs to consider.
+
+Based on this analysis, I would categorize this problem as "Easy" in terms of difficulty. The required programming skills primarily involve basic array manipulation and loop structures. This type of problem is commonly found in coding interviews and can be solved using a variety of popular programming languages such as Python, Java, JavaScript, C++ etc.
+
+However, since the size of the input array can go up to 50 elements, it's good practice to aim for an efficient solution. In this case, sorting the array first and then using two pointers to iterate through the array could lead to a more time-efficient solution with a time complexity of O(n log n) due to the sorting step.
+
+Hence, if optimizing for performance is considered, this problem would be categorized as "Medium" in terms of difficulty.

@@ -1,0 +1,67 @@
+Problem ID: abc352_a
+Problem Content:
+The AtCoder railway line has N stations, numbered 1, 2, \ldots, N.
+On this line, there are inbound trains that start at station 1 and stop at the stations 2, 3, \ldots, N in order, and outbound trains that start at station N and stop at the stations N - 1, N - 2, \ldots, 1 in order.
+Takahashi is about to travel from station X to station Y using only one of the inbound and outbound trains.
+Determine whether the train stops at station Z during this travel.
+
+Input
+
+The input is given from Standard Input in the following format:
+N X Y Z
+
+Output
+
+If the train stops at station Z during the travel from station X to station Y, print Yes; otherwise, print No.
+
+Constraints
+
+
+- 3 \leq N \leq 100
+- 1 \leq X, Y, Z \leq N
+- X, Y, and Z are distinct.
+- All input values are integers.
+
+Sample Input 1
+
+7 6 1 3
+
+Sample Output 1
+
+Yes
+
+To travel from station 6 to station 1, Takahashi will take an outbound train.
+After departing from station 6, the train stops at stations 5, 4, 3, 2, 1 in order, which include station 3, so you should print Yes.
+
+Sample Input 2
+
+10 3 2 9
+
+Sample Output 2
+
+No
+
+Sample Input 3
+
+100 23 67 45
+
+Sample Output 3
+
+Yes
+
+Qwen2 Analysis:
+The problem presented can be categorized as a "Basic Algorithm" or "Simple Logic" problem given its straightforward nature.
+
+**Difficulty Level**: This problem is relatively simple and should not take too long to solve for an experienced programmer. However, beginners might struggle without proper guidance on how to approach it due to the lack of clear steps outlined in the question text itself.
+
+**Required Programming Skills**: The required skills include basic programming knowledge like loop usage (in this case, a simple `for` loop might suffice), conditional statements (`if-else`, `switch-case` depending on language preference), and variable manipulation. Knowledge of arrays or similar data structures isn't necessary since the input size is small enough to handle without them.
+
+**Complexity**: The time complexity of solving this problem would be O(1) because no matter how big N is, you only need to determine if Z falls between X and Y. The space complexity would also be O(1), as you are using a fixed amount of memory to store variables regardless of the input size.
+
+**Approach Outline**:
+1. **Check Input**: Verify that `X`, `Y`, and `Z` fall within valid range `[1, N]` and they are distinct.
+2. **Determine Direction**: If `X < Y`, it means Takahashi wants to travel from station X to station Y using an outbound train. Conversely, if `X > Y`, he uses the inbound train.
+3. **Calculate Stops**: Based on whether traveling is inbound or outbound, calculate the stations through which trains pass between X and Y (excluding X and Y).
+4. **Check Station Z**: If Z falls within this calculated range of stations, print "Yes". Otherwise, print "No".
+
+Given these details, the problem primarily tests basic programming skills with no need for complex logic or advanced data structures. This aligns with its categorization as a "Basic Algorithm" problem suitable for beginners to intermediate programmers looking to reinforce their understanding of control flow and variable manipulation in code.

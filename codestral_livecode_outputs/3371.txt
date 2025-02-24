@@ -1,0 +1,25 @@
+Problem ID: 3371
+Problem Content:
+An integer divisible by the sum of its digits is said to be a Harshad number. You are given an integer x. Return the sum of the digits of x if x is a Harshad number, otherwise, return -1.
+ 
+Example 1:
+
+Input: x = 18
+Output: 9
+Explanation:
+The sum of digits of x is 9. 18 is divisible by 9. So 18 is a Harshad number and the answer is 9.
+
+Example 2:
+
+Input: x = 23
+Output: -1
+Explanation:
+The sum of digits of x is 5. 23 is not divisible by 5. So 23 is not a Harshad number and the answer is -1.
+
+ 
+Constraints:
+
+1 <= x <= 100
+
+Codestral Analysis:
+ The problem can be categorized as "Basic Algorithms" or "Mathematical Operations". It falls into a relatively easy category because it only requires basic mathematical operations and no advanced algorithms are needed to solve this. The problem is within the constraints of 1 <= x <= 100, which makes it feasible to solve using simple iteration over digits instead of complex number theory methods. This problem does not require any specific programming skills other than understanding of loops and basic arithmetic operations in a given programming language.

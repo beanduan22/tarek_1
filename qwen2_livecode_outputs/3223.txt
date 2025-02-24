@@ -1,0 +1,41 @@
+Problem ID: 3223
+Problem Content:
+You are given a string word and an integer k.
+A substring s of word is complete if:
+
+Each character in s occurs exactly k times.
+The difference between two adjacent characters is at most 2. That is, for any two adjacent characters c1 and c2 in s, the absolute difference in their positions in the alphabet is at most 2.
+
+Return the number of complete substrings of word.
+A substring is a non-empty contiguous sequence of characters in a string.
+ 
+Example 1:
+
+Input: word = "igigee", k = 2
+Output: 3
+Explanation: The complete substrings where each character appears exactly twice and the difference between adjacent characters is at most 2 are: igigee, igigee, igigee.
+
+Example 2:
+
+Input: word = "aaabbbccc", k = 3
+Output: 6
+Explanation: The complete substrings where each character appears exactly three times and the difference between adjacent characters is at most 2 are: aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc.
+
+ 
+Constraints:
+
+1 <= word.length <= 10^5
+word consists only of lowercase English letters.
+1 <= k <= word.length
+
+Qwen2 Analysis:
+Based on the description provided, this problem falls under the category of **Algorithms** with a focus on **String Processing**. The difficulty level is medium to high because it requires understanding of both character frequency (using hash maps) and string matching conditions (ensuring that adjacent characters have a difference at most 2).
+
+Required programming skills include:
+
+1. **Data Structures**: Use of hash maps or arrays to count occurrences of each character.
+2. **Sliding Window Technique**: To efficiently find substrings that meet the criteria by moving through the input string.
+
+The complexity is also medium-high, as it involves iterating through strings and maintaining frequency counts for characters while checking conditions within a window of size `k`. It could potentially be optimized using more advanced techniques like suffix arrays or tries for better performance in worst-case scenarios. However, these optimizations are not necessary for understanding the basic approach to solving this problem.
+
+Overall, this problem challenges one's ability to combine different algorithms (hash maps and sliding window) to solve a complex string manipulation task with constraints.

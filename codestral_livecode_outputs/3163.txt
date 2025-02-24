@@ -1,0 +1,50 @@
+Problem ID: 3163
+Problem Content:
+You are given a 0-indexed integer array nums.
+The distinct count of a subarray of nums is defined as:
+
+Let nums[i..j] be a subarray of nums consisting of all the indices from i to j such that 0 <= i <= j < nums.length. Then the number of distinct values in nums[i..j] is called the distinct count of nums[i..j].
+
+Return the sum of the squares of distinct counts of all subarrays of nums.
+A subarray is a contiguous non-empty sequence of elements within an array.
+ 
+Example 1:
+
+Input: nums = [1,2,1]
+Output: 15
+Explanation: Six possible subarrays are:
+[1]: 1 distinct value
+[2]: 1 distinct value
+[1]: 1 distinct value
+[1,2]: 2 distinct values
+[2,1]: 2 distinct values
+[1,2,1]: 2 distinct values
+The sum of the squares of the distinct counts in all subarrays is equal to 1^2 + 1^2 + 1^2 + 2^2 + 2^2 + 2^2 = 15.
+
+Example 2:
+
+Input: nums = [1,1]
+Output: 3
+Explanation: Three possible subarrays are:
+[1]: 1 distinct value
+[1]: 1 distinct value
+[1,1]: 1 distinct value
+The sum of the squares of the distinct counts in all subarrays is equal to 1^2 + 1^2 + 1^2 = 3.
+ 
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100
+
+Codestral Analysis:
+ The given problem is a dynamic programming and sliding window problem with some combinatorics involved. It falls under the Medium level of difficulty due to its complexity, but it doesn't require any advanced programming concepts or techniques.
+
+    In this problem, we are given an array of integers. We need to calculate the sum of squares of distinct counts of all subarrays in this array. To solve this, we first initialize two arrays 'left', 'right' with the same size as the input array and set all elements to -1.
+
+    Then we use a nested loop structure to iterate through each element in the array, keeping track of the last seen position of each element using a hash map 'last_seen'. We then calculate the left and right boundaries for each subarray that ends at this index, which can be used to determine the distinct count.
+
+    After that, we iterate over each subarray based on its length (from 1 to nums.length), and calculate all possible combinations of it using combinatorics formula. For each combination, we find its contribution to the result and add it to our answer. We square the number of distinct values in a subarray because that's what the problem statement asks for.
+
+    This solution has an overall time complexity of O(N^2) due to nested loops and a space complexity of O(N) because we store information about each element in 'last_seen'. The main challenge is understanding how to calculate the contributions of all subarrays ending at a particular index, and how to use combinatorics to count combinations.
+
+    To solve this problem, we will need good knowledge of dynamic programming concepts (specifically prefix sums), array manipulation, hash maps for tracking last seen positions, and combinatorics for counting combinations. It's not a difficult problem but it requires a solid understanding of these concepts to be solved efficiently.

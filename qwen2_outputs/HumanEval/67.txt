@@ -1,0 +1,10 @@
+The problem can be categorized as Easy to Medium in terms of difficulty.
+
+Skills Required:
+1. Basic understanding of Python language: It involves string manipulation (splitting strings), arithmetic operations, and variable assignments.
+2. Problem-solving ability: The ability to understand the relationship between fruits' quantity mentioned in a sentence and perform calculations based on that.
+
+Problem Complexity:
+The problem is linear and straightforward once you have identified what needs to be calculated. There are no nested loops or recursive functions involved. It requires basic programming concepts, so it wouldn't be considered too complex for an introductory level course.
+
+In summary, this problem tests the ability of a programmer in understanding string data types, arithmetic operations, and applying basic mathematical calculations based on logical interpretation from input text. The problem doesn't involve any advanced algorithms or data structures, making it suitable for beginners or those brushing up on their coding skills.

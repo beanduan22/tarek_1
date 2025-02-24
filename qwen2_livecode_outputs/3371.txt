@@ -1,0 +1,44 @@
+Problem ID: 3371
+Problem Content:
+An integer divisible by the sum of its digits is said to be a Harshad number. You are given an integer x. Return the sum of the digits of x if x is a Harshad number, otherwise, return -1.
+ 
+Example 1:
+
+Input: x = 18
+Output: 9
+Explanation:
+The sum of digits of x is 9. 18 is divisible by 9. So 18 is a Harshad number and the answer is 9.
+
+Example 2:
+
+Input: x = 23
+Output: -1
+Explanation:
+The sum of digits of x is 5. 23 is not divisible by 5. So 23 is not a Harshad number and the answer is -1.
+
+ 
+Constraints:
+
+1 <= x <= 100
+
+Qwen2 Analysis:
+Based on the description provided and considering factors such as difficulty, required programming skills, and computational complexity, this problem can be categorized as follows:
+
+**Difficulty Level**: Medium to Hard
+
+- **Required Programming Skills**: Basic understanding of arithmetic operations (addition/subtraction), loops for iterating over numbers, conditional statements (if/else) for making decisions based on specific conditions.
+  
+- **Complexity**: The time complexity is linear (`O(n)`), where `n` represents the number of digits in the given integer. This involves basic operations like summing up individual digits, checking if it divides evenly into the original number.
+
+This problem requires familiarity with arithmetic operations and conditional logic, but doesn't involve advanced concepts or complex algorithms that would typically elevate its difficulty to high levels (like recursion, dynamic programming, graph theory etc.). It's more focused on applying straightforward computational skills which are part of basic algorithmic knowledge. Therefore, it falls into the medium-to-hard difficulty category based on these criteria.
+
+**Solution Approach**: 
+To solve this problem, you'd need to:
+1. Take an integer `x` as input.
+2. Sum up its digits (which involves converting each digit from the number to an individual value).
+3. Check if `x` is divisible by this sum of its digits.
+4. If yes, return the sum; else, return -1.
+
+This approach uses simple arithmetic operations and logical checks which are fundamental skills in programming. The solution would likely involve loops for iterating over each digit (through division/multiplication) and conditionals to check divisibility.
+
+Let me know if you need a code snippet or more insights on how the solution might look like!

@@ -1,0 +1,47 @@
+Problem ID: 3252
+Problem Content:
+You are given a 0-indexed array of positive integers nums.
+A subarray of nums is called incremovable if nums becomes strictly increasing on removing the subarray. For example, the subarray [3, 4] is an incremovable subarray of [5, 3, 4, 6, 7] because removing this subarray changes the array [5, 3, 4, 6, 7] to [5, 6, 7] which is strictly increasing.
+Return the total number of incremovable subarrays of nums.
+Note that an empty array is considered strictly increasing.
+A subarray is a contiguous non-empty sequence of elements within an array.
+ 
+Example 1:
+
+Input: nums = [1,2,3,4]
+Output: 10
+Explanation: The 10 incremovable subarrays are: [1], [2], [3], [4], [1,2], [2,3], [3,4], [1,2,3], [2,3,4], and [1,2,3,4], because on removing any one of these subarrays nums becomes strictly increasing. Note that you cannot select an empty subarray.
+
+Example 2:
+
+Input: nums = [6,5,7,8]
+Output: 7
+Explanation: The 7 incremovable subarrays are: [5], [6], [5,7], [6,5], [5,7,8], [6,5,7] and [6,5,7,8].
+It can be shown that there are only 7 incremovable subarrays in nums.
+
+Example 3:
+
+Input: nums = [8,7,6,6]
+Output: 3
+Explanation: The 3 incremovable subarrays are: [8,7,6], [7,6,6], and [8,7,6,6]. Note that [8,7] is not an incremovable subarray because after removing [8,7] nums becomes [6,6], which is sorted in ascending order but not strictly increasing.
+
+ 
+Constraints:
+
+1 <= nums.length <= 50
+1 <= nums[i] <= 50
+
+Codestral Analysis:
+ This is a medium-level programming problem that falls under the category of Arrays and Dynamic Programming. The problem requires understanding of subarrays, array manipulation, and dynamic programming concepts to solve it optimally. Since there's no explicit sorting or searching involved in this problem, it doesn't belong to those categories.
+
+    To analyze the problem:
+    1. We are given an array of positive integers.
+    2. The task is to find all the subarrays which when removed from the original array make the resulting array strictly increasing.
+    3. These subarrays should not be empty.
+    4. The array length can vary from 1 to 50, and each element of the array is within a range from 1 to 50.
+
+    Since we are dealing with subarrays, it's clear that this problem requires some form of iteration over the array or its elements. Given the constraints on the size of the input and the range of the numbers, it can be solved using dynamic programming in a reasonable time frame. However, it might also be possible to solve it using simpler methods but that could result in less efficient solutions.
+
+    In terms of complexity, the problem is likely to have at least O(n^2) complexity because we need to check every possible subarray and removing each subarray could potentially require us to iterate over the remaining array once. However, with dynamic programming techniques, it's possible to reduce this time complexity significantly.
+
+    In conclusion, based on the problem statement, analysis, and our understanding of related concepts, we can categorize this problem as a medium-level problem that requires array manipulation skills and knowledge of dynamic programming for optimal solutions.

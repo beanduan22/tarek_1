@@ -1,0 +1,5 @@
+ Category: Basic Problem
+
+   The problem can be categorized as a basic level problem due to several reasons. Firstly, it involves the implementation of logical conditions that check for date validity according to specific rules. This is relatively straightforward and does not involve complex mathematical operations or data structures. Additionally, string manipulation techniques are used which are commonly taught in introductory programming courses. The complexity of this problem can be considered low since all checks can be done using simple if-else statements without any need for loops or recursion.
+
+   Regarding the required programming skills, a good understanding of conditional statements and string manipulation is necessary to solve this problem. The required skills also include the ability to break down complex problems into smaller steps, which is essential for structuring the solution. This suggests that this problem can be solved by beginners or intermediate-level programmers.

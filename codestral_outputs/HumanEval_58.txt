@@ -1,0 +1,5 @@
+ The problem falls under the category of "Easy" in terms of difficulty, as it only requires implementing a simple function to find common elements between two lists. No advanced data structures or algorithms are needed for solving this problem.
+
+   Required programming skills include basic understanding of list manipulation and operations in Python. This problem primarily tests the ability to work with lists and perform set operations such as intersection in Python. It also involves sorting, but since the input is not large, a simple sorting method like the built-in "sorted()" function will suffice.
+
+   In terms of complexity, this function has a time complexity of O(n log n) due to the sorting operation and a space complexity of O(n), where n is the length of the longer list. This makes it an efficient solution for moderate-sized lists.

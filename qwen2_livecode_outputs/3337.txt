@@ -1,0 +1,35 @@
+Problem ID: 3337
+Problem Content:
+You are given a string s and a character c. Return the total number of substrings of s that start and end with c.
+ 
+Example 1:
+
+Input: s = "abada", c = "a"
+Output: 6
+Explanation: Substrings starting and ending with "a" are: "abada", "abada", "abada", "abada", "abada", "abada".
+
+Example 2:
+
+Input: s = "zzz", c = "z"
+Output: 6
+Explanation: There are a total of 6 substrings in s and all start and end with "z".
+
+ 
+Constraints:
+
+1 <= s.length <= 10^5
+s and c consist only of lowercase English letters.
+
+Qwen2 Analysis:
+Based on the description provided for this problem - its difficulty level is relatively low to medium. This problem requires basic understanding of strings and loops in a programming language. No complex algorithms or data structures are needed.
+
+The key skills required:
+1. **Understanding of Strings**: Being able to manipulate strings, access substrings, and iterate over them.
+2. **Looping Constructs**: For iterating through the string and analyzing each substring.
+3. **Basic Algorithmic Thinking**: Counting conditions where specified criteria (in this case starting and ending with a specific character) are met.
+
+In terms of complexity:
+- Time Complexity: Since we're iterating over all substrings, the time complexity is O(n^2), where n is the length of the string s.
+- Space Complexity: The space required for storing the substring doesn't count towards significant space usage since we're not considering any auxiliary data structures that grow with input size. Thus, it can be considered as constant or O(1).
+
+Therefore, this problem falls under **Beginner to Intermediate** category in terms of programming skills needed and complexity level. It's suitable for those learning fundamental concepts related to string manipulation and basic algorithms in a programming context.

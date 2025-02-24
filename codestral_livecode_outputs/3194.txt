@@ -1,0 +1,42 @@
+Problem ID: 3194
+Problem Content:
+You are given a 0-indexed array of strings words and a character x.
+Return an array of indices representing the words that contain the character x.
+Note that the returned array may be in any order.
+ 
+Example 1:
+
+Input: words = ["leet","code"], x = "e"
+Output: [0,1]
+Explanation: "e" occurs in both words: "leet", and "code". Hence, we return indices 0 and 1.
+
+Example 2:
+
+Input: words = ["abc","bcd","aaaa","cbc"], x = "a"
+Output: [0,2]
+Explanation: "a" occurs in "abc", and "aaaa". Hence, we return indices 0 and 2.
+
+Example 3:
+
+Input: words = ["abc","bcd","aaaa","cbc"], x = "z"
+Output: []
+Explanation: "z" does not occur in any of the words. Hence, we return an empty array.
+
+ 
+Constraints:
+
+1 <= words.length <= 50
+1 <= words[i].length <= 50
+x is a lowercase English letter.
+words[i] consists only of lowercase English letters.
+
+Codestral Analysis:
+ The problem category for this task would be considered as 'Easy' or 'Beginner'. The reason being that it involves iterating over a list of strings, checking each string for the presence of a given character, and returning the indices of those strings where the character is found. This doesn't involve complex data structures or algorithms typically used in higher difficulty level problems. Furthermore, the constraints provided in the problem suggest that the size of input would be relatively small which makes the task even more manageable. The required programming skills for solving this problem include basic looping constructs and string manipulation.
+
+    To solve the problem, we can use a simple approach involving list comprehension or a traditional loop:
+    1. Initialize an empty list to store the indices of the strings containing the character x.
+    2. Iterate over each word in the given array.
+    3. For each word, check if it contains the character x. If yes, then add its index to the resultant list.
+    4. Finally return the resultant list.
+
+    This algorithm will have a time complexity of O(n*m), where n is the length of words array and m is the maximum length of any word in the array. It's because for each word, we are checking if it contains the character x which takes O(m) time and we are doing this for all n words. Thus, the overall time complexity will be O(n*m). The space complexity would be O(k), where k is the number of words containing the character x. In the worst case, k can be equal to n if all words contain the character x.

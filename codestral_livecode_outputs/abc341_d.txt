@@ -1,0 +1,65 @@
+Problem ID: abc341_d
+Problem Content:
+You are given three positive integers N, M, and K. Here, N and M are different.
+Print the K-th smallest positive integer divisible by exactly one of N and M.
+
+Input
+
+The input is given from Standard Input in the following format:
+N M K
+
+Output
+
+Print the K-th smallest positive integer divisible by exactly one of N and M.
+
+Constraints
+
+
+- 1 \leq N, M \leq 10^8
+- 1 \leq K \leq 10^{10}
+- N \neq M
+- N, M, and K are integers.
+
+Sample Input 1
+
+2 3 5
+
+Sample Output 1
+
+9
+
+The positive integers divisible by exactly one of 2 and 3 are 2, 3, 4, 8, 9, 10, \ldots in ascending order.
+Note that 6 is not included because it is divisible by both 2 and 3.
+The fifth smallest positive integer that satisfies the condition is 9, so we print 9.
+
+Sample Input 2
+
+1 2 3
+
+Sample Output 2
+
+5
+
+The numbers that satisfy the condition are 1, 3, 5, 7, \ldots in ascending order.
+
+Sample Input 3
+
+100000000 99999999 10000000000
+
+Sample Output 3
+
+500000002500000000
+
+Codestral Analysis:
+ Based on the given information, I'll analyze the problem as follows:
+
+1. Problem Category: Mathematics, Number Theory
+2. Difficulty Level: Medium to Hard
+3. Required Skills: Understanding of number theory concepts such as least common multiple (LCM), greatest common divisor (GCD), and knowledge on modular arithmetic. The problem also requires implementation skills in a programming language.
+4. Complexity: The main challenge lies in efficiently finding the K-th smallest positive integer divisible by exactly one of N and M, which can be solved using a mathematical approach with optimization techniques for handling large numbers.
+
+In this problem, we are asked to find the K-th smallest positive integer that is divisible by either N or M, but not both. A key observation here is that since N and M are co-prime (i.e., their greatest common divisor is 1), every number can be classified into one of three categories: numbers divisible by only N, numbers divisible by only M, and numbers divisible by both N and M. We need to find the K-th number in the first category. To do this efficiently, we can use the principle of inclusion-exclusion to count how many such numbers exist up to a certain limit, then use binary search to find the exact position of the K-th number within that limit.
+
+However, a direct implementation of this approach may still result in time complexity issues due to large inputs (N and M can be up to 10^8). To optimize the solution further, we can leverage the properties of modular arithmetic and number theory to perform the calculations more efficiently. This might involve reducing the problem size by factoring N and M into their prime factors, then using those factors to calculate the counts and positions of the numbers in each category.
+
+In conclusion, I would classify this as a moderately difficult mathematical problem that requires knowledge of number theory concepts and implementation skills. The complexity lies in efficiently finding the K-th smallest positive integer divisible by exactly one of N and M, which can be optimized using mathematical techniques such as modular arithmetic and prime factorization.

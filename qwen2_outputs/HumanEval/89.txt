@@ -1,0 +1,38 @@
+This programming problem falls into the category of "Easy". The reason for this categorization is threefold:
+
+1. **Difficulty Level**: The requirement to encrypt a string by rotating the alphabet is relatively straightforward. There's no deep algorithmic or complex logic involved; it primarily tests basic knowledge in strings manipulation and modular arithmetic.
+
+2. **Required Programming Skills**:
+   - **Understanding of Strings**: Knowledge on how to handle characters, indices, slicing, concatenation etc.
+   - **Modular Arithmetic**: To rotate the alphabet by a certain number (in this case 4 positions), understanding of modulus operation (%) is needed to wrap around the alphabet.
+
+3. **Complexity**:
+   - The problem description and examples are clear and easily understandable.
+   - There's no need for recursion, complex condition checks, or nested data structures, making it manageable even for beginners.
+
+To solve this problem:
+
+```python
+def encrypt(s):
+    result = ""
+    for char in s:
+        if 'a' <= char <= 'z':
+            # Shift character by 4 positions (downwards)
+            shifted_char = chr(((ord(char) - ord('a') + 2 * 2) % 26) + ord('a'))
+            result += shifted_char
+        elif 'A' <= char <= 'Z':
+            # For uppercase letters, the same logic applies with ASCII values
+            shifted_char = chr(((ord(char) - ord('A') + 2 * 2) % 26) + ord('A'))
+            result += shifted_char
+        else:
+            result += char  # Non-alphabetic characters are added as is
+    return result
+
+# Test the function with provided data points
+print(encrypt('hi'))  # Output: 'lm'
+print(encrypt('asdfghjkl'))  # Output: 'ewhjklnop'
+print(encrypt('gf'))  # Output: 'kj'
+print(encrypt('et'))  # Output: 'ix'
+```
+
+This solution demonstrates a clear and concise way to achieve the desired encryption, handling both lowercase and uppercase alphabetic characters separately for consistency.

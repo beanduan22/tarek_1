@@ -1,0 +1,9 @@
+ This problem can be categorized as a Medium-level problem. Here's why:
+
+Difficulty: The logic involved is not complex but the implementation might require some thought process and understanding of data structures.
+
+Required Programming Skills: Basic knowledge of programming language, specifically lists or arrays, loops, conditional statements, and dictionary/hashmap usage for counting frequencies.
+
+Complexity: In terms of complexity, it's O(n), where n is the size of the input list. This is because we have to iterate over the list once to count the frequencies of each integer in the list, which takes O(n) time. Then we iterate through the frequency dictionary, which also takes O(n) time since there can be up to n unique integers. So overall, it's a linear time complexity algorithm.
+
+In conclusion, this problem could be solved by a programmer with basic knowledge of programming and data structures. It doesn't require advanced algorithms or concepts but requires the understanding of how to use these concepts correctly in context. Therefore, I would categorize it as Medium-level.

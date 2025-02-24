@@ -1,0 +1,48 @@
+Problem ID: 2867
+Problem Content:
+You are given a binary array nums.
+A subarray of an array is good if it contains exactly one element with the value 1.
+Return an integer denoting the number of ways to split the array nums into good subarrays. As the number may be too large, return it modulo 10^9 + 7.
+A subarray is a contiguous non-empty sequence of elements within an array.
+ 
+Example 1:
+
+Input: nums = [0,1,0,0,1]
+Output: 3
+Explanation: There are 3 ways to split nums into good subarrays:
+- [0,1] [0,0,1]
+- [0,1,0] [0,1]
+- [0,1,0,0] [1]
+
+Example 2:
+
+Input: nums = [0,1,0]
+Output: 1
+Explanation: There is 1 way to split nums into good subarrays:
+- [0,1,0]
+
+ 
+Constraints:
+
+1 <= nums.length <= 10^5
+0 <= nums[i] <= 1
+
+Qwen2 Analysis:
+Based on the description provided, this programming problem can be categorized as follows:
+
+**Difficulty:** Medium to Hard
+
+- **Explanation:** The problem requires understanding of array manipulation and potentially dealing with large data sets given the constraints (array length up to 10^5). It also involves efficient counting techniques, which is not a trivial task.
+
+**Required Programming Skills:**
+
+- **Array Processing:** Candidates need to be comfortable reading and manipulating arrays.
+- **Counting Techniques:** They should understand how to efficiently count occurrences of specific conditions within the array (in this case, finding subarrays with exactly one `1`).
+- **Modulo Arithmetic:** Since the output needs to be computed modulo 10^9 + 7, candidates should be familiar with handling large numbers and performing operations under modular arithmetic.
+  
+**Complexity:**
+
+- **Time Complexity:** The problem involves iterating through the array, which typically leads to O(n) complexity. However, because of the need for efficient counting techniques (not trivially done in one pass), there might involve additional optimizations or data structures that could influence the time complexity.
+- **Space Complexity:** Since this is a space-constrained operation on an existing array with no significant need for additional large data structures, the space complexity can be considered as O(1) if we ignore the storage of the output count.
+
+This problem leans towards requiring a solid understanding and application of algorithmic concepts such as counting techniques in combination with managing large numbers under specific constraints. It would likely involve writing clean code that efficiently handles these requirements without unnecessary computational overhead.

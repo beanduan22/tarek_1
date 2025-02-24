@@ -1,0 +1,8 @@
+ This problem can be categorized as a medium-level problem in terms of difficulty. It requires knowledge of array manipulation, iteration, and conditional statements in Python. The complexity lies in managing the state of the wells and the bucket while iterating through them efficiently. This is more of an algorithmic problem than a data structures or mathematics problem.
+
+   Specifically, to solve this problem:
+   1. We need to iterate over each column (day) of the grid.
+   2. For each column, we count the number of wells that have water on that day. This is the number of times we'll have to lower the bucket that day.
+   3. After counting, we subtract the capacity from the wells' water level (or set it to 0 if less than capacity), simulating the action of emptying the buckets.
+   4. We repeat this process for all columns until no more water is left in any well.
+   5. The total number of times we lowered the bucket is our answer.

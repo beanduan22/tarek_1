@@ -1,0 +1,5 @@
+ The problem can be categorized as a "Beginner" level problem. It is suitable for individuals who are new to programming or have limited experience in Python specifically. This problem only requires basic knowledge of list manipulation and looping constructs.
+
+   The difficulty lies mainly in understanding the problem statement, which might seem confusing at first because it asks to insert an element between each pair of elements in a given list. Once this is understood, the solution involves using a simple for loop or a list comprehension to iterate over the input list and create a new list with the delimiter inserted as required.
+
+   The complexity of the problem can be described as linear O(n) because in the worst-case scenario, we have to traverse the entire list once. There are no nested loops or recursive calls involved which could increase the time complexity.

@@ -1,0 +1,67 @@
+Problem ID: abc336_b
+Problem Content:
+For a positive integer X, let \text{ctz}(X) be the (maximal) number of consecutive zeros at the end of the binary notation of X.
+If the binary notation of X ends with a 1, then \text{ctz}(X)=0.
+You are given a positive integer N. Print \text{ctz}(N).
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+
+Output
+
+Print \text{ctz}(N).
+
+Constraints
+
+
+- 1\leq N\leq 10^9
+- N is an integer.
+
+Sample Input 1
+
+2024
+
+Sample Output 1
+
+3
+
+2024 is 11111101000 in binary, with three consecutive 0s from the end, so \text{ctz}(2024)=3.
+Thus, print 3.
+
+Sample Input 2
+
+18
+
+Sample Output 2
+
+1
+
+18 is 10010 in binary, so \text{ctz}(18)=1.
+Note that we count the trailing zeros.
+
+Sample Input 3
+
+5
+
+Sample Output 3
+
+0
+
+Codestral Analysis:
+ Category: Basic Mathematics and Bitwise Operations
+
+    Difficulty Level: Easy
+
+    Required Programming Skills: Understanding of binary representation of numbers, bitwise operations and loops.
+
+    Explanation: The problem is about finding the number of consecutive zeros at the end of a positive integer's binary representation. To solve this problem, we need to iteratively divide the number by 2 until we get a remainder that is not zero (which would indicate a 1 in the binary representation). We can keep track of how many times we divided by 2 without getting a remainder to find our answer.
+
+    Complexity: The time complexity for this problem is O(log N) because in each iteration, we're effectively halving the size of the number we're working with until it becomes zero or non-zero. The space complexity is O(1) as we're using a constant amount of space to store our input and output values.
+
+    Solution Steps:
+    1. Take the positive integer N as input.
+    2. Initialize a counter variable to keep track of the number of consecutive zeros at the end of N's binary representation.
+    3. While N is divisible by 2 (i.e., the remainder when divided by 2 is zero), divide N by 2 and increment the counter.
+    4. Print the value of the counter as output.

@@ -1,0 +1,14 @@
+Based on the description provided:
+
+- **Difficulty**: Medium to High. This problem involves knowledge of algorithms (primarily for finding Fibonacci numbers) as well as number theory concepts like primality testing.
+
+- **Required Programming Skills**:
+   - Understanding of Python programming language.
+   - Familiarity with basic algorithms, specifically the Fibonacci sequence generation and looping constructs.
+   - Ability to implement functions that can check whether a given number is prime or not. This typically involves knowledge on how to do this efficiently (e.g., using trial division method).
+
+- **Complexity**: The solution requires generating Fibonacci numbers up to the nth position where n-th Fibonacci number is also prime. So, it's more complex than just finding the Fibonacci sequence because there is an additional condition of checking if a number in the sequence is prime.
+
+**Category Prediction**: This problem would fall under the category of "Intermediate Algorithmic Problem" since it combines fundamental concepts (like loops and arrays) with intermediate level complexity by requiring understanding of another concept (primality testing). It also touches upon mathematical sequences which can add an extra layer of complexity depending on how one implements the solution.
+
+Please note that difficulty perception may vary based on individual's programming background and skills, but in general, this problem is suitable for someone who has already mastered basic concepts like loops, conditionals, functions in Python and wants to dive deeper into algorithmic problems involving mathematical concepts.

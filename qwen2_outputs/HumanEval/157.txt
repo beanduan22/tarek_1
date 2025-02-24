@@ -1,0 +1,17 @@
+The given programming problem can be categorized as follows:
+
+**Difficulty Level**: Easy
+
+- **Required Programming Skills**: Basic understanding of arithmetic operations (addition, comparison), familiarity with conditional statements (if-else), and knowledge of function definitions in Python.
+
+- **Complexity**: Low
+
+This problem doesn't involve complex data structures or advanced algorithms. It simply checks if the given lengths form a right angle triangle using the Pythagorean theorem. The logic is straightforward and can be solved using basic mathematical concepts.
+
+To solve this problem:
+
+1. Sort the sides of the triangle in ascending order.
+2. Check if the square of the longest side is equal to the sum of squares of other two sides.
+3. Return True or False based on the result of the check.
+
+This approach ensures that we are only checking the condition for a right-angled triangle using the theorem \(a^2 + b^2 = c^2\), where 'c' is the longest side.

@@ -1,0 +1,15 @@
+The problem can be categorized as Easy to Medium in terms of difficulty level depending on familiarity with string manipulation and list operations in a given programming language.
+
+Required Skills:
+
+1. String manipulation: The candidate needs to understand how to extract words from a sentence by splitting it based on spaces.
+2. Counting characters: They need to know how to iterate over the letters of each word, filter consonants, and count them using a conditional check.
+3. Filtering arrays: Finally, they should be capable of filtering the list of words based on specific conditions (in this case, having exactly `n` consonants).
+
+Problem Complexity:
+
+The problem complexity is moderate due to multiple levels of iteration and conditionals required for solving it. It involves extracting data from a string in one step (splitting by spaces), processing each word individually (consonant counting and comparison with the input parameter `n`), and then deciding whether to include that word in the output based on these calculations.
+
+To solve this problem, you could start by splitting the given string into words using the space character as a delimiter. Then iterate over each word, count its consonants by checking if characters are not vowels (A, E, I, O, U), and finally filter the words that have exactly `n` consonants. These steps require basic knowledge of loops, conditional statements, string manipulation functions, and list comprehension in programming.
+
+Overall, this problem tests your understanding of fundamental programming concepts like iteration over collections, logical conditionals, and filtering data based on specific criteria, which are essential skills for any beginner programmer looking to improve their coding abilities.

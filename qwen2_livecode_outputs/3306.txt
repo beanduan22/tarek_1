@@ -1,0 +1,68 @@
+Problem ID: 3306
+Problem Content:
+You are given a 0-indexed array nums of size n consisting of positive integers.
+You are also given a 2D array queries of size m where queries[i] = [index_i, k_i].
+Initially all elements of the array are unmarked.
+You need to apply m queries on the array in order, where on the i^th query you do the following:
+
+Mark the element at index index_i if it is not already marked.
+Then mark k_i unmarked elements in the array with the smallest values. If multiple such elements exist, mark the ones with the smallest indices. And if less than k_i unmarked elements exist, then mark all of them.
+
+Return an array answer of size m where answer[i] is the sum of unmarked elements in the array after the i^th query.
+ 
+Example 1:
+
+Input: nums = [1,2,2,1,2,3,1], queries = [[1,2],[3,3],[4,2]]
+Output: [8,3,0]
+Explanation:
+We do the following queries on the array:
+
+Mark the element at index 1, and 2 of the smallest unmarked elements with the smallest indices if they exist, the marked elements now are nums = [1,2,2,1,2,3,1]. The sum of unmarked elements is 2 + 2 + 3 + 1 = 8.
+Mark the element at index 3, since it is already marked we skip it. Then we mark 3 of the smallest unmarked elements with the smallest indices, the marked elements now are nums = [1,2,2,1,2,3,1]. The sum of unmarked elements is 3.
+Mark the element at index 4, since it is already marked we skip it. Then we mark 2 of the smallest unmarked elements with the smallest indices if they exist, the marked elements now are nums = [1,2,2,1,2,3,1]. The sum of unmarked elements is 0.
+
+
+Example 2:
+
+Input: nums = [1,4,2,3], queries = [[0,1]]
+Output: [7]
+Explanation:  We do one query which is mark the element at index 0 and mark the smallest element among unmarked elements. The marked elements will be nums = [1,4,2,3], and the sum of unmarked elements is 4 + 3 = 7.
+
+ 
+Constraints:
+
+n == nums.length
+m == queries.length
+1 <= m <= n <= 10^5
+1 <= nums[i] <= 10^5
+queries[i].length == 2
+0 <= index_i, k_i <= n - 1
+
+Qwen2 Analysis:
+Based on the provided details of this problem, it can be categorized as follows:
+
+### Difficulty Level: Medium to High 
+
+- **Reasoning:** The solution involves both array manipulation (marking elements) and heap/ priority queue usage to select the minimum elements efficiently. This level requires a good understanding of data structures and their applications in solving problems.
+
+### Required Programming Skills: 
+1. **Array Handling:** You need skills to manage an array, including insertion, deletion, and traversal.
+2. **Data Structures:** Knowledge of priority queues or heaps is crucial as they allow for efficient selection of minimum elements under constraints.
+3. **Algorithmic Thinking:** The problem requires careful consideration of the order in which operations are performed (i.e., marking elements based on queries).
+
+### Problem Complexity:
+1. **Input Size:** The number of operations (`queries.length`) can be quite large (up to 10^5), implying that the solution needs efficient handling of data without exceeding time limits.
+2. **Data Constraints:** Operations involve both marking and unmarking elements, which could potentially affect subsequent queries if not managed carefully.
+
+### Category: Algorithms - Array Manipulation and Data Structures
+
+Given these factors, this problem falls under the category of algorithms that require a combination of array manipulation skills and effective use of data structures like priority queues. It's suitable for candidates who have experience with algorithmic challenges but may be looking to deepen their understanding of specific techniques in managing arrays and implementing efficient data structure usage.
+
+### Note on Implementation:
+
+To solve this problem efficiently, you might consider:
+- Using a separate boolean array or hash set to track marked elements.
+- Utilizing a min heap to keep track of unmarked minimum elements for the query operation.
+- Iterating through queries in reverse order if possible can optimize marking since later queries are dependent on previous operations.
+
+This categorization helps identify that the problem is challenging, requiring careful consideration of data structures and their efficient implementation to handle large input sizes.

@@ -1,0 +1,29 @@
+Problem ID: 3199
+Problem Content:
+You are given two positive integers n and limit.
+Return the total number of ways to distribute n candies among 3 children such that no child gets more than limit candies.
+ 
+Example 1:
+
+Input: n = 5, limit = 2
+Output: 3
+Explanation: There are 3 ways to distribute 5 candies such that no child gets more than 2 candies: (1, 2, 2), (2, 1, 2) and (2, 2, 1).
+
+Example 2:
+
+Input: n = 3, limit = 3
+Output: 10
+Explanation: There are 10 ways to distribute 3 candies such that no child gets more than 3 candies: (0, 0, 3), (0, 1, 2), (0, 2, 1), (0, 3, 0), (1, 0, 2), (1, 1, 1), (1, 2, 0), (2, 0, 1), (2, 1, 0) and (3, 0, 0).
+
+ 
+Constraints:
+
+1 <= n <= 50
+1 <= limit <= 50
+
+Codestral Analysis:
+ This is a combination problem that can be solved using dynamic programming or math principles. The problem can be classified as 'Medium' in terms of difficulty level, but it could be easier for people who are comfortable with combination mathematics and have some knowledge about three-dimensional arrays. It requires good understanding of loops, conditionals, and array manipulation skills in a programming language like Python or Java.
+
+In general, to solve this problem we will use nested loops to iterate through all possible distributions of candies for each child. We will maintain a count of valid distributions which are within the limit of candies per child. This can be optimized using dynamic programming to store and reuse intermediate results. The overall time complexity could range from O(n^3) to less if we use a proper approach like dynamic programming or mathematical combinations calculation, and space complexity will be O(n).
+
+However, it's worth noting that this problem has a constraint where 1 <= n, limit <= 50. Due to the small input size, even a naive solution with a time complexity of O(n^3) might perform well enough within acceptable limits. Therefore, if we have no constraints on runtime or memory usage and simplicity is preferred over efficiency, a more straightforward approach could be chosen as well.

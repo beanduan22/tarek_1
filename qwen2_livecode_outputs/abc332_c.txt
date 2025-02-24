@@ -1,0 +1,109 @@
+Problem ID: abc332_c
+Problem Content:
+AtCoder Inc. sells T-shirts with its logo.
+You are given Takahashi's schedule for N days as a string S of length N consisting of 0, 1, and 2.
+Specifically, for an integer i satisfying 1\leq i\leq N,
+
+- if the i-th character of S is 0, he has no plan scheduled for the i-th day;
+- if the i-th character of S is 1, he plans to go out for a meal on the i-th day;
+- if the i-th character of S is 2, he plans to attend a competitive programming event on the i-th day.
+
+Takahashi has M plain T-shirts, all washed and ready to wear just before the first day.
+In addition, to be able to satisfy the following conditions, he will buy several AtCoder logo T-shirts.
+
+- On days he goes out for a meal, he will wear a plain or logo T-shirt.
+- On days he attends a competitive programming event, he will wear a logo T-shirt.
+- On days with no plans, he will not wear any T-shirts. Also, he will wash all T-shirts worn at that point. He can wear them again from the next day onwards.
+- Once he wears a T-shirt, he cannot wear it again until he washes it.
+
+Determine the minimum number of T-shirts he needs to buy to be able to wear appropriate T-shirts on all scheduled days during the N days. If he does not need to buy new T-shirts, print 0.
+Assume that the purchased T-shirts are also washed and ready to use just before the first day.
+
+Input
+
+The input is given from Standard Input in the following format:
+N M
+S
+
+Output
+
+Print the minimum number of T-shirts Takahashi needs to buy to be able to satisfy the conditions in the problem statement.
+If he does not need to buy new T-shirts, print 0.
+
+Constraints
+
+
+- 1\leq M\leq N\leq 1000
+- S is a string of length N consisting of 0, 1, and 2.
+- N and M are integers.
+
+Sample Input 1
+
+6 1
+112022
+
+Sample Output 1
+
+2
+
+If Takahashi buys two logo T-shirts, he can wear T-shirts as follows:
+
+- On the first day, he wears a logo T-shirt to go out for a meal.
+- On the second day, he wears a plain T-shirt to go out for a meal.
+- On the third day, he wears a logo T-shirt to attend a competitive programming event.
+- On the fourth day, he has no plans, so he washes all the worn T-shirts. This allows him to reuse the T-shirts worn on the first, second, and third days.
+- On the fifth day, he wears a logo T-shirt to attend a competitive programming event.
+- On the sixth day, he wears a logo T-shirt to attend a competitive programming event.
+
+If he buys one or fewer logo T-shirts, he cannot use T-shirts to meet the conditions no matter what. Hence, print 2.
+
+Sample Input 2
+
+3 1
+222
+
+Sample Output 2
+
+3
+
+Sample Input 3
+
+2 1
+01
+
+Sample Output 3
+
+0
+
+He does not need to buy new T-shirts.
+
+Qwen2 Analysis:
+The problem described can be categorized as a **Basic Algorithm - Dynamic Programming** type of question. Here's an analysis:
+
+1. **Difficulty Level**: This would fall into the medium to hard difficulty range due to the requirement for efficient space usage (dynamic programming) and logical reasoning based on conditions.
+
+2. **Required Programming Skills**:
+   - Understanding of basic programming constructs like loops, conditionals
+   - Proficiency in dynamic programming techniques, specifically focusing on state transition formulas
+   - Ability to reason through scenarios and derive optimal solutions based on constraints
+
+3. **Complexity**: The problem involves iterating over a string (N days) where actions depend on the value at each position. The logic relies on counting occurrences of specific events (`1` for meals, `2` for events), with dynamic programming used to determine if buying more shirts is necessary and how many are required.
+
+The solution likely requires keeping track of:
+- Current number of plain shirts (`M`)
+- Number of logo shirts needed (`logoShirtsNeeded`)
+- Number of days where a plain shirt could be reused (`plainReusables`)
+
+Key insight: 
+1. **At most**, `2` types of shirts are necessary for any day.
+2. The cost comes down to handling days with events specifically needing logo shirts.
+
+By analyzing the constraints and sample inputs, you understand that:
+- Dynamic programming is essential for considering scenarios based on previous states efficiently (e.g., what happens when a meal event occurs).
+- Careful management of shirt types needs to be addressed to ensure appropriate wear as per schedule requirements without exceeding shirt usage limits. 
+
+This problem encourages students to apply dynamic programming techniques in an interesting scenario-based context, focusing on logic and optimization rather than complex data structures or advanced algorithms.
+
+In summary, this question tests the ability to model a real-life scenario using algorithmic constructs efficiently and choose optimal actions based on state transitions and constraints given in the problem description. It is well-suited for students who have grasped basic programming concepts and are ready to apply them in slightly more complex scenarios that require strategic thinking and optimization techniques like dynamic programming.
+
+Therefore, it is placed within a higher difficulty bracket than simpler algorithmic problems while still being approachable with fundamental programming skills and a good understanding of basic data manipulation and control flow.

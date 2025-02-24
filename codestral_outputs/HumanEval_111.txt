@@ -1,0 +1,6 @@
+ This is a string manipulation problem with a bit of data analysis. The function 'histogram' takes a string as input and returns a dictionary as output where keys are unique letters from the string and values are their corresponding frequencies. The task requires finding the letter(s) that appear most frequently in the string.
+
+    Category: Intermediate to Advanced
+    Explanation: This problem tests your understanding of string manipulation, data structures (dictionaries), and data analysis. It requires iterating over a string, updating values in a dictionary, and finding maximum values in it. Although these tasks are not complex on their own, implementing them all correctly in one function can be challenging for beginners.
+
+    Skills required: Proficiency in programming language (Python), understanding of data structures (dictionaries), basic string manipulation skills, ability to analyze and solve problems logically, and familiarity with the problem domain.

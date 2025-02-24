@@ -1,0 +1,17 @@
+The given programming problem falls under the category of "Easy" in terms of difficulty. The problem requires understanding of basic string manipulation and handling of nested parentheses. This involves:
+
+1. **Handling Input**: Reading a string containing multiple groups of nested parentheses.
+
+2. **String Manipulation**: Identifying separate groups based on the balance of parentheses, which implies searching for matching opening and closing brackets.
+
+3. **Output Construction**: Constructing separate strings by extracting balanced groups from the input string.
+
+This problem primarily tests skills related to:
+
+- **Pattern Recognition**: Recognizing patterns in the input (nested parentheses) and understanding their structure.
+- **String Parsing**: Handling and parsing strings based on specific rules (like balancing of parentheses).
+- **Algorithmic Thinking**: Implementing a logic to separate groups while ensuring all groups are balanced.
+
+The required programming skills involve knowledge of basic string operations, conditional logic, iteration, and function definitions in Python. The complexity lies mainly in implementing the algorithm correctly to handle multiple nested groups without getting confused about their order or balance.
+
+In summary, this problem is suitable for beginners or those looking to practice basic string manipulation and simple parsing techniques using programming.

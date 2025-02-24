@@ -1,0 +1,12 @@
+The given problem falls under the category of "Intermediate" level. Here's why:
+
+Difficulty: The problem is not overly complex but requires understanding of basic mathematical operations like power (using `n`), modulo (`p % m`) operation, and dealing with large numbers through efficient algorithms.
+
+Required Programming Skills: The primary skills needed are:
+1. Basic knowledge of Python programming language.
+2. Understanding of arithmetic operations such as exponentiation and modulus.
+3. Ability to handle integer values effectively.
+
+Complexity: While the problem is not very complex, it requires an efficient approach for handling large numbers, which involves using modular exponentiation or other optimization techniques instead of directly calculating `2^n` and then taking modulo with `p`. This shows that the candidate should be familiar with at least basic optimization techniques in computing. 
+
+In summary, this problem tests the understanding and practical application of mathematical operations within a programming context, requiring both logical thinking and efficient coding practices to handle numerical computations effectively.

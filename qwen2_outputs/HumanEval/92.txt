@@ -1,0 +1,15 @@
+The problem falls under the category of "Easy" problems in terms of difficulty, as it requires basic understanding of arithmetic operations, conditional checks, and function implementation in a programming language.
+
+Required Programming Skills:
+
+1. Basic knowledge of arithmetic operations: Addition, subtraction, multiplication, division (though not used here).
+
+2. Conditional logic using 'if-else' statements to check conditions based on the input parameters.
+
+3. Function definition and usage.
+
+Complexity:
+
+The problem's complexity is minimal due to its straightforward nature. It involves simple checks for given conditions and does not require complex algorithms or data structures.
+
+In summary, this problem tests basic programming skills like function creation and conditional execution in a context involving arithmetic operations on integers.

@@ -1,0 +1,112 @@
+Problem ID: abc321_c
+Problem Content:
+A positive integer x is called a 321-like Number when it satisfies the following condition. This definition is the same as the one in Problem A.
+
+- The digits of x are strictly decreasing from top to bottom.
+- In other words, if x has d digits, it satisfies the following for every integer i such that 1 \le i < d:
+- (the i-th digit from the top of x) > (the (i+1)-th digit from the top of x).
+
+
+
+Note that all one-digit positive integers are 321-like Numbers.
+For example, 321, 96410, and 1 are 321-like Numbers, but 123, 2109, and 86411 are not.
+Find the K-th smallest 321-like Number.
+
+Input
+
+The input is given from Standard Input in the following format:
+K
+
+Output
+
+Print the K-th smallest 321-like Number as an integer.
+
+Constraints
+
+
+- All input values are integers.
+- 1 \le K
+- At least K 321-like Numbers exist.
+
+Sample Input 1
+
+15
+
+Sample Output 1
+
+32
+
+The 321-like Numbers are (1,2,3,4,5,6,7,8,9,10,20,21,30,31,32,40,\dots) from smallest to largest.
+The 15-th smallest of them is 32.
+
+Sample Input 2
+
+321
+
+Sample Output 2
+
+9610
+
+Sample Input 3
+
+777
+
+Sample Output 3
+
+983210
+
+Qwen2 Analysis:
+The problem described above involves generating a specific sequence of numbers known as "321-like Numbers", which are defined by certain properties related to digit ordering. Given an input `K`, the task is to find the K-th smallest number in this sequence.
+
+### Analysis:
+
+**Category Prediction:**
+
+- **Difficulty**: Moderate to High.
+  The problem combines concepts from combinatorics, algorithm design, and possibly dynamic programming or backtracking, making it moderately challenging for those familiar with these techniques but complex enough to test their implementation skills and ability to handle large inputs efficiently.
+
+- **Required Programming Skills**:
+  - **Number Manipulation**: Understanding how to manipulate digits is crucial.
+  - **Algorithm Design**: The solution requires devising an algorithm that can generate numbers in ascending order based on the problem's constraints.
+  - **Efficiency Optimization**: Given the potentially large input size (`K`), efficient algorithms are necessary.
+
+- **Complexity**:
+  - **Time Complexity**: Determining this would depend on the specific approach. A naive solution might be exponential, but a more optimized one could use dynamic programming with space complexity of `O(1)` and time complexity depending on how efficiently it generates numbers.
+  - **Space Complexity**: The optimization mentioned above implies constant space usage.
+
+### Detailed Solution Approach (High-Level Overview):
+
+1. **Initialization**: Start by initializing variables or data structures necessary for generating the sequence.
+
+2. **Dynamic Programming/Backtracking**:
+   - Use dynamic programming to generate and store intermediate results efficiently, avoiding recalculations.
+   - Implement a backtracking function that constructs numbers adhering to the problem's constraints (strictly decreasing digits).
+
+3. **Sequence Generation**:
+   - Begin with single-digit numbers (1-9) as they are inherently sorted in decreasing order.
+   - For each subsequent digit added, ensure it is smaller than all previously chosen digits but larger than at least one.
+
+4. **Tracking Progress**:
+   - Keep a count of generated valid numbers (`321-like Numbers`) until reaching `K`.
+   - Increment the counter for every new number that meets criteria and maintains its sorted order.
+
+5. **Output**: Once the K-th smallest number is found, return it as specified in the problem statement.
+
+### Example Implementation (Pseudo-Code):
+```
+function findKthNumber(K):
+    // Initialize count of generated numbers
+    let count = 0
+
+    for digit1 from 9 to 1:
+        for each possible continuation that maintains decreasing order:
+            for i = length(digitList) - 2 to 0 (backtracking):
+                if current number formed is valid and larger than previous K-1 numbers found:
+                    increment count
+                    if count == K:
+                        return current number
+
+    // If still not found, this should indicate some logic flaw or specific edge cases that need refinement in the implementation.
+```
+
+This solution leverages a combination of dynamic programming to optimize choices at each step and backtracking for exploring possible sequences while ensuring the sequence generation process adheres to the problem's constraints efficiently.

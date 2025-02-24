@@ -1,0 +1,12 @@
+ The problem is a function that calculates the derivative of a polynomial given its coefficients. Based on the provided information:
+
+1. Difficulty: Easy to Medium
+   - The problem requires understanding how derivatives work for polynomials. However, it doesn't involve any complex mathematical concepts or algorithms.
+
+2. Required Programming Skills: Beginner to Intermediate
+   - The programmer needs a good grasp on basic list manipulation and indexing in Python. Knowledge of the polynomial equation representation is helpful but not strictly necessary.
+
+3. Complexity: Linear
+   - The complexity of this problem is linear, as it only requires iterating over the list once to calculate each term's derivative.
+
+   Therefore, I would classify this problem as a Beginner-Intermediate level problem in Python programming with a focus on list manipulation and mathematical concepts.

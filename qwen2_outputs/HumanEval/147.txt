@@ -1,0 +1,18 @@
+The problem described above can be categorized as follows:
+
+**Difficulty Level**: Intermediate
+
+**Required Programming Skills**: 
+- Understanding of basic data structures like lists or arrays
+- Knowledge of arithmetic operations in programming languages (addition, multiplication)
+- Basic understanding of loops and iteration
+- Ability to apply mathematical concepts like finding square numbers and multiples 
+
+**Complexity**: The solution involves:
+1. Generating an array with a specific pattern based on the input `n`
+2. Iterating through the array elements to form triples `(a[i], a[j], a[k])` where `i < j < k`
+3. Checking if the sum of any such triple is divisible by 3
+
+The solution requires careful handling of index-based iteration and mathematical computations, but does not involve advanced data structures or complex algorithms like recursion, sorting, graph theory, etc. 
+
+Therefore, this problem can be considered to have an intermediate difficulty level that tests basic programming skills with a hint of math operations involved.

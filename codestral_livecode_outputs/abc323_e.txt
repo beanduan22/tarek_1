@@ -1,0 +1,82 @@
+Problem ID: abc323_e
+Problem Content:
+Takahashi has a playlist with N songs.
+Song i (1 \leq i \leq N) lasts T_i seconds.
+Takahashi has started random play of the playlist at time 0.
+Random play repeats the following: choose one song from the N songs with equal probability and play that song to the end.
+Here, songs are played continuously: once a song ends, the next chosen song starts immediately.
+The same song can be chosen consecutively.
+Find the probability that song 1 is being played (X + 0.5) seconds after time 0, modulo 998244353.
+
+How to print a probability modulo 998244353
+It can be proved that the probability to be found in this problem is always a rational number.
+Also, the constraints of this problem guarantee that when the probability to be found is expressed as an irreducible fraction \frac{y}{x}, x is not divisible by 998244353.
+Then, there is a unique integer z between 0 and 998244352, inclusive, such that xz \equiv y \pmod{998244353}. Report this z.
+
+Input
+
+The input is given from Standard Input in the following format:
+N X
+T_1 T_2 \ldots T_N
+
+Output
+
+Print the probability, modulo 998244353, that the first song in the playlist is being played (X+0.5) seconds after time 0.
+
+Constraints
+
+
+- 2 \leq N\leq 10^3
+- 0 \leq X\leq 10^4
+- 1 \leq T_i\leq 10^4
+- All input values are integers.
+
+Sample Input 1
+
+3 6
+3 5 6
+
+Sample Output 1
+
+369720131
+
+Song 1 will be playing 6.5 seconds after time 0 if songs are played in one of the following orders.
+
+- Song 1 \to Song 1 \to Song 1
+- Song 2 \to Song 1 
+- Song 3 \to Song 1 
+
+The probability that one of these occurs is \frac{7}{27}.
+We have 369720131\times 27\equiv 7 \pmod{998244353}, so you should print 369720131.
+
+Sample Input 2
+
+5 0
+1 2 1 2 1
+
+Sample Output 2
+
+598946612
+
+0.5 seconds after time 0, the first song to be played is still playing, so the sought probability is \frac{1}{5}.
+Note that different songs may have the same length.
+
+Sample Input 3
+
+5 10000
+1 2 3 4 5
+
+Sample Output 3
+
+586965467
+
+Codestral Analysis:
+ This problem is a dynamic programming problem with modular arithmetic. Takahashi has a playlist of N songs, each with varying lengths. He starts playing the playlist randomly at time 0, which means any song can be played next with equal probability. The task is to find the probability that the first song in the playlist is being played (X + 0.5) seconds after time 0, modulo 998244353.
+
+Difficulty: MEDIUM
+
+Skills Required: Dynamic Programming, Probability Theory, Modular Arithmetic
+
+Complexity Analysis: The problem involves a single loop that runs for X seconds and nested loops to iterate through all the songs in the playlist. This results in a time complexity of O(N*X). The space complexity is also O(N*X) due to the dynamic programming approach used to store the probabilities.
+
+Hence, this problem can be categorized as a MEDIUM-DIFFICULTY problem with a focus on Dynamic Programming and Modular Arithmetic skills.

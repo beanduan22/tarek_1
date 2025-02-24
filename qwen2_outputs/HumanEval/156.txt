@@ -1,0 +1,29 @@
+The given problem falls under the category of "Easy".
+
+**Difficulty:**
+
+1. The problem statement is clear and straightforward, requiring only basic understanding and familiarity with Python or any other programming language that supports string manipulation functions such as `replace()`.
+
+2. It involves mapping integers to their corresponding Roman numeral symbols and concatenating them in a specific order based on the value of the number provided. This process does not require complex algorithms or data structures.
+
+3. No advanced concepts like recursion, dynamic programming, or parallel computing are involved.
+
+**Required Programming Skills:**
+
+1. **Basic Python skills:** Understanding how to perform string manipulation (like concatenation and substitution) is essential for this problem.
+   
+2. **Control flow:** The implementation requires conditional statements (if-elif-else) to determine which symbol(s) should be appended based on the integer input.
+
+3. **Looping:** To cover all possible values from 1 to 1000, you might need nested loops or a loop that iterates over predefined chunks of numbers and their Roman numeral equivalents.
+
+**Problem Complexity:**
+
+The complexity is relatively low because:
+
+1. The problem has limited inputs (values between 1-1000), which makes it more predictable compared to problems with open-ended ranges.
+   
+2. There are no nested or recursive logic, loops within loops, or complex mathematical operations that would increase the difficulty.
+
+3. It requires a simple mapping structure of integers to Roman numerals and then forming the correct sequence from this map based on input.
+
+In conclusion, due to its straightforward nature, basic requirements for programming skills, limited complexity in terms of looping and conditional statements, and well-defined problem boundaries, this task can be categorized as "Easy".

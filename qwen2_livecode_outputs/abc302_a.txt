@@ -1,0 +1,75 @@
+Problem ID: abc302_a
+Problem Content:
+There is an enemy with stamina A.  Every time you attack the enemy, its stamina reduces by B.
+At least how many times do you need to attack the enemy to make its stamina 0 or less?
+
+Input
+
+The input is given from Standard Input in the following format:
+A B
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- 1 \le A,B \le 10^{18}
+- A and B are integers.
+
+Sample Input 1
+
+7 3
+
+Sample Output 1
+
+3
+
+Attacking three times make the enemy's stamina -2.
+Attacking only twice makes the stamina 1, so you need to attack it three times.
+
+Sample Input 2
+
+123456789123456789 987654321
+
+Sample Output 2
+
+124999999
+
+Sample Input 3
+
+999999999999999998 2
+
+Sample Output 3
+
+499999999999999999
+
+Qwen2 Analysis:
+The given problem involves basic arithmetic operations (subtraction) and input/output handling. The main challenge is dealing with large integers up to \(10^{18}\), which requires using a language or library that supports arbitrary precision integer calculations.
+
+**Difficulty Level**: Easy-Medium
+
+**Required Programming Skills**:
+- **Handling Large Numbers**: Understanding how to manage arithmetic operations with numbers exceeding the range of standard integral types (e.g., long, int).
+- **Input/Output Management**: Familiarity with input/output methods in your chosen programming language.
+- **Basic Algorithmic Thinking**: Understanding simple mathematical concepts and applying them to determine a number of attacks needed.
+
+**Complexity**: The primary complexity comes from the arithmetic operation repeated multiple times. This makes the time complexity \(\mathcal{O}(1)\) as it does not depend on the input size for determining the solution, only calculating the result based on given \(A\) and \(B\).
+
+**Algorithmic Approach**:
+To solve this problem, you need to calculate how many times \(B\) needs to be subtracted from \(A\) until you reach a value less than or equal to 0. This can be simply calculated by dividing \(A\) by \(B\) and rounding up since the number of attacks cannot be fractional.
+
+**Code Example (Pseudo-code)**:
+```pseudo
+function calculateAttacks(stamina, attackValue):
+    return ceil(stamina / attackValue)
+
+stamina = read input as integer
+attackValue = read input as integer
+
+number_of_attacks = calculateAttacks(stamina, attackValue)
+print(number_of_attacks)
+```
+
+**Conclusion**: This problem involves straightforward arithmetic operations and understanding of basic programming constructs (input/output and mathematical functions). It's a good starting point for beginners to practice handling large numbers in their code.

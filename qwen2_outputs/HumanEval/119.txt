@@ -1,0 +1,12 @@
+The problem falls under the category of "String Manipulation" and requires basic programming skills to solve. The key focus is understanding the concept of balanced parentheses, which involves checking if for every opening parenthesis there exists a corresponding closing one in the correct order.
+
+Difficulty Level: Easy-Medium
+Required Programming Skills:
+1. String manipulation techniques - concatenating strings.
+2. Logic/Algorithm skills to check balance of parentheses.
+3. Basic programming constructs like loops and conditional statements.
+
+Complexity:
+The time complexity is O(n), where n is the total number of characters in both input strings combined, since we need to potentially go through each character once.
+
+This problem requires knowledge on handling string inputs and applying logical checks to ensure a condition (in this case, balanced parentheses) is satisfied. It does not require advanced data structures or complex algorithms, making it suitable for beginners learning programming fundamentals while focusing on a specific aspect of strings manipulation related to patterns found within them (in this case, parenthesis balancing).

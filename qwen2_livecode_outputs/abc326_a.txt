@@ -1,0 +1,80 @@
+Problem ID: abc326_a
+Problem Content:
+Takahashi is in a building with 100 floors.
+He uses the stairs for moving up two floors or less or moving down three floors or less, and uses the elevator otherwise.
+Does he use the stairs to move from floor X to floor Y?
+
+Input
+
+The input is given from Standard Input in the following format:
+X Y
+
+Output
+
+If Takahashi uses the stairs for the move, print Yes; if he uses the elevator, print No.
+
+Constraints
+
+
+- 1 \leq X,Y \leq 100
+- X \neq Y
+- All input values are integers.
+
+Sample Input 1
+
+1 4
+
+Sample Output 1
+
+No
+
+The move from floor 1 to floor 4 involves going up three floors, so Takahashi uses the elevator.
+
+Sample Input 2
+
+99 96
+
+Sample Output 2
+
+Yes
+
+The move from floor 99 to floor 96 involves going down three floors, so Takahashi uses the stairs.
+
+Sample Input 3
+
+100 1
+
+Sample Output 3
+
+No
+
+Qwen2 Analysis:
+Based on the analysis of the given problem:
+
+- **Difficulty Level**: The problem is relatively straightforward, focusing mainly on basic arithmetic operations such as comparisons and conditional evaluations. No advanced algorithms or data structures are needed.
+
+- **Required Programming Skills**: The solution requires knowledge of how to read input from standard input (`Standard Input`), handle simple variable assignments, perform comparisons between integers, use logical operators (`if...else`) for decision-making, and print output using the `print()` function.
+
+- **Complexity**: The time complexity is O(1) since there are no loops or recursive calls that scale with input size. Similarly, space complexity is also O(1), as it uses a fixed amount of memory regardless of the input size.
+
+Given these aspects:
+
+**Category Prediction**: This problem falls under the category of **Easy Programming Problem**. It tests basic programming skills and the ability to follow instructions closely while dealing with simple mathematical conditions. The solution would involve writing a conditional statement that checks whether moving between floors involves less than 2 upwards steps or less than 3 downwards steps (using stairs), otherwise, it uses an elevator.
+
+The implementation might look something like this in Python:
+
+```python
+# Read input values X and Y from standard input
+X, Y = map(int, input().split())
+
+# Calculate the difference between Y and X
+difference = abs(Y - X)
+
+# Determine if Takahashi should use stairs or elevator based on floor difference
+if (difference <= 2) or (difference >= 3):
+    print("Yes")
+else:
+    print("No")
+```
+
+This code snippet covers all constraints (`1 ≤ X, Y ≤ 100`, `X ≠ Y`) and handles the logic of determining whether Takahashi uses stairs based on floor differences as described in the problem statement.

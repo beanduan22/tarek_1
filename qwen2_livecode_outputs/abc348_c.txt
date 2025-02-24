@@ -1,0 +1,85 @@
+Problem ID: abc348_c
+Problem Content:
+There are N types of beans, one bean of each type. The i-th type of bean has a deliciousness of A_i and a color of C_i. The beans are mixed and can only be distinguished by color.
+You will choose one color of beans and eat one bean of that color. By selecting the optimal color, maximize the minimum possible deliciousness of the bean you eat.
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+A_1 C_1
+A_2 C_2
+\vdots
+A_N C_N
+
+Output
+
+Print as an integer the maximum value of the minimum possible deliciousness of the bean you eat.
+
+Constraints
+
+
+- 1 \leq N \leq 2 \times 10^{5}
+- 1 \leq A_i \leq 10^{9}
+- 1 \leq C_i \leq 10^{9}
+- All input values are integers.
+
+Sample Input 1
+
+4
+100 1
+20 5
+30 5
+40 1
+
+Sample Output 1
+
+40
+
+Note that beans of the same color cannot be distinguished from each other.
+You can choose color 1 or color 5.
+
+- There are two types of beans of color 1, with deliciousness of 100 and 40. Thus, the minimum deliciousness when choosing color 1 is 40.
+- There are two types of beans of color 5, with deliciousness of 20 and 30. Thus, the minimum deliciousness when choosing color 5 is 20.
+
+To maximize the minimum deliciousness, you should choose color 1, so print the minimum deliciousness in that case: 40.
+
+Sample Input 2
+
+10
+68 3
+17 2
+99 2
+92 4
+82 4
+10 3
+100 2
+78 1
+3 1
+35 4
+
+Sample Output 2
+
+35
+
+Qwen2 Analysis:
+The given problem can be categorized as:
+
+Difficulty: Hard
+
+Required Programming Skills:
+- Understanding of sorting algorithms (as we need to sort elements based on multiple criteria)
+- Implementation of efficient data structures and algorithms (like binary search or segment trees) for optimizing solution 
+- Logic to make decisions in programming based on conditions/variables
+- Ability to handle large inputs efficiently 
+
+Complexity: The time complexity of this problem might depend on the implementation details, but a feasible approach would involve sorting which has O(N logN) complexity along with searching through array once after sorting, bringing overall time complexity close to O(N logN). This indicates that it's quite complex due to the constraint N can be up to 2*10^5.
+
+The problem involves understanding and utilizing concepts related to optimization (maximizing minimum value), data structures, algorithms for efficient search in sorted arrays, sorting techniques etc. Therefore, this type of question requires a deeper understanding and skill set related to algorithmic efficiency and coding practices. 
+
+In terms of difficulty level:
+1. Problem Statement Complexity: Hard
+2. Required Knowledge Complexity: Medium-High (Understanding of multiple concepts and efficient code implementation)
+3. Implementation Difficulty: High
+
+Therefore, based on these attributes, this problem can be categorized as a hard problem that demands deep knowledge about data structures and algorithms along with excellent coding skills to manage constraints effectively.

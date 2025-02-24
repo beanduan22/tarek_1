@@ -1,0 +1,7 @@
+ Category: Basic Programming Problem (Easy)
+
+   Difficulty: Low to Medium
+
+   Required Programming Skills: Understanding of basic mathematical concepts like prime numbers and loops. Knowledge of a programming language such as Python is necessary for implementing the solution.
+
+   Complexity: The time complexity of this problem can be considered linear, i.e., O(n). This is because in the worst-case scenario, we might need to check all numbers up to n to determine if it's prime or not.

@@ -1,0 +1,13 @@
+The given problem is a coding challenge that involves understanding of sequence computations, algorithm optimization techniques like dynamic programming or memoization, as well as recursion understanding. 
+
+Based on these aspects:
+1) Difficulty: Moderate to High - The problem requires not only grasping the concept behind computing a sequence but also optimizing its computation efficiently. Given that it's not straightforward to compute this recursively without exceeding computational time limits for large 'n', candidates are expected to have experience with iterative approaches or dynamic programming strategies.
+
+2) Programming Skills Required: Intermediate level skills required including proficiency in at least one of the Python, Java, C++, or other similar languages. The candidate needs knowledge on handling arrays or lists efficiently and understanding basic concepts like loops and conditions.
+
+3) Complexity: High - The problem involves dealing with a recursive sequence that isn't easily solvable by direct recursion due to its high time complexity (O(2^n)). Efficiently computing the n-th element without resorting to recursion requires the use of iterative techniques or dynamic programming. 
+
+In summary, this problem tests knowledge and skills in algorithm optimization, iterative computation strategies, and understanding recursive sequence computations. The challenge is considered moderately complex requiring not only the ability to write correct code but also efficient and optimized code that can handle large inputs within reasonable time constraints.
+
+Therefore, categorizing this problem:
+Category: Intermediate Algorithm Optimization Problem

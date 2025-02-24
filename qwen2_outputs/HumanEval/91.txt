@@ -1,0 +1,14 @@
+Based on the description provided, this programming problem falls under the following categories:
+
+**Difficulty Level:**
+- **Easy**: The problem involves basic string operations and condition checks. No advanced algorithms or complex data structures are needed.
+
+**Required Programming Skills:**
+- **String manipulation**: Splitting strings into sentences using delimiters (periods, question marks, exclamation points).
+- **Condition checking**: Identifying if a sentence starts with the word "I".
+- **Counting operations**: Incrementing a counter when conditions are met.
+
+**Complexity:**
+- **Low**: The solution involves straightforward operations and does not require recursion, nested loops, or complex logic structures. 
+
+Therefore, this problem is suitable for beginners in programming or those learning basic string handling and conditional statements. It focuses on practicing fundamental skills such as reading strings, splitting text based on punctuation marks, and applying conditions to count specific occurrences within the input.

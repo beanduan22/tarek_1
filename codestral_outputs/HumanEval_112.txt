@@ -1,0 +1,7 @@
+ Category: Easy-Intermediate
+
+   This problem can be categorized as easy to intermediate because it involves manipulating strings based on certain conditions. Here's a breakdown of why:
+
+   1. Difficulty: The problem statement is clear and the task is specific (delete characters from one string that are present in another, then check for palindrome). It doesn't require advanced algorithms or data structures to solve. However, it does involve understanding how to manipulate strings in a programming language which could be challenging for beginners.
+   2. Required Programming Skills: Understanding of string manipulation functions (like replace or delete), basic looping constructs and conditional statements.
+   3. Complexity: The time complexity is O(n*m) where n is the length of first string and m is the length of second string because for each character in the first string, we are checking if it's present in the second string which takes O(m) time. The space complexity is O(n) as we might have to store the resultant string after deletion.

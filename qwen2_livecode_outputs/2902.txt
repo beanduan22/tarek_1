@@ -1,0 +1,71 @@
+Problem ID: 2902
+Problem Content:
+You are given a 0-indexed integer array nums. You have to find the maximum sum of a pair of numbers from nums such that the maximum digit in both numbers are equal.
+Return the maximum sum or -1 if no such pair exists.
+ 
+Example 1:
+
+Input: nums = [51,71,17,24,42]
+Output: 88
+Explanation: 
+For i = 1 and j = 2, nums[i] and nums[j] have equal maximum digits with a pair sum of 71 + 17 = 88. 
+For i = 3 and j = 4, nums[i] and nums[j] have equal maximum digits with a pair sum of 24 + 42 = 66.
+It can be shown that there are no other pairs with equal maximum digits, so the answer is 88.
+Example 2:
+
+Input: nums = [1,2,3,4]
+Output: -1
+Explanation: No pair exists in nums with equal maximum digits.
+
+ 
+Constraints:
+
+2 <= nums.length <= 100
+1 <= nums[i] <= 10^4
+
+Qwen2 Analysis:
+The problem you've provided is a good example of an intermediate-level algorithm question that focuses on both string manipulation (in order to determine the maximum digit in each number) and sorting.
+
+### Problem Category:
+
+1. **Category**: Array / String Manipulation / Sorting
+
+   This problem involves iterating through an array, finding properties about numbers (specifically their maximum digits), comparing those properties across different elements of the array, and potentially performing some optimization through sorting for better efficiency.
+
+2. **Difficulty Level**: Medium to Hard
+
+   The difficulty depends on how familiar one is with these concepts and data structures. While it might be challenging for someone new to this type of problem, intermediate programmers would find it quite doable with careful planning and execution.
+
+3. **Required Programming Skills**:
+
+    - **Understanding of Array Operations**: Looping through arrays, accessing elements by index.
+   
+    - **String Manipulation**: Working with strings to extract digits from integers.
+   
+    - **Sorting Techniques**: While the sorting is relatively straightforward (e.g., using built-in sort functions), understanding its role in optimizing the problem can be crucial.
+
+4. **Complexity**:
+
+   **Time Complexity**: The main operations are iterating through the array and extracting maximum digit, which would generally involve linear time complexity (`O(n)`) where `n` is the length of `nums`. Sorting numbers could potentially add to this if that's required for optimization purposes but seems unnecessary given the question constraints.
+
+   **Space Complexity**: Assuming a basic implementation (no additional data structures other than variables), space complexity should be considered minimal (`O(1)` as it would depend mostly on local variables).
+
+### Solution Outline:
+
+Given these considerations, here is a brief outline of how one might approach this problem in code:
+
+- Iterate through the array `nums` and for each number:
+  - Convert it to a string to easily access individual digits.
+  - Find the maximum digit within the number (you can iterate over characters if you convert to string, or use built-in functions to find max).
+  
+- Store these maximum digits in another data structure that allows for quick lookups and comparisons. A `HashMap` from the language’s standard library could be suitable here where keys are digits and values could represent a list of numbers containing that digit.
+
+- For each unique maximum digit stored, consider pairs:
+  - Sort this subset by number (since we're interested in maximizing sums).
+  - Then take the two highest numbers for which you can form a pair.
+  
+- Calculate their sum, update your maximum if needed.
+
+### Conclusion:
+
+This problem is quite well-defined and solvable with algorithms that involve basic array traversal and some level of string manipulation. It tests skills in efficiently iterating through data, understanding the constraints given by input size, and applying sorting as an optimization technique (even though it might not be strictly necessary).

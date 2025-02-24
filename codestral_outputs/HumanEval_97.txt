@@ -1,0 +1,5 @@
+ The problem can be categorized as a basic mathematics problem that involves extracting the unit digit from two integers and multiplying them. This is a common task in programming and falls under the category of "beginner-level".
+
+   Difficulty: Easy
+   Required Programming Skills: Basic arithmetic operations, modulus operator for finding remainder.
+   Complexity: Linear time complexity O(1), as the size of input does not affect the number of steps required to solve the problem.

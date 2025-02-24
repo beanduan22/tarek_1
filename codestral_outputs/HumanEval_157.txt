@@ -1,0 +1,5 @@
+ This is a basic mathematics-based algorithmic problem that can be classified as an "Easy" level problem. The prediction of the problem's category is:
+
+   Category: Basic Algorithms (Mathematics)
+
+   Justification: To solve this problem, one needs to understand and implement simple mathematical concepts. A right angle triangle satisfies Pythagoras' theorem - a^2 + b^2 = c^2 where c is the hypotenuse (the side opposite to the right angle). This is a simple mathematical concept that doesn't require advanced skills in programming or mathematics. Thus, it falls under basic algorithms category.

@@ -1,0 +1,65 @@
+Problem ID: abc306_a
+Problem Content:
+You are given a string S of length N consisting of lowercase English letters.
+We denote the i-th character of S by S_i.
+Print the string of length 2N obtained by concatenating S_1,S_1,S_2,S_2,\dots,S_N, and S_N in this order.
+For example, if S is beginner, print bbeeggiinnnneerr.
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+S
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- N is an integer such that 1 \le N \le 50.
+- S is a string of length N consisting of lowercase English letters.
+
+Sample Input 1
+
+8
+beginner
+
+Sample Output 1
+
+bbeeggiinnnneerr
+
+It is the same as the example described in the problem statement.
+
+Sample Input 2
+
+3
+aaa
+
+Sample Output 2
+
+aaaaaa
+
+Codestral Analysis:
+ The problem provided is a simple string manipulation task that falls under the beginner level in terms of difficulty. The task requires basic knowledge of handling strings and loops in programming to solve it. The complexity of this problem can be considered linear as it only involves iterating through each character in the input string exactly once.
+
+    In Python, you would use a simple for loop to solve this problem:
+
+    1. Read the length of the string N from standard input.
+    2. Read the string S from standard input.
+    3. Iterate over each character in the string S.
+    4. Print each character twice consecutively.
+
+    Here is a simple Python solution for this problem:
+
+    ```python
+    n = int(input())  # reading the length of the string
+    s = input()  # reading the string
+
+    result = ''
+    for char in s:
+        result += char * 2
+
+    print(result)
+    ```

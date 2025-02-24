@@ -1,0 +1,17 @@
+ This problem can be categorized as "Easy-Medium". Although it might seem complex at first due to the instructions for squaring or cubing elements based on their indexes in the list, the problem itself is quite straightforward once you understand the conditions. Therefore, it requires a basic understanding of looping through lists and applying mathematical operations. The complexity also lies in error handling for edge cases such as an empty list.
+
+   Here's a Python solution to help illustrate:
+
+```python
+def sum_squares(lst):
+    total = 0
+    for i, num in enumerate(lst):
+        if (i+1) % 3 == 0: # Check if index is multiple of 3
+            total += num ** 2
+        elif (i+1) % 4 == 0 and (i+1) % 3 != 0: # Check if index is multiple of 4 but not multiple of 3
+            total += num ** 3
+        else:
+            total += num
+    return total
+```
+This function loops through the list with `enumerate`, which allows us to access both the element and its index. It checks each index and performs the necessary operations before adding it to a running total, which is then returned at the end of the function.

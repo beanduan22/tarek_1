@@ -1,0 +1,44 @@
+This problem falls under the category of "Medium" difficulty in terms of coding problems. It requires basic understanding and implementation skills as well as knowledge about prime numbers.
+
+**Required Programming Skills:**
+1. **Loops:** The solution needs to iterate over a range of numbers up to `n` which means you'll need to use loops.
+2. **Conditionals (if statements):** You will have to check if a number is prime or not, which involves conditional logic.
+3. **Array/List Manipulation:** The function needs to return an array of integers.
+
+**Problem Complexity:**
+1. **Memory usage:** Since you are storing all the prime numbers less than `n`, this might lead to higher memory consumption for larger values of `n`. However, as `n` grows significantly large it would require optimization or efficient algorithms.
+2. **Time complexity:** The main challenge is determining the time complexity of checking if a number is prime. In naive implementation, this can take up O(n) time per each number until you optimize it (e.g., by skipping even numbers after checking for 2).
+
+To solve this problem:
+1. You would start by implementing logic to check whether a given number is prime or not.
+2. Then iterate over the range from `2` to `n`, and if a number is found to be prime, add it to your array (which will store all primes less than `n`). 
+
+Here's how you might solve this problem:
+
+```python
+def count_up_to(n):
+    def is_prime(num):
+        """Check if a number is prime."""
+        if num < 2:
+            return False
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                return False
+        return True
+
+    primes = []
+    for num in range(2, n):
+        if is_prime(num):
+            primes.append(num)
+    return primes
+
+
+print(count_up_to(5))  # [2,3]
+print(count_up_to(11))  # [2,3,5,7]
+print(count_up_to(0))  # []
+print(count_up_to(20))  # [2,3,5,7,11,13,17,19]
+print(count_up_to(1))  # []
+print(count_up_to(18))  # [2,3,5,7,11,13,17]
+```
+
+This solution meets the problem requirements but could be optimized further by skipping even numbers (after checking for `2`) and only considering up to the square root of a number when testing for primality (`int(num ** 0.5) + 1`).

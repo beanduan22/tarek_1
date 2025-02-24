@@ -1,0 +1,6 @@
+ The problem is a fundamental statistics problem that requires a basic understanding of sorting algorithms and list indexing in Python. It can be categorized as an 'Easy' level problem.
+
+   Category: Basic Algorithms
+   Difficulty Level: Easy
+   Skills Required: Understanding of sorting, list manipulation in Python, basic statistical knowledge (median)
+   Complexity: Linear Time and Space complexity due to the usage of sort function, O(n log n) for time complexity.

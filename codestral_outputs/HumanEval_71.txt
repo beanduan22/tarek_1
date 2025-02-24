@@ -1,0 +1,5 @@
+ Category: Basic Mathematics & Validation
+
+   Explanation: The problem presents a function to calculate the area of a triangle given its three side lengths. To solve this, we first need to validate if the provided lengths can form a valid triangle based on the triangle inequality theorem (sum of any two sides must be greater than the third side). If they do, then we use Heron's formula to compute the area. This problem tests basic mathematical knowledge and application as well as coding skills to implement the logic in Python. Since the function only uses simple arithmetic operations and an if-else condition, it can be considered a beginner level problem.
+
+   Additional notes: The provided example suggests rounding the result to 2 decimal places which adds another layer of complexity for beginners as they might need to learn about handling floating point numbers in Python. However, since this is a simple calculation and doesn't involve advanced concepts such as numerical stability, it can still be considered a basic problem.

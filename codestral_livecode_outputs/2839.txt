@@ -1,0 +1,59 @@
+Problem ID: 2839
+Problem Content:
+You are given two 0-indexed integer arrays nums1 and nums2, each of length n, and a 1-indexed 2D array queries where queries[i] = [x_i, y_i].
+For the i^th query, find the maximum value of nums1[j] + nums2[j] among all indices j (0 <= j < n), where nums1[j] >= x_i and nums2[j] >= y_i, or -1 if there is no j satisfying the constraints.
+Return an array answer where answer[i] is the answer to the i^th query.
+ 
+Example 1:
+
+Input: nums1 = [4,3,1,2], nums2 = [2,4,9,5], queries = [[4,1],[1,3],[2,5]]
+Output: [6,10,7]
+Explanation: 
+For the 1st query x_i = 4 and y_i = 1, we can select index j = 0 since nums1[j] >= 4 and nums2[j] >= 1. The sum nums1[j] + nums2[j] is 6, and we can show that 6 is the maximum we can obtain.
+
+For the 2nd query x_i = 1 and y_i = 3, we can select index j = 2 since nums1[j] >= 1 and nums2[j] >= 3. The sum nums1[j] + nums2[j] is 10, and we can show that 10 is the maximum we can obtain. 
+
+For the 3rd query x_i = 2 and y_i = 5, we can select index j = 3 since nums1[j] >= 2 and nums2[j] >= 5. The sum nums1[j] + nums2[j] is 7, and we can show that 7 is the maximum we can obtain.
+
+Therefore, we return [6,10,7].
+
+Example 2:
+
+Input: nums1 = [3,2,5], nums2 = [2,3,4], queries = [[4,4],[3,2],[1,1]]
+Output: [9,9,9]
+Explanation: For this example, we can use index j = 2 for all the queries since it satisfies the constraints for each query.
+
+Example 3:
+
+Input: nums1 = [2,1], nums2 = [2,3], queries = [[3,3]]
+Output: [-1]
+Explanation: There is one query in this example with x_i = 3 and y_i = 3. For every index, j, either nums1[j] < x_i or nums2[j] < y_i. Hence, there is no solution. 
+
+ 
+Constraints:
+
+nums1.length == nums2.length 
+n == nums1.length 
+1 <= n <= 10^5
+1 <= nums1[i], nums2[i] <= 10^9 
+1 <= queries.length <= 10^5
+queries[i].length == 2
+x_i == queries[i][1]
+y_i == queries[i][2]
+1 <= x_i, y_i <= 10^9
+
+Codestral Analysis:
+ Category: Medium to Hard
+
+The given problem is a medium-to-hard level algorithmic challenge. It falls under the category of data structure algorithms. The task involves working with two arrays and multiple queries, where each query has specific constraints. The main goal is to find the maximum sum that satisfies these constraints for all queries.
+
+The difficulty of this problem lies in efficiently handling a large number of elements (up to 10^5) and queries (up to 10^9). A naive approach, which would involve checking every element for each query, will not be efficient enough due to the high time complexity. Thus, an optimized data structure or algorithm that reduces the search space is required to solve this problem in a reasonable amount of time.
+
+Programming skills required:
+- Proficient understanding of data structures like arrays and their operations.
+- Knowledge of algorithms for sorting and searching.
+- Ability to analyze and implement complex solutions using programming language such as Python, Java, or C++.
+- Experience with handling large datasets efficiently will be an advantage.
+
+Complexity:
+Time complexity is likely to be O(n log n) due to the need for sorting the arrays or queries. However, additional optimization techniques could potentially reduce this to O(n). Space complexity would also be O(n), as we may need to store intermediate results. Keep in mind that these estimates are subject to how exactly you choose to solve this problem.

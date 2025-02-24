@@ -1,0 +1,70 @@
+Problem ID: abc350_a
+Problem Content:
+You are given a string S of length 6. It is guaranteed that the first three characters of S are ABC and the last three characters are digits.
+Determine if S is the abbreviation of a contest held and concluded on AtCoder before the start of this contest.
+Here, a string T is "the abbreviation of a contest held and concluded on AtCoder before the start of this contest" if and only if it equals one of the following 348 strings:
+ABC001, ABC002, \ldots, ABC314, ABC315, ABC317, ABC318, \ldots, ABC348, ABC349.
+Note that ABC316 is not included.
+
+Input
+
+The input is given from Standard Input in the following format:
+S
+
+Output
+
+If S is the abbreviation of a contest held and concluded on AtCoder before the start of this contest, print Yes; otherwise, print No.
+
+Constraints
+
+
+- S is a string of length 6 where the first three characters are ABC and the last three characters are digits.
+
+Sample Input 1
+
+ABC349
+
+Sample Output 1
+
+Yes
+
+ABC349 is the abbreviation of a contest held and concluded on AtCoder last week.
+
+Sample Input 2
+
+ABC350
+
+Sample Output 2
+
+No
+
+ABC350 is this contest, which has not concluded yet.
+
+Sample Input 3
+
+ABC316
+
+Sample Output 3
+
+No
+
+ABC316 was not held on AtCoder.
+
+Qwen2 Analysis:
+The problem outlined above is a simple string matching problem that involves both pattern recognition and basic input handling techniques. Here are some key aspects of this problem:
+
+1. **Input Handling**: The problem requires reading an input string `S` consisting of six characters where the first three are 'ABC' and the last three are digits.
+
+2. **Pattern Recognition**: You need to determine if the provided string matches one of the patterns that represent a contest held on AtCoder prior to this current contest period (with the 348 specific strings mentioned).
+
+3. **Output Determination**: Based on whether `S` is one of these pre-defined contest abbreviations, your program must output either 'Yes' or 'No'.
+
+From these key aspects:
+
+- **Difficulty Level**: This problem can be considered easy to medium in difficulty due to the simplicity of its logic and the straightforward nature of string manipulation tasks involved.
+
+- **Required Programming Skills**: The primary skills needed are understanding basic input/output operations, familiarity with string handling (specifically substring extraction), comparison operations for strings, and conditional logic (`if/else`) statements.
+
+- **Complexity**: The computational complexity is low as it involves a fixed set of patterns to check against. This makes the problem efficient in terms of computation time and does not require any advanced data structures or complex algorithms.
+
+The category this problem fits into might be categorized under "String Processing" or "Basic Algorithmic Problem Solving". These categories emphasize problems that primarily involve understanding string operations, pattern matching, etc., which are fundamental skills for most programming tasks.

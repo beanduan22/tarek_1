@@ -1,0 +1,7 @@
+The problem can be categorized as an Easy-Medium level question which primarily tests basic understanding of string manipulation and indexing in programming. The required programming skills involve familiarity with Python language syntax such as for-loops, conditionals (if/else), and slicing/indexing operations on strings.
+
+The problem involves iterating over the input string to check each character at even indices against a set of uppercase vowels ('A', 'E', 'I', 'O', 'U'). It requires checking whether an index is even using the modulus operator `%` and evaluating characters based on their position in the given string. 
+
+As for complexity, it scales linearly with the length of the input string (`s`). The operations performed are straightforward and do not involve recursion or nested structures that could increase time complexity.
+
+The question also checks if candidates can handle edge cases like empty strings or strings without uppercase vowels at even indices correctly.

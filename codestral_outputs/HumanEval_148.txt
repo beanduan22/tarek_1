@@ -1,0 +1,14 @@
+ The problem is a classic one that can be solved using data structures and algorithms. It involves handling strings (the names of planets), sorting elements based on predefined order, and searching within ordered lists.
+
+   Category: Medium to Hard
+
+   This problem can be classified as a medium to hard level problem because it requires knowledge of Python's data structures (lists and tuples) and algorithms for searching and sorting. The complexity also depends on the approach you take; if you use list indexing, it would have O(n) time complexity, which makes it relatively simple compared to other approaches like binary search that could provide a logarithmic time complexity of O(log n). However, since we are dealing with a small fixed set of eight planets, the difference in efficiency is negligible.
+
+   Required programming skills:
+
+   1. Basic knowledge of Python data structures (lists and tuples) and their methods.
+   2. Knowledge of conditional statements and loops for iterating over lists.
+   3. Understanding of indexing in Python and how it can be used to search within a list.
+   4. Awareness of slicing in Python, as it is utilized in the solution to return a sublist of planets between two given planets.
+
+   In summary, this problem tests your ability to work with lists in Python, including searching for elements and returning sorted sublists based on predefined order. It falls into the medium difficulty category due to its reliance on foundational programming concepts and the use of Python-specific features such as slicing and list indexing.

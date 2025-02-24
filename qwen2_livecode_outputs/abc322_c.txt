@@ -1,0 +1,76 @@
+Problem ID: abc322_c
+Problem Content:
+The AtCoder Kingdom holds a festival for N days. On M of these days, namely on the A_1-th, A_2-th, \dots, A_M-th days, fireworks will be launched. It is guaranteed that fireworks will be launched on the last day of the festival. (In other words, A_M=N is guaranteed.)
+For each i=1,2,\dots,N, solve the following problem.
+
+- How many days later from the i-th day will fireworks be launched for the first time on or after the i-th day? If fireworks are launched on the i-th day, it is considered to be 0 days later.
+
+Input
+
+The input is given from Standard Input in the following format:
+N M
+A_1 A_2 \dots A_M
+
+Output
+
+Print N lines.
+The i-th line (1 \le i \le N) should contain an integer representing the number of days from the i-th day until fireworks are launched for the first time on or after the i-th day.
+
+Constraints
+
+
+- 1 \le M \le N \le 2 \times 10^5
+- 1 \le A_1 < A_2 < \dots < A_M = N
+- All input values are integers.
+
+Sample Input 1
+
+3 2
+2 3
+
+Sample Output 1
+
+1
+0
+0
+
+The kingdom holds a festival for 3 days, and fireworks are launched on the 2-nd and 3-rd days.
+
+- From the 1-st day, the first time fireworks are launched is the 2-nd day of the festival, which is 1 day later.
+- From the 2-nd day, the first time fireworks are launched is the 2-nd day of the festival, which is 0 days later.
+- From the 3-rd day, the first time fireworks are launched is the 3-rd day of the festival, which is 0 days later.
+
+Sample Input 2
+
+8 5
+1 3 4 7 8
+
+Sample Output 2
+
+0
+1
+0
+0
+2
+1
+0
+0
+
+Qwen2 Analysis:
+The given programming problem falls under the category of "Basic Algorithm - Array and Simulation". This classification is based on several factors:
+
+1. **Difficulty Level**: The problem appears to be of moderate difficulty due to:
+   - The requirement for handling multiple inputs (days) within a loop that iterates N times, where N could potentially be quite large (up to 2x10^5).
+   - It involves basic array operations such as searching and maintaining counts.
+   - It requires understanding of how events are scheduled over days, which is a common theme in many algorithmic problems.
+
+2. **Required Programming Skills**: The solution would require knowledge of:
+   - Basic C++/Java programming syntax and data structures.
+   - Algorithms to efficiently process each day (e.g., binary search for finding the closest fireworks launch day).
+   - Looping through arrays or sequences, which are fundamental skills in any programming language.
+
+3. **Complexity**: The complexity mainly lies in managing the input constraints efficiently:
+   - The time complexity of a straightforward approach would be O(NM) since it potentially loops over all M days for each of N days.
+   - Optimizations might include using data structures like sets or maps to reduce the search time from fireworks launch days, bringing the complexity down significantly.
+
+In summary, while this problem does not require advanced topics such as dynamic programming or complex data structures, its implementation can still be challenging due to large input sizes and the need for efficient algorithms. It's ideal for students who are learning basic algorithmic techniques like binary search, simulation loops, and handling of input constraints efficiently.

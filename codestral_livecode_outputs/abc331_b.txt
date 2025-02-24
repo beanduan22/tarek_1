@@ -1,0 +1,61 @@
+Problem ID: abc331_b
+Problem Content:
+A supermarket sells egg packs.
+A pack of 6 eggs costs S yen, a pack of 8 eggs costs M yen, and a pack of 12 eggs costs L yen.
+When you can buy any number of each pack, find the minimum amount of money required to purchase at least N eggs.
+
+Input
+
+The input is given from Standard Input in the following format:
+N S M L
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- 1 \leq N \leq 100
+- 1 \leq S,M,L \leq 10^4
+- All input values are integers.
+
+Sample Input 1
+
+16 120 150 200
+
+Sample Output 1
+
+300
+
+It is optimal to buy two 8-egg packs.
+
+Sample Input 2
+
+10 100 50 10
+
+Sample Output 2
+
+10
+
+It is optimal to buy one 12-egg pack.
+
+Sample Input 3
+
+99 600 800 1200
+
+Sample Output 3
+
+10000
+
+It is optimal to buy five 8-egg packs and five 12-egg packs.
+
+Codestral Analysis:
+ Problem Analysis:
+This problem can be categorized as a Dynamic Programming (DP) or Greedy problem. Given the constraints and the nature of the problem, it might be easier to solve this using a greedy approach instead of DP because the number of eggs is relatively small. The complexity of the solution would primarily depend on the implementation chosen and not the size of input numbers.
+
+In a nutshell, you're given prices for three sizes of egg packs (6, 8, and 12) and need to find out how many packs of each size are needed to buy at least N eggs while spending the minimum amount of money. A greedy approach might be to keep buying the largest pack that doesn't exceed N until you can't anymore, then switch to a smaller pack, and continue this process until you reach or exceed N.
+
+However, since it requires careful consideration of all possible combinations (packs of 6, 8, and 12), a more thorough analysis would involve checking every combination to ensure that the greedy strategy is always optimal, which might lead us to consider this problem as DP-like.
+
+Overall, I'd rate this problem as Medium in difficulty. A good understanding of basic programming concepts and control structures (like if-else statements or loops) would be sufficient to solve this problem using a greedy approach. However, more advanced strategies such as dynamic programming could be considered for learning purposes.

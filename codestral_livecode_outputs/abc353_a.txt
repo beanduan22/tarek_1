@@ -1,0 +1,62 @@
+Problem ID: abc353_a
+Problem Content:
+There are N buildings aligned in a row. The i-th building from the left has a height of H_i.
+Determine if there is a building taller than the first one from the left. If such a building exists, find the position of the leftmost such building from the left.
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+H_1 H_2 \ldots H_N
+
+Output
+
+If no building is taller than the first one from the left, print -1.
+If such a building exists, print the position (index) of the leftmost such building from the left.
+
+Constraints
+
+
+- 1 \leq N \leq 100
+- 1 \leq H_i \leq 100
+- All input values are integers.
+
+Sample Input 1
+
+4
+3 2 5 2
+
+Sample Output 1
+
+3
+
+The building taller than the first one from the left is the third one from the left.
+
+Sample Input 2
+
+3
+4 3 2
+
+Sample Output 2
+
+-1
+
+No building is taller than the first one from the left.
+
+Sample Input 3
+
+7
+10 5 10 2 10 13 15
+
+Sample Output 3
+
+6
+
+The buildings taller than the first one from the left are the sixth and seventh ones. Among them, the leftmost is the sixth one.
+
+Codestral Analysis:
+ This problem can be classified under a simple search or array iteration problem category. The level of difficulty is EASY because it only involves iterating over an array to find an element that satisfies a given condition. It doesn't require any advanced data structures or algorithms.
+
+The required programming skills include basic understanding of handling input/output, variables, arrays and looping constructs. No specific knowledge about a particular programming language is needed as long as the basics are understood.
+
+As for complexity, this problem has a time complexity of O(N) because in the worst-case scenario we might need to iterate through all N elements of the array once. The space complexity is O(1) because we only use a constant amount of additional memory to store variables such as the first building's height and the current position within the array.

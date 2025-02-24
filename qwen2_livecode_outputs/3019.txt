@@ -1,0 +1,51 @@
+Problem ID: 3019
+Problem Content:
+You are given a string moves of length n consisting only of characters 'L', 'R', and '_'. The string represents your movement on a number line starting from the origin 0.
+In the i^th move, you can choose one of the following directions:
+
+move to the left if moves[i] = 'L' or moves[i] = '_'
+move to the right if moves[i] = 'R' or moves[i] = '_'
+
+Return the distance from the origin of the furthest point you can get to after n moves.
+ 
+Example 1:
+
+Input: moves = "L_RL__R"
+Output: 3
+Explanation: The furthest point we can reach from the origin 0 is point -3 through the following sequence of moves "LLRLLLR".
+
+Example 2:
+
+Input: moves = "_R__LL_"
+Output: 5
+Explanation: The furthest point we can reach from the origin 0 is point -5 through the following sequence of moves "LRLLLLL".
+
+Example 3:
+
+Input: moves = "_______"
+Output: 7
+Explanation: The furthest point we can reach from the origin 0 is point 7 through the following sequence of moves "RRRRRRR".
+
+ 
+Constraints:
+
+1 <= moves.length == n <= 50
+moves consists only of characters 'L', 'R' and '_'.
+
+Qwen2 Analysis:
+The problem described above can be categorized under **"Algorithms"** particularly within subcategory **"String Processing"**. 
+
+### Analysis:
+
+1. **Difficulty Level:** This is an **Easy to Medium level** problem because it involves straight-forward logic with a single pass through the input string and doesn't require any complex data structures or algorithms.
+
+2. **Required Programming Skills:**
+   - **Basic String Manipulation:** You need familiarity with how strings are handled in your preferred programming language (e.g., indexing, iteration).
+   - **Logical Reasoning:** Understanding of basic mathematical operations like incrementation and decrementation.
+   - **Algorithmic Thinking:** The problem requires strategic placement of symbols ('L', 'R') to maximize the distance covered. This involves understanding how 'L' moves you left and 'R' moves you right on a number line.
+
+3. **Complexity:**
+   - **Time Complexity:** The solution will likely involve iterating through each character in the string once, leading to a time complexity of O(n) where n is the length of the string.
+   - **Space Complexity:** Assuming standard variable declarations, the space complexity would be O(1), as it doesn't require additional data structures that scale with input size.
+
+The problem primarily tests one's ability to process information sequentially and make decisions based on predefined rules ('L' vs 'R'), which aligns well with fundamental algorithmic challenges common in programming interviews.

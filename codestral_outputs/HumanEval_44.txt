@@ -1,0 +1,7 @@
+ The problem is about converting a given decimal number into a number of a different base (between 2 and 9). This is a common algorithmic problem that can be solved using a divide-and-conquer approach or by utilizing built-in functions in most programming languages. Given the context, it's likely a beginner to intermediate level problem, assuming the person knows about basic looping structures and recursion.
+
+   Difficulty: Beginner to Intermediate
+
+   Skills Required: Familiarity with loops or recursion, understanding of division and modulus operations for base conversion algorithm.
+
+   Complexity: The time complexity is O(log n), where 'n' is the input number. This is because we divide the input number by the base in each iteration. The space complexity is also O(log n) due to storing the result of each division.

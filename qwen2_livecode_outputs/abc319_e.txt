@@ -1,0 +1,104 @@
+Problem ID: abc319_e
+Problem Content:
+Takahashi is initially at his house and is about to visit Aoki's house.
+There are N bus stops numbered 1 to N between the two houses, and Takahashi can move between them in the following ways:
+
+- He can walk from his house to bus stop 1 in X units of time.
+- For each i = 1, 2, \ldots, N-1, a bus departs from bus stop i at each time that is a multiple of P_i, and by taking this bus, he can get to bus stop (i+1) in T_i units of time. Here, the constraints guarantee that 1 \leq P_i \leq 8.
+- Takahashi can walk from bus stop N to Aoki's house in Y units of time.
+
+For each i = 1, 2, \ldots, Q, process the following query.
+
+Find the earliest time that Takahashi can arrive at Aoki's house when he leaves his house at time q_i.
+
+Note that if he arrives at a bus stop exactly at the departure time of a bus, he can take that bus.
+
+Input
+
+The input is given from Standard Input in the following format:
+N X Y
+P_1 T_1
+P_2 T_2
+\vdots
+P_{N-1} T_{N-1}
+Q
+q_1
+q_2
+\vdots
+q_Q
+
+Output
+
+Print Q lines.
+For each i = 1, 2, \ldots, Q, the i-th line should contain the answer to the i-th query.
+
+Constraints
+
+
+- 2 \leq N \leq 10^5
+- 1 \leq X, Y \leq 10^9
+- 1 \leq P_i \leq 8
+- 1 \leq T_i \leq 10^9
+- 1 \leq Q \leq 2 \times 10^5
+- 0 \leq q_i \leq 10^9
+- All input values are integers.
+
+Sample Input 1
+
+4 2 3
+5 4
+6 6
+3 1
+7
+13
+0
+710511029
+136397527
+763027379
+644706927
+447672230
+
+Sample Output 1
+
+34
+22
+710511052
+136397548
+763027402
+644706946
+447672250
+
+For the first query, Takahashi can move as follows to arrive at Aoki's house at time 34.
+
+- Leave his house at time 13.
+- Walk from his house and arrive at bus stop 1 at time 15.
+- Take the bus departing from bus stop 1 at time 15 and arrive at bus stop 2 at time 19.
+- Take the bus departing from bus stop 2 at time 24 and arrive at bus stop 3 at time 30.
+- Take the bus departing from bus stop 3 at time 30 and arrive at bus stop 4 at time 31.
+- Walk from bus stop 4 and arrive at Aoki's house at time 34.
+
+For the second query, Takahashi can move as follows and arrive at Aoki's house at time 22.
+
+- Leave his house at time 0.
+- Walk from his house and arrive at bus stop 1 at time 2.
+- Take the bus departing from bus stop 1 at time 5 and arrive at bus stop 2 at time 9.
+- Take the bus departing from bus stop 2 at time 12 and arrive at bus stop 3 at time 18.
+- Take the bus departing from bus stop 3 at time 18 and arrive at bus stop 4 at time 19.
+- Walk from bus stop 4 and arrive at Aoki's house at time 22.
+
+Qwen2 Analysis:
+The problem described here is a type of optimization problem with elements of algorithmic thinking and efficient data structure usage. Specifically, it involves calculating optimal routes or times under varying conditions and constraints, which suggests it could fall into the category of Graph Theory problems that often require Breadth-First Search (BFS) or Dijkstra's Algorithm for finding minimum cost paths in weighted graphs.
+
+However, given the unique bus scheduling dynamics with specific time intervals (which are multiples of certain values), the problem also has elements of Number Theory due to the focus on time points at which buses depart. This indicates that Dynamic Programming might be another key technique used here, since such problems often require tracking state transitions over a sequence or set of events.
+
+Moreover, handling queries efficiently for potentially large input sizes (the problem constraints allow up to 10^5 nodes and edges along with 2*10^5 queries) suggests the usage of some form of preprocessing, possibly with the help of data structures like priority queues or sorting in conjunction with BFS or DFS algorithms. 
+
+Thus, based on these observations:
+- **Difficulty Level**: Medium-High due to complexity involving time management, graph traversal techniques, and efficient query handling.
+- **Required Programming Skills**: Strong understanding of algorithmic concepts including Graph Theory (BFS/DFS), Dynamic Programming, Time Complexity Optimization, and Efficient use of Data Structures like Priority Queues or Sorted Arrays for optimal query processing.
+- **Complexity**:
+  - Space Complexity: O(N) to store graph information along with potential node states.
+  - Time Complexity for Preprocessing: At least O(N log N) due to sorting for scheduling buses and potentially using sorting in BFS/Dijkstra optimization steps.
+  - Query Processing Time Complexity: Performed during the initial setup or on-demand, aiming for logarithmic time complexity using optimized data structures.
+
+The problem combines elements of graph traversal with specific constraints that necessitate clever implementation techniques beyond simple brute-force approaches. This blend makes it a challenging but instructive exercise suitable for advanced programming and algorithmic training sessions.

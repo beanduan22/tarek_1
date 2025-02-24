@@ -1,0 +1,61 @@
+Problem ID: abc335_a
+Problem Content:
+You are given a string S consisting of lowercase English letters and digits.
+S is guaranteed to end with 2023.
+Change the last character of S to 4 and print the modified string.
+
+Input
+
+The input is given from Standard Input in the following format:
+S
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- S is a string of length between 4 and 100, inclusive, consisting of lowercase English letters and digits.
+- S ends with 2023.
+
+Sample Input 1
+
+hello2023
+
+Sample Output 1
+
+hello2024
+
+Changing the last character of hello2023 to 4 yields hello2024.
+
+Sample Input 2
+
+worldtourfinals2023
+
+Sample Output 2
+
+worldtourfinals2024
+
+Sample Input 3
+
+2023
+
+Sample Output 3
+
+2024
+
+S is guaranteed to end with 2023, possibly being 2023 itself.
+
+Sample Input 4
+
+20232023
+
+Sample Output 4
+
+20232024
+
+Codestral Analysis:
+ Category: Beginner
+
+   The problem can be solved using basic string manipulation techniques that are commonly taught in introductory programming courses. No advanced algorithms or data structures are required to solve this problem. Hence, it is classified as a beginner-level problem. To solve the problem, we need to take a string as input, then change its last character from '3' to '4', and print the modified string as output. This can be done using simple programming concepts such as accepting user input, understanding string indexing, and performing string manipulation. Therefore, the required skills include basic knowledge of string handling and input/output operations in a programming language. The problem does not involve any complex calculations or high-level computational thinking. Overall, it is a straightforward problem that can be solved with ease by beginners who have recently started learning programming.

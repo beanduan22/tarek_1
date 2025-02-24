@@ -1,0 +1,33 @@
+Problem ID: 2800
+Problem Content:
+You are given a string s consisting only of uppercase English letters.
+You can apply some operations to this string where, in one operation, you can remove any occurrence of one of the substrings "AB" or "CD" from s.
+Return the minimum possible length of the resulting string that you can obtain.
+Note that the string concatenates after removing the substring and could produce new "AB" or "CD" substrings.
+ 
+Example 1:
+
+Input: s = "ABFCACDB"
+Output: 2
+Explanation: We can do the following operations:
+- Remove the substring "ABFCACDB", so s = "FCACDB".
+- Remove the substring "FCACDB", so s = "FCAB".
+- Remove the substring "FCAB", so s = "FC".
+So the resulting length of the string is 2.
+It can be shown that it is the minimum length that we can obtain.
+Example 2:
+
+Input: s = "ACBBD"
+Output: 5
+Explanation: We cannot do any operations on the string so the length remains the same.
+
+ 
+Constraints:
+
+1 <= s.length <= 100
+s consists only of uppercase English letters.
+
+Codestral Analysis:
+ This is a dynamic programming problem that involves string manipulation and recursion. Given a string composed of uppercase English letters, the goal is to find the minimum possible length of the resulting string after applying certain operations where "AB" or "CD" substrings can be removed from the original string. The difficulty level of this problem can be considered HARD because it requires advanced programming skills in dynamic programming and string manipulation. It also has a high complexity due to the recursive nature of the solution and the need to consider all possible combinations of removing "AB" or "CD".
+
+    To solve this, we'll create a DP array of size N+1 (where N is the length of the input string) where dp[i] stores the minimum possible length after processing i characters. We will loop through the string, and for each pair of different letters at indices i and j (i < j), we'll check if s[i...j] is "AB" or "CD". If it is, then we'll update dp[j+1] with the minimum value between its current state and the value from dp[i]. At last, dp[N] will store our answer. This solution has a time complexity of O(n^2) due to the nested loop structure.

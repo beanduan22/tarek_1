@@ -1,0 +1,7 @@
+ Difficulty: Easy
+
+   Required Programming Skills: Basic list comprehension or looping constructs, string manipulation functions
+
+   Category: List Filtering & String Manipulation
+
+   Explanation: This problem is categorized as easy because it requires the use of basic list filtering and string manipulation. The task can be solved using a list comprehension or a for loop to iterate through each element in the input list, checking if a given substring exists within that string. If so, the string will be added to a new output list. The problem doesn't require any advanced data structures or algorithms. It is suitable for beginners and intermediate programmers who are familiar with fundamental programming concepts such as looping constructs, string manipulation functions, and function definition in Python.

@@ -1,0 +1,62 @@
+Problem ID: abc333_c
+Problem Content:
+A repunit is an integer whose digits are all 1 in decimal representation. The repunits in ascending order are 1, 11, 111, \ldots.
+Find the N-th smallest integer that can be expressed as the sum of exactly three repunits.
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- N is an integer between 1 and 333, inclusive.
+
+Sample Input 1
+
+5
+
+Sample Output 1
+
+113
+
+The integers that can be expressed as the sum of exactly three repunits are 3, 13, 23, 33, 113, \ldots in ascending order. For example, 113 can be expressed as 113 = 1 + 1 + 111.
+Note that the three repunits do not have to be distinct.
+
+Sample Input 2
+
+19
+
+Sample Output 2
+
+2333
+
+Sample Input 3
+
+333
+
+Sample Output 3
+
+112222222233
+
+Qwen2 Analysis:
+The given problem can be categorized as a **Mathematical/Algorithmic Programming Problem** that falls under the complexity level of **Medium to Hard**. Here's why:
+
+1. **Difficulty Level**: The solution requires some understanding of number theory (specifically dealing with repunits) and iterative algorithms, which are not common knowledge for beginners but can be grasped by intermediate-level programmers.
+
+2. **Required Programming Skills**: Basic programming skills will suffice to implement the logic described in the problem statement. However, it's beneficial to have familiarity with loops (for iterating over possible combinations of repunits), arithmetic operations, and array or list handling, depending on how you structure your solution for storing the sums.
+
+3. **Complexity**:
+   - **Time Complexity**: The most challenging part would be generating all possible combinations of three repunits that sum up to a given number within the constraints provided. As \(N\) increases (up to 333), there might potentially exist larger numbers formed by more than one combination of smaller repunits, leading to an algorithm with relatively high complexity.
+   - **Space Complexity**: The space required would depend on how you store intermediate sums and possibly previous results if using a dynamic programming approach. In this case, since the input is limited to \(N \leq 333\), the space complexity might be manageable.
+
+4. **Solving Strategy**:
+   - **Iterative Approach**: Implementing a function that iteratively computes all possible sums of three repunits starting from the smallest (1) up to the N-th one.
+   - **Optimization**: To optimize, one could consider using memoization or dynamic programming techniques to avoid recalculating previously computed sums if \(N\) is not too large.
+
+In summary, this problem requires a good grasp of number theory concepts, familiarity with iterative algorithms and optimization techniques (like avoiding redundant calculations), which are crucial skills for tackling algorithmic challenges effectively. The categorization reflects the need for intermediate-level programming skills to efficiently solve it within reasonable computational resources.

@@ -1,0 +1,53 @@
+Problem ID: 3045
+Problem Content:
+You are given a 0-indexed array nums of length n containing distinct positive integers. Return the minimum number of right shifts required to sort nums and -1 if this is not possible.
+A right shift is defined as shifting the element at index i to index (i + 1) % n, for all indices.
+ 
+Example 1:
+
+Input: nums = [3,4,5,1,2]
+Output: 2
+Explanation: 
+After the first right shift, nums = [2,3,4,5,1].
+After the second right shift, nums = [1,2,3,4,5].
+Now nums is sorted; therefore the answer is 2.
+
+Example 2:
+
+Input: nums = [1,3,5]
+Output: 0
+Explanation: nums is already sorted therefore, the answer is 0.
+Example 3:
+
+Input: nums = [2,1,4]
+Output: -1
+Explanation: It's impossible to sort the array using right shifts.
+
+ 
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100
+nums contains distinct integers.
+
+Qwen2 Analysis:
+This problem falls under the category of "Algorithms" specifically dealing with array manipulation and sorting. The primary technique involves understanding array shifts (cyclic right shift) and identifying whether the given sequence can be sorted by performing a series of these operations.
+
+**Problem Analysis:**
+
+1. **Difficulty:** This is an intermediate-level problem that requires good understanding of array handling and sorting algorithms, specifically focusing on cyclic permutations.
+2. **Required Programming Skills:** It necessitates knowledge in handling arrays, understanding modulo arithmetic for circular shifts, and having experience with basic algorithmic concepts like detecting monotonicity (increasing or decreasing order).
+3. **Complexity:** The complexity lies more on logical comprehension than high-level algorithms since the core task involves iterating over the array once to identify patterns that allow sorting through right shifts.
+
+**Solving Strategy:**
+
+To solve this problem, you would iterate through each element of the `nums` array:
+
+- Check if a right shift operation could potentially sort the array by comparing adjacent elements. The key insight is to track the index where the sequence breaks its increasing order when shifting from start to end.
+- Perform the actual shifts based on the identified break point and verify if sorting can be achieved with this number of shifts.
+- If no solution found, return `-1`.
+
+**Time Complexity:** O(n), as each element needs to be inspected once.
+**Space Complexity:** O(1), since constant space is used (assuming that the overhead for function calls doesn't count towards space complexity).
+
+Overall, this problem combines logical reasoning and basic algorithmic concepts in an interesting way, making it a good test case for evaluating one's skills in manipulating arrays and understanding their properties.

@@ -1,0 +1,9 @@
+ Category: Beginner
+
+    This problem can be categorized as a beginner level problem because it only requires basic knowledge of Python functions, control flow, and mathematical operations such as exponentiation. No advanced data structures or algorithms are needed to solve this task.
+
+    The difficulty level is low since the problem statement is clear and concise, providing all necessary information for solving the problem. Additionally, there are a few examples provided which can help clarify any ambiguities in the problem statement.
+
+    The required programming skills include the ability to write functions in Python, use control flow statements like if-else, and perform mathematical operations such as exponentiation. No specific advanced knowledge is needed for this task.
+
+    In terms of complexity, this problem has a time complexity of O(1) because it involves only a single mathematical operation (exponentiation), which can be performed in constant time regardless of the size of the input numbers. The space complexity is also O(1) as no additional data structures are used to solve the problem.

@@ -1,0 +1,50 @@
+Problem ID: abc312_a
+Problem Content:
+Given a length-3 string S consisting of uppercase English letters, print Yes if S equals one of ACE, BDF, CEG, DFA, EGB, FAC, and GBD; print No otherwise.
+
+Input
+
+The input is given from Standard Input in the following format:
+S
+
+Output
+
+Print Yes if S equals one of ACE, BDF, CEG, DFA, EGB, FAC, and GBD; print No otherwise.
+
+Constraints
+
+
+- S is a length-3 string consisting of uppercase English letters.
+
+Sample Input 1
+
+ABC
+
+Sample Output 1
+
+No
+
+When S = ABC, S does not equal any of ACE, BDF, CEG, DFA, EGB, FAC, and GBD, so No should be printed.
+
+Sample Input 2
+
+FAC
+
+Sample Output 2
+
+Yes
+
+Sample Input 3
+
+XYX
+
+Sample Output 3
+
+No
+
+Codestral Analysis:
+ The problem can be categorized as a simple string matching problem. It does not require advanced data structures or algorithms to solve. The problem involves checking if a given length-3 string is equal to any of the provided strings in the list (ACE, BDF, CEG, DFA, EGB, FAC, GBD). This can be solved by directly comparing the input string with each string from the list and returning "Yes" if there's a match. If none of them matches, return "No".
+
+    Difficulty: Easy (1 out of 5)
+    Required Skills: Basic String Manipulation
+    Complexity: Linear Time (O(n)) where n is the number of strings in the list for checking each string. However, since the list contains a fixed size of 7 strings, the complexity can be considered as constant time (O(1)).

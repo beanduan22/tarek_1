@@ -1,0 +1,10 @@
+ Category: Easy-Medium
+
+   This problem can be categorized as an 'Easy-Medium' level problem because it involves iterating through a list to compare elements, but does not require complex data structures or algorithms. To solve this problem, you need basic programming skills in Python and a good understanding of looping constructs. The time complexity is linear O(n), where n is the number of elements in the array.
+
+   Here's how one could approach solving this problem:
+
+   1. Initialize a variable `max_index` to -1. This variable will store the largest index of an element that does not meet the condition (i.e., it is greater than its preceding element).
+   2. Loop through the array, starting from the second element (since there's no previous element for the first one).
+   3. For each iteration, check if the current element is less than or equal to the previous element. If this condition holds true, update `max_index` with the current index.
+   4. After the loop ends, return `max_index`. This will be the largest index of an element that does not meet the condition, or -1 if no such element exists.

@@ -1,0 +1,6 @@
+ The problem involves encoding and decoding a given string by shifting each character 5 places in the alphabet. It uses ASCII values to perform these operations. This is a common technique for creating simple encryption and decryption algorithms.
+
+Category: Basic to Intermediate Python Programming Problem
+Difficulty Level: Easy to Medium
+Required Skills: Understanding of string manipulation, ASCII values, and modular arithmetic in Python. Familiarity with list comprehension can be beneficial but is not strictly necessary.
+Complexity: The time complexity for both encoding and decoding functions is O(n), where n is the length of the input string. This is because each function iterates over every character in the string once. The space complexity is also O(n) to store the output string.

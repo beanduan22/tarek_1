@@ -1,0 +1,10 @@
+ This problem can be classified as a basic level problem in programming. The category of this problem would be algorithmic problems, specifically mathematical problems. It doesn't require any advanced data structures or algorithms. The difficulty level can be considered easy to moderate since it involves the use of loops or recursion for checking all possible cubes up to the given number 'a'. However, it might also be solved by using mathematical concepts such as cube roots which could make it a bit more challenging.
+
+    Required programming skills:
+    1. Understanding functions and their usage in Python.
+    2. Basic knowledge of loops or recursion for iterative checking of cubes.
+    3. Familiarity with the concept of cube root (Optional)
+
+    Complexity:
+    The time complexity of this problem is O(n), where n is the cube root of 'a'. This is because in the worst-case scenario, we may have to check all numbers up to the cube root of 'a' to determine if it's a cube number.
+    The space complexity is O(1) as we are using a constant amount of space to store our variables.

@@ -1,0 +1,8 @@
+This programming problem is of medium difficulty. It requires good knowledge in string manipulation, conditional statements and understanding of date validation rules.
+
+To solve this problem, you might need to apply techniques such as:
+- String manipulation: extracting month, day, year from the input string using slicing or regular expressions.
+- Conditionals: applying multiple condition checks based on extracted values for validating months, days and leap years.
+- Handling edge cases: dealing with invalid inputs like single digit numbers, non-standard date formats, etc.
+
+The problem involves checking specific rules about the date format, ranges of day/months and leap year validation which would require careful implementation to handle all possible scenarios. Thus, it is a suitable test for assessing someone's ability in those areas within programming skills.

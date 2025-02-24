@@ -1,0 +1,17 @@
+The given problem can be categorized as an intermediate level programming challenge. It requires understanding of string manipulation in Python, familiarity with the `ord()` function for character conversion, basic list handling capabilities, and knowledge about conditional statements to tackle different scenarios.
+
+To solve this problem effectively:
+
+1. **String Manipulation**: The problem demands working with strings by splitting them based on specific delimiters such as whitespace or commas.
+2. **Conditional Logic**: Implementing logic to handle cases where there are no whitespaces or commas necessitates using conditional checks, specifically the `if` statement(s).
+3. **Character Handling**: Utilizing Python's built-in character order conversion function (`ord()`) is essential for calculating a specific output when no whitespace or comma exists.
+
+Overall, this problem tests one's ability to handle multiple conditions in their code and effectively manage string data types using basic programming constructs and functions provided by the language (Python).
+
+The key aspects of solving this problem might involve writing logic that can:
+
+- Detect if there is a whitespace or comma as a delimiter.
+- Split the input string accordingly and return the resulting list.
+- If no whitespaces or commas exist, count the number of lowercase letters with odd order in the alphabet.
+
+Thus, it primarily tests skills related to these areas: string manipulation techniques, conditional logic, and character-based calculations in Python.

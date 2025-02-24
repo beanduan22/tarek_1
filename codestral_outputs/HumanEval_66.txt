@@ -1,0 +1,3 @@
+ Category: Basic String Manipulation & ASCII Operations
+
+   Explanation: The problem falls under the category of basic string manipulation and ASCII operations as it requires checking each character in a given string to determine if it is uppercase or not, then calculating and summing up their ASCII values. This task does not involve complex data structures, advanced algorithms, or extensive knowledge of programming languages. It could be considered an "easy" problem with respect to most common coding interviews and assessments.

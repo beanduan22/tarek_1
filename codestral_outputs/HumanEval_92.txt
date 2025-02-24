@@ -1,0 +1,19 @@
+ Problem Category: Beginner to Intermediate
+
+   The problem can be categorized as a beginner to intermediate level problem due to the following reasons:
+
+1. Difficulty Level: The function only requires basic operations such as addition and comparison. However, it requires checking for data type (integer) which might slightly elevate its difficulty level.
+2. Programming Skills Required: Knowledge of a programming language is necessary. Understanding of functions and conditional statements are essential. Experience with data type checking could be beneficial but not necessarily required.
+3. Complexity: The problem does not require complex algorithms or advanced data structures. However, it involves multiple conditions which might add to its complexity if not handled correctly.
+
+   Here's a simple solution in Python:
+
+```python
+def any_int(x, y, z):
+    # Check if all numbers are integers
+    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):
+        # Check if one of the numbers is equal to the sum of the other two
+        if x == y + z or y == x + z or z == x + y:
+            return True
+    return False
+```

@@ -1,0 +1,93 @@
+Problem ID: abc348_e
+Problem Content:
+You are given a tree with N vertices. The vertices are numbered 1 to N, and the i-th edge connects vertices A_i and B_i.
+You are also given a sequence of positive integers C = (C_1, C_2, \ldots ,C_N) of length N. Let d(a, b) be the number of edges between vertices a and b, and for x = 1, 2, \ldots, N, let \displaystyle f(x) = \sum_{i=1}^{N} (C_i \times d(x, i)). Find \displaystyle \min_{1 \leq v \leq N} f(v).
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+A_1 B_1
+A_2 B_2
+\vdots
+A_{N - 1} B_{N - 1}
+C_1 C_2 \cdots C_N
+
+Output
+
+Print the answer in one line.
+
+Constraints
+
+
+- 1 \leq N \leq 10^5
+- 1 \leq A_i, B_i \leq N
+- The given graph is a tree.
+- 1 \leq C_i \leq 10^9
+
+Sample Input 1
+
+4
+1 2
+1 3
+2 4
+1 1 1 2
+
+Sample Output 1
+
+5
+
+For example, consider calculating f(1). We have d(1, 1) = 0, d(1, 2) = 1, d(1, 3) = 1, d(1, 4) = 2.
+Thus, f(1) = 0 \times 1 + 1 \times 1 + 1 \times 1 + 2 \times 2 = 6.
+Similarly, f(2) = 5, f(3) = 9, f(4) = 6. Since f(2) is the minimum, print 5.
+
+Sample Input 2
+
+2
+2 1
+1 1000000000
+
+Sample Output 2
+
+1
+
+f(2) = 1, which is the minimum.
+
+Sample Input 3
+
+7
+7 3
+2 5
+2 4
+3 1
+3 6
+2 1
+2 7 6 9 3 4 6
+
+Sample Output 3
+
+56
+
+Qwen2 Analysis:
+The given problem is a classic example of a graph theory problem with elements requiring algorithmic thinking and understanding of tree structures. This problem asks for calculating certain properties (d(x,i) and f(x)) associated with each vertex in the tree and finding minimum value across all vertices.
+
+**Difficulty Level**: Medium to Hard - The problem involves complex traversal of graphs, sum calculations over nodes, and optimization techniques such as minimizing a given function which requires thoughtful implementation.
+
+**Required Programming Skills**: This problem primarily relies on skills like:
+- Graph Theory: Understanding properties and operations in trees.
+- Dynamic Programming or Depth First Search (DFS): To calculate sums d(x,i) for each node x across all other nodes i. 
+- Optimization Techniques: Minimization of a function over the vertices to find the minimum value.
+
+**Complexity**: The input constraints suggest that the algorithm needs to have reasonable time complexity to work efficiently on large inputs within typical time limits (like O(N log N), or better). Algorithms involving DFS are usually capable of handling these cases effectively by leveraging recursion or stack operations. 
+
+Thus, this problem requires a good understanding of tree traversal algorithms in graphs and efficient coding practices to compute sums over nodes while minimizing the function f(x) for each vertex x.
+
+**Category**: This would fall under Graph Theory / Algorithms problems typically found in algorithmic competitions like Codeforces, LeetCode, or ACM/ICPC contests. It combines knowledge from data structures (like adjacency lists or matrices for graph representation), recursion, and possibly dynamic programming principles to solve efficiently over large graphs with constraints as specified.
+
+In summary:
+- Difficulty: Medium-Hard
+- Programming Skills Required: Graph Theory Concepts & Algorithm Implementation
+- Complexity Consideration: O(N) or better time complexity suitable for medium input sizes.
+- Problem Category: Graph Theory / Algorithms
+
+The solution would involve constructing the tree (if not provided), performing DFS to calculate necessary sums and then applying optimization techniques to find minimum value of function f(x) across all vertices.

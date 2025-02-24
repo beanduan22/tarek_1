@@ -1,0 +1,77 @@
+Problem ID: 3398
+Problem Content:
+You are given a 2D matrix grid of size 3 x 3 consisting only of characters 'B' and 'W'. Character 'W' represents the white color, and character 'B' represents the black color.
+Your task is to change the color of at most one cell so that the matrix has a 2 x 2 square where all cells are of the same color.
+Return true if it is possible to create a 2 x 2 square of the same color, otherwise, return false.
+ 
+
+
+Example 1:
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+Input: grid = [["B","W","B"],["B","W","W"],["B","W","B"]]
+Output: true
+Explanation:
+It can be done by changing the color of the grid[0][2].
+
+Example 2:
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+Input: grid = [["B","W","B"],["W","B","W"],["B","W","B"]]
+Output: false
+Explanation:
+It cannot be done by changing at most one cell.
+
+Example 3:
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+Input: grid = [["B","W","B"],["B","W","W"],["B","W","W"]]
+Output: true
+Explanation:
+The grid already contains a 2 x 2 square of the same color.
+
+ 
+Constraints:
+
+grid.length == 3
+grid[i].length == 3
+grid[i][j] is either 'W' or 'B'.
+
+Codestral Analysis:
+ The problem can be categorized as a simple problem in matrix manipulation. It requires analyzing each cell of the given 3x3 grid to determine if changing one cell's color can create a 2x2 square with the same color. This task can be accomplished by checking all possible combinations of four cells that form a 2x2 square, and seeing if changing any single cell in these combinations results in a valid solution.
+
+    Difficulty: Easy
+
+    Required programming skills: Basic knowledge in array manipulation and problem-solving.
+
+    Complexity: The time complexity is O(1) since the grid size is fixed at 3x3, so we don't need to iterate over all cells of the matrix. The space complexity is also O(1), as no additional space is used that scales with input size.

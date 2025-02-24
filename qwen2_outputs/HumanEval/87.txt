@@ -1,0 +1,19 @@
+**Category:**
+
+* **Difficulty:** Medium
+
+The given problem requires a good understanding of multi-dimensional data structures (nested lists), array manipulation, sorting algorithms, and the use of tuples in Python. It also involves nested loops for iterating through each element within potentially varying-sized sublists. Therefore, while it might not be overly complex, it does require familiarity with these specific programming concepts.
+
+* **Required Programming Skills:**
+
+1. **Multi-dimensional Arrays:** The problem revolves around navigating multi-dimensional lists (nested lists), which requires a solid grasp of how to handle and access elements in such structures.
+2. **List Manipulation:** Operations such as adding elements to the list, filtering based on conditions, etc., are needed here.
+3. **Sorting:** You need to sort both rows in ascending order and individual columns within each row in descending order.
+
+4. **Tuple Usage:** The output needs to return coordinates represented as tuples of `(row, column)` format, which involves understanding how to create and use tuples effectively.
+
+* **Complexity:**
+
+The time complexity would primarily depend on the number of elements across all rows (n) and potentially also their maximum length (m). Since there might be several passes through this data structure (for instance, for checking every element in each row against `x`, and then sorting), a worst-case time complexity could be considered as O(n * m log(m)) considering the sorting step. However, without additional details about optimizations or constraints on the input size, it's difficult to precisely define the upper limit of complexity.
+
+In summary, this problem requires knowledge of multi-dimensional data structures manipulation, list and tuple operations in Python along with basic sorting techniques. The solution should be relatively straightforward if those concepts are understood but can become more intricate depending on how the optimization is handled for large inputs or cases where rows have very different lengths.

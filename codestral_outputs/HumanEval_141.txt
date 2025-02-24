@@ -1,0 +1,7 @@
+ Category: Easy-Medium
+
+   This is an easy to medium level problem that tests basic string manipulation, regular expressions (if used), conditional statements, and knowledge of file naming conventions. The problem mainly checks if a given string meets certain conditions related to its structure and content. To solve it, you need to extract the substrings before and after the dot, count the number of digits in the name, check if the name starts with an alphabet letter, and validate the extension.
+
+   In terms of programming skills, a basic understanding of string methods like split(), isdigit(), startswith() and a knowledge of regular expressions for more advanced solutions would be sufficient to solve this problem. The complexity lies in managing and applying these conditions accurately.
+
+   This type of problem could be found in beginner-level coding challenges or introductory programming courses that focus on string manipulation and conditional statements.

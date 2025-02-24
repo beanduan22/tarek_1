@@ -1,0 +1,19 @@
+The programming problem described above falls under the category of "Basic Algorithm Problem" which involves mathematical concepts and simple logic. The difficulty level would be categorized as Beginner or Easy because it requires understanding basic concepts like geometry (triangle properties) and some knowledge about Python's function definitions and rounding rules.
+
+Required Programming Skills:
+
+1. **Function Definition**: Understanding how to define a function in Python, including the proper use of parameters.
+
+2. **If-Else Statement**: The ability to use conditional logic to determine if certain conditions are met (whether the given sides form a valid triangle).
+
+3. **Mathematical Concepts**: Basic knowledge about triangles and their properties such as the triangle inequality theorem that states the sum of any two sides must be greater than the third side.
+
+4. **Rounding Numbers**: Python's `round()` function might be used to round off the calculated area of the triangle to 2 decimal points if it forms a valid triangle.
+
+5. **Error Handling**: In this case, handling scenarios where input does not form a valid triangle by returning -1.
+
+The complexity is low because:
+- There are no nested loops or recursive calls needed.
+- The logic mainly involves simple arithmetic operations and conditional checks which are straightforward to implement in Python.
+
+Overall, this problem would be suitable for someone learning basic programming concepts as it combines both mathematical theory with practical application using a language like Python.

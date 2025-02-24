@@ -1,0 +1,97 @@
+Problem ID: abc312_f
+Problem Content:
+There are N items.
+Each of these is one of a pull-tab can, a regular can, or a can opener.
+The i-th item is described by an integer pair (T_i, X_i) as follows:  
+
+- If T_i = 0, the i-th item is a pull-tab can; if you obtain it, you get a happiness of X_i.
+- If T_i = 1, the i-th item is a regular can; if you obtain it and use a can opener against it, you get a happiness of X_i.
+- If T_i = 2, the i-th item is a can opener; it can be used against at most X_i cans.
+
+Find the maximum total happiness that you get by obtaining M items out of N.
+
+Input
+
+The input is given from Standard Input in the following format:
+N M
+T_1 X_1
+T_2 X_2
+\vdots
+T_N X_N
+
+Output
+
+Print the answer as an integer.
+
+Constraints
+
+
+- 1 \leq M \leq N \leq 2 \times 10^5
+- T_i is 0, 1, or 2.
+- 1 \leq X_i \leq 10^9
+- All input values are integers.
+
+Sample Input 1
+
+8 4
+0 6
+0 6
+1 3
+1 5
+1 15
+2 1
+2 10
+2 100
+
+Sample Output 1
+
+27
+
+If you obtain the 1-st, 2-nd, 5-th, and 7-th items, and use the 7-th item (a can opener) against the 5-th item, you will get a happiness of 6 + 6 + 15 = 27.
+There are no ways to obtain items to get a happiness of 28 or greater, but you can still get a happiness of 27 by obtaining the 6-th or 8-th items instead of the 7-th in the combination above.
+
+Sample Input 2
+
+5 5
+1 5
+1 5
+1 5
+1 5
+1 5
+
+Sample Output 2
+
+0
+
+Sample Input 3
+
+12 6
+2 2
+0 1
+0 9
+1 3
+1 5
+1 3
+0 4
+2 1
+1 8
+2 1
+0 1
+0 4
+
+Sample Output 3
+
+30
+
+Codestral Analysis:
+ This is a typical optimization problem that can be solved using priority queues (also known as heaps) in combination with a greedy algorithm approach. Here's how you might analyze and categorize this problem:
+
+- **Difficulty**: Medium to Hard
+  - The problem requires understanding of data structures like priority queues, sorting algorithms, and the concept of using two different data structures to solve a problem (greedy algorithm). It also involves making decisions under constraints.
+
+- **Required Programming Skills**: Data Structures, Algorithms, Priority Queue, Greedy Algorithm
+  - The solution would require a solid understanding of how to implement and use priority queues in your code. Additionally, it demands the application of sorting algorithms based on specific criteria and implementing a greedy approach for solving the problem.
+
+- **Complexity**: Time complexity is O(N log N) due to the sorting operation. The space complexity is also O(N) as we are storing all the input data in memory.
+
+This problem can be categorized as an optimization problem, specifically a priority scheduling problem with a greedy algorithm approach. It requires understanding of how to use different data structures efficiently and how to sort based on specific criteria. The complexity indicates that it's a challenge problem that may require good programming skills and a solid understanding of algorithms to solve optimally.

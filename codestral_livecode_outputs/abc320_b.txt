@@ -1,0 +1,57 @@
+Problem ID: abc320_b
+Problem Content:
+You are given a string S.
+Find the maximum length of a contiguous substring of S that is a palindrome.
+Note that there is always a contiguous substring of S that is a palindrome.
+
+Input
+
+The input is given from Standard Input in the following format:
+S
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- S is a string of length between 2 and 100, inclusive, consisting of uppercase English letters.
+
+Sample Input 1
+
+TOYOTA
+
+Sample Output 1
+
+5
+
+TOYOT, a contiguous substring of TOYOTA, is a palindrome of length 5.
+TOYOTA, the only length-6 contiguous substring of TOYOTA, is not a palindrome, so print 5.
+
+Sample Input 2
+
+ABCDEFG
+
+Sample Output 2
+
+1
+
+Every contiguous substring of length 1 is a palindrome.
+
+Sample Input 3
+
+AAAAAAAAAA
+
+Sample Output 3
+
+10
+
+Codestral Analysis:
+ Category: String Manipulation (Medium)
+
+This is a string manipulation problem that focuses on finding the maximum length of a contiguous substring that is a palindrome within a given input string. The problem can be solved by checking all possible substrings and verifying if they are palindromes. This requires iterating over each character in the string, and for each character, check both directions to see how far you can extend a palindrome centered at that character.
+
+Difficulty: Medium
+Required Skills: Looping structures, String manipulation, Palindrome checking algorithm
+Complexity: O(n^2), where n is the length of the string. This is because for each character in the string, we could potentially check up to all substrings ending at that character.

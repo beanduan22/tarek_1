@@ -1,0 +1,55 @@
+Problem ID: 2886
+Problem Content:
+Your laptop keyboard is faulty, and whenever you type a character 'i' on it, it reverses the string that you have written. Typing other characters works as expected.
+You are given a 0-indexed string s, and you type each character of s using your faulty keyboard.
+Return the final string that will be present on your laptop screen.
+ 
+Example 1:
+
+Input: s = "string"
+Output: "rtsng"
+Explanation: 
+After typing first character, the text on the screen is "s".
+After the second character, the text is "st". 
+After the third character, the text is "str".
+Since the fourth character is an 'i', the text gets reversed and becomes "rts".
+After the fifth character, the text is "rtsn". 
+After the sixth character, the text is "rtsng". 
+Therefore, we return "rtsng".
+
+Example 2:
+
+Input: s = "poiinter"
+Output: "ponter"
+Explanation: 
+After the first character, the text on the screen is "p".
+After the second character, the text is "po". 
+Since the third character you type is an 'i', the text gets reversed and becomes "op". 
+Since the fourth character you type is an 'i', the text gets reversed and becomes "po".
+After the fifth character, the text is "pon".
+After the sixth character, the text is "pont". 
+After the seventh character, the text is "ponte". 
+After the eighth character, the text is "ponter". 
+Therefore, we return "ponter".
+ 
+Constraints:
+
+1 <= s.length <= 100
+s consists of lowercase English letters.
+s[0] != 'i'
+
+Qwen2 Analysis:
+Based on the characteristics provided in the problem description:
+
+- **Difficulty**: The task involves implementing a specific logic to process an input string according to certain rules. It requires understanding of basic programming constructs like loops, conditionals, and string manipulation operations such as reversing strings.
+
+- **Required Programming Skills**: The problem primarily tests skills related to:
+    - Looping through data structures (specifically iterating over characters in the input string)
+    - Conditional logic (deciding actions based on specific conditions: whether a character is 'i')
+    - String manipulation (reversing strings)
+
+- **Complexity**: While this task might seem straightforward, it could potentially have edge cases or limitations due to the language's constraints (like not being able to directly reverse strings in some languages and needing special handling for that operation). The complexity lies more in understanding and implementing the logic correctly than in dealing with intricate data structures or algorithmic complexities.
+
+Considering these aspects, this problem would likely fall under a **beginner to intermediate level category** in coding challenges. It requires basic programming proficiency but also emphasizes careful attention to detail and efficient use of available constructs within the language being used (not specified here). 
+
+Typically such problems might be categorized as part of algorithms or data structures exercises, especially those focusing on string manipulation and simple logic operations. They can serve well for teaching basic principles in computer science courses or during coding interviews with a focus on understanding how to handle edge cases and optimize solutions based on problem constraints (like avoiding direct use of built-in reverse functions).

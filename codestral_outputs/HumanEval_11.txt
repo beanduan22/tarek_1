@@ -1,0 +1,5 @@
+ This problem is considered a basic level problem in terms of programming. It falls under the category of string manipulation or bitwise operations. The main concept to solve this problem is understanding binary XOR operation and applying it character by character between two strings. Since the input consists only of 1s and 0s, there's no need for additional conversion.
+
+    Difficulty: Easy
+    Required Programming Skills: Basic knowledge of string manipulation or bitwise operations, understanding of binary XOR operation
+    Complexity: Linear time complexity O(n) where n is the length of input strings since we are iterating through each character once.

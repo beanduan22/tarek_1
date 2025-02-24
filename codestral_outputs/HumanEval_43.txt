@@ -1,0 +1,7 @@
+ The problem can be categorized as a "Easy" level problem in terms of difficulty since it only requires the implementation of an algorithm to check if there exist two distinct numbers in a list that sum up to zero.
+
+   In terms of required programming skills, this problem tests basic knowledge of Python and its data structures like lists. It also checks the ability to use loops for iterating through the list and conditionals for making comparisons. Hence, it can be considered a beginner-level problem.
+
+   The complexity of the problem is O(n²) because it uses nested loops to check every pair in the list. However, if we sort the array first or use a hash table (dictionary), the time complexity will decrease to O(n log n) and O(n) respectively, but this may increase space complexity.
+
+   Based on these factors, I would categorize this problem as "Beginner-Level Easy".

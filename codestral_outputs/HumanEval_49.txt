@@ -1,0 +1,3 @@
+ This problem can be classified as a medium-level algorithmic problem with focus on number theory and modular arithmetic. The function is expected to calculate 2^n modulo p. To solve this, one can use the concept of exponentiation by squaring which reduces computational complexity significantly for large numbers. The difficulty level might slightly vary depending upon whether the programmer is comfortable with modular arithmetic and optimizing their code for performance.
+
+   Category: Number Theory - Medium-level algorithmic problem focusing on modular arithmetic and optimization techniques like exponentiation by squaring.

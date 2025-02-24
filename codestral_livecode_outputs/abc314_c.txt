@@ -1,0 +1,80 @@
+Problem ID: abc314_c
+Problem Content:
+You are given a string S of length N consisting of lowercase English letters.
+Each character of S is painted in one of the M colors: color 1, color 2, ..., color M; for each i = 1, 2, \ldots, N, the i-th character of S is painted in color C_i.
+For each i = 1, 2, \ldots, M in this order, let us perform the following operation.
+
+- Perform a right circular shift by 1 on the part of S painted in color i.
+  That is, if the p_1-th, p_2-th, p_3-th, \ldots, p_k-th characters are painted in color i from left to right, then simultaneously replace the p_1-th, p_2-th, p_3-th, \ldots, p_k-th characters of S with the p_k-th, p_1-th, p_2-th, \ldots, p_{k-1}-th characters of S, respectively.
+
+Print the final S after the above operations.
+The constraints guarantee that at least one character of S is painted in each of the M colors.
+
+Input
+
+The input is given from Standard Input in the following format:
+N M
+S
+C_1 C_2 \ldots C_N
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- 1 \leq M \leq N \leq 2 \times 10^5
+- 1 \leq C_i \leq M
+- N, M, and C_i are all integers.
+- S is a string of length N consisting of lowercase English letters.
+- For each integer 1 \leq i \leq M, there is an integer 1 \leq j \leq N such that C_j = i.
+
+Sample Input 1
+
+8 3
+apzbqrcs
+1 2 3 1 2 2 1 2
+
+Sample Output 1
+
+cszapqbr
+
+Initially, S =  apzbqrcs.
+
+- For i = 1, perform a right circular shift by 1 on the part of S formed by the 1-st, 4-th, 7-th characters, resulting in S =  cpzaqrbs.
+- For i = 2, perform a right circular shift by 1 on the part of S formed by the 2-nd, 5-th, 6-th, 8-th characters, resulting in S =  cszapqbr.
+- For i = 3, perform a right circular shift by 1 on the part of S formed by the 3-rd character, resulting in S =  cszapqbr (here, S is not changed).
+
+Thus, you should print cszapqbr, the final S.
+
+Sample Input 2
+
+2 1
+aa
+1 1
+
+Sample Output 2
+
+aa
+
+Codestral Analysis:
+ The problem is a string manipulation task that involves performing right circular shifts on parts of a given string based on their assigned colors. To solve this, we need to iterate over each color and find all characters painted with that color. Then, we perform the right circular shift operation on those characters by moving the last character to the beginning and shifting the rest of the characters one position to the right. This process is repeated for all colors in order. The problem can be categorized as a medium-difficulty task that requires good understanding of string manipulation and iteration techniques.
+
+Here's a Python solution using list slicing and join operations:
+
+```python
+def rotate(input_str, color_list):
+    n = len(input_str)
+    m = max(color_list)
+    input_str = list(input_str)
+    for i in range(1, m+1):
+        indices = [j for j, x in enumerate(color_list) if x == i]
+        elements = [input_str[k] for k in indices]
+        elements = [elements[-1]] + elements[:-1]
+        for j, k in enumerate(indices):
+            input_str[k] = elements[j]
+    return ''.join(input_str)
+```
+
+This solution works by converting the string to a list to allow individual character assignment. It then iterates over each color and finds all indices that have that color. For those indices, it extracts the characters and performs the right circular shift operation. Finally, it joins the list back into a string before returning the result.

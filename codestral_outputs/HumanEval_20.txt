@@ -1,0 +1,14 @@
+ Category: Beginner to Intermediate
+
+   The problem is about finding two numbers in a given list that are closest to each other. To solve this, we first sort the list of numbers, then iterate through it to find the pair with the smallest difference between any two consecutive numbers. This problem tests basic knowledge of data structures (specifically lists) and basic operations such as iteration and comparison. It also requires a moderate understanding of algorithms for solving these tasks.
+
+   In terms of difficulty, this is generally considered a beginner-to-intermediate level problem because it combines multiple fundamental concepts in programming. However, the actual level can vary depending on the individual's familiarity with sorting algorithms and list operations.
+
+   Required Programming Skills:
+   1. List manipulation and sorting functions (built-in or user-defined)
+   2. Ability to iterate through a list
+   3. Basic understanding of data types, particularly floating point numbers.
+   4. Knowledge of comparison operators.
+
+   Complexity:
+   The time complexity of this problem is O(n log n) due to the sorting operation. The space complexity is O(1), as we're not using any additional data structures that grow with input size. However, if we consider the space used by the sorted list (which might be significant for large lists), then the space complexity becomes O(n).

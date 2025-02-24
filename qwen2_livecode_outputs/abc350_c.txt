@@ -1,0 +1,91 @@
+Problem ID: abc350_c
+Problem Content:
+You are given a permutation A=(A_1,\ldots,A_N) of (1,2,\ldots,N).
+Transform A into (1,2,\ldots,N) by performing the following operation between 0 and N-1 times, inclusive:
+
+- Operation: Choose any pair of integers (i,j) such that 1\leq i < j \leq N. Swap the elements at the i-th and j-th positions of A.
+
+It can be proved that under the given constraints, it is always possible to transform A into (1,2,\ldots,N).
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+A_1 \ldots A_N
+
+Output
+
+Let K be the number of operations. Print K+1 lines.
+The first line should contain K.
+The (l+1)-th line (1\leq l \leq K) should contain the integers i and j chosen for the l-th operation, separated by a space.
+Any output that satisfies the conditions in the problem statement will be considered correct.
+
+Constraints
+
+
+- 2 \leq N \leq 2\times 10^5
+- (A_1,\ldots,A_N) is a permutation of (1,2,\ldots,N).
+- All input values are integers.
+
+Sample Input 1
+
+5
+3 4 1 2 5
+
+Sample Output 1
+
+2
+1 3
+2 4
+
+The operations change the sequence as follows:
+
+- Initially, A=(3,4,1,2,5).
+- The first operation swaps the first and third elements, making A=(1,4,3,2,5).
+- The second operation swaps the second and fourth elements, making A=(1,2,3,4,5).
+
+Other outputs such as the following are also considered correct:
+4
+2 3
+3 4
+1 2
+2 3
+
+Sample Input 2
+
+4
+1 2 3 4
+
+Sample Output 2
+
+0
+
+Sample Input 3
+
+3
+3 1 2
+
+Sample Output 3
+
+2
+1 2
+2 3
+
+Qwen2 Analysis:
+The given problem can be categorized as a moderate difficulty problem in algorithmic programming. This is because it requires an understanding of sorting algorithms (in this case, the process of reversing certain elements to sort them) as well as some knowledge about permutations and basic algorithmic thinking.
+
+**Required Programming Skills:**
+1. **Array Manipulation:** The ability to work with arrays or sequences.
+2. **Looping Constructs:** Using loops effectively to perform iterations over array elements.
+3. **Conditional Logic:** Being able to implement conditional statements to check if certain conditions are met for swapping (like ensuring indices i and j where i < j).
+4. **Counting Operations:** Keeping track of the number of operations needed.
+
+**Algorithmic Thinking:**
+- The problem requires understanding that every operation is essentially reversing two parts of the array until it achieves a sorted order.
+- It involves implementing an algorithm to sort elements using swaps, which implies knowledge of sorting principles even though direct sorting methods aren't being used. 
+- Efficient counting and tracking of operations to print out each swap as part of the solution.
+
+**Complexity:**
+The problem's complexity comes from ensuring that every operation is correctly performed without unnecessary repetitions or inversions. The process resembles a form of insertion sort where elements are swapped with their correct adjacent positions, but implemented through swapping indices rather than actual values.
+
+Given these points, this problem would be well-suited for interviews or coding challenges targeting developers who have experience with basic algorithms and are looking to improve their skills in implementing more complex sorting logic from scratch. It's not overly complicated but does require thoughtful implementation of an intuitive solution process into a working program.

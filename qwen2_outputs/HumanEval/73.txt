@@ -1,0 +1,25 @@
+The problem described falls under several categories:
+
+**Difficulty Level**: **Medium**
+
+- **Problem Solving Skills Required**: This question primarily requires good understanding of array manipulation and sorting concepts. It also tests logical reasoning abilities, specifically in determining the minimum number of changes needed to achieve a specific outcome.
+
+**Programming Skills**:
+
+1. **Array Operations**: Understanding how to manipulate arrays and lists is crucial here as you need to traverse through them and compare their elements.
+2. **Looping Constructs**: Knowledge of for loops or while loops might be necessary for iterating over the array elements.
+3. **Conditional Logic**: The problem requires conditional logic (if statements) to determine if changes are needed based on the current comparison between two elements.
+4. **Algorithmic Thinking**: Efficient algorithms can help in reducing time complexity.
+
+**Complexity**:
+
+The time complexity of this function will depend on how the array is traversed and compared. In its naive implementation, the worst-case scenario could be O(n^2), considering you might need to compare each element with every other element.
+
+However, an optimized approach involves comparing elements from both ends towards the center. This can be achieved using two pointers technique which would result in a time complexity of O(n), making it more efficient for large arrays.
+
+**Solution Strategies**: 
+
+1. **Two Pointers Technique**: Start from both ends of the array and move towards the center, keeping track of differences that need adjustment.
+2. **Sorting**: An alternative could involve sorting the array first which can help in identifying mismatches directly by comparing elements from either end.
+
+Understanding these categories helps in gauging not only the difficulty but also preparing for solving problems based on various techniques such as efficient algorithms and data structures, logic building, and optimization strategies.

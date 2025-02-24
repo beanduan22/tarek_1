@@ -1,0 +1,11 @@
+ The problem is a basic arithmetic operation that involves extracting the decimal part of a floating point number. It can be solved by subtracting the integer part of the number from the original number. This requires a basic understanding of data types, variables, and mathematical operations in programming. The complexity is low as it only involves simple calculations.
+
+   Category: Basic Arithmetic Operations
+
+   Difficulty Level: Beginner
+
+   Required Skills:
+   1. Understanding of floating point numbers.
+   2. Basic arithmetic operations in the programming language.
+
+   Complexity: Low (since it only involves subtraction and type casting)

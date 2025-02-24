@@ -1,0 +1,10 @@
+ Based on the provided information:
+
+- Difficulty: Medium
+  This is because while generating Fibonacci numbers and checking for primality are common tasks in programming problems, finding the nth number that meets both criteria can be a bit more challenging. It requires the combined application of two algorithms (Fibonacci generation and primality test).
+
+- Required Programming Skills: Basic understanding of loops, functions, conditional statements, and knowledge about Fibonacci series and prime numbers checking algorithm. Understanding of recursion can be beneficial but is not necessarily required.
+
+- Complexity: The complexity of this problem is primarily determined by the number 'n' provided as input. To find the nth such number, we would have to generate at least 'n' Fibonacci numbers and check each one for primality. If a number is not prime, it needs to be discarded and another Fibonacci number must be generated. Thus, in the worst case scenario (if most of the first 'n' Fibonacci numbers are not primes), the time complexity would be O(n^2) due to repeated generation and checking of Fibonacci numbers. However, as we know that primes become less frequent as they get larger, on average this problem should have a better than linear time complexity.
+
+- Category: Number Theory & Algorithms

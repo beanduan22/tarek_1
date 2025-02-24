@@ -1,0 +1,31 @@
+Problem ID: 2902
+Problem Content:
+You are given a 0-indexed integer array nums. You have to find the maximum sum of a pair of numbers from nums such that the maximum digit in both numbers are equal.
+Return the maximum sum or -1 if no such pair exists.
+ 
+Example 1:
+
+Input: nums = [51,71,17,24,42]
+Output: 88
+Explanation: 
+For i = 1 and j = 2, nums[i] and nums[j] have equal maximum digits with a pair sum of 71 + 17 = 88. 
+For i = 3 and j = 4, nums[i] and nums[j] have equal maximum digits with a pair sum of 24 + 42 = 66.
+It can be shown that there are no other pairs with equal maximum digits, so the answer is 88.
+Example 2:
+
+Input: nums = [1,2,3,4]
+Output: -1
+Explanation: No pair exists in nums with equal maximum digits.
+
+ 
+Constraints:
+
+2 <= nums.length <= 100
+1 <= nums[i] <= 10^4
+
+Codestral Analysis:
+ This problem is classified as a medium-level programming question in terms of difficulty. It requires understanding of basic array manipulation, string conversion (for digit extraction), and looping constructs. The problem does not need any advanced data structures or algorithms. However, it may be considered more challenging due to the requirement of extracting maximum digits from numbers which can be solved by converting the number into a string.
+
+Overall, this is a good problem for practicing basic programming concepts and understanding how to solve a problem with clear steps. The complexity of this problem is O(n^2) because for each pair in the array, we are checking if their maximum digits are equal or not, which results in nested loops. So it's not optimal for large inputs but suitable for small arrays given by the constraints (2 <= nums.length <= 100).
+
+The category of this problem can be labeled as "Array & String Manipulation".

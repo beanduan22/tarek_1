@@ -1,0 +1,13 @@
+ The problem is about writing a Python function that checks whether a list of numbers are monotonically increasing or decreasing. This is a common algorithmic problem that can be solved with basic programming skills.
+
+   Category:
+      - Beginner to Intermediate (depending on the programmer's familiarity with Python and programming concepts)
+
+   Skills Required:
+      - Familiarity with Python programming language
+      - Understanding of lists and loops
+      - Ability to iterate through a list and compare elements
+
+   Complexity:
+      - Time complexity is O(n) since the function needs to iterate through all n elements in the list once.
+      - Space complexity is O(1) as only a few variables are used regardless of the size of the input list.

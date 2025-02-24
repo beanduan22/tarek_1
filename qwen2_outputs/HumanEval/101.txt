@@ -1,0 +1,14 @@
+Based on the description provided, this programming problem can be categorized as:
+
+**Difficulty**: Easy
+
+**Required Programming Skills**:
+- Basic understanding of string manipulation in Python
+- Ability to split strings using different separators (commas, spaces)
+- Knowledge of creating and returning lists from sequences
+
+**Complexity**:
+- The problem requires minimal logic. It involves parsing a single input string by either space or comma delimiters and then splitting the resulting string into an array of words.
+- No advanced data structures or algorithms are required for solving this problem.
+
+So, based on these characteristics, one could classify this as an easy programming problem that primarily tests fundamental string manipulation skills in Python.

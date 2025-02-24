@@ -1,0 +1,9 @@
+ Category: String Manipulation (Medium)
+
+   Difficulty: Medium
+
+   Reasoning: This is a string manipulation task that requires parsing and separating groups of nested parentheses. The problem involves managing state (open/close brackets), handling edge cases, and demonstrates an understanding of recursion or loop constructs to handle the separation of balanced groups within the string.
+
+   Required Programming Skills: Proficiency in string manipulation techniques, recursion or loop structures, and basic understanding of parsing algorithms.
+
+   Complexity: The time complexity is O(n), where n is the length of the input string, as we're traversing the string once. The space complexity is also O(n) because in the worst case scenario (when all parentheses are grouped together without spaces), we might need to store the entire string in a list or stack.

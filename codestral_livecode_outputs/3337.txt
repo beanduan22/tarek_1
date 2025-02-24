@@ -1,0 +1,30 @@
+Problem ID: 3337
+Problem Content:
+You are given a string s and a character c. Return the total number of substrings of s that start and end with c.
+ 
+Example 1:
+
+Input: s = "abada", c = "a"
+Output: 6
+Explanation: Substrings starting and ending with "a" are: "abada", "abada", "abada", "abada", "abada", "abada".
+
+Example 2:
+
+Input: s = "zzz", c = "z"
+Output: 6
+Explanation: There are a total of 6 substrings in s and all start and end with "z".
+
+ 
+Constraints:
+
+1 <= s.length <= 10^5
+s and c consist only of lowercase English letters.
+
+Codestral Analysis:
+ This problem is a classic example of substring manipulation in strings. It falls into the "Easy" category as it doesn't require complex algorithms or advanced data structures to solve. The main challenge in this problem lies in correctly identifying all substrings that start and end with the given character 'c'.
+
+    The required programming skills include:
+    1. String manipulation techniques: Involves understanding how to iterate through strings, compare characters, and identify substrings.
+    2. Basic knowledge of loops and conditional statements for selecting appropriate substrings.
+
+    The complexity of this problem is O(n), where n is the length of the string 's'. This is because we need to traverse the entire string once to solve the problem. Therefore, even for a large input size (up to 10^5), the solution will be executed efficiently within reasonable time.

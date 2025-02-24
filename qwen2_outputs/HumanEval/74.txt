@@ -1,0 +1,8 @@
+The problem falls under the category of "Easy" in terms of difficulty. The main skills it requires are:
+
+1) Understanding basic Python syntax - lists and strings (to be able to count characters)
+2) Being able to compare two numerical values to determine which is smaller/larger (for determining which list has fewer total characters)
+
+The logic doesn't involve complex algorithms, high-level data structures like trees or graphs, nor does it require any external libraries. It's more about applying fundamental knowledge of Python programming in a straightforward manner.
+
+The main complexity comes from correctly implementing the logic to calculate the total number of characters for each input list and then comparing these totals. However, this is manageable as long as the coder understands basic operations on lists and strings in Python.

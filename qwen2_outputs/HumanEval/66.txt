@@ -1,0 +1,19 @@
+The problem described above is a relatively simple coding challenge that involves string processing and character manipulation. The main requirements are:
+
+1. It tests basic understanding of strings in programming languages (accessing individual characters within a string).
+2. Knowledge of ASCII values for specific characters (uppercase English alphabets specifically).
+3. Basic arithmetic operations, like summing up elements.
+
+The difficulty level is considered 'Easy' due to the straightforward nature and minimal complexity:
+
+- It doesn't require advanced data structures or algorithms knowledge.
+- The logic needed can be implemented using basic programming constructs such as loops or built-in functions available in many languages.
+
+This problem primarily tests skills related to:
+1. Basic understanding of strings
+2. Familiarity with ASCII characters 
+3. Ability to process and manipulate character data
+
+In terms of complexity, this is a linear operation; each character needs to be processed once which makes it O(n), where n is the length of the string.
+
+So in summary, this problem suits someone who's starting out learning programming or someone looking for easy practice problems on basic strings manipulation.

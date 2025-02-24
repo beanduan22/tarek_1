@@ -1,0 +1,3 @@
+ Category: Basic String Manipulation & Number System Conversion (Easy-Medium)
+
+Explanation: This is a basic problem that combines string manipulation and number system conversion. It's not overly complex and doesn't require extensive or advanced programming skills. The main challenge might be understanding the roman numeral system, but with a brief research on this subject, anyone can solve it. Therefore, I'd rate its difficulty as Easy-Medium.

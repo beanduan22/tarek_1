@@ -1,0 +1,16 @@
+The problem described here falls under the category of "Easy" in terms of difficulty. The main reasons for this categorization are:
+
+1. **Required Programming Skills**: This problem requires fundamental knowledge of programming such as:
+   - Function definitions
+   - Basic control flow (if-else statements)
+   - Simple arithmetic operations 
+
+2. **Complexity**: The complexity arises from determining whether a number is prime or not, which involves simple mathematical logic but can be slightly more complex than basic math problems. However, this operation usually doesn't involve complex algorithms requiring deep technical knowledge.
+
+3. **Understanding of Prime Numbers**: Participants need to understand the concept of prime numbers, although there are many ways to check for primality that don't require advanced number theory or computational complexity knowledge. 
+
+To solve this problem, you would likely implement a function `is_prime(n)` that checks whether a given integer is a prime number and use it inside your main function `x_or_y`. You'll use basic modular arithmetic (like % operator in most programming languages) to check divisibility by other numbers for determining the primality of the input `n`.
+
+This problem requires basic problem-solving skills, an understanding of some fundamental concepts in mathematics, and knowledge of how to express these ideas using programming constructs.
+
+The difficulty might increase if more complex conditions are added to determine when to return `x` or `y`, but based on the given description of this specific question, it is considered easy.

@@ -1,0 +1,42 @@
+Problem ID: 3199
+Problem Content:
+You are given two positive integers n and limit.
+Return the total number of ways to distribute n candies among 3 children such that no child gets more than limit candies.
+ 
+Example 1:
+
+Input: n = 5, limit = 2
+Output: 3
+Explanation: There are 3 ways to distribute 5 candies such that no child gets more than 2 candies: (1, 2, 2), (2, 1, 2) and (2, 2, 1).
+
+Example 2:
+
+Input: n = 3, limit = 3
+Output: 10
+Explanation: There are 10 ways to distribute 3 candies such that no child gets more than 3 candies: (0, 0, 3), (0, 1, 2), (0, 2, 1), (0, 3, 0), (1, 0, 2), (1, 1, 1), (1, 2, 0), (2, 0, 1), (2, 1, 0) and (3, 0, 0).
+
+ 
+Constraints:
+
+1 <= n <= 50
+1 <= limit <= 50
+
+Qwen2 Analysis:
+The problem described above can be categorized as follows:
+
+**Difficulty Level:** Medium. The solution involves a combination of understanding how to distribute items across different categories with constraints and using simple mathematical calculations.
+
+**Required Programming Skills:** Basic knowledge in loops (for or while), arithmetic operations (+, -, *, /), conditional statements (if-else). No advanced data structures are required.
+
+**Algorithm Complexity:** O(N * M) - where N is the number of candies and M is the limit. This complexity comes from considering all possible distributions given the constraints.
+
+The problem falls into the category of **Greedy Algorithms**, **Dynamic Programming**, or **Simple Math Operations** depending on how one chooses to solve it. It requires careful consideration of limits and distribution rather than exploring complex data structures or advanced algorithms.
+
+To illustrate, a greedy approach might not always yield the correct answer due to constraints like 'no child gets more than limit candies'. Dynamic programming could be used to build up solutions for smaller values until reaching the given n value, considering all possible distributions. However, with such small constraints (N <= 50), brute force or simple mathematical logic can also solve this problem efficiently.
+
+In summary:
+
+- **Difficulty:** Medium
+- **Required Skills:** Basic Programming Operations & Conditional Logic
+- **Algorithm Complexity:** O(N * M)
+- **Category:** Greedy Algorithms / Dynamic Programming / Simple Math Problems

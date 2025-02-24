@@ -1,0 +1,149 @@
+Problem ID: 3388
+Problem Content:
+You are given a 2D boolean matrix grid.
+Return an integer that is the number of right triangles that can be made with the 3 elements of grid such that all of them have a value of 1.
+Note:
+
+A collection of 3 elements of grid is a right triangle if one of its elements is in the same row with another element and in the same column with the third element. The 3 elements do not have to be next to each other.
+
+ 
+Example 1:
+
+
+
+
+0
+1
+0
+
+
+0
+1
+1
+
+
+0
+1
+0
+
+
+
+
+
+
+0
+1
+0
+
+
+0
+1
+1
+
+
+0
+1
+0
+
+
+
+
+
+Input: grid = [[0,1,0],[0,1,1],[0,1,0]]
+Output: 2
+Explanation:
+There are two right triangles.
+
+Example 2:
+
+
+
+
+1
+0
+0
+0
+
+
+0
+1
+0
+1
+
+
+1
+0
+0
+0
+
+
+
+
+
+Input: grid = [[1,0,0,0],[0,1,0,1],[1,0,0,0]]
+Output: 0
+Explanation:
+There are no right triangles.
+
+Example 3:
+
+
+
+
+1
+0
+1
+
+
+1
+0
+0
+
+
+1
+0
+0
+
+
+
+
+
+
+1
+0
+1
+
+
+1
+0
+0
+
+
+1
+0
+0
+
+
+
+
+
+Input: grid = [[1,0,1],[1,0,0],[1,0,0]]
+Output: 2
+Explanation:
+There are two right triangles.
+
+ 
+Constraints:
+
+1 <= grid.length <= 1000
+1 <= grid[i].length <= 1000
+0 <= grid[i][j] <= 1
+
+Codestral Analysis:
+ The given problem is a medium-difficulty problem that can be solved using dynamic programming in Python. This type of problem requires an understanding of iterating through matrices, nested loops, and a knowledge of how to find patterns within the data. Additionally, it tests reasoning skills as you need to determine how to count right triangles based on the given conditions.
+
+     The category for this problem is dynamic programming because we can solve it by breaking down the problem into smaller subproblems. We iterate through each element of the matrix and use previously calculated values to find the number of possible right-angled triangles with that point as the top vertex, left vertex, or bottom vertex. This approach helps in avoiding unnecessary calculations and reduces time complexity.
+
+     The time complexity is O(N^2) because we need to iterate through all N*N elements of the matrix. The space complexity is also O(N^2) since we are storing the count of triangles for each element in two additional matrices.
+
+    In terms of programming skills, a problem-solving mindset and proficiency with Python language is essential as we need to write code that can handle iterations through 2D arrays efficiently. Additionally, understanding how to manipulate matrices and utilize nested loops will be beneficial for solving this problem.

@@ -1,0 +1,5 @@
+ The problem falls under the category of "Easy to Medium" in terms of difficulty level. It's a classic algorithmic problem that involves finding the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.
+
+   In programming skills, this problem primarily tests the understanding of loops and recursion, as well as the ability to implement mathematical algorithms in code.
+
+   Complexity-wise, the time complexity of the Euclidean algorithm is O(log(min(a, b))), making it an efficient solution for calculating the GCD. Therefore, the problem is not considered highly complex from this perspective.

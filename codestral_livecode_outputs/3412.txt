@@ -1,0 +1,50 @@
+Problem ID: 3412
+Problem Content:
+You are given two strings s and t such that every character occurs at most once in s and t is a permutation of s.
+The permutation difference between s and t is defined as the sum of the absolute difference between the index of the occurrence of each character in s and the index of the occurrence of the same character in t.
+Return the permutation difference between s and t.
+ 
+Example 1:
+
+Input: s = "abc", t = "bac"
+Output: 2
+Explanation:
+For s = "abc" and t = "bac", the permutation difference of s and t is equal to the sum of:
+
+The absolute difference between the index of the occurrence of "a" in s and the index of the occurrence of "a" in t.
+The absolute difference between the index of the occurrence of "b" in s and the index of the occurrence of "b" in t.
+The absolute difference between the index of the occurrence of "c" in s and the index of the occurrence of "c" in t.
+
+That is, the permutation difference between s and t is equal to |0 - 1| + |2 - 2| + |1 - 0| = 2.
+
+Example 2:
+
+Input: s = "abcde", t = "edbac"
+Output: 12
+Explanation: The permutation difference between s and t is equal to |0 - 3| + |1 - 2| + |2 - 4| + |3 - 1| + |4 - 0| = 12.
+
+ 
+Constraints:
+
+1 <= s.length <= 26
+Each character occurs at most once in s.
+t is a permutation of s.
+s consists only of lowercase English letters.
+
+Codestral Analysis:
+ This problem can be solved using various programming languages like Python, Java, C++ etc. The problem falls under the category of 'Arrays' or 'String Manipulation' in terms of data structure usage. It is a medium level question as it requires a good understanding of array manipulations and string handling.
+
+The difficulty lies in the calculation of permutation difference where for each character, we have to find its index position in both strings and then calculate the absolute difference before summing up these differences. The complexity can be analyzed as O(n) because we are traversing through the input string only once.
+
+Here is a Python solution:
+
+```python
+def permutation_difference(s, t):
+    diff = 0
+    for i in range(len(s)):
+        diff += abs(i - t.index(s[i])) # calculate absolute difference and add to the total sum
+    return diff
+```
+In this solution, we iterate over each character in string s and find its index position in both s and t. We then calculate the absolute difference of these two indices and add it to a running total (diff). Finally, we return this total at the end of the function. This solution has a time complexity of O(n^2) due to the usage of list.index() method inside the loop which makes its performance less efficient for larger inputs.
+
+A more optimal solution can be achieved by using a dictionary data structure to store the indices of each character in string t, which allows us to access these indices in constant time. This reduces the overall time complexity to O(n), making it much faster and more scalable for larger inputs.

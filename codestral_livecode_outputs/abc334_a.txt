@@ -1,0 +1,41 @@
+Problem ID: abc334_a
+Problem Content:
+Takahashi, a young baseball enthusiast, has been a very good boy this year, so Santa has decided to give him a bat or a glove, whichever is more expensive.
+If a bat costs B yen and a glove costs G yen (B\neq G), which one will Santa give to Takahashi?
+
+Input
+
+The input is given from Standard Input in the following format:
+B G
+
+Output
+
+If Santa gives Takahashi a bat, print Bat; if Santa gives him a glove, print Glove.
+
+Constraints
+
+
+- B and G are different integers between 1 and 1000, inclusive.
+
+Sample Input 1
+
+300 100
+
+Sample Output 1
+
+Bat
+
+The bat is more expensive than the glove, so Santa will give Takahashi the bat.
+
+Sample Input 2
+
+334 343
+
+Sample Output 2
+
+Glove
+
+The glove is more expensive than the bat, so Santa will give Takahashi the glove.
+
+Codestral Analysis:
+ The given problem falls into the category of "Beginner." This is because it's a simple decision-making problem that doesn't require complex data structures or algorithms to solve. The problem only involves taking two integer inputs (the prices of bat and glove), comparing them, and outputting the corresponding string ("Bat" if bat is more expensive, "Glove" otherwise). No knowledge of baseball or gift-giving scenarios is required to solve this problem. This makes it a good entry-level problem for those new to programming. The complexity of the problem can be considered as O(1), because the input size does not affect the number of operations required to solve the problem.

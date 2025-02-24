@@ -1,0 +1,79 @@
+Problem ID: abc324_b
+Problem Content:
+You are given a positive integer N.
+If there are integers x and y such that N=2^x3^y, print Yes; otherwise, print No.
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+
+Output
+
+Print a single line containing Yes if there are integers x and y that satisfy the condition, and No otherwise.
+
+Constraints
+
+
+- 1\leq N\leq10^{18}
+- N is an integer.
+
+Sample Input 1
+
+324
+
+Sample Output 1
+
+Yes
+
+For x=2,y=4, we have 2^x3^y=2^23^4=4\times81=324, so the condition is satisfied.
+Thus, you should print Yes.
+
+Sample Input 2
+
+5
+
+Sample Output 2
+
+No
+
+There are no integers x and y such that 2^x3^y=5.
+Thus, you should print No.
+
+Sample Input 3
+
+32
+
+Sample Output 3
+
+Yes
+
+For x=5,y=0, we have 2^x3^y=32\times1=32, so you should print Yes.
+
+Sample Input 4
+
+37748736
+
+Sample Output 4
+
+Yes
+
+Qwen2 Analysis:
+Based on the provided details about the problem:
+
+1. **Problem Difficulty**: The task involves understanding number theory principles (specifically dealing with powers of numbers) and basic arithmetic operations like exponentiation and comparison. This is considered a medium-level difficulty in competitive coding or as part of an intermediate programming course, since it requires logical reasoning but does not involve complex algorithms or data structures.
+
+2. **Required Programming Skills**: To solve this problem, you need to be familiar with:
+   - Basic input/output operations using standard input/output (stdin/stdout).
+   - Understanding and implementing exponentiation functions.
+   - Condition checking and logical decision-making based on the result of mathematical computations.
+
+3. **Complexity**: The complexity here is linear as we are performing a single operation in terms of time complexity (`O(1)`), since it doesn't depend on the size of input (N). However, considering space complexity, it's also constant (`O(1)`) because no additional data structures that grow with input size are used.
+
+Given these points, this problem can be classified as:
+
+**Category**: Intermediate/Advanced Beginner Level, Category: Algorithms - Number Theory
+
+The skills required align well with what someone learning programming or preparing for coding interviews would need to understand and apply concepts of number theory in a practical context. The time constraints aren't mentioned here but are usually not a factor unless explicitly stated in the contest guidelines.
+
+For a full solution, one might typically use programming languages like Python which handle large integers efficiently without requiring external libraries (since Python's `int` type supports arbitrarily large numbers). C++ could also be used effectively given its support for large number calculations with the right techniques or libraries.

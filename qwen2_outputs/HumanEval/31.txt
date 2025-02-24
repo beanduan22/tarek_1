@@ -1,0 +1,9 @@
+This programming problem falls into the category of "Easy". The reason for this categorization includes:
+
+1. **Difficulty**: The task described involves a simple concept in mathematics which is prime numbers and applying it within basic Python syntax.
+
+2. **Required Programming Skills**: It requires knowledge of how to define a function, use loops (specifically 'for' loop), conditionals (`if` statement) and the ability to perform arithmetic operations in python.
+
+3. **Complexity**: The problem involves a single function that iterates through a range of numbers (1 to n-1 for number `n`) using a simple logic and doesn't involve complex data structures or advanced programming concepts.
+
+Hence, this is an easy-level coding problem requiring foundational knowledge of programming concepts and basic understanding of mathematics.

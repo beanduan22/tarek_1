@@ -1,0 +1,5 @@
+This problem falls under the category of 'Easy' to 'Medium' difficulty level. The complexity of this problem can be classified as Linear because it involves iterating through the lists once.
+
+The problem requires understanding of basic programming constructs such as loops (for loop), list data structure manipulation, and arithmetic operations. It also tests the ability to handle multiple types of operators in an algebraic expression.
+
+This task is a good fit for candidates who are learning Python or looking to enhance their skills with simple expressions parsing tasks.

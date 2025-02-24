@@ -1,0 +1,14 @@
+The problem described above falls under the following categories:
+
+Category: Difficulty
+- **Easy**: The problem involves basic string manipulation and understanding of binary XOR operation. It does not require any advanced or complex logic.
+
+Category: Required Programming Skills 
+- **Basic String Manipulation**: Knowledge on how to handle strings in Python including accessing individual characters, converting between string representations and their corresponding numerical values.
+- **Understanding Binary Operations**: Understanding what binary XOR is and how it works when applied to bits of two numbers. Binary XOR operation returns a bit which is 1 if the bits are different, otherwise returns 0.
+
+Category: Complexity
+- **Linear Time Complexity**: The problem can be solved using linear time complexity by iterating through both strings once.
+- **Space Complexity**: Low since only variables for storing the input and output strings are used. 
+
+This problem primarily requires fundamental programming skills and understanding of bitwise operations, making it suitable for beginners or as a simple coding exercise to practice string handling and basic logic in Python.

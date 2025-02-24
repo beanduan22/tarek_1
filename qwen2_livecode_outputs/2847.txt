@@ -1,0 +1,64 @@
+Problem ID: 2847
+Problem Content:
+You are given a 0-indexed array words consisting of distinct strings.
+The string words[i] can be paired with the string words[j] if:
+
+The string words[i] is equal to the reversed string of words[j].
+0 <= i < j < words.length.
+
+Return the maximum number of pairs that can be formed from the array words.
+Note that each string can belong in at most one pair.
+ 
+Example 1:
+
+Input: words = ["cd","ac","dc","ca","zz"]
+Output: 2
+Explanation: In this example, we can form 2 pair of strings in the following way:
+- We pair the 0^th string with the 2^nd string, as the reversed string of word[0] is "dc" and is equal to words[2].
+- We pair the 1^st string with the 3^rd string, as the reversed string of word[1] is "ca" and is equal to words[3].
+It can be proven that 2 is the maximum number of pairs that can be formed.
+Example 2:
+
+Input: words = ["ab","ba","cc"]
+Output: 1
+Explanation: In this example, we can form 1 pair of strings in the following way:
+- We pair the 0^th string with the 1^st string, as the reversed string of words[1] is "ab" and is equal to words[0].
+It can be proven that 1 is the maximum number of pairs that can be formed.
+
+Example 3:
+
+Input: words = ["aa","ab"]
+Output: 0
+Explanation: In this example, we are unable to form any pair of strings.
+
+ 
+Constraints:
+
+1 <= words.length <= 50
+words[i].length == 2
+words consists of distinct strings.
+words[i] contains only lowercase English letters.
+
+Qwen2 Analysis:
+The problem described above falls under the category of **Algorithms** and specifically involves **String Processing**, **Hashing/Dictionary**, and **Sorting**. It's categorized as **Medium Difficulty**, requiring good understanding of basic data structures like dictionaries or hash maps to store unique strings for comparison, along with sorting techniques to pair up matching reversed string pairs efficiently.
+
+Skills Required:
+
+1. **Understanding and manipulation of arrays and strings**: The problem requires you to work with an array of strings and perform operations on them such as getting the reverse string and comparing it with other entries in the array.
+2. **Use of data structures**: Efficient use of a hash map or dictionary can significantly reduce the complexity of searching for matching pairs, especially when each entry is unique.
+3. **Algorithmic thinking**: The problem requires understanding how to count possible matches under certain constraints like index order and string uniqueness.
+
+Complexity:
+
+- **Time Complexity**: O(n log n) due to sorting (where n is the length of the input array). Additional operations are dependent on hash map lookups which average out to O(1).
+- **Space Complexity**: O(n), as we might need extra space for the dictionary or hash map that stores unique strings.
+
+The solution involves:
+
+1. Sorting the array: To ensure that when you're checking if two strings can form a pair, the one with the lower index is always checked against others to avoid duplicate pairs.
+2. Creating a hash map (dictionary): Store each string along with its index for quick lookup and verification of reversed matches.
+3. Iterating through sorted array: For every string, check its reverse in the dictionary. If found, increment pair count by 1, then remove both strings from consideration to avoid counting duplicate pairs.
+
+The problem is designed to test skills on efficient use of data structures for fast retrieval operations (lookup) and understanding when sorting can be beneficial in algorithm design.
+
+In conclusion, solving this problem requires a blend of fundamental algorithmic knowledge like sorting and hash map usage, along with the ability to apply these techniques creatively within the constraints given.

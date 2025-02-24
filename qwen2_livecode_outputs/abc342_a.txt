@@ -1,0 +1,60 @@
+Problem ID: abc342_a
+Problem Content:
+You are given a string S consisting of lowercase English letters. The length of S is between 3 and 100, inclusive.
+All characters but one of S are the same.
+Find x such that the x-th character of S differs from all other characters.
+
+Input
+
+The input is given from Standard Input in the following format:
+S
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- S is a string of length between 3 and 100, inclusive, consisting of two different lowercase English letters.
+- All characters but one of S are the same.
+
+Sample Input 1
+
+yay
+
+Sample Output 1
+
+2
+
+The second character of yay differs from the first and third characters.
+
+Sample Input 2
+
+egg
+
+Sample Output 2
+
+1
+
+Sample Input 3
+
+zzzzzwz
+
+Sample Output 3
+
+6
+
+Qwen2 Analysis:
+Based on the description provided, this programming problem involves basic string analysis and pattern recognition. Given the constraints (the input being a single-line string consisting of lowercase English letters where all but one character is identical), it can be classified as an easy-level problem.
+
+The required programming skills involve understanding how to process and analyze strings in a language of your choice (such as Python, C++, or Java). No advanced algorithms are necessary; just basic string manipulation functions and conditional logic would suffice for solving this problem.
+
+The complexity of the problem lies more in the understanding of patterns within the given string than in implementing complex computational algorithms. The solution generally involves iterating through the characters of the string to identify where the pattern breaks, which requires linear time complexity (O(n), where n is the length of the string).
+
+To summarize:
+- **Category**: Easy programming problem focusing on basic string processing and understanding patterns within strings.
+- **Required Skills**: Basic knowledge of a programming language that includes string manipulation capabilities such as looping constructs and conditional statements.
+- **Complexity**: Linear time complexity due to the need for iterating through each character once.
+
+This kind of problem serves well as an introduction or practice exercise in teaching basic string operations and algorithmic thinking in a simple, straightforward context.

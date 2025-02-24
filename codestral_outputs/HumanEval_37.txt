@@ -1,0 +1,14 @@
+ This problem falls under the category of "Array/List Manipulation".
+
+   Difficulty: Easy to Medium
+   Reasoning: The task is to manipulate elements at specific indices in an array or list which is a fundamental concept in many programming languages. However, sorting and indexing can be considered slightly more complex due to their common nuances across different programming environments.
+
+   Required Programming Skills:
+   1. Knowledge of basic data structures such as arrays/lists.
+   2. Ability to perform operations on elements based on their indices.
+   3. Basic knowledge of sorting algorithms can be helpful but not necessarily required, as the problem only requires sorting even-indexed values and not the entire list.
+
+   Complexity: Linear Time (O(n))
+   Reasoning: The function needs to iterate through half of the given list once to extract the even indices' elements, which gives us O(n/2). Then it sorts this subset, which in most cases has a time complexity of O(m log m), where m is the size of this subset. But since m <= n and n is already in the loop, we consider this part as linear time complexity. Hence, overall time complexity remains linear i.e., O(n).
+
+   Additionally, the problem doesn't require any additional data structures other than input list and a temporary list to store even indices' elements, which results in constant space complexity (O(1)).

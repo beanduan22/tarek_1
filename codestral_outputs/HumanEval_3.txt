@@ -1,0 +1,9 @@
+ Category: Basic Algorithms
+
+   Difficulty: Easy to Medium
+
+   Required Programming Skills: Basic knowledge of Python, understanding of list iterations, and accumulation of sums.
+
+   Complexity: The problem can be solved using a simple loop that iterates through the operations list. At each iteration, it adds the current operation value to a running total and checks if the total is less than zero. If so, it immediately returns True. After processing all operations, if the balance never fell below zero, the function will return False.
+
+   The time complexity of this solution is O(n) where n is the length of the operations list as we may have to iterate through each operation once. The space complexity is O(1) as we are not using any additional data structure that grows with input size.

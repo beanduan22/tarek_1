@@ -1,0 +1,7 @@
+ Category: Basic Algorithms / Number Theory
+
+   Analysis: This is a basic problem that requires understanding of prime factorization and loops. It can be solved using a simple algorithm known as "trial division". For each number starting from 2, while it divides the input number, add it to the list of factors and divide the input number by this divisor. Repeat until the input number becomes 1. The problem does not require any advanced data structures or algorithms; hence, it is relatively easy in terms of programming skills needed.
+
+   Difficulty: Easy
+
+   Complexity: The time complexity is O(sqrt(n)) because we only need to check divisors up to the square root of n. However, as we divide the input number by each factor, this operation could potentially reduce the size of the number much faster than sqrt(n), so the actual performance might be better than the theoretical limit. The space complexity is O(k) where k is the number of factors, which can be up to n in the worst case for an input that is a prime number.

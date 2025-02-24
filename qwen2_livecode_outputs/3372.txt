@@ -1,0 +1,61 @@
+Problem ID: 3372
+Problem Content:
+You are given an array of integers nums. Return the length of the longest subarray of nums which is either strictly increasing or strictly decreasing.
+ 
+Example 1:
+
+Input: nums = [1,4,3,3,2]
+Output: 2
+Explanation:
+The strictly increasing subarrays of nums are [1], [2], [3], [3], [4], and [1,4].
+The strictly decreasing subarrays of nums are [1], [2], [3], [3], [4], [3,2], and [4,3].
+Hence, we return 2.
+
+Example 2:
+
+Input: nums = [3,3,3,3]
+Output: 1
+Explanation:
+The strictly increasing subarrays of nums are [3], [3], [3], and [3].
+The strictly decreasing subarrays of nums are [3], [3], [3], and [3].
+Hence, we return 1.
+
+Example 3:
+
+Input: nums = [3,2,1]
+Output: 3
+Explanation:
+The strictly increasing subarrays of nums are [3], [2], and [1].
+The strictly decreasing subarrays of nums are [3], [2], [1], [3,2], [2,1], and [3,2,1].
+Hence, we return 3.
+
+ 
+Constraints:
+
+1 <= nums.length <= 50
+1 <= nums[i] <= 50
+
+Qwen2 Analysis:
+Based on the description provided in the question, this problem falls under the category of "Algorithm" or "Dynamic Programming". 
+
+### Difficulty:
+
+The task involves traversing an array to find the longest subarray that is either strictly increasing or decreasing. It requires understanding how elements are sequentially compared and finding patterns within the input data. The level of difficulty could be considered medium as it involves some level of logic, but not overly complex. 
+
+### Required Programming Skills:
+
+1. **Array Handling**: Basic knowledge on manipulating arrays is essential.
+2. **Loops**: Use of loops to iterate through array elements will likely be necessary.
+3. **Conditional Statements**: For making decisions based on the comparison between consecutive elements in the array.
+4. **Algorithmic Thinking**: The ability to think about different sequences (increasing/decreasing) and how they relate to subarrays.
+
+### Complexity:
+
+1. **Time Complexity**: The most straightforward approach involves iterating through each element of the array once, leading to a time complexity of O(n), where n is the size of the input array.
+2. **Space Complexity**: Depending on the implementation details like whether you're storing intermediate results for all possible subarrays or just tracking lengths of increasing and decreasing sequences, space complexity might be O(1) assuming that no extra data structure larger than constant space usage (like a map or set) is used.
+
+### Solution Strategy:
+
+The solution would typically involve iterating through the array while maintaining counters for the longest strictly increasing and strictly decreasing subarrays seen so far. At each step, you update these counters based on whether the current element continues the trend of being greater (increasing sequence) or lesser (decreasing sequence) than the previous one.
+
+This problem requires careful tracking of sequences without necessarily storing all subsequences explicitly, making it an interesting exercise in efficient algorithm design and space optimization.

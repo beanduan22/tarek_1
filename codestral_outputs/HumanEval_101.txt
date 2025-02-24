@@ -1,0 +1,5 @@
+ Based on the description of the problem, it can be categorized as a basic problem in string manipulation or parsing. This problem doesn't require any advanced data structures or algorithms, just simple string splitting techniques which are common features in most programming languages. Therefore, I would categorize this problem as a beginner-level problem.
+
+   Skills required: Basic understanding of the language's string manipulation functions.
+
+   Complexity: The time complexity of splitting a string into words is linear to the size of the input string, so the overall time complexity for this function would be O(n), where n is the length of the input string. This makes it an efficient solution.

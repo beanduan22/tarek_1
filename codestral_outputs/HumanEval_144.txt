@@ -1,0 +1,9 @@
+ The given problem can be categorized as a Beginner to Intermediate level problem in programming. The category is based on its overall nature:
+
+1. Difficulty: The problem is not complex but it involves parsing strings which can sometimes be a source of errors. Additionally, understanding and applying the concept of simplifying fractions might take some time for beginners. Thus, I'd say this problem is generally suitable for Intermediate level programmers, but someone new to programming could also solve it with careful planning and sufficient attempts.
+
+2. Required Programming Skills: The skills required to solve this problem include understanding of basic arithmetic operations, string manipulation, and the concept of fractions. A knowledge of functions would be beneficial as the solution involves writing a custom function. No advanced programming concepts are required.
+
+3. Complexity: This problem is fairly simple in terms of time complexity (O(1)) because it performs a constant number of operations no matter the size of the input, as long as the fractions aren't extremely large. However, since we're working with strings and parsing to extract integers from them, there could be a slight increase in computational complexity if the string representation of fractions are very large.
+
+In conclusion, I would categorize this problem as Intermediate-Level based on its use of string manipulation, arithmetic operations, and fractional simplification concepts.

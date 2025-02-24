@@ -1,0 +1,19 @@
+This is a **MEDIUM** difficulty problem that focuses on understanding of loops, list manipulation, and tracking dynamic state during iteration. It requires basic knowledge of Python, familiarity with lists and tuples in Python, and the ability to think through sequential operations.
+
+### Required Programming Skills:
+1. **Understanding Loops**: The student needs to know how to iterate over a sequence (list) using a `for` loop.
+2. **List Manipulation**: Ability to append elements to a list based on certain conditions.
+3. **Tracking State**: The problem requires keeping track of the maximum number seen so far in each iteration.
+
+### Problem Complexity:
+The complexity is moderate as it involves generating output based on sequential input data, which could potentially have different outcomes for different inputs depending on the sequence given.
+
+To solve this problem:
+
+1. Initialize an empty list to store rolling max elements.
+2. Iterate over the given `numbers` list.
+3. For each number in the iteration, compare it with the maximum element found so far (initially set as the first element).
+4. If the current number is greater than or equal to the max seen so far, update the max and append this new max into your result list.
+5. Continue this process until all elements are iterated over.
+
+This approach ensures that we capture the maximum value encountered up to each point in time (`rolling_max`), which satisfies the problem's requirement.

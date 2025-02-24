@@ -1,0 +1,18 @@
+The given programming problem seems to fall under the categories of Easy/Medium in terms of difficulty. The task requires understanding of basic string manipulation and conditional logic.
+
+Required Programming Skills:
+1. String handling: This includes splitting strings into substrings, joining substrings into a single string using different separators, and iterating over the characters or substrings within the original string.
+2. Conditional Logic: Since the problem has conditions based on the number of consecutive spaces, this would require checking for specific patterns (sequences) within the string.
+
+Complexity:
+- Time Complexity: The algorithm iterates through each character of the input string once, making it O(n), where n is the length of the string.
+- Space Complexity: The space complexity will be minimal since we're only storing a few extra variables. Therefore, it can also be considered constant or linear depending on how you count auxiliary space.
+
+To solve this problem, you might need to:
+
+1. Iterate through each character (or substring if considering consecutive spaces) in the input string.
+2. Check for consecutive spaces by checking if current char is " " and previous one was also a space (`" "`).
+3. If less than 3 consecutive spaces are found, replace them with underscores ("_").
+4. If more than or equal to 3 consecutive spaces are found, replace them with hyphens ("-").
+
+If you have further questions or need assistance in understanding or solving the problem, feel free to ask!

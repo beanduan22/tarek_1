@@ -1,0 +1,50 @@
+Problem ID: 3395
+Problem Content:
+You are given a string s, which is known to be a concatenation of anagrams of some string t.
+Return the minimum possible length of the string t.
+An anagram is formed by rearranging the letters of a string. For example, "aab", "aba", and, "baa" are anagrams of "aab".
+ 
+Example 1:
+
+Input: s = "abba"
+Output: 2
+Explanation:
+One possible string t could be "ba".
+
+Example 2:
+
+Input: s = "cdef"
+Output: 4
+Explanation:
+One possible string t could be "cdef", notice that t can be equal to s.
+
+ 
+Constraints:
+
+1 <= s.length <= 10^5
+s consist only of lowercase English letters.
+
+Codestral Analysis:
+ This is a string manipulation problem that can be classified as medium to hard in terms of difficulty. It requires knowledge of Python or Java-like programming languages. The problem also involves concepts like frequency counting (counting the occurrences of each character) and anagrams (permutations of a word).
+
+    In this problem, we are given a string 's' that is composed of one or more anagrams of another string 't'. Our goal is to find the smallest possible length of 't', which can be achieved by finding the greatest common divisor (GCD) of frequencies of all characters in 's'.
+
+    The problem complexity lies in handling large input strings efficiently and accurately computing the GCD. Finding the frequency of each character in a string takes O(n) time, where n is the length of the string, and finding the GCD can take up to O(log m), where m is the highest count of any character in 's'. Since we have to find frequencies for all characters in 's', the overall time complexity would be O(n log max_freq), which should be manageable given the constraints provided.
+
+    To solve this problem, we can:
+    1. Count the frequency of each character in string s.
+    2. Calculate the GCD of these frequencies to find the minimum length of string t.
+
+    Here is a Python function that solves the problem using this approach:
+
+    ```python
+    from math import gcd
+    from collections import Counter
+
+    def minLength(s):
+        freq = Counter(s)
+        ans = len(s)
+        for k, v in freq.items():
+            ans = gcd(ans, v)
+        return ans
+    ```

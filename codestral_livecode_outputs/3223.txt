@@ -1,0 +1,40 @@
+Problem ID: 3223
+Problem Content:
+You are given a string word and an integer k.
+A substring s of word is complete if:
+
+Each character in s occurs exactly k times.
+The difference between two adjacent characters is at most 2. That is, for any two adjacent characters c1 and c2 in s, the absolute difference in their positions in the alphabet is at most 2.
+
+Return the number of complete substrings of word.
+A substring is a non-empty contiguous sequence of characters in a string.
+ 
+Example 1:
+
+Input: word = "igigee", k = 2
+Output: 3
+Explanation: The complete substrings where each character appears exactly twice and the difference between adjacent characters is at most 2 are: igigee, igigee, igigee.
+
+Example 2:
+
+Input: word = "aaabbbccc", k = 3
+Output: 6
+Explanation: The complete substrings where each character appears exactly three times and the difference between adjacent characters is at most 2 are: aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc.
+
+ 
+Constraints:
+
+1 <= word.length <= 10^5
+word consists only of lowercase English letters.
+1 <= k <= word.length
+
+Codestral Analysis:
+ The given problem can be categorized as a sliding window and prefix sum problem in the field of algorithmic programming. It is moderately difficult to solve, requiring knowledge of array manipulation techniques, substring handling, and understanding the concept of frequency mapping.
+
+   The approach would involve iterating through each character of the string using a nested loop to check for all possible substrings. For each substring, we would maintain an occurrence map/frequency dictionary to count the characters' appearances. We would then ensure that each character in the substring appears exactly 'k' times and the difference between two adjacent characters is at most 2 by checking our conditions against the frequency map. If all conditions are satisfied, we increment a counter for complete substrings.
+
+   The time complexity of this approach could be O(n^3), where n is the length of the string, because in the worst case, we might have to iterate through each character of the string and check every possible substring which involves checking for frequency conditions that may take another O(n) time. However, optimizing the solution further could possibly bring down this time complexity.
+
+   The space complexity is relatively low - O(n), as in the worst case scenario we would need to store all characters of the string in a frequency dictionary. If we use a fixed size array (as there are only 26 lowercase English letters) instead of a dictionary, we could further optimize this space complexity to O(1).
+
+   This problem falls into the category of "Moderate to Hard", considering the need for careful substring handling and application of frequency mapping techniques.

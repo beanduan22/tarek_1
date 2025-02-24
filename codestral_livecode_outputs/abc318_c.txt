@@ -1,0 +1,75 @@
+Problem ID: abc318_c
+Problem Content:
+Takahashi is planning an N-day train trip.
+For each day, he can pay the regular fare or use a one-day pass.
+Here, for 1\leq i\leq N, the regular fare for the i-th day of the trip is F_i yen.
+On the other hand, a batch of D one-day passes is sold for P yen. You can buy as many passes as you want, but only in units of D.
+Each purchased pass can be used on any day, and it is fine to have some leftovers at the end of the trip.
+Find the minimum possible total cost for the N-day trip, that is, the cost of purchasing one-day passes plus the total regular fare for the days not covered by one-day passes.
+
+Input
+
+The input is given from Standard Input in the following format:
+N D P
+F_1 F_2 \ldots F_N
+
+Output
+
+Print the minimum possible total cost for the N-day trip.
+
+Constraints
+
+
+- 1\leq N\leq 2\times 10^5
+- 1\leq D\leq 2\times 10^5
+- 1\leq P\leq 10^9
+- 1\leq F_i\leq 10^9
+- All input values are integers.
+
+Sample Input 1
+
+5 2 10
+7 1 6 3 6
+
+Sample Output 1
+
+20
+
+If he buys just one batch of one-day passes and uses them for the first and third days, the total cost will be (10\times 1)+(0+1+0+3+6)=20, which is the minimum cost needed.
+Thus, print 20.
+
+Sample Input 2
+
+3 1 10
+1 2 3
+
+Sample Output 2
+
+6
+
+The minimum cost is achieved by paying the regular fare for all three days.
+
+Sample Input 3
+
+8 3 1000000000
+1000000000 1000000000 1000000000 1000000000 1000000000 1000000000 1000000000 1000000000
+
+Sample Output 3
+
+3000000000
+
+The minimum cost is achieved by buying three batches of one-day passes and using them for all eight days.
+Note that the answer may not fit into a 32-bit integer type.
+
+Codestral Analysis:
+ The problem seems to be an optimization problem that falls under the dynamic programming or greedy algorithms category. Here's how you can approach this:
+
+1. Understand the Problem: This is a cost minimization problem where Takahashi wants to minimize his total travel cost for an N-day train trip by choosing between paying regular fares and buying one-day passes in batches of D. The goal is to find the minimum possible total cost for the N-day trip.
+
+2. Predict the Category: Based on the problem description, I would predict this falls under a dynamic programming or greedy algorithms category since we need to make optimal decisions at each day of the trip and potentially look ahead to future days to minimize the total cost.
+
+3. Difficulty Level: The difficulty level of this problem is moderate to high because it requires both optimization skills (to decide when to buy one-day passes) and programming skills to implement a solution efficiently.
+
+4. Complexity Analysis: The time complexity will be O(N), as we need to iterate through each day once. However, the space complexity might also be considered significant due to storing the regular fares for all N days. Therefore, an optimal solution should aim to minimize both time and space complexities.
+
+In summary, I predict that this problem falls under dynamic programming or greedy algorithms category with a moderate to high difficulty level and a time complexity of O(N) and significant space complexity due to storing the regular fares for all N days.

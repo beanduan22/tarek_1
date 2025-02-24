@@ -1,0 +1,38 @@
+Problem ID: 3408
+Problem Content:
+You are given a string word. A letter is called special if it appears both in lowercase and uppercase in word.
+Return the number of special letters in word.
+ 
+Example 1:
+
+Input: word = "aaAbcBC"
+Output: 3
+Explanation:
+The special characters in word are 'a', 'b', and 'c'.
+
+Example 2:
+
+Input: word = "abc"
+Output: 0
+Explanation:
+No character in word appears in uppercase.
+
+Example 3:
+
+Input: word = "abBCab"
+Output: 1
+Explanation:
+The only special character in word is 'b'.
+
+ 
+Constraints:
+
+1 <= word.length <= 50
+word consists of only lowercase and uppercase English letters.
+
+Codestral Analysis:
+ The problem provided falls under the category of "Easy" to "Medium". This is a string manipulation problem that can be solved by using data structures such as sets or hash maps to track unique characters in the input string. In this case, we will iterate through the string and check if both uppercase and lowercase versions of each character are present in the string.
+
+   Difficulty: Easy to Medium
+   Required programming skills: Basic understanding of string manipulation, data structures (sets or hash maps)
+   Complexity: The time complexity is O(n), where n is the length of the input string, as we need to iterate through each character once. The space complexity is also O(n) in the worst case, since we might store all unique characters in a data structure. However, since the problem constraints state that the maximum length of the string is 50, and there are only 26 lowercase and 26 uppercase English letters, the actual space used will not exceed a constant limit.

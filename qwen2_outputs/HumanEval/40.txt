@@ -1,0 +1,15 @@
+The problem described above falls under the "Easy" difficulty level. The key requirements here are to understand basic Python programming concepts such as loops, lists, and conditional statements.
+
+Skills Required:
+1. **Understanding of Basic Python**: Knowledge about data types (integers), list manipulation, for-loops, if-else conditions, and functions.
+2. **Algorithmic Thinking**: The ability to logically think through the problem and come up with a solution that checks all possible triplets in the given array.
+
+Complexity:
+The time complexity of this function depends on the input size (number of elements in the list). Since we are iterating over each element and for every element, we're considering combinations of other elements as well. Therefore, if there are 'n' elements in the list, the worst-case scenario would involve checking approximately n * (n-1) * (n-2) / 6 triplets.
+
+This is due to a brute-force approach where we consider all possible combinations for three distinct numbers and check their sum against zero. This complexity is not considered very high but becomes inefficient with large input sizes as it grows cubically. However, given the context of this problem being labeled 'Easy', this is acceptable.
+
+In summary:
+- **Difficulty**: Easy
+- **Required Skills**: Basic programming knowledge in Python.
+- **Complexity**: Cubic (with respect to input size), though efficient enough for small inputs in practice.

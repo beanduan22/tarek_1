@@ -1,0 +1,9 @@
+ Category: Basic to Intermediate
+
+The problem is a function implementation problem that tests knowledge of simple looping constructs, conditional statements, and understanding of prime numbers. It's categorized as basic to intermediate because while it doesn't require advanced algorithms or data structures, it does involve writing a function from scratch which could be challenging for beginners.
+
+The difficulty level can also depend on the specific programming language used. For example, languages with built-in functions for checking prime numbers might make this problem easier than those that don't. However, even without such a function, the overall complexity is still relatively low compared to more advanced problems.
+
+Skills required include understanding of loops and conditionals, basic mathematics (knowing what a prime number is), and the ability to write and call functions.
+
+The complexity can be considered as O(n^2) due to the nested loop structure that checks each number up to n for primality. However, since n is the input size, this is a common time complexity for such problems.

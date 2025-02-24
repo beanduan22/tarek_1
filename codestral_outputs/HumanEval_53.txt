@@ -1,0 +1,5 @@
+ Category: Beginner
+
+   This is a basic programming problem that requires understanding of function definition, parameters, and return values in Python. It's quite straightforward as it only involves addition of two integers. The problem doesn't involve any complex data structures or algorithms, so the difficulty level can be considered beginner to intermediate depending on the programmer's familiarity with Python syntax and basic programming concepts. The required programming skills include knowledge of defining functions in Python, understanding type hinting for function parameters, and basic arithmetic operations.
+
+   This problem is not complex as it only requires performing a single operation (addition) and doesn't have any additional constraints or requirements beyond that. It's also a self-contained problem with clear input and expected output, which makes it easier to understand and solve.

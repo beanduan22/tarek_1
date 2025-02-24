@@ -1,0 +1,11 @@
+ Category: Basic String Manipulation
+
+    This problem requires a basic understanding of string manipulation in programming. It's not overly complex, but it does involve some iteration and counting, which makes it a good exercise for beginners to practice their looping and conditional statements. The difficulty level would be considered easy to moderate depending on the language and the experience of the person solving it.
+
+    Required Programming Skills:
+    1. String manipulation functions (like finding substring)
+    2. Loops or recursion for iterating through string
+    3. Variable assignment and arithmetic operations
+
+    Complexity:
+    The time complexity of this problem is O(n), where n is the length of the string, as in the worst case scenario we may need to iterate through each character once. However, since the size of input strings isn't explicitly mentioned or limited in the problem statement, this complexity could potentially be misleading if very large inputs are used.

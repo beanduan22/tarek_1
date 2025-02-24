@@ -1,0 +1,3 @@
+ Category: Easy
+
+   Explanation: This is a basic problem that tests your understanding of list traversal, condition checking, and arithmetic operations in Python. The complexity is linear (O(n)) as you need to traverse the entire list once. No advanced data structures or algorithms are required. You don't need any specific programming skills besides the basics such as loops, conditional statements, and understanding of indexing in lists.

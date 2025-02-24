@@ -1,0 +1,10 @@
+ Based on the given information and the provided function signature in Python:
+
+- Difficulty: Easy
+    This is an easy problem because it only requires understanding of list comprehensions or built-in filter functions to solve. No advanced data structures or algorithms are required.
+
+- Required programming skills: Beginner - Intermediate
+   A basic knowledge of the Python language, specifically how to manipulate lists and strings, would be sufficient to solve this problem. However, using a more sophisticated approach such as regular expressions might require an intermediate level of skill.
+
+- Complexity: Linear
+    The time complexity for this function is O(n), where n is the number of elements in the input list. This is because it iterates over each element of the list exactly once. The space complexity is also linear, as it creates a new list to store the output.

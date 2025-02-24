@@ -1,0 +1,15 @@
+The given problem is a classic example of a string processing question that involves understanding regular patterns within text data. The key points to consider are:
+
+1. **Search for vowels**: This requires knowledge about strings and searching techniques in Python (or any language). 
+
+2. **Consecutive consonants**: This involves iterating over the characters in reverse order from right to left, which is another common technique seen in string problems.
+
+3. **Boundary conditions**: Special cases like "ab" need to be handled carefully since there are no vowels between two consonants at either ends.
+
+The overall complexity of this problem can be considered as **Easy-Medium** due to the nature of tasks involved being straightforward and requiring basic programming skills:
+
+- It requires string processing abilities which is usually taught early on in most coding languages.
+  
+- The task doesn't involve complex algorithms like sorting, searching over large datasets or recursion that could make the question more difficult.
+
+In summary, this problem tests the understanding of strings and iterative techniques without delving into advanced or complicated programming concepts. Hence it falls under Easy-Medium difficulty category based on the skills required to solve it.

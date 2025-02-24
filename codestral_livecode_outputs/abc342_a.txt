@@ -1,0 +1,56 @@
+Problem ID: abc342_a
+Problem Content:
+You are given a string S consisting of lowercase English letters. The length of S is between 3 and 100, inclusive.
+All characters but one of S are the same.
+Find x such that the x-th character of S differs from all other characters.
+
+Input
+
+The input is given from Standard Input in the following format:
+S
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- S is a string of length between 3 and 100, inclusive, consisting of two different lowercase English letters.
+- All characters but one of S are the same.
+
+Sample Input 1
+
+yay
+
+Sample Output 1
+
+2
+
+The second character of yay differs from the first and third characters.
+
+Sample Input 2
+
+egg
+
+Sample Output 2
+
+1
+
+Sample Input 3
+
+zzzzzwz
+
+Sample Output 3
+
+6
+
+Codestral Analysis:
+ Based on the information provided, this is a Beginner-level programming problem that tests basic string manipulation skills in Python. Here's how to analyze it:
+
+- The problem involves finding the index of the unique character in a given string consisting of lowercase English letters.
+- It is stated that all characters but one of S are the same, and the length of S is between 3 and 100.
+- To solve this problem, we can iterate through each character in the string and compare it with the first and last characters of the string. If a character doesn't match either of them, then it is the unique character, and we return its index.
+- The complexity of this solution is O(n), where n is the length of the string. This is because we need to iterate through each character in the string once to find the unique one.
+
+Overall, I would categorize this problem as a Beginner level problem that tests basic string manipulation skills.

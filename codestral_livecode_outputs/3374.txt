@@ -1,0 +1,52 @@
+Problem ID: 3374
+Problem Content:
+You are given a binary array nums.
+We call a subarray alternating if no two adjacent elements in the subarray have the same value.
+Return the number of alternating subarrays in nums.
+ 
+Example 1:
+
+Input: nums = [0,1,1,1]
+Output: 5
+Explanation:
+The following subarrays are alternating: [0], [1], [1], [1], and [0,1].
+
+Example 2:
+
+Input: nums = [1,0,1,0]
+Output: 10
+Explanation:
+Every subarray of the array is alternating. There are 10 possible subarrays that we can choose.
+
+ 
+Constraints:
+
+1 <= nums.length <= 10^5
+nums[i] is either 0 or 1.
+
+Codestral Analysis:
+ Category: Array/Prefix Sum/Sliding Window
+
+Difficulty: Medium
+
+Required Skills: Basic understanding of array traversal, prefix sum concept, and sliding window technique in arrays.
+
+Complexity: The time complexity is O(n) because we are traversing the given binary array only once. Here 'n' is the size of the array. The space complexity is also O(n), which is required to store a prefix sum array. However, it can be optimized to O(1), by maintaining just two variables instead of an entire prefix sum array. So the optimal space complexity is O(1).
+
+The problem falls into the category of 'Array' and 'Prefix Sum' or 'Sliding Window', depending on which approach you take for solving this. The key insight is to understand that each sequence of alternating elements (like 0, 1, 0, 1) can form a certain number of subarrays that are also alternating. By using the prefix sum concept and keeping track of the last occurrence index of both '0' and '1', we can solve this problem efficiently. Another approach is to use the sliding window technique by maintaining two pointers, start and end, for each sequence of alternating elements and calculate the number of subarrays from that sequence.
+
+Here's a Python code using Prefix Sum concept:
+```python
+def find_alternating_subarrays(nums):
+    n = len(nums)
+    prefix = [0] * (n + 1)
+    last_zero, last_one = -1, -1
+    for i in range(n):
+        if nums[i] == 0:
+            prefix[i+1] = prefix[last_zero] + (i - last_zero)
+            last_zero = i
+        else:
+            prefix[i+1] = prefix[last_one] + (i - last_one)
+            last_one = i
+    return prefix[-1]
+```

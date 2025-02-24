@@ -1,0 +1,47 @@
+Problem ID: abc341_a
+Problem Content:
+Given a positive integer N, print a string of N zeros and N+1 ones where 0 and 1 alternate.
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+
+Output
+
+Print the answer.
+
+Constraints
+
+
+- N is an integer.
+- 1 \leq N \leq 100
+
+Sample Input 1
+
+4
+
+Sample Output 1
+
+101010101
+
+A string of four zeros and five ones where 0 and 1 alternate is 101010101.
+
+Sample Input 2
+
+1
+
+Sample Output 2
+
+101
+
+Sample Input 3
+
+10
+
+Sample Output 3
+
+101010101010101010101
+
+Codestral Analysis:
+ This problem is categorized as a beginner level problem in programming. It can be solved using various programming languages such as Python, Java, C++, etc. The main focus of this problem is to understand how to print alternating characters or strings based on user input. Since the user's input range (N) is limited to 1-100, it doesn't have a high time complexity. Thus, the overall difficulty level of this problem can be considered easy.

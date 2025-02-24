@@ -1,0 +1,48 @@
+Problem ID: 3313
+Problem Content:
+You are given a 0-indexed array of integers nums of length n, and a positive odd integer k.
+The strength of x subarrays is defined as strength = sum[1] * x - sum[2] * (x - 1) + sum[3] * (x - 2) - sum[4] * (x - 3) + ... + sum[x] * 1 where sum[i] is the sum of the elements in the i^th subarray. Formally, strength is sum of (-1)^i+1 * sum[i] * (x - i + 1) over all i's such that 1 <= i <= x.
+You need to select k disjoint subarrays from nums, such that their strength is maximum.
+Return the maximum possible strength that can be obtained.
+Note that the selected subarrays don't need to cover the entire array.
+ 
+Example 1:
+
+Input: nums = [1,2,3,-1,2], k = 3
+Output: 22
+Explanation: The best possible way to select 3 subarrays is: nums[0..2], nums[3..3], and nums[4..4]. The strength is (1 + 2 + 3) * 3 - (-1) * 2 + 2 * 1 = 22.
+
+Example 2:
+
+Input: nums = [12,-2,-2,-2,-2], k = 5
+Output: 64
+Explanation: The only possible way to select 5 disjoint subarrays is: nums[0..0], nums[1..1], nums[2..2], nums[3..3], and nums[4..4]. The strength is 12 * 5 - (-2) * 4 + (-2) * 3 - (-2) * 2 + (-2) * 1 = 64.
+
+Example 3:
+
+Input: nums = [-1,-2,-3], k = 1
+Output: -1
+Explanation: The best possible way to select 1 subarray is: nums[0..0]. The strength is -1.
+
+ 
+Constraints:
+
+1 <= n <= 10^4
+-10^9 <= nums[i] <= 10^9
+1 <= k <= n
+1 <= n * k <= 10^6
+k is odd.
+
+Codestral Analysis:
+ The problem appears to be about selecting subarrays from a given array such that their strength is maximized. The strength of subarrays is defined as a specific mathematical expression involving sums of elements in each subarray. This is a complex optimization problem with several constraints. To solve this, we need a strong understanding of dynamic programming and the ability to manipulate mathematical expressions effectively.
+
+    Based on these factors, I would classify this problem as "Hard" since it requires both advanced algorithmic skills and a deep understanding of mathematical expressions. This problem likely falls under the category of Dynamic Programming problems with additional complexity introduced by the mathematical expression used to calculate the strength of subarrays.
+
+    To solve this problem, we can follow these steps:
+
+    1. Calculate prefix sums for the array `nums`.
+    2. Use dynamic programming to keep track of the maximum strength that can be obtained using a certain number of subarrays ending at each index in the array.
+    3. Iterate through the array and update the dynamic programming table according to the mathematical expression given in the problem statement.
+    4. The answer will be the maximum value in the last row of the dynamic programming table, which represents the maximum strength that can be obtained using `k` subarrays ending at each index in the array.
+
+    This approach should allow us to solve the problem efficiently within the given constraints.

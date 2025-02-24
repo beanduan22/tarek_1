@@ -1,0 +1,10 @@
+ Category: Medium-Level Problem
+
+   Difficulty Level: Medium
+
+   Required Programming Skills: Basic array manipulation and understanding of palindromes.
+
+   Complexity: The time complexity is O(n), where n is the length of the array, as we only need to traverse through the array once. The space complexity is also O(1) as we are not using any additional data structures that grow with input size.
+
+   Explanation:
+   Given an array of integers, this problem requires us to find out the minimum number of elements that need to be changed in order to make the array palindromic (i.e., same read forwards and backwards). We can solve this by comparing corresponding elements from both ends of the array towards the middle. Any discrepancies will count as a change needed. This is a good problem to test basic programming skills with arrays, especially those who are new to coding. However, it also provides a simple introduction to more advanced concepts such as dynamic programming and greedy algorithms for solving similar problems.

@@ -1,0 +1,38 @@
+Problem ID: 3429
+Problem Content:
+An array is considered special if every pair of its adjacent elements contains two numbers with different parity.
+You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
+ 
+Example 1:
+
+Input: nums = [1]
+Output: true
+Explanation:
+There is only one element. So the answer is true.
+
+Example 2:
+
+Input: nums = [2,1,4]
+Output: true
+Explanation:
+There is only two pairs: (2,1) and (1,4), and both of them contain numbers with different parity. So the answer is true.
+
+Example 3:
+
+Input: nums = [4,3,1,6]
+Output: false
+Explanation:
+nums[1] and nums[2] are both odd. So the answer is false.
+
+ 
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100
+
+Codestral Analysis:
+ The given problem is a basic array manipulation question that falls under the category of easy to moderate level problems in terms of difficulty. This type of problem is commonly encountered in coding interviews or contests, focusing more on logical reasoning rather than requiring advanced programming skills or complex data structures.
+
+The complexity of this problem can be considered as O(n) where n is the size of the array. The algorithm used to solve this problem only needs to iterate through each element once and perform a constant time parity check for every pair, making it quite efficient even for large inputs.
+
+In conclusion, I would classify this problem as an easy level question with a time complexity of O(n) that tests your logical reasoning skills rather than requiring advanced programming skills or complex data structures.

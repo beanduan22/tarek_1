@@ -1,0 +1,7 @@
+ Problem Analysis:
+    The problem is about writing a function that takes a string as input and returns a new string where all lowercase characters are transformed to uppercase and vice versa. In other words, the case of each character in the string should be reversed. This can be achieved by traversing through each character in the string and checking its case type using built-in functions, then converting it to the opposite case.
+
+    Problem Category:
+    Based on the analysis above, this problem falls under the category of "String Manipulation" and is considered an easy problem. It does not require any advanced programming skills or complex algorithms to solve.
+
+    The difficulty level of this problem can be classified as "Easy", mainly because it's a basic operation that requires minimal logic and can be solved using built-in functions in most programming languages. This type of problem typically shows up in beginner-level coding challenges or interviews to assess a candidate's basic understanding of string manipulation and case conversion.

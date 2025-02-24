@@ -1,0 +1,62 @@
+Problem ID: 1899_A
+Problem Content:
+Vanya and Vova are playing a game. Players are given an integer $n$. On their turn, the player can add $1$ to the current integer or subtract $1$. The players take turns; Vanya starts. If after Vanya's move the integer is divisible by $3$, then he wins. If $10$ moves have passed and Vanya has not won, then Vova wins.
+
+Write a program that, based on the integer $n$, determines who will win if both players play optimally.
+
+Input
+
+The first line contains the integer $t$ ($1 \leq t \leq 100$) — the number of test cases.
+
+The single line of each test case contains the integer $n$ ($1 \leq n \leq 1000$).
+
+Output
+
+For each test case, print "First" without quotes if Vanya wins, and "Second" without quotes if Vova wins.Sample Input 1:
+6
+
+1
+
+3
+
+5
+
+100
+
+999
+
+1000
+
+
+
+Sample Output 1:
+
+First
+Second
+First
+First
+Second
+First
+
+
+Qwen2 Analysis:
+The provided problem falls under the category of "Game Theory" and "Dynamic Programming", specifically tailored for those with intermediate to advanced skills in algorithmic problem solving. 
+
+### Difficulty Level:
+- **Beginner to Intermediate**: The problem requires understanding of basic mathematical operations (addition, subtraction) along with strategic planning which is suitable for beginners familiar with competitive programming concepts.
+- **Intermediate to Advanced** : To solve the problem efficiently and understand its underlying logic, a certain level of familiarity with algorithmic thinking and dynamic programming techniques is necessary.
+
+### Required Programming Skills:
+1. **Conditional Logic**: The game's win condition involves conditional evaluation based on whether an integer is divisible by 3 after Vanya’s move.
+2. **Looping Constructs**: Implementing the game turns requires iteration over a predefined number of moves (up to 10 in this case).
+3. **Modular Arithmetic**: Understanding and utilizing modulo operations to check divisibility is crucial.
+4. **Recursion or Dynamic Programming**: The solution heavily relies on determining whether Vanya wins by considering both possible moves from the current state, which points towards recursive solutions or dynamic programming for larger inputs.
+
+### Complexity:
+- **Time Complexity**: Since each test case involves a fixed number of operations (up to 10 moves), the time complexity is relatively low and can be considered constant per test case.
+- **Space Complexity**: The space required grows linearly with the input size, as we might potentially keep track of states for memoization in dynamic programming solutions.
+
+### Approach:
+Given that the problem requires understanding game dynamics and strategic outcomes based on moves, employing a recursive approach or utilizing a table to store previously computed results (for larger inputs via dynamic programming) is recommended. This method allows for efficient computation by avoiding redundant calculations through memorization of intermediate results.
+
+In summary, this problem effectively challenges participants to apply concepts from both mathematics and computer science while requiring careful consideration of strategies and outcomes in competitive scenarios typical of algorithmic challenges found in coding competitions or interviews.

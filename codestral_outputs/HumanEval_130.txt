@@ -1,0 +1,8 @@
+ Problem Analysis:
+The given problem is about generating a sequence of numbers based on certain rules, which can be classified as a sequence generation or recursive function problem. The sequence in question is Tribonacci, which is similar to Fibonacci but with three previous terms instead of two. To generate the sequence, we're provided with a formula that varies depending on whether the input number 'n' is even or odd.
+
+Category:
+Based on the analysis above, this problem can be classified into the following category:
+- Intermediate Level: The problem requires understanding and applying conditional statements based on given rules which are not overly complex. However, it might require practice with recursive functions for those less experienced with them.
+- Programming Skills Required: Basic programming skills in any language that supports conditional statements and recursion would be sufficient to solve this problem.
+- Complexity: The time complexity of the solution could range from O(n) to O(n^2) depending on how efficiently the sequence is calculated, where 'n' is the input number. In general, it seems to have a moderate level of complexity.

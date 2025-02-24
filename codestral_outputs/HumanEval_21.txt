@@ -1,0 +1,7 @@
+ This problem can be categorized as a basic level problem in programming. It falls under data manipulation or array/list processing tasks.
+
+   In terms of difficulty, it's considered an easy-to-medium task for someone who is familiar with programming basics and knows how to handle lists or arrays. However, the exact difficulty may vary based on the specific language used to solve the problem as some languages might have built-in functions that make this task easier than others.
+
+   In terms of required skills, one needs a solid understanding of basic programming concepts such as loops, conditionals, and how to use lists or arrays in their language of choice. Additionally, knowledge about linear transformations would be helpful but is not strictly necessary to solve the problem.
+
+   Complexity-wise, it's considered an O(n) problem because we only need one loop or iteration over all elements in the list where n is the size of the list. This means that as the input grows, the time needed to compute the result will grow linearly with the size of the input. The space complexity is also O(n), which comes from creating a new list to store the rescaled numbers.

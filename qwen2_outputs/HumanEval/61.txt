@@ -1,0 +1,11 @@
+The given problem falls under the **Easy** difficulty level. It requires basic understanding of strings in Python along with simple algorithmic logic to track opening and closing brackets.
+
+**Required Programming Skills:**
+- String manipulation: The problem involves iterating over a string and counting characters within that string, which are typical skills required for beginners learning programming.
+- Understanding of stacks: Though not explicitly mentioned in the solution, this could be used implicitly or explicitly depending on how you solve the problem. If your approach uses stack data structures (pushing opening brackets onto the stack and popping them when a matching closing bracket is encountered), it will involve understanding basic concepts related to stacks.
+
+**Problem Complexity:**
+- Time complexity: The algorithm iterates through each character in the string once, leading to O(n) time complexity where n is the length of the input string.
+- Space complexity: In the worst-case scenario (all characters are opening brackets), the space required could be proportional to n (to store all the opening brackets on a stack), leading to O(n) space complexity.
+
+In summary, this problem tests fundamental programming skills like handling strings and basic algorithmic understanding with minimal use of advanced data structures or complex logic. It's suitable for beginners who are learning about string manipulation and simple iteration techniques in Python.

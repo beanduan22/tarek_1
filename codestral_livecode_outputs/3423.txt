@@ -1,0 +1,41 @@
+Problem ID: 3423
+Problem Content:
+You are given an array nums consisting of integers. You are also given a 2D array queries, where queries[i] = [pos_i, x_i].
+For query i, we first set nums[pos_i] equal to x_i, then we calculate the answer to query i which is the maximum sum of a subsequence of nums where no two adjacent elements are selected.
+Return the sum of the answers to all queries.
+Since the final answer may be very large, return it modulo 10^9 + 7.
+A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
+ 
+Example 1:
+
+Input: nums = [3,5,9], queries = [[1,-2],[0,-3]]
+Output: 21
+Explanation:
+After the 1^st query, nums = [3,-2,9] and the maximum sum of a subsequence with non-adjacent elements is 3 + 9 = 12.
+After the 2^nd query, nums = [-3,-2,9] and the maximum sum of a subsequence with non-adjacent elements is 9.
+
+Example 2:
+
+Input: nums = [0,-1], queries = [[0,-5]]
+Output: 0
+Explanation:
+After the 1^st query, nums = [-5,-1] and the maximum sum of a subsequence with non-adjacent elements is 0 (choosing an empty subsequence).
+
+ 
+Constraints:
+
+1 <= nums.length <= 5 * 10^4
+-10^5 <= nums[i] <= 10^5
+1 <= queries.length <= 5 * 10^4
+queries[i] == [pos_i, x_i]
+0 <= pos_i <= nums.length - 1
+-10^5 <= x_i <= 10^5
+
+Codestral Analysis:
+ The problem is categorized as a dynamic programming problem with a twist of handling queries. It falls under the advanced level of difficulty because it requires an understanding of dynamic programming concepts along with effective query handling techniques. This problem involves modifying the array based on each query and then calculating the maximum sum subsequence without selecting any two adjacent elements.
+
+    The complexity can be predicted as follows:
+
+    Time Complexity: O(n + q), where n is the size of the nums array and q is the number of queries. This is because for each query, we are essentially updating a value in the array and then recalculating a subsequence sum which would take linear time in the worst case.
+
+    Space Complexity: O(n), since we need to store all elements of the nums array or at least the maximum sum subsequence values for each index, which could be done in an auxiliary array.

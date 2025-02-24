@@ -1,0 +1,48 @@
+Problem ID: 3230
+Problem Content:
+You are given a 0-indexed string word.
+In one operation, you can pick any index i of word and change word[i] to any lowercase English letter.
+Return the minimum number of operations needed to remove all adjacent almost-equal characters from word.
+Two characters a and b are almost-equal if a == b or a and b are adjacent in the alphabet.
+ 
+Example 1:
+
+Input: word = "aaaaa"
+Output: 2
+Explanation: We can change word into "acaca" which does not have any adjacent almost-equal characters.
+It can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2.
+
+Example 2:
+
+Input: word = "abddez"
+Output: 2
+Explanation: We can change word into "ybdoez" which does not have any adjacent almost-equal characters.
+It can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2.
+Example 3:
+
+Input: word = "zyxyxyz"
+Output: 3
+Explanation: We can change word into "zaxaxaz" which does not have any adjacent almost-equal characters. 
+It can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 3.
+
+ 
+Constraints:
+
+1 <= word.length <= 100
+word consists only of lowercase English letters.
+
+Qwen2 Analysis:
+The provided programming problem falls under the categories of "String Processing" and "Algorithms". 
+
+**Difficulty:** Medium
+
+**Required Programming Skills:**
+- **Understanding of string manipulation**: The problem involves working directly with characters in a string, requiring knowledge about how to access and modify individual characters.
+- **Logical Reasoning**: The solution requires analyzing sequences of adjacent characters and determining the minimum number of operations needed for them to not be 'almost-equal'. This involves understanding the conditions under which two characters can be considered 'almost-equal'.
+- **Algorithmic Thinking**: Efficiently iterating through or traversing the string to identify sequences that need changes is key. The algorithm should aim for optimal performance, especially considering constraints like upper limit on string length and character set.
+
+**Complexity:**
+- **Time Complexity:** A straightforward solution might involve checking every pair of adjacent characters, leading to a time complexity of O(n^2), where n is the length of the input word. However, by using a single pass through the string (with some form of conditional logic or comparison between current and next character) one can achieve linear time complexity, specifically O(n).
+- **Space Complexity:** This problem has an implicit space complexity since it only uses basic data structures like strings and integers for storing operations count and iterating over the input. Assuming constant space usage for variables involved in computation, the space complexity is O(1), considering input string length as a constant factor.
+
+In summary, this problem requires understanding of string manipulation techniques along with efficient algorithmic strategies to solve it optimally within given constraints.

@@ -1,0 +1,5 @@
+This programming problem can be classified as having medium difficulty. It requires knowledge of basic Python programming skills such as string manipulation and set operations. The problem involves iterating through a given string to identify distinct characters (considering uppercase and lowercase letters as the same). This indicates that understanding data structures, like sets in Python, is necessary to solve this challenge efficiently.
+
+The complexity of the problem primarily lies in handling character case sensitivity when considering 'distinct' characters. The solution needs to convert all characters to a consistent case before determining distinctness, which adds an additional layer of logic beyond simple iteration and counting.
+
+Overall, solving this problem requires understanding how Python handles strings, familiarity with sets as a data structure for keeping track of unique elements, and the ability to implement conditional logic based on character case in Python.

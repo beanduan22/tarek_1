@@ -1,0 +1,32 @@
+Problem ID: 2856
+Problem Content:
+You are given an array nums consisting of positive integers.
+We call a subarray of an array complete if the following condition is satisfied:
+
+The number of distinct elements in the subarray is equal to the number of distinct elements in the whole array.
+
+Return the number of complete subarrays.
+A subarray is a contiguous non-empty part of an array.
+ 
+Example 1:
+
+Input: nums = [1,3,1,2,2]
+Output: 4
+Explanation: The complete subarrays are the following: [1,3,1,2], [1,3,1,2,2], [3,1,2] and [3,1,2,2].
+
+Example 2:
+
+Input: nums = [5,5,5,5]
+Output: 10
+Explanation: The array consists only of the integer 5, so any subarray is complete. The number of subarrays that we can choose is 10.
+
+ 
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 2000
+
+Codestral Analysis:
+ This problem can be classified as a medium-level problem in the context of algorithmic problems. It requires good understanding of array manipulation, subarray concepts, and distinct elements handling. This is not a very complex problem but it does require careful attention to detail and correct implementation of the solution. The problem involves traversing the array multiple times (or using nested loops) which may lead to a quadratic time complexity in the worst case, but can be optimized to linear time complexity with the use of sliding window or two-pointer techniques.
+
+This problem requires good programming skills, especially in handling arrays and subarrays. It also requires logical thinking to understand the conditions for a subarray to be considered complete. The overall difficulty of this problem would be rated as medium.

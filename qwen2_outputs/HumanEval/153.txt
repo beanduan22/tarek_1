@@ -1,0 +1,23 @@
+This problem can be categorized as a somewhat advanced coding challenge that involves string manipulation, sorting algorithms, and understanding of basic data structures. 
+
+### Difficulty Level:
+Intermediate to Advanced
+
+### Required Programming Skills:
+
+1. **String Manipulation**: The problem heavily relies on extracting character counts from strings (both uppercase and lowercase letters).
+2. **Sorting**: Sorting the extensions based on their strengths requires knowledge of how to sort items based on a specific attribute or function.
+3. **Algorithmic Thinking**: You need to think about how to compare multiple elements in the list effectively, considering both uppercase and lowercase letter counts.
+
+### Problem Complexity:
+
+The main complexity lies in efficiently calculating the strength of each extension (the difference between uppercase and lowercase letters), sorting them according to this criterion, selecting the strongest one if there are ties based on their order in the original list, and finally concatenating this with the class name. 
+
+**Note**: The problem statement does not explicitly mention whether you should return the object instance or just its string representation when calling `Strongest_Extension()`. In real-world applications, you would likely need to create objects dynamically based on strings, but here we're operating more at a high-level logic and implementation phase.
+
+This question aims to test your ability to:
+1. **Parse and process information from strings** - identifying parts of the string (like uppercase and lowercase counts).
+2. **Implement a sorting algorithm or utilize built-in functionality effectively for sorting purposes**, considering multiple criteria.
+3. **Understand and apply conditional logic** based on specific rules defined in the problem.
+
+Overall, this is not just about writing code but understanding how to logically organize and process data according to complex specifications.

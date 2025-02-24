@@ -1,0 +1,3 @@
+ This problem can be classified as a "Basic" level programming problem. It tests knowledge of string manipulation functions such as replace() in Python or similar methods in other languages. The problem's difficulty might be slightly increased by the requirement to handle multiple consecutive spaces differently than single spaces. However, this is still a relatively straightforward task for programmers with basic experience.
+
+   The category of this problem can be "String Manipulation". String manipulation problems involve operations such as concatenating strings, splitting strings into substrings, searching for and replacing specific characters or sequences of characters in a string, and so on.

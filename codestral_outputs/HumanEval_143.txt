@@ -1,0 +1,16 @@
+ Category: Elementary
+
+   This problem can be categorized as elementary because it primarily focuses on basic string manipulation and list operations to solve a straightforward problem within the given constraints.
+
+   Skills Required:
+   1. String Manipulation: Splitting and joining strings based on a delimiter, checking if a character is alphabetical.
+   2. List Comprehension (Python): Using conditional statements inside list comprehensions to filter elements based on certain criteria.
+   3. Basic Knowledge of Prime Numbers: Identifying whether a number is prime or not.
+
+   Difficulty: Easy
+
+   This problem can be solved using basic programming concepts and doesn't require any advanced algorithms or data structures, making it an easy-level problem within its category.
+
+   Complexity:
+   1. Time Complexity: The time complexity of this solution is O(n), where n is the length of the sentence. This is because we need to iterate through each character in the string once to check for prime word lengths.
+   2. Space Complexity: The space complexity is also O(n) as we are storing the words from the input sentence in a list. In the worst case, all words could be of prime length and end up being stored in the resultant list.

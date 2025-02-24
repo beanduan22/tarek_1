@@ -1,0 +1,8 @@
+ The problem can be categorized as an Easy level problem in the category of String Manipulation.
+
+   The function 'encode' takes a string message as input and performs several operations on it:
+
+   1. It swaps the case of all letters in the message. This requires basic knowledge of string manipulation functions or methods that can handle case conversions.
+   2. It replaces all vowels (a, e, i, o, u) with the letter two places ahead in the English alphabet. This again involves using some string methods to identify and replace characters. However, it adds a bit more complexity since we need to consider different cases for each vowel and their corresponding replacements.
+
+   The problem does not involve any advanced concepts like data structures or algorithms. Thus, its difficulty level is Easy, and the required programming skills mainly include basic string manipulation functions or methods.

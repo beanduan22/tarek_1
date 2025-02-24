@@ -1,0 +1,107 @@
+Problem ID: abc309_c
+Problem Content:
+Snuke the doctor prescribed N kinds of medicine for Takahashi.  For the next a_i days (including the day of the prescription), he has to take b_i pills of the i-th medicine.  He does not have to take any other medicine.
+Let the day of the prescription be day 1.  On or after day 1, when is the first day on which he has to take K pills or less?
+
+Input
+
+The input is given from Standard Input in the following format:
+N K
+a_1 b_1
+\vdots
+a_N b_N
+
+Output
+
+If Takahashi has to take K pills or less on day X for the first time on or after day 1, print X.
+
+Constraints
+
+
+- 1 \leq N \leq 3 \times 10^5
+- 0 \leq K \leq 10^9
+- 1 \leq a_i,b_i \leq 10^9
+- All input values are integers.
+
+Sample Input 1
+
+4 8
+6 3
+2 5
+1 9
+4 2
+
+Sample Output 1
+
+3
+
+On day 1, he has to take 3,5,9, and 2 pills of the 1-st, 2-nd, 3-rd, and 4-th medicine, respectively.  In total, he has to take 19 pills on this day, which is not K(=8) pills or less.
+On day 2, he has to take 3,5, and 2 pills of the 1-st, 2-nd, and 4-th medicine, respectively.  In total, he has to take 10 pills on this day, which is not K(=8) pills or less.
+On day 3, he has to take 3 and 2 pills of the 1-st and 4-th medicine, respectively.  In total, he has to take 5 pills on this day, which is K(=8) pills or less for the first time.  
+Thus, the answer is 3.
+
+Sample Input 2
+
+4 100
+6 3
+2 5
+1 9
+4 2
+
+Sample Output 2
+
+1
+
+Sample Input 3
+
+15 158260522
+877914575 2436426
+24979445 61648772
+623690081 33933447
+476190629 62703497
+211047202 71407775
+628894325 31963982
+822804784 50968417
+430302156 82631932
+161735902 80895728
+923078537 7723857
+189330739 10286918
+802329211 4539679
+303238506 17063340
+492686568 73361868
+125660016 50287940
+
+Sample Output 3
+
+492686569
+
+Qwen2 Analysis:
+The problem described above is from a coding competition or challenge where the task involves processing data related to medicine prescriptions for Takahashi, an individual being prescribed multiple types of medicines. The specifics include:
+
+1. **Input Constraints**: 
+   - `N` (number of kinds of medicine) can be up to `3 * 10^5`.
+   - `K` (threshold pills per day), `a_i`, and `b_i` (`days` and `pills`) are within specific bounds, indicating a significant data processing challenge.
+
+2. **Problem Statement**:
+   - The problem requires calculating the first day where Takahashi has to take `K` or fewer pills across all his prescribed medicines.
+   - This implies an efficient algorithm is needed for handling large inputs efficiently in terms of time complexity and memory usage.
+
+3. **Skill Requirements**: 
+   - **Data Structures**: Efficient use of data structures like arrays, vectors, maps, etc., particularly given the potential size constraints.
+   - **Algorithmic Techniques**: Ability to handle multiple sources of input (multiple medicine types) efficiently. Potential techniques could involve sorting, cumulative sums, or more complex algorithms depending on how the solution is crafted.
+
+4. **Complexity Analysis**:
+   - **Time Complexity**: The naive approach might involve iterating over each day and calculating pills taken for every type of medicine daily until reaching a day where `K` pills are met or exceeded. However, this would have a time complexity close to O(N * sum(a_i)), which could exceed practical limits given constraints.
+   - **Space Complexity**: Given the large `N`, efficient space usage is required.
+
+**Category Prediction Based on Criteria**:
+
+This problem seems to be categorized in the **Advanced Data Structures and Algorithms** category. The reason being:
+
+- **Complexity of Input Handling**: The need for processing data efficiently with a high number of input points (`N`) implies an advanced understanding of managing large datasets, which is typically associated with algorithms that optimize space-time trade-offs.
+  
+- **Algorithmic Skill Requirement**: The problem requires skills beyond basic algorithms (like sorting or simple loops) and likely involves techniques like dynamic programming, simulation with optimization, or leveraging specific data structures to efficiently handle multiple sources of data.
+
+- **Optimization Challenges**: Given the constraints on `K`, finding an efficient solution that scales well is crucial. This suggests the problem requires optimizing existing algorithmic techniques beyond their basic application.
+
+In summary, this problem falls under a category requiring **Advanced Data Structures and Algorithms**, highlighting skills in handling large datasets efficiently while optimizing algorithms for better performance.

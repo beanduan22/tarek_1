@@ -1,0 +1,102 @@
+Problem ID: abc332_a
+Problem Content:
+AtCoder Inc. sells merchandise through its online shop.
+Takahashi has decided to purchase N types of products from there.
+For each integer i from 1 to N, the i-th type of product has a price of P_i yen each, and he will buy Q_i of this.
+Additionally, he must pay a shipping fee.
+The shipping fee is 0 yen if the total price of the products purchased is S yen or above, and K yen otherwise.
+He will pay the total price of the products purchased plus the shipping fee.
+Calculate the amount he will pay.
+
+Input
+
+The input is given from Standard Input in the following format:
+N S K
+P_1 Q_1
+P_2 Q_2
+\vdots
+P_N Q_N
+
+Output
+
+Print the amount Takahashi will pay for online shopping.
+
+Constraints
+
+
+- 1\leq N\leq 100
+- 1\leq S\leq 10000
+- 1\leq K\leq 10000
+- 1\leq P_i\leq 10000
+- 1\leq Q_i\leq 100
+- All input values are integers.
+
+Sample Input 1
+
+2 2000 500
+1000 1
+100 6
+
+Sample Output 1
+
+2100
+
+Takahashi buys one product for 1000 yen and six products for 100 yen each.
+Thus, the total price of the products is 1000\times 1+100\times 6=1600 yen.
+Since the total amount for the products is less than 2000 yen, the shipping fee will be 500 yen.
+Therefore, the amount Takahashi will pay is 1600+500=2100 yen.
+
+Sample Input 2
+
+3 2000 500
+1000 1
+100 6
+5000 1
+
+Sample Output 2
+
+6600
+
+The total price of the products is 1000\times 1+100\times 6+5000\times 1=6600 yen.
+Since the total amount for the products is not less than 2000 yen, the shipping fee will be 0 yen.
+Therefore, the amount Takahashi will pay is 6600+0=6600 yen.
+
+Sample Input 3
+
+2 2000 500
+1000 1
+1000 1
+
+Sample Output 3
+
+2000
+
+There may be multiple products with the same price per item.
+
+Qwen2 Analysis:
+The given problem falls under the 'Intermediate' level of difficulty in coding challenges. It requires basic understanding of input processing, arithmetic operations, and conditional logic. Here's a breakdown:
+
+**Required Programming Skills:**
+- **Input Processing:** The problem involves reading data from the standard input (stdin) which is common in many programming contests.
+- **Arithmetic Operations:** Calculations like multiplication and addition are used to compute total prices and shipping fees.
+- **Conditional Logic:** The condition for applying a shipping fee based on whether the total price of items exceeds a certain threshold uses simple conditional statements.
+
+**Problem-Solving Techniques:**
+1. **Data Collection:** Reading input data for item prices (`P_i`) and quantities (`Q_i`).
+2. **Total Calculation:** Compute the total cost by summing up the product of price and quantity for each item.
+3. **Shipping Fee Logic:** Determine whether to apply a shipping fee based on the total cost compared to `S`.
+4. **Output:** Finally, calculate the final amount to be paid which includes the total cost plus or minus shipping fees (if applicable).
+
+**Algorithmic Complexity:**
+The time complexity of this problem is O(N), where N is the number of items since each item involves a constant number of operations. This makes it an efficient and straightforward solution.
+
+**Category Based on Difficulty:**
+Given its focus on basic arithmetic, conditional logic without loops or nested structures beyond simple iteration, this problem would typically be classified as 'Intermediate' in difficulty levels seen in coding challenges like LeetCode, HackerRank, or Codeforces contests. It requires careful attention to details but does not involve complex algorithms or data structures.
+
+To solve the problem programmatically:
+1. **Initialize variables:** Use `N`, `S`, and `K` for input values related to quantities and fees.
+2. **Process items:** Iterate through each item, summing up costs (`total_cost`) based on price and quantity.
+3. **Apply shipping fee conditionally:** If `total_cost >= S`, no additional charge; else add `K`.
+4. **Output result:** Display the total amount to be paid.
+
+This problem doesn't require advanced techniques or complex logic paths, making it suitable for intermediate-level coders who are learning basic programming concepts and algorithmic problem-solving skills.

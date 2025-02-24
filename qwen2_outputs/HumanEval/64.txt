@@ -1,0 +1,40 @@
+The problem falls under the category of "Basic String Processing". It requires understanding of string manipulation in Python to iterate over each character, checking if it is a vowel (including 'y' at the end) and then counting these vowels.
+
+To solve this problem:
+
+1. First, we need to define what characters are considered vowels. We'll have two sets: one for regular vowels ('a', 'e', 'i', 'o', 'u') and another for special cases where 'y' can be considered a vowel if it's at the end of the string.
+
+2. We will iterate over each character in the input string:
+   - If we encounter a vowel, increment our count.
+   - Check for 'y' specifically when iterating from the start of the string (not at the end), and don't count it as a vowel if found there.
+   
+3. Finally, return the total count of vowels.
+
+Here's an implementation using Python:
+
+```python
+def vowels_count(s):
+    vowels = set('aeiou')
+    special_vowels = {'y'}
+    
+    # Convert to lowercase for case-insensitive comparison
+    s = s.lower()
+    vowel_count = 0
+
+    for i, char in enumerate(s):
+        if char == 'y' and i == len(s) - 1:
+            vowel_count += 1
+        elif char in vowels:
+            vowel_count += 1
+    
+    return vowel_count
+
+# Test cases to validate the solution
+print(vowels_count("abcde")) # Expected output: 2
+print(vowels_count("ACEDY")) # Expected output: 3
+```
+
+This code addresses all aspects of the problem:
+
+- It correctly counts vowels 'a', 'e', 'i', 'o', and 'u'.
+- It considers 'y' as a vowel when it is at the end of the word, following the special rule provided in the problem statement.

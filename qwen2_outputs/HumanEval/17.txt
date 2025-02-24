@@ -1,0 +1,33 @@
+The given programming problem is a straightforward task that involves string parsing. It doesn't require any advanced concepts or algorithms but focuses on understanding the input format, extracting relevant data (numbers of beats), and converting them into an appropriate output structure.
+
+**Category based on difficulty:**
+This problem would fall under easy to medium difficulty level since it requires basic programming skills related to strings manipulation, array creation, and iteration. It doesn't involve complex logic or algorithms that require deep analysis.
+
+**Required programming skills:**
+To solve this problem effectively, you need the following programming skills:
+
+1. **String manipulation:** Understand how to iterate through a string, split it into parts based on delimiters (in this case, spaces), and extract numbers from those parts.
+2. **Basic Python knowledge:** You should be familiar with creating lists and assigning values to list elements using indexing.
+
+**Complexity:**
+The time complexity of the solution would be O(n), where n is the length of the input string. The space complexity could vary slightly depending on the implementation, but it mainly depends on the size of the output list.
+
+Here's a simple Python solution implementing these skills:
+
+```python
+def parse_music(music_string: str) -> List[int]:
+    beats = []
+    notes = music_string.split()
+    
+    for note in notes:
+        if 'o' in note:
+            beats.append(4)
+        elif 'o|' in note:
+            beats.append(2)
+        elif '.|' in note:
+            beats.append(1)
+            
+    return beats
+```
+
+This solution iterates through each element of the string, checks its type based on the given legend, and appends the corresponding number of beats to a list.

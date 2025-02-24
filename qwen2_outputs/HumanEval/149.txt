@@ -1,0 +1,18 @@
+The given programming problem involves multiple concepts of Python programming like list manipulation, sorting, string processing. The difficulty level is considered intermediate since it requires knowledge about handling lists, strings in python along with understanding how to perform custom sorts based on specific conditions.
+
+To solve the problem:
+
+1. First filter out the strings that have odd lengths from the given list.
+2. Sort this filtered list first based on their length (ascending order).
+3. If two elements have same length then sort them alphabetically.
+
+The required skills include knowledge of Python's list comprehensions, string methods like len(), and sorting functions such as sorted() with custom key parameters.
+
+The complexity level would be low because the main difficulty lies in understanding the problem statement thoroughly rather than dealing with complex logic or data structures. The solution can efficiently be achieved using built-in python features which makes it an ideal medium difficulty problem for intermediate Python programmers looking to improve their coding skills through challenges like these. 
+
+So, based on these factors:
+- Difficulty Level: Intermediate
+- Required Programming Skills: List and String manipulation in Python, Custom sorting logic 
+- Complexity: Low
+
+This categorization aligns well with the problem's description and constraints provided by the given question, indicating that it would suitably challenge intermediate-level programmers while being approachable enough to learn from.

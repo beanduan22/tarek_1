@@ -1,0 +1,94 @@
+Problem ID: abc351_b
+Problem Content:
+You are given two grids, each with N rows and N columns, referred to as grid A and grid B.
+Each cell in the grids contains a lowercase English letter.
+The character at the i-th row and j-th column of grid A is A_{i, j}.
+The character at the i-th row and j-th column of grid B is B_{i, j}.  
+The two grids differ in exactly one cell. That is, there exists exactly one pair (i, j) of positive integers not greater than N such that A_{i, j} \neq B_{i, j}. Find this (i, j).
+
+Input
+
+The input is given from Standard Input in the following format:
+N
+A_{1,1}A_{1,2}\dots A_{1,N}
+A_{2,1}A_{2,2}\dots A_{2,N}
+\vdots
+A_{N,1}A_{N,2}\dots A_{N,N}
+B_{1,1}B_{1,2}\dots B_{1,N}
+B_{2,1}B_{2,2}\dots B_{2,N}
+\vdots
+B_{N,1}B_{N,2}\dots B_{N,N}
+
+Output
+
+Let (i, j) be the pair of positive integers not greater than N such that A_{i, j} \neq B_{i, j}. Print (i, j) in the following format:
+i j
+
+Constraints
+
+
+- 1 \leq N \leq 100
+- A_{i, j} and B_{i, j} are all lowercase English letters.
+- There exists exactly one pair (i, j) such that A_{i, j} \neq B_{i, j}.
+
+Sample Input 1
+
+3
+abc
+def
+ghi
+abc
+bef
+ghi
+
+Sample Output 1
+
+2 1
+
+From A_{2, 1} = d and B_{2, 1} = b, we have A_{2, 1} \neq B_{2, 1}, so (i, j) = (2, 1) satisfies the condition in the problem statement.
+
+Sample Input 2
+
+1
+f
+q
+
+Sample Output 2
+
+1 1
+
+Sample Input 3
+
+10
+eixfumagit
+vtophbepfe
+pxbfgsqcug
+ugpugtsxzq
+bvfhxyehfk
+uqyfwtmglr
+jaitenfqiq
+acwvufpfvv
+jhaddglpva
+aacxsyqvoj
+eixfumagit
+vtophbepfe
+pxbfgsqcug
+ugpugtsxzq
+bvfhxyehok
+uqyfwtmglr
+jaitenfqiq
+acwvufpfvv
+jhaddglpva
+aacxsyqvoj
+
+Sample Output 3
+
+5 9
+
+Codestral Analysis:
+ This is a basic programming problem that focuses on string comparison and finding differences between two grids (or matrices). It can be classified as an "Easy" level problem. Here's why:
+
+    - Problem Difficulty: The problem statement clearly defines the input format, output format, and the requirement to find the position of the single cell that differs in both matrices. This makes it a straightforward problem for those who understand basic string comparison or matrix operations.
+    - Required Programming Skills: To solve this problem, you need to read inputs, compare strings/characters in matrices, and output results. These are fundamental skills in programming that everyone should be comfortable with.
+    - Complexity: The time complexity for solving this problem is O(N^2), where N is the size of the matrix. This is because we have to iterate over all elements of both matrices once. Since the maximum value of N is 100, the execution time should be within acceptable limits.
+    - Categorization: Based on the above analysis, this problem can be categorized as "Easy" level in a programming contest or a basic algorithmic problem.

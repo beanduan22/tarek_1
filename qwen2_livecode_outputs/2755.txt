@@ -1,0 +1,53 @@
+Problem ID: 2755
+Problem Content:
+You are given a 0-indexed string s and a dictionary of words dictionary. You have to break s into one or more non-overlapping substrings such that each substring is present in dictionary. There may be some extra characters in s which are not present in any of the substrings.
+Return the minimum number of extra characters left over if you break up s optimally.
+ 
+Example 1:
+
+Input: s = "leetscode", dictionary = ["leet","code","leetcode"]
+Output: 1
+Explanation: We can break s in two substrings: "leet" from index 0 to 3 and "code" from index 5 to 8. There is only 1 unused character (at index 4), so we return 1.
+
+
+Example 2:
+
+Input: s = "sayhelloworld", dictionary = ["hello","world"]
+Output: 3
+Explanation: We can break s in two substrings: "hello" from index 3 to 7 and "world" from index 8 to 12. The characters at indices 0, 1, 2 are not used in any substring and thus are considered as extra characters. Hence, we return 3.
+
+ 
+Constraints:
+
+1 <= s.length <= 50
+1 <= dictionary.length <= 50
+1 <= dictionary[i].length <= 50
+dictionary[i] and s consists of only lowercase English letters
+dictionary contains distinct words
+
+Qwen2 Analysis:
+The problem can be categorized as a **Dynamic Programming** problem with a slight twist. The main idea here is to break down the string (`s`) into substrings that exist in the given dictionary while minimizing the number of extra characters.
+
+**Difficulty Level**: Medium
+
+**Required Programming Skills**: 
+
+1. **Understanding and Implementation of Dynamic Programming**
+2. **String Manipulation**: Working with strings, finding patterns, etc.
+3. **Recursion and Memoization**: To optimize recursive solutions by storing intermediate results for reuse (as seen in top-down DP).
+4. **Handling Edge Cases**: Such as dealing with cases where no solution exists.
+
+**Algorithm Complexity Analysis**: 
+
+1. **Time Complexity**: The time complexity is primarily determined by the process of checking each substring against the dictionary and filling up the DP table. Since we're iterating through `s` once for forming substrings and then checking them against the dictionary, which itself could involve multiple comparisons (`O(n * m)` where `n` is length of `s`, and `m` is the average length of words in the dictionary), this can be considered as O(n^2 * m). However, with memoization, we avoid redundant computations by storing results for substrings.
+
+2. **Space Complexity**: The space complexity depends on the DP table which could potentially store up to 50 x 50 values (in a simplified view assuming the most naive implementation), hence it's `O(n^2)` due to using memoization or at least `O(n)` if we use recursion without explicit caching.
+
+**General Solution Approach**:
+
+1. **Initialization**: Create a DP table of size `(n+1) x n` (including zero index, as in the problem setup).
+2. **Recursion**: Define a recursive function to check all possible splits for substrings ending at each position.
+3. **Memoization**: Use this memoization technique to store results for already computed substrings, reducing repetitive computation.
+4. **Optimization**: Return the minimum extra characters needed by trying every possible split and choosing the option that minimizes these additional characters.
+
+This problem is quite intriguing because it combines string manipulation with optimization techniques like dynamic programming, providing a rich ground to explore different aspects of algorithmic thinking.

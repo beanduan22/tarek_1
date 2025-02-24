@@ -1,0 +1,75 @@
+Problem ID: 3382
+Problem Content:
+You are given an array of positive integers nums.
+Return the number of subarrays of nums, where the first and the last elements of the subarray are equal to the largest element in the subarray.
+ 
+Example 1:
+
+Input: nums = [1,4,3,3,2]
+Output: 6
+Explanation:
+There are 6 subarrays which have the first and the last elements equal to the largest element of the subarray:
+
+subarray [1,4,3,3,2], with its largest element 1. The first element is 1 and the last element is also 1.
+subarray [1,4,3,3,2], with its largest element 4. The first element is 4 and the last element is also 4.
+subarray [1,4,3,3,2], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [1,4,3,3,2], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [1,4,3,3,2], with its largest element 2. The first element is 2 and the last element is also 2.
+subarray [1,4,3,3,2], with its largest element 3. The first element is 3 and the last element is also 3.
+
+Hence, we return 6.
+
+Example 2:
+
+Input: nums = [3,3,3]
+Output: 6
+Explanation:
+There are 6 subarrays which have the first and the last elements equal to the largest element of the subarray:
+
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+subarray [3,3,3], with its largest element 3. The first element is 3 and the last element is also 3.
+
+Hence, we return 6.
+
+Example 3:
+
+Input: nums = [1]
+Output: 1
+Explanation:
+There is a single subarray of nums which is [1], with its largest element 1. The first element is 1 and the last element is also 1.
+Hence, we return 1.
+
+ 
+Constraints:
+
+1 <= nums.length <= 10^5
+1 <= nums[i] <= 10^9
+
+Codestral Analysis:
+ This is a dynamic programming or sliding window problem that could be solved using a single scan of the array in O(n) time complexity. Here's why:
+
+- Difficulty: Medium. Although it involves some logic to count subarrays efficiently, it doesn't require advanced data structures or algorithms.
+- Programming skills: Basic understanding of arrays, loops, and if-else statements are sufficient for this problem. A good grasp on dynamic programming can help optimize the solution further.
+- Complexity: Single scan of the array, so time complexity is O(n). Constant space is used since no additional data structure grows with input size. So overall, it's an efficient problem to solve in terms of computational resources.
+
+Here's a simplified Python solution using sliding window concept that illustrates this approach:
+
+```python
+def count_subarrays(nums):
+    result = 0
+    max_num = 0
+    for num in nums:
+        if num >= max_num:
+            max_num = num
+            result += 1
+        elif num < max_num:
+            result += 1
+    return result
+```
+In this approach, we iterate through the array. For each number, we check if it is greater than or equal to the maximum number encountered so far. If yes, then we increment the result count by one as a new subarray with current number as the largest number starts here. In either case (current number >= max_num or not), we add 1 to our result because every single element can be considered as a valid subarray where both first and last elements are equal to the largest element in that subarray (which is itself). If the current number is less than the maximum, then we still increment the count since it might be part of subarrays with their max_num at the end. Finally, we return the result which gives us the total number of valid subarrays where first and last elements are equal to the largest element in that subarray.
+
+The key insight here is to understand that a new set of subarrays start from every occurrence of the maximum number in the array. By keeping track of this, we can solve the problem without explicitly generating or storing all subarrays.

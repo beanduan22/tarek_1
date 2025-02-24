@@ -1,0 +1,5 @@
+ Category: Beginner
+
+   Explanation: This is a simple problem that falls under the category of string manipulation and list comprehension. It doesn't require advanced data structures or algorithms to solve. The function takes a string as input and returns all its prefixes from shortest to longest in a list format. Knowledge of string indexing, slicing, and creating lists in Python is required to solve this problem.
+
+   The complexity of the solution depends on the length of the input string. In the worst case scenario (when the input string is very long), the time complexity could be O(n^2) due to the repeated concatenation operations inside a loop. However, in practice, Python's internal string representation and optimizations can make this operation more efficient than that. Still, the overall category of this problem would likely be considered "Beginner" as it doesn't require deep understanding or complex techniques to solve.

@@ -1,0 +1,9 @@
+Based on the description of the problem provided:
+
+- **Difficulty**: The problem asks for basic string manipulation and condition checking. It doesn't involve complex algorithms or data structures, making it relatively simple.
+
+- **Required Programming Skills**: This question requires knowledge in Python (specifically string methods like `split`, indexing, and conditionals), understanding of regular expressions could help optimize the solution but isn't mandatory as no regex functions are used in the given examples. 
+
+- **Complexity**: The problem is linear in nature; it goes through each character of the file name once using standard programming constructs (string slicing, loop, etc.). There's no recursion or nested loops that significantly increase complexity.
+
+Overall, this question can be classified as an easy-to-moderate difficulty level problem requiring basic coding skills and knowledge on string handling.

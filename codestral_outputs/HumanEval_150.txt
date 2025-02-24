@@ -1,0 +1,7 @@
+ Category: Basic Algorithm Implementation (Easy)
+
+   Difficulty: The problem is considered easy because it mainly focuses on implementing a basic conditional statement and understanding how to determine if a number is prime or not.
+
+   Required Programming Skills: Understanding of conditionals, functions, and basic mathematical concepts such as determining whether a number is prime.
+
+   Complexity: The time complexity for this problem primarily depends on the algorithm used to check for primality. A simple method like checking divisibility up to the square root of n will have a time complexity of O(sqrt(n)). But since we're dealing with smaller numbers here, it should be fast enough for practical purposes. Space complexity is minimal as only a few variables are used.

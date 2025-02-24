@@ -1,0 +1,5 @@
+ This problem can be classified as a beginner-intermediate level problem under the category of "String Manipulation" or "Text Processing". The problem requires understanding how to split strings based on delimiters (sentence terminators) and then iterate over these sentences to count the number that start with the word "I", which is considered a boredom. This task does not require advanced data structures or algorithms, making it an approachable problem for beginners and more comfortable for intermediate-level programmers.
+
+   The complexity of this problem can be analyzed as follows:
+   1) Time Complexity: The time complexity would be O(n), where n is the number of characters in the string. This is because we may have to process each character once to split the sentences and check if they start with "I".
+   2) Space Complexity: The space complexity would also be O(n), as we might store all the characters into a list or array during the splitting process.

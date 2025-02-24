@@ -1,0 +1,66 @@
+Problem ID: 3354
+Problem Content:
+You are given a string s. s[i] is either a lowercase English letter or '?'.
+For a string t having length m containing only lowercase English letters, we define the function cost(i) for an index i as the number of characters equal to t[i] that appeared before it, i.e. in the range [0, i - 1].
+The value of t is the sum of cost(i) for all indices i.
+For example, for the string t = "aab":
+
+cost(0) = 0
+cost(1) = 1
+cost(2) = 0
+Hence, the value of "aab" is 0 + 1 + 0 = 1.
+
+Your task is to replace all occurrences of '?' in s with any lowercase English letter so that the value of s is minimized.
+Return a string denoting the modified string with replaced occurrences of '?'. If there are multiple strings resulting in the minimum value, return the lexicographically smallest one.
+ 
+Example 1:
+
+Input:   s = "???" 
+Output:   "abc" 
+Explanation:  In this example, we can replace the occurrences of '?' to make s equal to "abc".
+For "abc", cost(0) = 0, cost(1) = 0, and cost(2) = 0.
+The value of "abc" is 0.
+Some other modifications of s that have a value of 0 are "cba", "abz", and, "hey".
+Among all of them, we choose the lexicographically smallest.
+
+Example 2:
+
+Input:  s = "a?a?"
+Output:  "abac"
+Explanation:  In this example, the occurrences of '?' can be replaced to make s equal to "abac".
+For "abac", cost(0) = 0, cost(1) = 0, cost(2) = 1, and cost(3) = 0.
+The value of "abac" is 1.
+
+ 
+Constraints:
+
+1 <= s.length <= 10^5
+s[i] is either a lowercase English letter or '?'.
+
+Qwen2 Analysis:
+Based on the description of the problem provided above, we can categorize this as an **Intermediate Difficulty** coding challenge. 
+
+### Key Aspects:
+
+1. **Problem Complexity:** The problem involves string manipulation (specifically dealing with '?' characters), counting occurrences of each character before their respective index positions based on lexicographical order, and deciding which replacements to make for '?' to minimize the overall score while maintaining lexicographical order.
+
+2. **Required Programming Skills:**
+   - String operations: Manipulating strings including handling specific characters like '?'
+   - Basic data structures: Storing counts or frequencies might involve some form of auxiliary data structure.
+   - Algorithmic thinking: Deciding on strategies for replacing '?' based on the need to minimize the score and maintain lexicographical order.
+
+3. **Data Complexity:** The input size is up to \(10^5\) characters, which suggests a focus on efficient algorithms that can handle large inputs without excessive time complexity (ideally aiming for linear or at most quadratic complexity if a brute force approach is necessary).
+
+### Solving Strategy:
+
+A well-designed solution would involve:
+- Counting the occurrences of each letter in the initial string.
+- Iterating through the string again to replace '?' based on minimizing the score and ensuring lexicographical order. Since we are dealing with lowercase English letters, there's a finite number (26) that can be used for replacements.
+
+### Category Prediction:
+
+Given these aspects—moderate complexity in terms of operations, specific constraints related to input size, and requirements in data structures and algorithms—the problem falls into the category of **Intermediate** difficulty problems. 
+
+The skills needed are common to many beginner-to-intermediate level programming challenges, involving understanding and implementing basic string manipulations alongside a bit more complex logic to handle replacements while optimizing two criteria simultaneously.
+
+Such problems also encourage **greedy** strategies or sorting-based solutions, as demonstrated by the need for lexicographical order and minimizing score, which often lead to efficient yet well-thought-out algorithms.

@@ -1,0 +1,65 @@
+Problem ID: abc327_b
+Problem Content:
+You are given an integer B.
+If there exists a positive integer A such that A^A = B, print its value; otherwise, output -1.
+
+Input
+
+The input is given from Standard Input in the following format:
+B
+
+Output
+
+If there exists a positive integer A such that A^A = B, print its value; otherwise, print -1.
+If there are multiple positive integers A such that A^A = B, any of them will be accepted.
+
+Constraints
+
+
+- 1 \leq B \leq 10^{18}
+- B is an integer.
+
+Sample Input 1
+
+27
+
+Sample Output 1
+
+3
+
+3^3 = 27, so print 3.
+
+Sample Input 2
+
+100
+
+Sample Output 2
+
+-1
+
+There is no A such that A^A = B.
+
+Sample Input 3
+
+10000000000
+
+Sample Output 3
+
+10
+
+Qwen2 Analysis:
+The programming problem described here is categorized as a Hard-level question primarily due to its computational complexity and the necessity of implementing an efficient algorithm. The problem involves several important aspects:
+
+### Required Programming Skills:
+1. **Mathematical Reasoning**: Understanding and applying mathematical concepts such as exponentiation, which can involve large numbers (up to \(10^{18}\)).
+2. **Looping Constructs**: Iterating through possible values of A in a systematic way.
+3. **Conditional Logic**: Implementing if-else conditions for determining when the equation \(A^A = B\) holds true or does not hold.
+4. **Efficiency Optimization**: Solving problems that may require significant computational resources efficiently.
+
+### Difficulty and Complexity:
+1. **Large Number Handling**: Working with such large numbers necessitates using appropriate data types (like long integers) capable of storing large values, which can introduce complexity in terms of memory usage and performance considerations.
+2. **Algorithmic Efficiency**: The problem requires finding an efficient way to determine if there is any integer A that satisfies \(A^A = B\), potentially involving a search algorithm or mathematical insight rather than brute force.
+3. **Time Complexity**: Ensuring the solution executes within reasonable time limits (usually a few seconds for most programming languages) given constraints like \(1 \leq B \leq 10^{18}\).
+
+### Conclusion:
+The problem is complex due to the need for an algorithm that can handle large numbers efficiently, making it suitable for intermediate to advanced programmers. It requires not only understanding mathematical concepts but also implementing them in a computationally efficient manner, thus fitting well into the hard difficulty category based on required skills and computational considerations.

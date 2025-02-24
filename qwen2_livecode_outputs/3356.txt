@@ -1,0 +1,54 @@
+Problem ID: 3356
+Problem Content:
+You are given an array arr of size n consisting of non-empty strings.
+Find a string array answer of size n such that:
+
+answer[i] is the shortest substring of arr[i] that does not occur as a substring in any other string in arr. If multiple such substrings exist, answer[i] should be the lexicographically smallest. And if no such substring exists, answer[i] should be an empty string.
+
+Return the array answer.
+ 
+Example 1:
+
+Input: arr = ["cab","ad","bad","c"]
+Output: ["ab","","ba",""]
+Explanation: We have the following:
+- For the string "cab", the shortest substring that does not occur in any other string is either "ca" or "ab", we choose the lexicographically smaller substring, which is "ab".
+- For the string "ad", there is no substring that does not occur in any other string.
+- For the string "bad", the shortest substring that does not occur in any other string is "ba".
+- For the string "c", there is no substring that does not occur in any other string.
+
+Example 2:
+
+Input: arr = ["abc","bcd","abcd"]
+Output: ["","","abcd"]
+Explanation: We have the following:
+- For the string "abc", there is no substring that does not occur in any other string.
+- For the string "bcd", there is no substring that does not occur in any other string.
+- For the string "abcd", the shortest substring that does not occur in any other string is "abcd".
+
+ 
+Constraints:
+
+n == arr.length
+2 <= n <= 100
+1 <= arr[i].length <= 20
+arr[i] consists only of lowercase English letters.
+
+Qwen2 Analysis:
+Based on the description provided for this programming problem, I would categorize it as follows:
+
+**Difficulty:** Medium
+
+The solution requires understanding string manipulation operations such as substring extraction, checking if a string is contained within another string (which involves searching), sorting strings lexicographically, and potentially managing multiple cases for finding substrings. These are not trivial tasks but standard concepts in programming that can be mastered with practice.
+
+**Required Programming Skills:**
+
+1. **String Manipulation:** Being able to extract substrings from a given input string is crucial.
+2. **Searching within Strings:** The ability to check if one string occurs as a substring of another string efficiently will help find the required substrings.
+3. **Lexicographical Comparison:** Knowing how to sort strings in lexicographical order might be needed for finding the smallest (lexicographically) among candidates that are equal in length.
+
+**Complexity:**
+
+This problem falls under O(N*M^2), where N is the number of strings and M is the maximum length of a string, since for each string we potentially check against all substrings. The nested loop structure to iterate through all possible substrings contributes significantly to this complexity.
+
+In summary, while not overly complex in terms of data structures used (just basic manipulation operations), it requires careful implementation and understanding of concepts related to strings and algorithms on them to efficiently solve the problem within reasonable time constraints for larger inputs. Thus, I would place it in the medium difficulty category based on these considerations.

@@ -1,0 +1,52 @@
+Problem ID: 3019
+Problem Content:
+You are given a string moves of length n consisting only of characters 'L', 'R', and '_'. The string represents your movement on a number line starting from the origin 0.
+In the i^th move, you can choose one of the following directions:
+
+move to the left if moves[i] = 'L' or moves[i] = '_'
+move to the right if moves[i] = 'R' or moves[i] = '_'
+
+Return the distance from the origin of the furthest point you can get to after n moves.
+ 
+Example 1:
+
+Input: moves = "L_RL__R"
+Output: 3
+Explanation: The furthest point we can reach from the origin 0 is point -3 through the following sequence of moves "LLRLLLR".
+
+Example 2:
+
+Input: moves = "_R__LL_"
+Output: 5
+Explanation: The furthest point we can reach from the origin 0 is point -5 through the following sequence of moves "LRLLLLL".
+
+Example 3:
+
+Input: moves = "_______"
+Output: 7
+Explanation: The furthest point we can reach from the origin 0 is point 7 through the following sequence of moves "RRRRRRR".
+
+ 
+Constraints:
+
+1 <= moves.length == n <= 50
+moves consists only of characters 'L', 'R' and '_'.
+
+Codestral Analysis:
+ This is a simple string manipulation problem with some logical reasoning involved. It falls under the category of "Easy" to "Medium" in terms of difficulty. A basic understanding of how strings can be manipulated using loops and conditions is needed to solve this problem. Also, an understanding of the number line and how positive and negative numbers are represented on it will be helpful.
+
+    In Python, we could approach the problem by first replacing all underscores with R's or L's depending on what results in a further distance from origin. Then iterate over the string and keep a running total of our position while moving left or right as instructed. The maximum absolute value we reach during this process would be the furthest point we can get to after n moves, which is the answer to the problem.
+
+    Python code:
+
+```python
+def max_distance(moves):
+    moves = moves.replace('_', 'R') # assuming right direction results in maximum distance
+    position = 0
+    for move in moves:
+        if move == 'L':
+            position -= 1
+        else:
+            position += 1
+    return abs(position)
+```

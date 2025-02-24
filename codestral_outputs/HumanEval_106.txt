@@ -1,0 +1,12 @@
+ The problem can be categorized as an intermediate level programming problem. It tests understanding of loops, conditional statements and basic mathematical concepts such as factorial and summation up to a number. While it doesn't require extensive programming expertise, it does demand good logic building and the ability to translate instructions into code accurately.
+
+   Given that the problem deals with iterating through a range, performing conditionals, and calculating both factorials and sums, it falls under the "Algorithmic" category of problems.
+
+   To solve this problem:
+   1. Initialize an empty list to store the results.
+   2. Loop over the numbers from 1 to n (inclusive).
+   3. For each iteration check if the number is even or odd.
+       - If it's even, calculate its factorial and append that value to the result list.
+         The factorial calculation can be done in a separate function or within the loop using a for-loop.
+       - If it's odd, calculate the sum of numbers from 1 up to that number (inclusive) and append that value to the result list.
+   4. Finally, return the result list.

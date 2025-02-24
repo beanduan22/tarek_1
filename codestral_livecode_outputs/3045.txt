@@ -1,0 +1,44 @@
+Problem ID: 3045
+Problem Content:
+You are given a 0-indexed array nums of length n containing distinct positive integers. Return the minimum number of right shifts required to sort nums and -1 if this is not possible.
+A right shift is defined as shifting the element at index i to index (i + 1) % n, for all indices.
+ 
+Example 1:
+
+Input: nums = [3,4,5,1,2]
+Output: 2
+Explanation: 
+After the first right shift, nums = [2,3,4,5,1].
+After the second right shift, nums = [1,2,3,4,5].
+Now nums is sorted; therefore the answer is 2.
+
+Example 2:
+
+Input: nums = [1,3,5]
+Output: 0
+Explanation: nums is already sorted therefore, the answer is 0.
+Example 3:
+
+Input: nums = [2,1,4]
+Output: -1
+Explanation: It's impossible to sort the array using right shifts.
+
+ 
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 100
+nums contains distinct integers.
+
+Codestral Analysis:
+ The given problem can be categorized as a medium-level programming problem that involves array manipulation and sorting techniques. It requires understanding of loop structures, conditional statements, and array operations.
+
+The problem involves finding the minimum number of right shifts needed to sort an array of distinct positive integers. To solve this, we need to iterate through each element in the array and check if a sorted version of the array can be achieved by performing right shifts from that position. If such a position is found, we count the number of right shifts and return it as our answer.
+
+The complexity of this problem can be analyzed as follows:
+1. Time Complexity: The main operation in the algorithm is iterating through each element in the array, which takes O(n) time. Inside the loop, we are performing a constant amount of work (comparisons and assignments), so the overall time complexity remains linear - O(n).
+2. Space Complexity: Since no extra space proportional to the input size is used, the space complexity is constant - O(1).
+
+In terms of skills required, this problem will test a programmer's ability to implement logical thinking and array manipulation techniques. It does not require any advanced data structures or algorithms to be solved.
+
+Therefore, based on difficulty, programming skills required and time/space complexity, we can classify this as a medium-level problem.

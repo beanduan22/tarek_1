@@ -1,0 +1,4 @@
+ This problem can be categorized as a beginner-level problem in programming, specifically focusing on data manipulation with lists or arrays. It doesn't require advanced data structures or algorithms to solve. The task is clear: increment each element of the input list by 1 and return the new list. This can be achieved using simple iteration over the elements of the array, applying an addition operation on each one.
+
+   Difficulty level: Beginner
+   Required programming skills: Basic understanding of lists or arrays, loops and arithmetic operations in a programming language like Python, Java, C++ etc.

@@ -1,0 +1,15 @@
+The provided programming problem is relatively straightforward and focuses primarily on implementing a function that finds common elements between two given lists. The task involves basic list operations like sorting, comparing, and handling duplicates.
+
+**Difficulty Level**: Easy
+
+**Required Programming Skills**: This problem requires knowledge of Python basics such as defining functions, working with lists, sorting, and handling duplicate values in lists. It also emphasizes on understanding input/output parameters correctly using type annotations (`def common(l1: list, l2: list)`).
+
+**Complexity**: The complexity of this task is low because it mainly involves direct implementation of the specified functionality without needing advanced data structures or complex algorithms.
+
+To solve the problem, you would typically:
+1. Combine both lists into one.
+2. Sort the combined list (to simplify finding duplicates).
+3. Iterate through the sorted list to find duplicate elements which are common in both original lists.
+4. Return unique common elements as specified in the function docstring.
+
+The solution will involve some form of iteration, list handling, and potential use of built-in Python functions for sorting and removing duplicates (like `set()` or `.unique()` method if available).

@@ -1,0 +1,12 @@
+ This is a moderately difficult problem that involves filtering out prime numbers from a list of integers, finding the largest one, and then summing up its digits.
+
+   Difficulty: Medium-Hard
+   Category: Algorithmic Programming
+
+   Skills Required:
+   - Basic knowledge of Python programming language
+   - Understanding of loops and conditionals
+   - Knowledge of how to check if a number is prime
+   - Ability to manipulate strings (to extract digits from the largest prime number)
+
+   Complexity: The time complexity will be O(n*sqrt(m)), where n is the length of the list and m is the maximum integer in the list. This is because we're checking each number in the list to see if it is prime, which takes O(sqrt(m)) time, and doing this for all numbers in the list takes O(n*sqrt(m)) time. Extracting digits from a number also takes linear time. So, overall complexity will be dominated by the prime checking operation.

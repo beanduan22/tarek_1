@@ -1,0 +1,7 @@
+ The given problem is a Python function implementation problem which falls under the beginner to intermediate level of difficulty. To solve this problem, you would need basic understanding of Python syntax, list comprehension, and string manipulation functions. The complexity can be considered low as it mainly involves iterating over two lists and comparing their sums using simple mathematical operations.
+
+   In detail:
+   - Problem Type: Implementation of a Python function
+   - Difficulty Level: Beginner to Intermediate
+   - Required Skills: Basic Python syntax, list comprehension, string manipulation functions (len)
+   - Complexity: Low due to simple operations and data structures involved.

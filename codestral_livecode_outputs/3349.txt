@@ -1,0 +1,24 @@
+Problem ID: 3349
+Problem Content:
+Given a string s, return the maximum length of a substring such that it contains at most two occurrences of each character.
+ 
+Example 1:
+
+Input: s = "bcbbbcba"
+Output: 4
+Explanation:
+The following substring has a length of 4 and contains at most two occurrences of each character: "bcbbbcba".
+Example 2:
+
+Input: s = "aaaa"
+Output: 2
+Explanation:
+The following substring has a length of 2 and contains at most two occurrences of each character: "aaaa".
+ 
+Constraints:
+
+2 <= s.length <= 100
+s consists only of lowercase English letters.
+
+Codestral Analysis:
+ This problem can be categorized as a sliding window algorithm problem. It falls into the medium difficulty level because it requires understanding of how to manipulate substrings and use data structures such as dictionaries or arrays to keep track of character occurrences. The time complexity is O(n), where n is the length of the input string, since each character in the string is processed only once. This problem tests the ability to solve problems with strings using efficient algorithms and understanding of data structure usage.

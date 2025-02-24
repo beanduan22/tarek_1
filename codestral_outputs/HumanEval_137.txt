@@ -1,0 +1,5 @@
+ The problem seems to be categorized as a basic programming problem. It requires creating a function that compares two inputs (which could be integers, floats or strings), converts them into a common format for comparison (like float) and returns the larger one in its original data type. If the numbers are equal, it should return None.
+
+   Difficulty: Easy
+   Required Programming Skills: Basic knowledge of Python programming, understanding of data types, conditional statements, and basic string manipulation skills.
+   Complexity: The complexity is linear O(n) as we're only comparing two numbers once. But there's an added layer of complexity due to the need to handle different input types.

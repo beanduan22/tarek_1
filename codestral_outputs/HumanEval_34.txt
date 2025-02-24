@@ -1,0 +1,3 @@
+ The problem is classified as a basic level problem in terms of difficulty. It requires minimal programming skills to solve it. This is because the problem is asking to retrieve unique elements from a list and then sort them. Both these operations are common in most programming languages and can be solved using built-in functions or methods without requiring complex data structures or algorithms.
+
+   The problem can be categorized as: List Manipulation -> Unique Elements Retrieval and Sorting.

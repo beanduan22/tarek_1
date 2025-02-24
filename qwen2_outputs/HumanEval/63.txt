@@ -1,0 +1,20 @@
+This problem can be categorized as a somewhat advanced Programming Challenge in the field of Algorithms, specifically focusing on Dynamic Programming. Here's why:
+
+**Difficulty Level:**
+The difficulty level is medium-high due to the following factors:
+1. **Recursion**: The function needs to be recursive which involves understanding and implementing recursion.
+2. **Memoization or Tabulation**: To efficiently solve this problem, one needs to understand either memoization (storing result of expensive function calls and reusing them) or tabulation (building up a solution from smaller subproblems).
+3. **Sequence Understanding**: The fibfib sequence definition is not the standard Fibonacci sequence, so understanding its unique definition might be slightly challenging.
+
+**Required Programming Skills:**
+To solve this problem effectively, one should have:
+1. **Recursion**: The ability to write recursive functions and understand how recursion works.
+2. **Dynamic Programming Concepts**: Knowledge of how dynamic programming techniques like memoization or tabulation can optimize the solution process.
+3. **Time Complexity Analysis**: Understanding basic time complexity analysis for determining efficiency.
+
+**Complexity:**
+The problem involves:
+1. **Space Complexity**: Storing intermediate results might use significant space, depending on implementation (either using an array for tabulation or a dictionary for memoization).
+2. **Time Complexity**: The naive recursive approach would be quite inefficient as it has exponential time complexity due to recalculating the same values multiple times.
+
+In summary, this problem requires the ability to think recursively and understand Dynamic Programming techniques to optimize computation. The challenge is not just in writing code but also in analyzing and optimizing its efficiency.
